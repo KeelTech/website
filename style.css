@@ -16,6 +16,7 @@ html {
 
 button {
   cursor: pointer;
+  font-family: "Poppins", sans-serif;
 }
 
 /* width */
@@ -43,6 +44,14 @@ button {
 .img-fluid {
   max-width: 100%;
   height: auto;
+}
+
+h1, h2, h3, h4, h5 {
+  color: #262e33;
+}
+
+p, span {
+  color: #4d5459;
 }
 
 .p-relative {
@@ -258,21 +267,6 @@ button {
 @media (min-width: 1400px) {
   .container {
     max-width: 1370px;
-  }
-}
-
-@media (min-width: 1600px) {
-  .container {
-    max-width: 1770px;
-  }
-}
-
-@media (min-width: 1920px) {
-  .container-fluid {
-    max-width: 1870px;
-  }
-  .container {
-    max-width: 1870px;
   }
 }
 
@@ -1025,7 +1019,7 @@ footer {
   border: 1px solid #e5e5e5;
   outline: none;
   border-radius: 4px;
-  min-height: 40px;
+  min-height: 120px;
   padding: 12px;
 }
 
@@ -1106,6 +1100,16 @@ p.blackSubPera {
   margin-bottom: 20px;
 }
 
+.leftConttPanel button.submitBtn {
+  width: 320px;
+}
+
+img.img-fluid.iframeImg {
+  width: 150px;
+  margin: auto;
+  display: block;
+}
+
 .rightImagePanel {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1117,4 +1121,163 @@ p.blackSubPera {
       -ms-flex-pack: center;
           justify-content: center;
   height: 100%;
+}
+
+.iframeContainer iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+  max-height: 500px;
+  border: none;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 3px 3px #c5c5c5;
+          box-shadow: 0px 3px 3px #c5c5c5;
+}
+
+.iframeContainer {
+  margin: 30px 0;
+}
+
+button.course-accordion {
+  cursor: pointer;
+  padding: 8px;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  line-height: 1.5em;
+  text-transform: none;
+  letter-spacing: 0px;
+  font-weight: 500;
+  font-style: normal;
+  color: #262e33;
+  background: #fafafa;
+}
+
+/*When the button is active or mouse hovers*/
+button.course-accordion.active,
+button.course-accordion:hover {
+  background-color: rgba(166, 166, 166, 0.6);
+}
+
+/*button not active*/
+button.course-accordion:after {
+  content: '\002B';
+  color: black;
+  float: right;
+  margin-left: 5px;
+}
+
+/* minus button */
+button.course-accordion.active:after {
+  content: "\2212";
+}
+
+div.course-panel {
+  padding: 0 18px;
+  background-color: transparent;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
+  width: 96%;
+  font-size: 15px;
+  line-height: 28px;
+  letter-spacing: .4px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+div.course-panel p {
+  padding: 20px 0;
+}
+
+section.improveScore {
+  padding: 50px 0;
+}
+
+.scroreImgCont img {
+  width: 90px;
+  margin: auto;
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+h4.sectionSubHeading {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+p.sectionSubHeading {
+  font-size: 16px;
+}
+
+.scroreAccordionCont {
+  margin-top: 20px;
+}
+
+.scroreAccordionCont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+.contactMainHeading {
+  min-height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contactMainHeading h2 {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.contactContainer {
+  padding-bottom: 50px;
+}
+
+.getInTouch h4 {
+  color: #6f7176;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: inter,sans-serif;
+  margin-bottom: 15px;
+}
+
+.getInTouch p {
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+
+.getInTouch h5 {
+  font-size: 18px;
+  font-weight: 500;
 }

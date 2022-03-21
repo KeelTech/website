@@ -1,0 +1,22 @@
+<!doctype html> 
+<html>
+	<title>Keel</title>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link rel="icon" href="https://ucarecdn.com/38857dd3-ef54-4dea-b631-81cb91c54de7/">
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;1,200&display=swap" rel="stylesheet">	
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+		  <link rel="stylesheet" href="./style.css">
+	    <% for(var i=0; i<bundles.length; i++) {%>
+	        <script defer src="<%-bundles[i].file%>"></script>
+	    <% } %>
+	    <% for(var i=0; i<split_bundles.length; i++) {%>
+	        <script defer src="<%-split_bundles[i]%>"></script>
+	    <% } %>
+	</head>
+	<body>
+		<div id ="app"><%-htmlContent %></div>
+	</body>
+</html>

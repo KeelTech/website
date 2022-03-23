@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 import { container } from './style.js';
 
 const Header = ()=>{
@@ -12,16 +14,16 @@ const Header = ()=>{
                 <div className="navListing">
                     <ul>
                         <li>
-                            <a>Home</a>
+                            <Link href="/">Home</Link>
                         </li>
                         <li>
-                            <a>Service</a>
+                            <Link href="/services">Service</Link>
                         </li>
                         <li>
-                            <a>Check Eligibility</a>
+                            <Link href="/">Check Eligibilitye</Link>
                         </li>
                         <li>
-                            <a>Contact</a>
+                            <Link href="/contact"><a>Contact</a></Link>
                         </li>
                     </ul>
                 </div>

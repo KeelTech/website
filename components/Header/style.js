@@ -41,14 +41,14 @@ export const container = css`
         transition: all 0.2s ease;
       }
       
-      .navListing ul li:hover:after {
+      .navListing ul li a:hover:after {
         -webkit-transform: scaleX(1);
                 transform: scaleX(1);
         -webkit-transform-origin: 100% 50%;
                 transform-origin: 100% 50%;
       }
       
-      .navListing ul li:after {
+      .navListing ul li a:after {
         display: block;
         content: "";
         border-bottom: solid 3px #700000;
@@ -60,7 +60,7 @@ export const container = css`
         transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
       }
       
-      .navListing ul li:hover {
+      .navListing ul li a:hover {
         color: #700000;
       }
       button.getStarted {
@@ -72,5 +72,9 @@ export const container = css`
         font-size: 16px;
         padding: 15px 10px;
         border-radius: 4px;
+      }
+      li a{
+        text-decoration: none;
+        color: #c32020;
       }
 `

@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 import { container } from './style.js';
 
 const ImmigrationInfo = ()=>{
@@ -10,7 +12,7 @@ const ImmigrationInfo = ()=>{
             <div className="row vr-gap-50">
                 <div className="col-md-6 col-12">
                     <div className="immgImageBlock">
-                        <img className="img-fluid" src="https://getkeel.com/wp-content/uploads/2021/06/licensed.svg" />
+                        <Image width={655} height={281} className="img-fluid" src="https://getkeel.com/wp-content/uploads/2021/06/licensed.svg" />
                     </div>
                 </div>
                 <div className="col-md-6 col-12">
@@ -27,12 +29,12 @@ const ImmigrationInfo = ()=>{
                 </div>
                 <div className="col-md-6 col-12">
                     <div className="immgImageBlock">
-                        <img className="img-fluid" src="https://getkeel.com/wp-content/uploads/2021/06/licensed.svg" />
+                        <Image width={655} height={281} className="img-fluid" src="https://getkeel.com/wp-content/uploads/2021/06/licensed.svg" />
                     </div>
                 </div>
                 <div className="col-md-6 col-12">
                     <div className="immgImageBlock">
-                        <img className="img-fluid" src="https://getkeel.com/wp-content/uploads/2021/06/licensed.svg" />
+                        <Image width={655} height={281} className="img-fluid" src="https://getkeel.com/wp-content/uploads/2021/06/licensed.svg" />
                     </div>
                 </div>
                 <div className="col-md-6 col-12">
@@ -49,7 +51,7 @@ const ImmigrationInfo = ()=>{
                 </div>
                 <div className="col-md-6 col-12">
                     <div className="immgImageBlock">
-                        <img className="img-fluid" src="https://getkeel.com/wp-content/uploads/2021/06/licensed.svg" />
+                        <Image width={655} height={281} className="img-fluid" src="https://getkeel.com/wp-content/uploads/2021/06/licensed.svg" />
                     </div>
                 </div>
             </div>

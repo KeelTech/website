@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 import { container } from './style.js';
 
 const CRSScore = ()=>{
@@ -17,18 +19,18 @@ const CRSScore = ()=>{
                     <div className="listEmlText">
                         <ul>
                             <li>
-                                <img className="img-fluid"
+                                <Image layout="responsive" width={48} height={48} className="img-fluid"
                                     src="https://getkeel.com/wp-content/uploads/2021/06/Step-1-1.svg" />
                                 <p>Check your eligibility and book a free counselling session</p>
                             </li>
                             <li>
-                                <img className="img-fluid"
+                                <Image width={48} height={48} className="img-fluid"
                                     src="https://getkeel.com/wp-content/uploads/2021/06/step-2.svg" />
                                 <p>Get on a call with a licensed Canadian immigration consultant to understand your
                                     options</p>
                             </li>
                             <li>
-                                <img className="img-fluid"
+                                <Image width={48} height={48} className="img-fluid"
                                     src="https://getkeel.com/wp-content/uploads/2021/06/step-3.svg" />
                                 <p>Get matched with the best expert consultant personalized to your application needs
                                 </p>

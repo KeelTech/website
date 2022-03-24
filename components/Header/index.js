@@ -20,7 +20,7 @@ const Header = ()=>{
                             <Link href="/services">Service</Link>
                         </li>
                         <li>
-                            <Link href="/">Check Eligibilitye</Link>
+                            <Link href="/">Check Eligibility</Link>
                         </li>
                         <li>
                             <Link href="/contact"><a>Contact</a></Link>

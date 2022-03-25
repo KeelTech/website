@@ -9,7 +9,7 @@ const Contact = ()=>{
                 <div className="contactMainHeading">
                     <h2>Contact</h2>
                 </div>
-                <div className="row">
+                <div className="row vr-gap-30">
                     <div className="col-md-6 col-12">
                         <div className="getInTouch">
                             <h4>GET IN TOUCH </h4>

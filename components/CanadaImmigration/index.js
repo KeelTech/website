@@ -5,7 +5,7 @@ const CanadaImmigration = ()=>{
     return(
     <section className={container}>
         <div className="container">
-            <div className="row">
+            <div className="row vr-gap-30">
                 <div className="col-md-6">
                     <div className="leftConttPanel">
                         <h3>Canada Immigrations</h3>

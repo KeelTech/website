@@ -1,13 +1,13 @@
 import { css } from '@emotion/css'
 
 export const contactSection = css`
-    .container{
-        position: -webkit-sticky;
-        position: sticky;
-        top: 0;
-        background: white;
-        z-index: 1;
-    }
+    // .container{
+    //     position: -webkit-sticky;
+    //     position: sticky;
+    //     top: 0;
+    //     background: white;
+    //     z-index: 1;
+    // }
     
     .contactContainer {
       padding-bottom: 50px;
@@ -27,23 +27,23 @@ export const contactSection = css`
     }
     
     
-    .row {
-      display: -ms-flexbox;
-      display: -webkit-box;
-      display: flex;
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-      margin-right: -15px;
-      margin-left: -15px;
-    }
-    .col-12,
-    .col-md-6 {
-      -ms-flex: 0 0 50%;
-      -webkit-box-flex: 0;
-              flex: 0 0 50%;
-      max-width: 50%;
+    // .row {
+    //   display: -ms-flexbox;
+    //   display: -webkit-box;
+    //   display: flex;
+    //   -ms-flex-wrap: wrap;
+    //   flex-wrap: wrap;
+    //   margin-right: -15px;
+    //   margin-left: -15px;
+    // }
+    // .col-12,
+    // .col-md-6 {
+    //   -ms-flex: 0 0 50%;
+    //   -webkit-box-flex: 0;
+    //           flex: 0 0 50%;
+    //   max-width: 50%;
       
-    }
+    // }
     
 .getInTouch h4 {
   color: #6f7176;

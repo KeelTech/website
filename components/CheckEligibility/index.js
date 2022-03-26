@@ -7,7 +7,7 @@ import { container } from './style.js';
 const CheckEligibily = ()=>{
     const [email, setEmail] = useState('');
     const [contactNo, setContactNo] = useState('');
-
+console.log(process.env.NEXT_PUBLIC_ANALYTICS_ID);
     const handleEmailChange = (e)=>{
         setEmail(e.target.value)
     }

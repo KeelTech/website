@@ -2,6 +2,7 @@ import { css } from '@emotion/css'
 
 export const container = css`
     min-height: calc(100vh - 100px);
+    padding:80px 0px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

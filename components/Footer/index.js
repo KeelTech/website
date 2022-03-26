@@ -7,7 +7,7 @@ const Footer = ()=>{
     return(
     <footer className={container}>
         <div className="container">
-            <div className="row">
+            <div className="row vr-gap-30">
                 <div className="col-md-3 col-12">
                     <div className="socialBtns">
                         <div>

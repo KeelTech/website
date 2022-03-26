@@ -7,20 +7,18 @@ export const container = css`
       background: white;
       z-index: 1;
       .navBarMain {
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
                 align-items: center;
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
                 justify-content: space-between;
         min-height: 100px;
       }
-      
-      .main-logo img {
-        width: 100px;
+      .main-logo{
+        display: flex;
+        align-items: end;
+        gap: 10px;
+        img {
+          width: 100px;
+        }
       }
       
       .navListing ul {
@@ -29,8 +27,132 @@ export const container = css`
         display: -ms-flexbox;
         display: flex;
         gap: 30px;
+        @media (max-width:992px){
+         display:none;
+        }
       }
-      
+      .toggleMain{
+        // display:none;
+        position:relative;
+        @media (max-width:992px){
+          display:block;
+        }
+        #menu {
+          // display: none;
+          height: 100%;
+          width: 100%;
+          background: transparent;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          margin: auto;
+          transition: .5s all ease;
+          pointer-events: none;
+          visibility: hidden;
+          position: fixed;
+          // img.sideBarLogo{
+          //   display:none;
+          // }
+          ul.mainList {
+            position: absolute;
+            width: 320px;
+            margin: 0 0 0 0px;
+            padding: 85px 10px;
+            background: #ffffff;
+            list-style-type: none;
+            -webkit-font-smoothing: antialiased;
+            transform-origin: 0 0;
+            -webkit-transform: translate(-100%, 0);
+            -moz-transform: translate(-100%, 0);
+            -ms-transform: translate(-100%, 0);
+            transform: translate(-100%, 0);
+            -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+            transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+            height: 100vh;
+            img{
+              width:150px;
+              margin-bottom:30px;
+            }
+            li{
+              padding: 12px 8px;
+              border-bottom: 1px solid #efefefad;
+              &:last-child{
+                border:none;
+              }
+              a{
+                color:black;
+              }
+            }
+        }
+        }
+      }
+input{
+  display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+    &:checked ~ #menu {
+      // display: block;
+      position: fixed;
+      height: 100%;
+      width: 100%;
+      background: #000000b8;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      margin: auto;
+      visibility:inherit;
+      pointer-events:all;
+      // img.sideBarLogo{
+      //   display:block;
+      // }
+       ul {
+        transform: none !important;
+      }
+      img.sideBarLogo{
+        // display:block;
+      }
+  }
+  &:checked ~ span.bars {
+    opacity: 1;
+    transform: rotate(45deg) translate(0px, 2px);
+    background: #232323;
+    &:nth-last-child(3) {
+      opacity: 0;
+      transform: rotate(0deg) scale(0.2, 0.2);
+  }
+  &:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+}
+}
+}
+span{
+  &.bars{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #c32020;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+    &:first-child {
+      transform-origin: 0 0;
+  }
+    &:nth-last-child(2) {
+      transform-origin: 0 100%;
+  }
+  }
+}
+        
+      }
       .navListing ul li {
         color: #c32020;
         font-size: 16px;

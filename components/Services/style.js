@@ -4,10 +4,11 @@ export const container = css`
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: calc(100vh - 100px);
+    // height: calc(100vh - 100px);
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    padding:30px 0px;
     h1.blackSubHed {
         text-align: center;
         font-size: 40px;

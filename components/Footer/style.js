@@ -10,6 +10,7 @@ export const container = css`
         -ms-flex-align: center;
             align-items: center;
     min-height: 100px;
+    padding:30px 0px;
   .contactLeftCont img {
     width: 200px;
     display: block;
@@ -59,6 +60,10 @@ export const container = css`
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+            @media (max-width:767px){
+              flex-wrap:wrap;
+              flex-direction:column;
+            }
   }
   
   .socialBtns div {

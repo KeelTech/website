@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Image from 'next/image'
 
 import { validateEmail } from '@/helpers/utils.js';
+import { createLead } from '@/actions/index.js';
 import { container } from './style.js';
 
 const CheckEligibily = ()=>{
@@ -36,6 +37,15 @@ console.log(process.env.NEXT_PUBLIC_ANALYTICS_ID);
 
     const checkEligibility = ()=>{
         //alert('check');
+        const postData = {
+            email, 
+            phone: contactNo
+        }
+        createLead(postData).then((resp)=>{
+            console.log(resp);
+        }).catch((e)=>{
+            console.log(e);
+        })
     }
 
     return(

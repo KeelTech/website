@@ -1,7 +1,8 @@
 import { css } from '@emotion/css'
 
 export const container = css`
-    height: calc(100% - 100px);
+    // height: calc(100% - 100px);
+    padding:80px 0px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -21,6 +22,9 @@ export const container = css`
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+            @media (max-width:767px){
+              align-items:center;
+            }
   }
   h2.subHeadings {
     color: #c32020;

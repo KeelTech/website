@@ -27,11 +27,13 @@ export const container = css`
       .testLeftHed h5 {
         font-size: 18px;
         font-weight: 400;
+        color:white;
       }
       
       .testLeftHed h4 {
         font-size: 26px;
         font-weight: 500;
+        color:white;
       }
       
       .testiMoCard p {
@@ -49,6 +51,10 @@ export const container = css`
         padding: 10px 60px;
         width: 300px;
         margin: auto;
+        @media (max-width:767px){
+          margin-top:30px;
+          width:100%;
+        }
       }
       
       .testiUsr {

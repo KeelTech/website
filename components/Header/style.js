@@ -5,7 +5,7 @@ export const container = css`
       position: sticky;
       top: 0;
       background: white;
-      z-index: 1;
+      z-index: 2;
       .navBarMain {
         display: flex;
                 align-items: center;
@@ -95,7 +95,7 @@ input{
     left: -5px;
     cursor: pointer;
     opacity: 0;
-    z-index: 2;
+    z-index: 20;
     &:checked ~ #menu {
       // display: block;
       position: fixed;

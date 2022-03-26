@@ -28,7 +28,7 @@ const Header = () => {
                                             <Link href="/services">Service</Link>
                                         </li>
                                         <li>
-                                            <Link href="/">Check Eligibility</Link>
+                                            <Link href="/eligibility">Check Eligibility</Link>
                                         </li>
                                         <li>
                                             <Link href="/contact"><a>Contact</a></Link>
@@ -48,7 +48,7 @@ const Header = () => {
                                 <Link href="/services">Service</Link>
                             </li>
                             <li>
-                                <Link href="/">Check Eligibility</Link>
+                                <Link href="/eligibility">Check Eligibility</Link>
                             </li>
                             <li>
                                 <Link href="/contact"><a>Contact</a></Link>

@@ -1,16 +1,12 @@
-import Header from '../components/Header';
-import Services from '../components/Services';
-import CanadaImmigration from '../components/CanadaImmigration';
-import Footer from '../components/Footer';
+import Services from '@/components/Services';
+import CanadaImmigration from '@/components/CanadaImmigration';
 
 const ServiceView = ()=>{
 
     return(
         <>
-            <Header/>
             <Services/>
             <CanadaImmigration/>
-            <Footer/>
         </>
     )
 }

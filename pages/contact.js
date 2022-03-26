@@ -1,14 +1,10 @@
-import Header from '../components/Header';
-import ContactView from '../components/ContactView';
-import Footer from '../components/Footer';
+import ContactView from '@/components/ContactView';
 
 const Contact = ()=>{
 
     return(
         <>
-            <Header/>
             <ContactView/>
-            <Footer/>
         </>
     )
 }

@@ -56,7 +56,7 @@ const Footer = ()=>{
                         <ul>
                             <li> <Link href="/">Home</Link></li>
                             <li> <Link href="/services">Services</Link></li>
-                            <li><Link href="/">Check Eligibility</Link></li>
+                            <li><Link href="/eligibility">Check Eligibility</Link></li>
                             <li><Link href="/contact">Contact</Link></li>
                         </ul>
                     </div>

@@ -16,9 +16,10 @@ export const API_POST = (url, data, headers={})=>{
     return new Promise((resolve, reject)=>{
         fetch(url, {
             method: 'POST',
+            mode: 'cors',
+            cache: 'no-cache',
             headers: {
                 'Content-Type': 'application/json',
-                ...headers
             },
             body: JSON.stringify(data)
         })

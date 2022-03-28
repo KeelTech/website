@@ -111,6 +111,18 @@ p, span {
   margin-top: 50px !important;
 }
 
+.mb-50 {
+  margin-bottom: 50px !important;
+}
+
+.mt-60 {
+  margin-top: 60px !important;
+}
+
+.mb-60 {
+  margin-bottom: 50px !important;
+}
+
 .mt-30 {
   margin-top: 30px !important;
 }
@@ -187,7 +199,6 @@ p, span {
 .Max-width-full {
   max-width: 100%;
 }
-
 .text-right {
   text-align: right;
 }
@@ -710,4 +721,87 @@ h2.subHeadings {
 .immgTextBlock p {
   color: #4d5459;
   font-size: 16px;
+}
+
+h4.sectionSubHeading {
+  font-size: 28px;
+  font-weight: 500;
+  text-align: center;
+}
+
+p.sectionSubHeading {
+  font-size: 16px;
+  text-align: center;
+}
+
+.scroreAccordionCont {
+  margin-top: 20px;
+}
+
+.scroreAccordionCont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+button.course-accordion {
+  cursor: pointer;
+  padding: 8px;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  line-height: 1.5em;
+  text-transform: none;
+  letter-spacing: 0px;
+  font-weight: 500;
+  font-style: normal;
+  color: #262e33;
+  background: #fafafa;
+}
+
+/*When the button is active or mouse hovers*/
+button.course-accordion.active,
+button.course-accordion:hover {
+  background-color: rgba(166, 166, 166, 0.6);
+}
+
+/*button not active*/
+button.course-accordion:after {
+  content: '\002B';
+  color: black;
+  float: right;
+  margin-left: 5px;
+}
+
+/* minus button */
+button.course-accordion.active:after {
+  content: "\2212";
+}
+
+div.course-panel {
+  padding: 0 18px;
+  background-color: transparent;
+  overflow: hidden;
+  -webkit-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
+  width: 96%;
+  font-size: 15px;
+  line-height: 28px;
+  letter-spacing: .4px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+div.course-panel p {
+  padding: 20px 0;
 }

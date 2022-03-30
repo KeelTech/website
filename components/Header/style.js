@@ -32,7 +32,7 @@ export const container = css`
         }
       }
       .toggleMain{
-        // display:none;
+        display:none;
         position:relative;
         @media (max-width:992px){
           display:block;
@@ -96,7 +96,7 @@ input{
     cursor: pointer;
     opacity: 0;
     z-index: 20;
-    &:checked ~ #menu {
+    &.inputClick ~ #menu {
       // display: block;
       position: fixed;
       height: 100%;
@@ -118,7 +118,7 @@ input{
         // display:block;
       }
   }
-  &:checked ~ span.bars {
+  &.inputClick ~ span.bars {
     opacity: 1;
     transform: rotate(45deg) translate(0px, 2px);
     background: #232323;
@@ -194,6 +194,9 @@ span{
         font-size: 16px;
         padding: 15px 10px;
         border-radius: 4px;
+        @media (max-width:992px){
+          padding:12px 10px;
+        }
       }
       li a{
         text-decoration: none;

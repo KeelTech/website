@@ -10,7 +10,7 @@ const Header = () => {
                 <div className="navBarMain">
                     <div className="main-logo">
                         <div id="menuToggle" className='toggleMain'>
-                            <input type="checkbox" />
+                            <input type="checkbox" className='inputClick' />
                             <span className="bars"></span>
                             <span className="bars"></span>
                             <span className="bars"></span>

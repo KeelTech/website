@@ -3,49 +3,49 @@ import { container } from './style.js';
 const ConsultingMember = ()=>{
 
     return(
-    <section class={container}>
-        <div class="container">
-            <h4 class="sectionSubHeading text-center">Keel Immigration Consulting</h4>
-            <p class="sectionSubHeading mb-60 text-center">This can be an eyecatching sub-header. And we can add more text to it.</p>
-            <div class="row">
-                <div class="col-md-6 col-12">
-                    <div class="keelImgCardCont">
-                        <div class="row vr-gap-30">
-                            <div class="col-md-6 col-12">
-                                <div class="imgigCard">
+    <section className={container}>
+        <div className="container">
+            <h4 className="sectionSubHeading text-center">Keel Immigration Consulting</h4>
+            <p className="sectionSubHeading mb-60 text-center">This can be an eyecatching sub-header. And we can add more text to it.</p>
+            <div className="row">
+                <div className="col-md-6 col-12">
+                    <div className="keelImgCardCont">
+                        <div className="row vr-gap-30">
+                            <div className="col-md-6 col-12">
+                                <div className="imgigCard">
                                     <h4>20,000+</h4>
                                     <p>Community Members</p>
-                                    <img class="img-fluid" src="https://getkeel.com/wp-content/uploads/2022/02/1.jpg" />
+                                    <img className="img-fluid" src="https://getkeel.com/wp-content/uploads/2022/02/1.jpg" />
                                 </div>
                             </div>
-                            <div class="col-md-6 col-12">
-                                <div class="imgigCard">
+                            <div className="col-md-6 col-12">
+                                <div className="imgigCard">
                                     <h4>20,000+</h4>
                                     <p>Community Members</p>
-                                    <img class="img-fluid" src="https://getkeel.com/wp-content/uploads/2022/02/1.jpg" />
+                                    <img className="img-fluid" src="https://getkeel.com/wp-content/uploads/2022/02/1.jpg" />
                                 </div>
                             </div>
-                            <div class="col-md-6 col-12">
-                                <div class="imgigCard">
+                            <div className="col-md-6 col-12">
+                                <div className="imgigCard">
                                     <h4>20,000+</h4>
                                     <p>Community Members</p>
-                                    <img class="img-fluid" src="https://getkeel.com/wp-content/uploads/2022/02/1.jpg" />
+                                    <img className="img-fluid" src="https://getkeel.com/wp-content/uploads/2022/02/1.jpg" />
                                 </div>
                             </div>
-                            <div class="col-md-6 col-12">
-                                <div class="imgigCard">
+                            <div className="col-md-6 col-12">
+                                <div className="imgigCard">
                                     <h4>20,000+</h4>
                                     <p>Community Members</p>
-                                    <img class="img-fluid" src="https://getkeel.com/wp-content/uploads/2022/02/1.jpg" />
+                                    <img className="img-fluid" src="https://getkeel.com/wp-content/uploads/2022/02/1.jpg" />
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-12">
-                    <div class="imgrRight">
-                        <img class="img-fluid" src="https://getkeel.com/wp-content/uploads/2022/02/2-2-1024x576.jpg" />
-                        <div class="imgrPrice">
+                <div className="col-md-6 col-12">
+                    <div className="imgrRight">
+                        <img className="img-fluid" src="https://getkeel.com/wp-content/uploads/2022/02/2-2-1024x576.jpg" />
+                        <div className="imgrPrice">
                             <p>
                                 <span>₹14,999.00</span>
                                 ₹9,999.00

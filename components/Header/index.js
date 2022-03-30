@@ -25,7 +25,7 @@ const Header = () => {
                                             <Link href="/">Home</Link>
                                         </li>
                                         <li>
-                                            <Link href="/services">Service</Link>
+                                            <Link href="/services">Services</Link>
                                         </li>
                                         <li>
                                             <Link href="/eligibility">Check Eligibility</Link>
@@ -45,7 +45,7 @@ const Header = () => {
                                 <Link href="/">Home</Link>
                             </li>
                             <li>
-                                <Link href="/services">Service</Link>
+                                <Link href="/services">Services</Link>
                             </li>
                             <li>
                                 <Link href="/eligibility">Check Eligibility</Link>

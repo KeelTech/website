@@ -7,21 +7,21 @@ const ApplicationPlatform = ()=>{
 
     return(
         <>
-        <section class={container}>
-            <div class="container">
-                <h4 class="sectionSubHeading">End to End Immigration Application Platform
+        <section className={container}>
+            <div className="container">
+                <h4 className="sectionSubHeading">End to End Immigration Application Platform
                 </h4>
-                <div class="row">
-                    <div class="col-md-6 col-12">
-                        <div class="platformImg">
-                            <img class="img-fluid" src="https://getkeel.com/wp-content/uploads/2022/01/Feature-3.png" />
+                <div className="row">
+                    <div className="col-md-6 col-12">
+                        <div className="platformImg">
+                            <img className="img-fluid" src="https://getkeel.com/wp-content/uploads/2022/01/Feature-3.png" />
                         </div>
                     </div>
-                    <div class="col-md-6 col-12">
-                        <div class="platformList">
+                    <div className="col-md-6 col-12">
+                        <div className="platformList">
                             <ul>
                                 <li>
-                                    <img class="img-fluid"
+                                    <img className="img-fluid"
                                         src="https://getkeel.com/wp-content/uploads/2022/01/license-svgrepo-com-1.svg" />
                                     <div>
                                         <p>Only Licensed Consultants </p>
@@ -29,7 +29,7 @@ const ApplicationPlatform = ()=>{
                                     </div>
                                 </li>
                                 <li>
-                                    <img class="img-fluid"
+                                    <img className="img-fluid"
                                         src="https://getkeel.com/wp-content/uploads/2022/01/no-step-svgrepo-com-1.svg" />
                                     <div>
                                         <p>Don't Settle for the consultant "near you" </p>
@@ -37,7 +37,7 @@ const ApplicationPlatform = ()=>{
                                     </div>
                                 </li>
                                 <li>
-                                    <img class="img-fluid"
+                                    <img className="img-fluid"
                                         src="https://getkeel.com/wp-content/uploads/2022/01/8884838fb15f00484d61d641962ce96e-1.svg" />
                                     <div>
                                         <p>Your Money Is Precious </p>
@@ -45,7 +45,7 @@ const ApplicationPlatform = ()=>{
                                     </div>
                                 </li>
                                 <li>
-                                    <img class="img-fluid"
+                                    <img className="img-fluid"
                                         src="https://getkeel.com/wp-content/uploads/2022/01/295293-1.svg" />
                                     <div>
                                         <p>Don't Run For Updates For Months </p>
@@ -67,10 +67,10 @@ const SalaryFormat = ()=>{
 
     return(
     <>
-    <section class={tableSection}>
-        <div class="container">
-            <h4 class="sectionSubHeading">Salary Comparison India vs Canada </h4>
-            <div class="tableCont">
+    <section className={tableSection}>
+        <div className="container">
+            <h4 className="sectionSubHeading">Salary Comparison India vs Canada </h4>
+            <div className="tableCont">
                 <table>
                     <thead>
                         <tr>
@@ -125,11 +125,11 @@ const SalaryFormat = ()=>{
             </div>
         </div>
     </section>
-    <section class={combis}>
-        <div class="container">
-            <div class="faqSection">
-                <h4 class="sectionSubHeading">Salary Comparison India vs Canada </h4>
-                <p class="sectionSubHeading">Most frequent questions and answers </p>
+    <section className={combis}>
+        <div className="container">
+            <div className="faqSection">
+                <h4 className="sectionSubHeading">Salary Comparison India vs Canada </h4>
+                <p className="sectionSubHeading">Most frequent questions and answers </p>
                 <Accordian data={INTRO_ACCORDIAN}/>
             </div>
         </div>

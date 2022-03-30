@@ -3,12 +3,19 @@ import Image from 'next/image'
 
 import { validateEmail } from '@/helpers/utils.js';
 import { createLead } from '@/actions/index.js';
+import CustomToaster from '@/components/CustomToaster';
 import { container } from './style.js';
 
 const CheckEligibily = ()=>{
     const [email, setEmail] = useState('');
     const [contactNo, setContactNo] = useState('');
-console.log(process.env.NEXT_PUBLIC_ANALYTICS_ID);
+    const [toasterInfo, setToasterInfo] = useState({
+        isVisible: false,
+        isError: false,
+        isSuccess: false,
+        msg: ''
+    })
+    const { isVisible, isError, isSuccess, msg } = toasterInfo;
     const handleEmailChange = (e)=>{
         setEmail(e.target.value)
     }
@@ -35,23 +42,57 @@ console.log(process.env.NEXT_PUBLIC_ANALYTICS_ID);
         }
     }
 
+    const showToaster = (isSucess=false, errorMsg='')=>{
+        setToasterInfo({
+            isVisible: true,
+            isError: !isSucess,
+            isSuccess: isSucess,
+            msg: errorMsg
+        })
+        setTimeout(() => {
+            setToasterInfo({
+                isVisible: false,
+                isError: false,
+                isSuccess: false,
+                msg:''
+            })
+        }, 4000);
+    }
+
     const checkEligibility = ()=>{
-        //alert('check');
         const postData = {
             email, 
             phone: contactNo
         }
+        if(!validateEmail(email)){
+            showToaster(false, 'Please enter valid email id');
+            return;
+        }
+        if(!contactNo){
+            showToaster(false, 'Please enter valid mobile number');
+            return;
+        }
         createLead(postData).then((resp)=>{
-            console.log(resp);
+            if(resp && resp.status ==1){
+                showToaster(true, 'Details Saved Successfully, we will get back to you.');
+                setContactNo('');
+                setEmail('');
+            }else{
+                console.log('failed to create lead', resp);
+                showToaster(false, 'Failed to save details, Please try again later');
+            }
         }).catch((e)=>{
-            console.log(e);
+            console.error('failed to create lead uncaught error', e);
+            showToaster(false, 'Failed to save details, Please try again later');
         })
     }
 
     return(
     <section className={container}>
         <div className="container">
-
+            {
+                isVisible?<CustomToaster isVisible={isVisible} isError={isError} isSuccess={isSuccess} msg={msg}/>:null
+            }
             <div className="row align-center">
                 <div className="col-md-6 col-12">
                     <div className="immigrateForm">

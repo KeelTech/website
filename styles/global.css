@@ -805,3 +805,9 @@ div.course-panel {
 div.course-panel p {
   padding: 20px 0;
 }
+button.ProceedBtnPop {
+  background: #4267b2;
+  color: white;
+  border: none;
+  padding: 10px 30px;
+}

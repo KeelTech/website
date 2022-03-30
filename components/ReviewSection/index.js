@@ -4,40 +4,40 @@ const ReviewSection = ()=>{
 
     return(
     <>
-    <section class={container}>
-        <div class="container">
+    <section className={container}>
+        <div className="container">
             <h2>Reviews By Our Happy Customers</h2>
-            <div class="reviewSLider">
-                <div class="revSlideCard">
-                    <img class="img-fluid"
+            <div className="reviewSLider">
+                <div className="revSlideCard">
+                    <img className="img-fluid"
                         src="https://getkeel.com/wp-content/uploads/2022/02/WhatsApp-Image-2022-02-22-at-7.25.52-AM-600x1300.jpeg" />
                 </div>
-                <div class="revSlideCard">
-                    <img class="img-fluid"
+                <div className="revSlideCard">
+                    <img className="img-fluid"
                         src="https://getkeel.com/wp-content/uploads/2022/02/WhatsApp-Image-2022-02-22-at-7.25.52-AM-600x1300.jpeg" />
                 </div>
-                <div class="revSlideCard">
-                    <img class="img-fluid"
+                <div className="revSlideCard">
+                    <img className="img-fluid"
                         src="https://getkeel.com/wp-content/uploads/2022/02/WhatsApp-Image-2022-02-22-at-7.25.52-AM-600x1300.jpeg" />
                 </div>
-                <div class="revSlideCard">
-                    <img class="img-fluid"
+                <div className="revSlideCard">
+                    <img className="img-fluid"
                         src="https://getkeel.com/wp-content/uploads/2022/02/WhatsApp-Image-2022-02-22-at-7.25.52-AM-600x1300.jpeg" />
                 </div>
-                <div class="revSlideCard">
-                    <img class="img-fluid"
+                <div className="revSlideCard">
+                    <img className="img-fluid"
                         src="https://getkeel.com/wp-content/uploads/2022/02/WhatsApp-Image-2022-02-22-at-7.25.52-AM-600x1300.jpeg" />
                 </div>
-                <div class="revSlideCard">
-                    <img class="img-fluid"
+                <div className="revSlideCard">
+                    <img className="img-fluid"
                         src="https://getkeel.com/wp-content/uploads/2022/02/WhatsApp-Image-2022-02-22-at-7.25.52-AM-600x1300.jpeg" />
                 </div>
-                <div class="revSlideCard">
-                    <img class="img-fluid"
+                <div className="revSlideCard">
+                    <img className="img-fluid"
                         src="https://getkeel.com/wp-content/uploads/2022/02/WhatsApp-Image-2022-02-22-at-7.25.52-AM-600x1300.jpeg" />
                 </div>
-                <div class="revSlideCard">
-                    <img class="img-fluid"
+                <div className="revSlideCard">
+                    <img className="img-fluid"
                         src="https://getkeel.com/wp-content/uploads/2022/02/WhatsApp-Image-2022-02-22-at-7.25.52-AM-600x1300.jpeg" />
                 </div>
 
@@ -52,14 +52,14 @@ const ReviewSection = ()=>{
 const ExternalReviews = ()=>{
     
     return(
-        <section class={chooseUsContainer}>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-12">
-                    <div class="choseHeading">
+        <section className={chooseUsContainer}>
+        <div className="container">
+            <div className="row">
+                <div className="col-md-6 col-12">
+                    <div className="choseHeading">
                         <h4>Others</h4>
                     </div>
-                    <div class="chooseDetails">
+                    <div className="chooseDetails">
                         <ul>
                             <li>
                                 <h3>Unlicensed Consultants</h3>
@@ -100,11 +100,11 @@ const ExternalReviews = ()=>{
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-6 col-12">
-                    <div class="choseHeading">
+                <div className="col-md-6 col-12">
+                    <div className="choseHeading">
                         <h4>Others</h4>
                     </div>
-                    <div class="chooseDetails">
+                    <div className="chooseDetails">
                         <ul>
                             <li>
                                 <h3>100% Licensed Canadian Consultants</h3>

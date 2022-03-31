@@ -40,6 +40,7 @@ export const container = css`
             align-items: center;
     height: 100%;
     gap: 10px;
+    justify-content:center;
   }
   
   .redirection ul li {
@@ -57,9 +58,7 @@ export const container = css`
     display: -ms-flexbox;
     display: flex;
     gap: 20px;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+            justify-content: center;
             @media (max-width:767px){
               flex-wrap:wrap;
               flex-direction:column;
@@ -69,11 +68,38 @@ export const container = css`
   .socialBtns div {
     width: 30px;
     height: 30px;
+    cursor:pointer;
   }
   
   .copyRight p {
     color: white;
     font-size: 10px;
   }
-  
+  .terms {
+    
+    border-top: 1px solid #db414196;
+    li{
+      a{
+color:#e5a0a0;
+      }
+    }
+}
+
+.terms ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 10px 0;
+    gap: 20px;
+    font-size: 12px;
+    color: #e5a0a0;
+}
+
+.terms ul li {
+    cursor: pointer;
+}
+
+.terms ul li:hover {
+    color: white;
+}
 `

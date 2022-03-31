@@ -18,6 +18,10 @@ padding: 50px 0;
 
 .leftConttPanel button.submitBtn {
   width: 320px;
+  @media (max-width:767px){
+    display:block;
+    margin:auto;
+  }
 }
 
 img.img-fluid.iframeImg {
@@ -38,5 +42,9 @@ img.img-fluid.iframeImg {
           justify-content: center;
   height: 100%;
 }
-
+@media (max-width:767px){
+  .row.vr-gap-30.orderChange {
+    flex-direction: column-reverse;
+}
+}
 `

@@ -8,20 +8,6 @@ export const promiseSection = css`
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-
-      .container{position: -webkit-sticky;
-      position: sticky;
-      top: 0;
-      background: white;
-      z-index: 1;}
-      
-      h2.subHeadings {
-        color: #c32020;
-        font-size: 28px;
-        text-align: center;
-        margin-bottom: 50px;
-        font-weight: 600;
-      }
       
 p.blackSubPera {
     text-align: center;
@@ -60,6 +46,14 @@ p.blackSubPera {
       
       .iframeContainer {
         margin: 30px 0;
+        width: 100%;
+        height: 700px;
+        min-height: 500px;
+        max-height: 500px;
+        border: none;
+        border-radius: 4px;
+        -webkit-box-shadow: 0px 3px 3px #c5c5c5;
+                box-shadow: 0px 3px 3px #c5c5c5;
       }
       
 .listEmlText ul {
@@ -263,27 +257,6 @@ img.img-fluid.iframeImg {
 export const applicationPlatform = css`
     background: #fafafa;
     padding: 50px 0;
-    .container{position: -webkit-sticky;
-        position: sticky;
-        top: 0;
-        background: white;
-        z-index: 1;}
-        
-.row {
-    display: -ms-flexbox;
-    display: -webkit-box;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-  }
-    .col-md-6 {
-        -ms-flex: 0 0 50%;
-        -webkit-box-flex: 0;
-                flex: 0 0 50%;
-        max-width: 50%;
-      }
   
 .leftConttPanel h3 {
     color: #262e33;
@@ -334,29 +307,8 @@ button.submitBtn {
 `
 
 export const improveScore = css`
-    padding: 50px 0;
-    .container{position: -webkit-sticky;
-        position: sticky;
-        top: 0;
-        background: white;
-        z-index: 1;}
-        
-.row {
-    display: -ms-flexbox;
-    display: -webkit-box;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-  }
-    .col-md-6 {
-        -ms-flex: 0 0 50%;
-        -webkit-box-flex: 0;
-                flex: 0 0 50%;
-        max-width: 50%;
-      }
-  
+  padding: 50px 0px;
+  background: yellow;
 .scroreImgCont img {
     width: 90px;
     margin: auto;

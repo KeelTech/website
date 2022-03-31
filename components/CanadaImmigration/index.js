@@ -5,7 +5,7 @@ const CanadaImmigration = ()=>{
     return(
     <section className={container}>
         <div className="container">
-            <div className="row vr-gap-30">
+            <div className="row vr-gap-30 orderChange">
                 <div className="col-md-6">
                     <div className="leftConttPanel">
                         <h3>Canada Immigrations</h3>
@@ -18,7 +18,7 @@ const CanadaImmigration = ()=>{
                             aiming to bring a total of 341,000 permanent resident newcomers to Canada in 2021 then add
                             on hundreds of thousands more temporary residents! Why don’t you become one of them?
                         </p>
-                        <button className="submitBtn">Send</button>
+                        <button className="submitBtn">Check CRS Score</button>
                     </div>
                 </div>
                 <div className="col-md-6">

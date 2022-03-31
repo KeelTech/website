@@ -19,16 +19,22 @@ const Accordian = ({ data })=>{
     }
 
     return(
-        <div class="scroreAccordionCont">
+        <div className="scroreAccordionCont">
             {
                 data.map((val, key)=>{
-                    const { ques, ans } = val;
+                    const { ques, ans, isHtml } = val;
                     const showOption = activeList.indexOf(key)>-1;
-                    return <div class={`accrdCard`}  key={key} onClick={()=>handleClick(key)}>
-                    <button class={`course-accordion ${showOption?'active':''}`}>{ques}</button>
-                    <div class="course-panel">
+                    return <div className={`accrdCard`}  key={key} onClick={()=>handleClick(key)}>
+                    <button className={`course-accordion ${showOption?'active':''}`}>{ques}</button>
+                    <div className="course-panel">
                         {
-                            showOption?<p>{ans}</p>:null
+                            showOption?
+                            <>
+                                {
+                                    isHtml?<div dangerouslySetInnerHTML={{__html: ans}} />:<p>{ans}</p>
+                                } 
+                            </>
+                            :null
                         }
                     </div>
                 </div>

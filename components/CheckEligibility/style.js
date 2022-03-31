@@ -81,6 +81,13 @@ export const container = css`
         font-weight: 500;
       }
       
+      .inputForm label.fillInput{
+        top: -10px;
+        background: white;
+        color: #c32020;
+        font-size: 12px;
+        font-weight: 500;
+      }
       button.submitBtn {
         color: white;
         background: #c32020;

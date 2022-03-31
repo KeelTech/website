@@ -19,8 +19,8 @@ const CRSScore = ()=>{
                     <div className="listEmlText">
                         <ul>
                             <li>
-                                <Image layout="responsive" width={48} height={48} className="img-fluid"
-                                    src="https://getkeel.com/wp-content/uploads/2021/06/Step-1-1.svg" />
+                                <Image width={35} height={35} className="img-fluid"
+                                    src="https://getkeel.com/wp-content/uploads/2021/06/Step-1.svg" />
                                 <p>Check your eligibility and book a free counselling session</p>
                             </li>
                             <li>

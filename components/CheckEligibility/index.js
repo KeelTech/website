@@ -103,11 +103,11 @@ const CheckEligibily = ()=>{
                         <div className="formContainer">
                             <div className="inputForm">
                                 <input type="eamil" value={email} onChange={handleEmailChange} onKeyPress={handleEmailKeyPress}/>
-                                <label>Enter your email id</label>
+                                <label className={email ? 'fillInput' : ''}>Enter your email id</label>
                             </div>
                             <div className="inputForm">
                                 <input type="number" id="contactNo" value={contactNo} onChange={handleContactChange} onKeyPress={handleContactKeyPress}/>
-                                <label>Enter your contact number </label>
+                                <label className={contactNo ? 'fillInput' : ''}>Enter your contact number </label>
                             </div>
                             <button className="submitBtn" onClick={checkEligibility}>Check your Eligibility for Free</button>
                         </div>

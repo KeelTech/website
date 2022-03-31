@@ -1,16 +1,18 @@
+import { useState } from 'react';
 import Link from 'next/link';
 
 import { container } from './style.js';
 
-const Header = () => {
 
+const Header = () => {
+    const [activeNav, setNav] = useState(false)
     return (
         <nav className={container}>
             <div className="container">
                 <div className="navBarMain">
                     <div className="main-logo">
                         <div id="menuToggle" className='toggleMain'>
-                            <input type="checkbox" className='inputClick' />
+                            <input type="checkbox" onClick={()=>setNav(val=>!val)} className={activeNav ? 'inputClick' : ''} />
                             <span className="bars"></span>
                             <span className="bars"></span>
                             <span className="bars"></span>

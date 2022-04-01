@@ -848,3 +848,10 @@ button.ProceedBtnPop {
     align-items: center;
     justify-content: center;
 }
+.inputForm label.fillInput{
+  top: -10px !important;
+  background: white !important;
+  color: #c32020 !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+}

@@ -246,8 +246,8 @@ export const container = css`
             justify-content: space-between;
             width: 100%;
             max-width: 867px;
-            margin: 25px 10px;
-            height: calc(100% - 50px);
+            // margin: 25px 10px;
+            height: 100%;
             border: var(--border);
             border-radius: 5px;
             background: var(--msger-bg);

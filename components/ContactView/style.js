@@ -25,6 +25,21 @@ export const contactSection = css`
           -ms-flex-pack: center;
               justify-content: center;
     }
+    .row.reuseForm {}
+
+.col-md-6.col-12.hideOnOther {
+    display: none;
+}
+
+.col-md-6.col-12.reuseForm {
+    width: 100%;
+    max-width: 100%;
+    flex: 100%;
+}
+
+.col-md-6.col-12.customFormIn section {
+    padding: 0;
+}
     
     
     // .row {

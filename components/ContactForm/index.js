@@ -104,31 +104,31 @@ const ContactForm = ()=>{
             {
                 isVisible?<CustomToaster isVisible={isVisible} isError={isError} isSuccess={isSuccess} msg={msg}/>:null
             }
-            <div className="row">
-                <div className="col-md-6 col-12">
+            <div className="row reuseForm">
+                <div className="col-md-6 col-12 hideOnOther">
                     <div className="contactLeftCont">
                         <h4>Contact us</h4>
                         <img className="img-fluid" src="/images/box.png" />
                     </div>
                 </div>
-                <div className="col-md-6 col-12">
+                <div className="col-md-6 col-12 reuseForm">
                     <div className="contactForm">
                         <div className="formContainer">
                             <div className="inputForm">
                                 <input type="text" onChange={(e)=>setData(e.target.value, 'name')} value={name} onKeyPress={(e)=>handleEmailKeyPress(e, 'email')}/>
-                                <label>Enter your Name</label>
+                                <label className={name ? 'fillInput' : ''}>Enter your Name</label>
                             </div>
                             <div className="inputForm">
                                 <input id="email" type="eamil" onChange={(e)=>setData(e.target.value, 'email')} value={email} onKeyPress={(e)=>handleEmailKeyPress(e, 'phone')}/>
-                                <label>Enter your email id</label>
+                                <label className={email ? 'fillInput' : ''}>Enter your email id</label>
                             </div>
                             <div className="inputForm">
                                 <input id="phone" type="number" onChange={(e)=>setData(e.target.value, 'phone')} value={phone} onKeyPress={(e)=>handleEmailKeyPress(e, 'message')}/>
-                                <label>Enter your contact number </label>
+                                <label className={phone ? 'fillInput' : ''}>Enter your contact number </label>
                             </div>
                             <div className="inputForm">
                                 <textarea id="message" className="customTextArea" onChange={(e)=>setData(e.target.value, 'message')} value={message}></textarea>
-                                <label>Enter your message</label>
+                                <label className={message ? 'fillInput' : ''}>Enter your message</label>
                             </div>
                             <button className="submitBtn" onClick={saveData}>Send</button>
                         </div>

@@ -169,6 +169,16 @@ span{
         -webkit-transform-origin: 100% 50%;
                 transform-origin: 100% 50%;
       }
+      .navListing ul li a.actTab:after {
+        -webkit-transform: scaleX(1);
+                transform: scaleX(1);
+        -webkit-transform-origin: 100% 50%;
+                transform-origin: 100% 50%;
+                color: #700000;
+      }
+      .navListing ul li a.actTab {
+                color: #700000;
+      }
       
       .navListing ul li a:after {
         display: block;
@@ -182,6 +192,9 @@ span{
         transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
       }
       
+      .navListing ul li a:hover {
+        color: #700000;
+      }
       .navListing ul li a:hover {
         color: #700000;
       }

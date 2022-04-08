@@ -21,7 +21,7 @@ const Header = () => {
                                 <div className="navListingMobile">
                                     <ul className='mainList'>
                                         <Link href="/">
-                                            <img className="sideBarLogo" alt="Logo" src="https://getkeel.com/wp-content/uploads/2021/07/Logo-1-1-1024x367.jpg" />
+                                            <img className="sideBarLogo cursor-pointer" alt="Logo" src="https://getkeel.com/wp-content/uploads/2021/07/Logo-1-1-1024x367.jpg" />
                                         </Link>
                                         <li>
                                             <Link href="/">Home</Link>
@@ -39,7 +39,9 @@ const Header = () => {
                                 </div>
                             </div>
                         </div>
-                        <img className="img-fluid" src="https://getkeel.com/wp-content/uploads/2021/07/Logo-1-1-1024x367.jpg" />
+                        <Link href="/">
+                        <img className="img-fluid cursor-pointer" src="https://getkeel.com/wp-content/uploads/2021/07/Logo-1-1-1024x367.jpg" />
+                        </Link>
                     </div>
                     <div className="navListing">
                         <ul>

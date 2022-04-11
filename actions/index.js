@@ -24,3 +24,13 @@ export const submitQuestions = (data, cb)=>{
         if(cb) cb(null, true);
     })
 }
+
+export const getPlans = (data={}, cb)=>{
+    return API_GET(`${API_END_POINT}/plans/list-plans`, data).then((response)=>{
+        if(response && response.status==1){
+            if(cb) cb(response.data||[], null)
+            return response.data||[]
+        }
+        return []
+    })
+}

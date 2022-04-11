@@ -45,7 +45,6 @@ const Eligibility = ()=>{
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
     <section className={applicationPlatform}>

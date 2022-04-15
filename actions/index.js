@@ -34,3 +34,30 @@ export const getPlans = (data={}, cb)=>{
         return []
     })
 }
+
+export const handleCheckout = (data={}, cb)=>{
+    return API_POST(`${API_END_POINT}/payment/create-order-details`, data).then((response)=>{
+        if(response && response.status==1){
+            if(cb) cb(response.data||[], null)
+            return response.data||{}
+        }else{
+            if(cb)cb(null, true)
+        }
+        return []
+    })
+}
+
+export const getPlanDetail = (dataParams, cb=null)=>{
+    const { id } = dataParams;
+    API_GET(`${API_END_POINT}/plans/plan-details/${id}`).then((response)=>{
+        
+        if(response && response.status==1){
+            if(cb)cb(response.data||{}, null);
+        }else{
+            if(cb)cb(null, true);
+        }
+        
+    }).catch((e)=>{
+        if(cb)cb(null, true);
+    })
+}

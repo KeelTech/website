@@ -140,7 +140,8 @@ const ContactForm = ()=>{
     }
 
     return(
-        <div className={container}>
+        <section className={container}>
+            <div className="container"  >
             {
                 isVisible?<CustomToaster isVisible={isVisible} isError={isError} isSuccess={isSuccess} msg={msg}/>:null
             }
@@ -159,15 +160,15 @@ const ContactForm = ()=>{
                             </tr>
                             <tr>
                                 <td>{title}</td>
-                                <td>₹{price}</td>
+                                <td>₹ {price}</td>
                             </tr>
                             <tr>
                                 <td>Subtotal	</td>
-                                <td>₹{price}</td>
+                                <td>₹ {price}</td>
                             </tr>
                             <tr>
                                 <td><h5>Total</h5></td>
-                                <td><h5>₹{price}</h5></td>
+                                <td><h5>₹ {price}</h5></td>
                             </tr>
                         </table>
                     </div>
@@ -199,6 +200,7 @@ const ContactForm = ()=>{
                 </div>
             </div>
         </div>
+        </section>
     )
 }
 

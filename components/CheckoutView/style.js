@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 
 export const container = css`
-padding:80px 0px;
+padding:30px 0px;
 .formContainer.customPay {border: 1px solid #ebebeb;padding: 30px;border-radius: 4px;margin: 0;}
 
 .orderBox {border: 1px solid #ebebeb;
@@ -10,7 +10,12 @@ padding:80px 0px;
 
 .orderBox h3 {font-size: 16px;font-weight: 600;margin-bottom: 10px;}
 
-.orderBox table {text-align: left;}
+.orderBox table {text-align: left;
+width:100%;
+}
+.rupSymb{
+    font-family:sans-serif;
+}
 
 .orderBox table th {font-size: 14px;font-weight: 600;padding: 10px 0px;}
 

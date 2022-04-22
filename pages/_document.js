@@ -23,6 +23,7 @@ export default class AppDocument extends Document {
     return (
       <Html>
         <Head />
+        <link rel="shortcut icon" href="../images/fav.ico" />
         <body className="demmm">
           <Main />
           <NextScript />

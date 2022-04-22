@@ -160,15 +160,15 @@ const ContactForm = ()=>{
                             </tr>
                             <tr>
                                 <td>{title}</td>
-                                <td>₹ {price}</td>
+                                <td><span className='rupSymb'>₹</span> {price}</td>
                             </tr>
                             <tr>
                                 <td>Subtotal	</td>
-                                <td>₹ {price}</td>
+                                <td><span className='rupSymb'>₹</span> {price}</td>
                             </tr>
                             <tr>
                                 <td><h5>Total</h5></td>
-                                <td><h5>₹ {price}</h5></td>
+                                <td><h5><span className='rupSymb'>₹</span> {price}</h5></td>
                             </tr>
                         </table>
                     </div>

@@ -1,8 +1,8 @@
 import { css } from '@emotion/css';
 
 export const container = css`
-  height: calc(100% - 100px);
-  padding-top: 100px;
+  // height: calc(100% - 100px);
+  padding: 80px 0px;
   .contactLeftCont h4 {
     font-size: 28px;
     font-weight: 600;

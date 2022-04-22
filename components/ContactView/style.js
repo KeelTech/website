@@ -8,13 +8,14 @@ export const contactSection = css`
     //     background: white;
     //     z-index: 1;
     // }
+    padding:30px 0px;
     
     .contactContainer {
       padding-bottom: 50px;
     }
     
     .contactMainHeading {
-      min-height: 250px;
+      // min-height: 250px;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -202,6 +203,7 @@ textarea.customTextArea:focus + label {
 .contactMainHeading h2 {
   font-size: 50px;
   font-weight: 600;
+  margin-bottom:60px;
 }
 
 

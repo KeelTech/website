@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 
 export const container = css`
-    margin-top: 100px;
+    // margin-top: 100px;
     background: #c32020;
     display: -webkit-box;
     display: -ms-flexbox;

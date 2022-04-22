@@ -76,7 +76,7 @@ const Eligibility = ()=>{
             </div>
         </div>
     </section>
-    <section className={improveScore}>
+    <section className={improveScore + ' '+ 'addCustomPad' } style={{padding: '30px 0px'}}>
         <div className="container">
             <div className="row">
                 <div className="col-md-6">

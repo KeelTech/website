@@ -44,7 +44,7 @@ div#payment ul li {gap: 20px;}
 
 .payRadio lable {display: flex;flex-direction: column;}
 
-.payRadio label {display: flex;flex-direction: column;gap: 10px;margin-left: 20px;}
+.payRadio label {display: flex;flex-direction: column;gap: 10px;}
 
 .payRadio input {padding: 30px 20px;margin: 6px 0px;}
 

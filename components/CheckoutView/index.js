@@ -77,6 +77,7 @@ const ContactForm = ()=>{
             "image": "https://example.com/your_logo",
             "order_id": orderId, //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
             "handler": function (response){
+                router.push('/success');
             },
             "prefill": {
                 "name": `${first_name} ${last_name}`,
@@ -87,11 +88,12 @@ const ContactForm = ()=>{
                 "address": "Razorpay Corporate Office"
             },
             "theme": {
-                "color": "#3399cc"
+                "color": "#c32020"
             }
         };
         var rzp1 = new Razorpay(options);
         rzp1.on('payment.failed', function (response){
+            console.log(response.error);
             showToaster(false, response.error.reason);
         });
         rzp1.open();
@@ -176,10 +178,7 @@ const ContactForm = ()=>{
                         <ul class="">
                             <li class="">
                                 <div className='payRadio'>
-
-                                    <input type="radio" checked/>
-
-                                    <label for="">
+                                    <label>
                                         Credit Card/Debit Card/NetBanking <img src="https://cdn.razorpay.com/static/assets/logo/payment.svg" alt="Credit Card/Debit Card/NetBanking" />
                                     </label>
 

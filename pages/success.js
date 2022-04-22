@@ -1,4 +1,4 @@
-import SuccessMessage from '@/components/successFail';
+import SuccessMessage from '@/components/SuccessFail';
 
 const successMessageView = ()=>{
 

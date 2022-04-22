@@ -25,6 +25,10 @@ const Header = () => {
         return activeTabNo;
     },[router.pathname])
 
+    const handleRedirection = ()=>{
+        window.open('https://app.getkeel.com/?_ga=2.120116556.539293979.1650623580-1070651863.1634566153', '_blank');
+    }
+
     return (
         <nav className={container}>
             <div className="container">
@@ -94,7 +98,7 @@ const Header = () => {
                             </li>
                         </ul>
                     </div>
-                    <button className="getStarted">Get Started</button>
+                    <button className="getStarted" onClick={handleRedirection}>Get Started</button>
                 </div>
             </div>
         </nav>

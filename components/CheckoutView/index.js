@@ -72,11 +72,12 @@ const ContactForm = ()=>{
             "key": "rzp_live_SHoE722sQX5Zzg", // Enter the Key ID generated from the Dashboard
             amount, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
             "currency": "INR",
-            "name": "Acme Corp",
-            "description": "Test Transaction",
-            "image": "https://example.com/your_logo",
+            "name": "Keel Corp",
+            "description": "Purchase Plan",
+            "image": "https://getkeel.com/wp-content/uploads/2021/07/Logo-1-1-1024x367.jpg",
             "order_id": orderId, //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
             "handler": function (response){
+                console.log(response);
                 router.push('/success');
             },
             "prefill": {
@@ -85,7 +86,7 @@ const ContactForm = ()=>{
                 "contact": phone_number
             },
             "notes": {
-                "address": "Razorpay Corporate Office"
+                "address": "Keel Corporate Office"
             },
             "theme": {
                 "color": "#c32020"
@@ -128,7 +129,6 @@ const ContactForm = ()=>{
         handleCheckout(postParams).then((resp)=>{
             if(resp && resp.order_id){
                 redirectToRazorPay(resp.order_id, postParams);
-                showToaster(true, 'Details Saved Successfully, we will get back to you.');
             }else{
                 console.error('failed to create checkout lead', resp);
                 showToaster(false, 'Failed to save details, Please try again later');

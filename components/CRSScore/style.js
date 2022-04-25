@@ -57,6 +57,9 @@ export const container = css`
   
   .listEmlText ul {
     list-style: none;
+    @media (max-width:767px){
+      margin-top:30px;
+    }
   }
   
   .listEmlText ul li {

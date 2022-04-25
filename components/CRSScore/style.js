@@ -9,6 +9,9 @@ export const container = css`
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    @media (max-width:767px){
+      padding:30px 0px;
+    }
   
   .getStrtBtn {
     height: 100%;

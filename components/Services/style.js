@@ -9,6 +9,9 @@ export const container = css`
     -ms-flex-align: center;
     align-items: center;
     padding:80px 0px;
+    @media (max-width:767px){
+      padding:30px 0px;
+    }
     h1.blackSubHed {
         text-align: center;
         font-size: 40px;

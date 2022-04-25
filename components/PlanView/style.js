@@ -9,6 +9,13 @@ export const container = css`
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    @media (max-width:767px){
+      padding:30px 0px;
+      height:auto;
+      .row{
+        gap:30px;
+      }
+    } 
     .serviceCards {
         overflow: hidden;
         background: white;

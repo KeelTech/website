@@ -9,7 +9,9 @@ export const contactSection = css`
     //     z-index: 1;
     // }
     padding:80px 0px;
-    
+    @media (max-width:767px){
+      padding:30px 0px;
+    }
     .contactContainer {
       // padding-bottom: 50px;
     }

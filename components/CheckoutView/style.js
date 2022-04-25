@@ -2,8 +2,15 @@ import { css } from '@emotion/css';
 
 export const container = css`
 padding:80px 0px;
+@media (max-width:767px){
+    padding:30px 0px;
+  }
 .formContainer.customPay {border: 1px solid #ebebeb;padding: 30px;border-radius: 4px;margin: 0;}
-
+@media (max-width:767px){
+.orderBox{
+margin-top:30px;
+}
+}
 .orderBox {border: 1px solid #ebebeb;
     padding: 12px;
     border-radius: 4px;}

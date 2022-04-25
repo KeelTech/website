@@ -3,6 +3,9 @@ import { css } from '@emotion/css';
 export const promiseSection = css`
     // height: calc(100% - 100px);
     padding:80px 0px;
+    @media (max-width:767px){
+      padding:30px 0px;
+    }
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

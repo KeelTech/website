@@ -311,9 +311,8 @@ button.submitBtn {
 `
 
 export const improveScore = css`
-  padding: 50px 0px;
-  background: yellow;
-.scroreImgCont img {
+  padding: 80px 0px;
+ .scroreImgCont img {
     width: 90px;
     margin: auto;
     display: block;
@@ -331,12 +330,12 @@ export const improveScore = css`
        object-fit: contain;
   }
   
-.img-fluid {
+ .img-fluid {
     max-width: 100%;
     height: auto;
   }
   
-h4.sectionSubHeading {
+ h4.sectionSubHeading {
     font-size: 28px;
     font-weight: 500;
   }
@@ -347,7 +346,6 @@ h4.sectionSubHeading {
   
 .scroreAccordionCont {
     margin-top: 20px;
-  
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -357,8 +355,7 @@ h4.sectionSubHeading {
             flex-direction: column;
     gap: 10px;
   }
-  
-button.course-accordion {
+ button.course-accordion {
     cursor: pointer;
     padding: 8px;
     width: 100%;
@@ -383,18 +380,21 @@ button.course-accordion {
   }
   
   
-  button.course-accordion:after {
-    content: '\002B';
-    color: black;
-    float: right;
-    margin-left: 5px;
+  .course-accordion{
+    &:after{
+      content: '';
+      color: black;
+      float: right;
+      margin-left: 5px;
+    }
   }
   
-  
-  button.course-accordion.active:after {
-    content: "\2212";
+  .course-accordion.active {
+    &:after{
+      content: "";
+    }
   }
-div.course-panel {
+ div.course-panel {
     padding: 0 18px;
     background-color: transparent;
     max-height: 0;

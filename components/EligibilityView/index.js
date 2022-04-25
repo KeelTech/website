@@ -1,5 +1,3 @@
-import Image from 'next/image'
-
 import CustomChatWidget from '@/components/CustomChatWidget';
 import Accordian from '@/components/Accordian';
 import { ELIGIBILITY_ACCORDIAN } from '@/actions/constant.js';
@@ -76,7 +74,7 @@ const Eligibility = ()=>{
             </div>
         </div>
     </section>
-    <section className={improveScore + ' '+ 'addCustomPad' } style={{padding: '80px 0px'}}>
+    <section className={improveScore}>
         <div className="container">
             <div className="row">
                 <div className="col-md-6">

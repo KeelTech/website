@@ -1,7 +1,8 @@
 import { css } from '@emotion/css';
 
 export const container = css`
-    height: calc(100% - 100px);
+    // height: calc(100% - 100px);
+    padding:80px 0px;
     .testiMainCont {
         background-color: #c32020;
         padding: 60px 30px;

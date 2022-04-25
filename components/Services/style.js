@@ -8,7 +8,7 @@ export const container = css`
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding:30px 0px;
+    padding:80px 0px;
     h1.blackSubHed {
         text-align: center;
         font-size: 40px;

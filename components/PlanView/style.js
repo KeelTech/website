@@ -1,7 +1,8 @@
 import { css } from '@emotion/css';
 
 export const container = css`
-    height: calc(100vh - 200px);
+    height: calc(100vh - 320px);
+    padding:80px 0px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

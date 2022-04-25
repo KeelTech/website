@@ -8,10 +8,10 @@ export const contactSection = css`
     //     background: white;
     //     z-index: 1;
     // }
-    padding:30px 0px;
+    padding:80px 0px;
     
     .contactContainer {
-      padding-bottom: 50px;
+      // padding-bottom: 50px;
     }
     
     .contactMainHeading {

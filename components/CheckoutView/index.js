@@ -20,7 +20,7 @@ const ContactForm = ()=>{
         msg: ''
     })
     const { isVisible, isError, isSuccess, msg } = toasterInfo;
-    const { title='', price='' } = planDetails||{}
+    const { title='', price='', id:plan_id } = planDetails||{}
 
 
     const showToaster = (isSucess=false, errorMsg='')=>{
@@ -124,7 +124,8 @@ const ContactForm = ()=>{
             phone_number: phoneNo,
             email,
             amount: price,
-            currency: "INR"
+            currency: "INR",
+            plan_id
         }
         handleCheckout(postParams).then((resp)=>{
             if(resp && resp.order_id){

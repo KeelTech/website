@@ -382,7 +382,7 @@ export const improveScore = css`
   
   .course-accordion{
     &:after{
-      content: '';
+      content: '+';
       color: black;
       float: right;
       margin-left: 5px;
@@ -391,13 +391,13 @@ export const improveScore = css`
   
   .course-accordion.active {
     &:after{
-      content: "";
+      content: "-";
     }
   }
  div.course-panel {
     padding: 0 18px;
     background-color: transparent;
-    max-height: 0;
+    max-height: 100%;
     overflow: hidden;
     -webkit-transition: max-height 0.2s ease-out;
     transition: max-height 0.2s ease-out;

@@ -68,13 +68,13 @@ const ContactForm = ()=>{
         submitRef.current.submitData();
     }
 
-    const handlePaymentSuccess = (val)=>{
+    const handlePaymentSuccess = (val, transactionId)=>{
         setLoader(true)
-        const { razorpay_order_id, razorpay_payment_id, razorpay_signature } = val||{};
+        const { razorpay_order_id, razorpay_payment_id } = val||{};
         const postParams = {
             order_id: razorpay_order_id,
             payment_id: razorpay_payment_id,
-            transaction_id: razorpay_signature
+            transaction_id: transactionId
         }
         caputrePayment(postParams, (resp)=>{
             setLoader(false);
@@ -86,7 +86,7 @@ const ContactForm = ()=>{
         })
     }
 
-    const redirectToRazorPay = (orderId, userInfo)=>{
+    const redirectToRazorPay = (orderId, userInfo, transactionId)=>{
         const { email, first_name, last_name, amount, phone_number } = userInfo;
         const options = {
             "key": "rzp_live_SHoE722sQX5Zzg", // Enter the Key ID generated from the Dashboard
@@ -97,7 +97,7 @@ const ContactForm = ()=>{
             "image": "https://getkeel.com/wp-content/uploads/2021/07/Logo-1-1-1024x367.jpg",
             "order_id": orderId, //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
             "handler": function (response){
-                handlePaymentSuccess(response);
+                handlePaymentSuccess(response, transactionId);
             },
             "prefill": {
                 "name": `${first_name} ${last_name}`,
@@ -150,7 +150,7 @@ const ContactForm = ()=>{
         setLoader(true)
         handleCheckout(postParams).then((resp)=>{
             if(resp && resp.order_id){
-                redirectToRazorPay(resp.order_id, postParams);
+                redirectToRazorPay(resp.order_id, postParams, resp.transaction_id);
             }else{
                 console.error('failed to create checkout lead', resp);
                 showToaster(false, 'Failed to save details, Please try again later');

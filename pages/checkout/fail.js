@@ -1,12 +1,8 @@
 import { useRouter } from 'next/router';
-
-import { container } from './style.js';
-
 const SuccessFail = () => {
     const router = useRouter();
-//failPayment
     return (
-        <section className={container}>
+        <section className="failPayment">
             <div className="container">
                 <div className='afterPayMessage'>
                     <img className='img-fluid successImg' src={"/images/right.svg"} alt="time" />
@@ -15,8 +11,8 @@ const SuccessFail = () => {
                         <path d="M5.23212 5.21777L15.2321 15.2178" stroke="#343A40" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
 
-                    <h3>Transaction Completed Successfully</h3>
-                    <p>Thank you for your billing.</p>
+                    <h3>Transaction Failed</h3>
+                    <p>Please try again later, or contact our helpline no</p>
                     <button onClick={()=>router.push('/')}>Back to Home page</button>
                 </div>
             </div>

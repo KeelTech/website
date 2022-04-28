@@ -3,8 +3,9 @@ import { useRouter } from 'next/router';
 import Script from 'next/script'
 
 import { validateEmail } from '@/helpers/utils.js';
-import { handleCheckout, getPlanDetail } from '@/actions/index.js';
+import { handleCheckout, getPlanDetail, caputrePayment } from '@/actions/index.js';
 import CustomToaster from '@/components/CustomToaster';
+import LoadingWidget from '@/components/LoadingWidget';
 
 import CheckoutForm from './CheckoutForm.js';
 import { container } from './style.js';
@@ -22,6 +23,7 @@ const ContactForm = ()=>{
     const { isVisible, isError, isSuccess, msg } = toasterInfo;
     const { title='', price='', id:plan_id } = planDetails||{}
 
+    const[showLoader, setLoader] = useState(false);
 
     const showToaster = (isSucess=false, errorMsg='')=>{
         setToasterInfo({
@@ -66,6 +68,24 @@ const ContactForm = ()=>{
         submitRef.current.submitData();
     }
 
+    const handlePaymentSuccess = (val)=>{
+        setLoader(true)
+        const { razorpay_order_id, razorpay_payment_id, razorpay_signature } = val||{};
+        const postParams = {
+            order_id: razorpay_order_id,
+            payment_id: razorpay_payment_id,
+            transaction_id: razorpay_signature
+        }
+        caputrePayment(postParams, (resp)=>{
+            setLoader(false);
+            if(resp){
+                router.push('/checkout/success');
+            }else{
+                router.push('/checkout/fail');
+            }
+        })
+    }
+
     const redirectToRazorPay = (orderId, userInfo)=>{
         const { email, first_name, last_name, amount, phone_number } = userInfo;
         const options = {
@@ -77,8 +97,7 @@ const ContactForm = ()=>{
             "image": "https://getkeel.com/wp-content/uploads/2021/07/Logo-1-1-1024x367.jpg",
             "order_id": orderId, //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
             "handler": function (response){
-                console.log(response);
-                router.push('/success');
+                handlePaymentSuccess(response);
             },
             "prefill": {
                 "name": `${first_name} ${last_name}`,
@@ -97,6 +116,7 @@ const ContactForm = ()=>{
             console.log(response.error);
             showToaster(false, response.error.reason);
         });
+        setLoader(false);
         rzp1.open();
     }
 
@@ -127,6 +147,7 @@ const ContactForm = ()=>{
             currency: "INR",
             plan_id
         }
+        setLoader(true)
         handleCheckout(postParams).then((resp)=>{
             if(resp && resp.order_id){
                 redirectToRazorPay(resp.order_id, postParams);
@@ -142,7 +163,10 @@ const ContactForm = ()=>{
 
     return(
         <section className={container}>
-            <div className="container"  >
+            <div className="container">
+            {
+                showLoader?<LoadingWidget/>:null
+            }
             {
                 isVisible?<CustomToaster isVisible={isVisible} isError={isError} isSuccess={isSuccess} msg={msg}/>:null
             }

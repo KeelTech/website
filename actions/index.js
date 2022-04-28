@@ -61,3 +61,15 @@ export const getPlanDetail = (dataParams, cb=null)=>{
         if(cb)cb(null, true);
     })
 }
+
+export const caputrePayment = (data={}, cb)=>{
+    return API_POST(`${API_END_POINT}/payment/capture-payment`, data).then((response)=>{
+        if(response && response.status==1){
+            if(cb) cb(response.data||{}, null)
+            return response.data||{}
+        }else{
+            if(cb)cb(null, true)
+        }
+        return []
+    })
+}

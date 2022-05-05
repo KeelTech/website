@@ -683,7 +683,7 @@ button.getStarted {
   width: 130px;
   font-weight: 500;
   font-size: 16px;
-  padding: 15px 10px;
+  padding: 12px 10px;
   border-radius: 4px;
 }
 
@@ -1051,7 +1051,7 @@ section.outServices {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: calc(100vh - 100px);
+  min-height: calc(100vh - 100px);
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1297,7 +1297,7 @@ p.sectionSubHeading {
 }
 
 section.ourServices {
-  height: calc(100vh - 200px);
+  min-height: calc(100vh - 200px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

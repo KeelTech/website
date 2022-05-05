@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 
 export const container = css`
-height:70vh;
+min-height:80vh;
 .termsCond h1 {
   text-align: center;
   margin-bottom: 20px;

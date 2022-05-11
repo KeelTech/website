@@ -37,7 +37,7 @@ const CheckoutForm = forwardRef((props, ref)=>{
         <div className="formContainer customPay">
             <div className="inputForm">
                 <input type="text" value={fName} onChange={(e)=>handleClick({fName: e.target.value})} onKeyPress={(e)=>handleEmailKeyPress(e, 'lName')}/>
-                <label className='fillInput'>First Name id</label>
+                <label className='fillInput'>First Name</label>
             </div>
             <div className="inputForm">
                 <input type="text" value={lName} id="lName" onChange={(e)=>handleClick({lName: e.target.value})} onKeyPress={(e)=>handleEmailKeyPress(e, 'email')}/>
@@ -45,11 +45,11 @@ const CheckoutForm = forwardRef((props, ref)=>{
             </div>
             <div className="inputForm">
                 <input type="eamil" value={email} id="email" onChange={(e)=>handleClick({email: e.target.value})} onKeyPress={(e)=>handleEmailKeyPress(e, 'phoneNo')}/>
-                <label className='fillInput'>Enter your email id</label>
+                <label className='fillInput'>Email Id</label>
             </div>
             <div className="inputForm">
                 <input type="number" id="phoneNo" value={phoneNo} onChange={(e)=>handleClick({phoneNo: e.target.value})} onKeyPress={(e)=>handleEmailKeyPress(e, 'submit')}/>
-                <label className='fillInput'>Enter your contact number </label>
+                <label className='fillInput'>Contact Number </label>
             </div>
             {/* <button className="submitBtn" onClick={handleSubmit}>Submit</button> */}
         </div>

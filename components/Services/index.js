@@ -1,6 +1,13 @@
+import { useRouter } from 'next/router';
+
 import { container } from './style.js';
 
 const Services = ()=>{
+    const router = useRouter();
+
+    const handleCtaClick = ()=>{
+        router.push('/eligibility');
+    }
 
     return(
     <section className={container}>
@@ -47,7 +54,7 @@ const Services = ()=>{
                     </div>
                 </div>
                 <div className="serviceBtn">
-                    <button>Check CRS Score</button>
+                    <button onClick={handleCtaClick}>Check CRS Score</button>
                 </div>
             </div>
         </div>

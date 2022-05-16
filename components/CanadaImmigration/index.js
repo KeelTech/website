@@ -1,6 +1,14 @@
+import { useRouter } from 'next/router';
+
 import { container } from './style.js';
 
 const CanadaImmigration = ()=>{
+
+    const router = useRouter();
+
+    const handleCtaClick = ()=>{
+        router.push('/eligibility');
+    }
 
     return(
     <section className={container}>
@@ -18,7 +26,7 @@ const CanadaImmigration = ()=>{
                             aiming to bring a total of 341,000 permanent resident newcomers to Canada in 2021 then add
                             on hundreds of thousands more temporary residents! Why don’t you become one of them?
                         </p>
-                        <button className="submitBtn">Check CRS Score</button>
+                        <button className="submitBtn" onClick={handleCtaClick}>Check CRS Score</button>
                     </div>
                 </div>
                 <div className="col-md-6">

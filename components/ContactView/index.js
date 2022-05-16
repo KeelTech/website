@@ -20,6 +20,7 @@ const Contact = () => {
                                 </h4>
                                 <h5>hello@getkeel.com
                                     <br /> +1-416-277-5284
+                                    <br /> +91-9810206875
                                 </h5>
                             </div>
                         </div>

@@ -96,8 +96,8 @@ const CheckEligibily = ()=>{
             <div className="row align-center">
                 <div className="col-md-6 col-12">
                     <div className="immigrateForm">
-                        <h1>Want to Immigrate <br/>
-                            to <span>Canada?</span>
+                        <h1>Want To Immigrate <br/>
+                            To <span>Canada?</span>
                         </h1>
                         <p>Keel connects you with Canada’s<span> best licensed immigration consultants.</span></p>
                         <div className="formContainer">

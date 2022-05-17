@@ -29,12 +29,12 @@ const ImmigrationInfo = ()=>{
                 </div>
                 <div className="col-md-6 col-12">
                     <div className="immgImageBlock">
-                        <Image width={655} height={281} className="img-fluid" src="http://getkeel.com/wp-content/uploads/2021/06/dont-settle.svg" />
+                        <Image width={655} height={281} className="img-fluid" src="https://getkeel.com/wp-content/uploads/2021/06/dont-settle.svg" />
                     </div>
                 </div>
                 <div className="col-md-6 col-12">
                     <div className="immgImageBlock">
-                        <Image width={655} height={281} className="img-fluid" src="http://getkeel.com/wp-content/uploads/2021/06/money-precious.svg" />
+                        <Image width={655} height={281} className="img-fluid" src="https://getkeel.com/wp-content/uploads/2021/06/money-precious.svg" />
                     </div>
                 </div>
                 <div className="col-md-6 col-12">
@@ -51,7 +51,7 @@ const ImmigrationInfo = ()=>{
                 </div>
                 <div className="col-md-6 col-12">
                     <div className="immgImageBlock">
-                        <Image width={655} height={281} className="img-fluid" src="http://getkeel.com/wp-content/uploads/2021/06/dont-riun.svg" />
+                        <Image width={655} height={281} className="img-fluid" src="https://getkeel.com/wp-content/uploads/2021/06/dont-riun.svg" />
                     </div>
                 </div>
             </div>

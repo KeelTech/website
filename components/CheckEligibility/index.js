@@ -1,12 +1,16 @@
-import { useState } from 'react';
+import { useState, useCallback } from 'react';
 import Image from 'next/image'
 
 import { validateEmail } from '@/helpers/utils.js';
 import { createLead } from '@/actions/index.js';
 import CustomToaster from '@/components/CustomToaster';
+import { useAppContext } from '@/context/index.js';
+
 import { container } from './style.js';
 
 const CheckEligibily = ()=>{
+    const { activeComponents } = useAppContext();
+
     const [email, setEmail] = useState('');
     const [contactNo, setContactNo] = useState('');
     const [toasterInfo, setToasterInfo] = useState({
@@ -87,6 +91,19 @@ const CheckEligibily = ()=>{
         })
     }
 
+    const renderHomeText = useCallback(()=>{
+        const homeWidget = activeComponents?.filter(x=>x.id===3);
+        if(homeWidget.length){
+            const { title, body } = homeWidget[0];
+            return <>
+                <h1>{title}</h1>
+                <p dangerouslySetInnerHTML={{__html: body}}></p>
+            </>
+        }
+        return <></>
+        
+    },[activeComponents])
+
     return(
     <section className={container}>
         <div className="container">
@@ -96,10 +113,11 @@ const CheckEligibily = ()=>{
             <div className="row align-center">
                 <div className="col-md-6 col-12">
                     <div className="immigrateForm">
-                        <h1>Want To Immigrate <br/>
+                        {renderHomeText()}
+                        {/* <h1>Want To Immigrate <br/>
                             To <span>Canada?</span>
                         </h1>
-                        <p>Keel connects you with Canada’s<span> best licensed immigration consultants.</span></p>
+                        <p>Keel connects you with Canada’s<span> best licensed immigration consultants.</span></p> */}
                         <div className="formContainer">
                             <div className="inputForm">
                                 <input type="eamil" value={email} onChange={handleEmailChange} onKeyPress={handleEmailKeyPress}/>

@@ -1,21 +1,40 @@
-import { contactSection } from './style.js';
+import { useMemo } from 'react';
+import { useAppContext } from '@/context/index.js';
 import ContactForm from '@/components/ContactForm';
+
+import { contactSection } from './style.js';
+
 const Contact = () => {
+    const { activeComponents } = useAppContext();
+
+    const renderContactUsText = useMemo(()=>{
+        const widgetText = activeComponents?.filter(x=>x.id===1);
+        if(widgetText.length){
+            const { title, body } = widgetText[0];
+            return {
+                title,
+                body
+            }
+        }
+        return {
+            title:'',
+            body: ''
+        }
+        
+    },[activeComponents])
 
     return (
         <section className={contactSection}>
             <div className="container">
                 <div className="contactContainer">
                     <div className="contactMainHeading">
-                        <h2>Contact</h2>
+                        <h2>{renderContactUsText.title}</h2>
                     </div>
                     <div className="row vr-gap-30">
                         <div className="col-md-6 col-12">
                             <div className="getInTouch">
                                 <h4>GET IN TOUCH </h4>
-                                <p>Our team is here to help you in your Canada Immigration procedure. Feel free to contact
-                                    us if you have any queries.
-                                </p>
+                                <p dangerouslySetInnerHTML={{__html: renderContactUsText.body}}></p>
                                 <h4>SAY G’DAY
                                 </h4>
                                 <h5>hello@getkeel.com

@@ -73,3 +73,11 @@ export const caputrePayment = (data={}, cb)=>{
         return []
     })
 }
+
+export const getActiveComponents = (dataParams={}, cb=null)=>{
+    return API_GET(`${API_END_POINT}/web/website-components`).then((response)=>{
+        return response;        
+    }).catch((e)=>{
+        if(cb)cb(null, true);
+    })
+}

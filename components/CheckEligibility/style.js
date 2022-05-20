@@ -19,7 +19,7 @@ export const container = css`
       }
       
       .immigrateForm h1 span {
-        color: #fd5b5b;
+        // color: #fd5b5b;
       }
       
       .immigrateForm p {
@@ -30,7 +30,7 @@ export const container = css`
       }
       
       .immigrateForm p span {
-        color: #fd5b5b;
+        // color: #fd5b5b;
       }
       
       .inputForm {

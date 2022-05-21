@@ -703,19 +703,11 @@ section.mainSection {
   font-weight: 600;
 }
 
-.immigrateForm h1 span {
-  color: #fd5b5b;
-}
-
 .immigrateForm p {
   color: #4d5459;
   font-size: 18px;
   font-weight: 500;
   margin: 20px 0;
-}
-
-.immigrateForm p span {
-  color: #fd5b5b;
 }
 
 .inputForm {

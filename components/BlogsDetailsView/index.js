@@ -1,9 +1,34 @@
 
 
-import { container } from './style.js';
+import { useMemo } from 'react';
 import Link from 'next/link';
+import { useAppContext } from '@/context/index.js';
+
+import { container } from './style.js';
 
 const BlogsDet = () => {
+
+    const { activeComponents } = useAppContext();
+
+    const renderWidget = useMemo(()=>{
+        const widgetText = activeComponents?.filter(x=>x.id===4);
+        if(widgetText.length){
+            const { title, body } = widgetText[0];
+            return {
+                title,
+                body
+            }
+        }
+        return {
+            title:'',
+            body: ''
+        }
+        
+    },[activeComponents])
+
+    return (
+        <p dangerouslySetInnerHTML={{__html: renderWidget.body}}></p>
+    )
 
     return (
         <>

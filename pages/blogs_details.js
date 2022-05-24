@@ -5,7 +5,7 @@ const BlogsDet = ()=>{
     return(
         <BlogsDetails/>
     )
-Det}
+}
 
 
 export default BlogsDet;

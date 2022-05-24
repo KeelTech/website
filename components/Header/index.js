@@ -21,6 +21,8 @@ const Header = () => {
             activeTabNo = 3;
         }else if(pathName.includes('contact')){
             activeTabNo = 4;
+        }else if(pathName.includes('blogs')){
+            activeTabNo = 5;
         }
         return activeTabNo;
     },[router.pathname])
@@ -52,6 +54,11 @@ const Header = () => {
                                             </Link>
                                         </li>
                                         <li>
+                                            <Link href="/blogs">
+                                                <a onClick={toggleNavBar}>Blogs</a>
+                                            </Link>
+                                        </li>
+                                        <li>
                                             <Link href="/services">
                                                 <a onClick={toggleNavBar}>Services</a>
                                             </Link>
@@ -79,6 +86,11 @@ const Header = () => {
                             <li>
                                 <Link href="/">
                                     <a className={activeTab==1?"actTab":""}>Home</a>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/blogs">
+                                    <a className={activeTab==5?"actTab":""}>Blogs</a>
                                 </Link>
                             </li>
                             <li>

@@ -10,9 +10,9 @@ const BlogsDet = () => {
 
     const { activeComponents } = useAppContext();
 
-    const renderWidget = useMemo(()=>{
-        const widgetText = activeComponents?.filter(x=>x.id===4);
-        if(widgetText.length){
+    const renderWidget = useMemo(() => {
+        const widgetText = activeComponents?.filter(x => x.id === 4);
+        if (widgetText.length) {
             const { title, body } = widgetText[0];
             return {
                 title,
@@ -20,14 +20,21 @@ const BlogsDet = () => {
             }
         }
         return {
-            title:'',
+            title: '',
             body: ''
         }
-        
-    },[activeComponents])
+
+    }, [activeComponents])
 
     return (
-        <p dangerouslySetInnerHTML={{__html: renderWidget.body}}></p>
+        <section className={container}>
+            <div className="container">
+                <div className='blogDetailsCont'>
+                    <div className='blogImgDataCont'></div>
+                    <p dangerouslySetInnerHTML={{ __html: renderWidget.body }}></p>
+                </div>
+            </div>
+        </section>
     )
 
     return (
@@ -140,7 +147,7 @@ const BlogsDet = () => {
 
                         <div className='relatedPosts'>
                             <h3>Related Posts
-</h3>
+                            </h3>
                             <div className='blogGrid'>
                                 {[...Array(3)].map(() => (
                                     <div className='blogCard'>

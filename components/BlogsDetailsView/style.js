@@ -57,7 +57,11 @@ export const container = css`
         a{
           color:#03a9f4;
         }
-
+        @media (max-width:767px) {
+          iframe{
+            width:100%;
+          }
+        }
     }
 
 

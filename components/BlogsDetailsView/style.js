@@ -54,6 +54,9 @@ export const container = css`
         font-size: 17px;
         line-height: 24px;margin-bottom: 20px;}
         h3 {font-size: 22px;font-weight: 700; margin-bottom:15px;}
+        a{
+          color:#03a9f4;
+        }
 
     }
 

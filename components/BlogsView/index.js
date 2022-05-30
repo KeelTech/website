@@ -1,8 +1,11 @@
 
 
+import {useRouter} from 'next/router';
+
 import { container } from './style.js';
 
-const Blogs = () => {
+const Blogs = ({data}) => {
+    const router = useRouter()
 
     return (
         <>
@@ -15,38 +18,40 @@ const Blogs = () => {
                         <div className='row'>
                             <div className='col-md-8 col-12'>
                                 <div className='blogGrid'>
-                                    {[...Array(30)].map(() => (
-                                        <div className='blogCard'>
+                                    {data.map((val, key) => {
+                                        const { blog_img, title, id } = val;
+                                        return <div className='blogCard' key={key} onClick={()=>router.push(`/blogs/${id}`)}>
                                             <div className='blogImg'>
-                                                <img className='img-fluid' src='https://getkeel.com/wp-content/uploads/2022/05/Untitled-design-3-1024x546.png' />
-                                                <span>Canada Immigration</span>
+                                                <img className='img-fluid' src={blog_img} />
+                                                {/* <span>Canada Immigration</span> */}
                                             </div>
-                                            <p>Know everything about Express Entry ahead of July 2022</p>
+                                            <p>{title}</p>
                                         </div>
-                                    ))}
+                                    })}
                                 </div>
                             </div>
                             <div className='col-md-4 col-12 pl-web-40px'>
-                                <div className='recentPost'>
-                                    <h3>Recent Posts</h3>
-                                    <div className="listRecent">
-                                        <div className='postCard'>
-                                            <p> Do I need a job offer to migrate to Canada? </p>
-                                            <span>May 19, 2022 </span>
-                                        </div>
-                                        <div className='postCard'>
-                                            <p> Do I need a job offer to migrate to Canada? </p>
-                                            <span>May 19, 2022 </span>
-                                        </div>
-                                        <div className='postCard'>
-                                            <p> Do I need a job offer to migrate to Canada? </p>
-                                            <span>May 19, 2022 </span>
+                                {
+                                    data.length?
+                                    <div className='recentPost'>
+                                        <h3>Recent Posts</h3>
+                                        <div className="listRecent">
+                                            {
+                                                data.slice(0,3).map((val, key)=>{
+                                                    const { title } = val; 
+                                                    return  <div className='postCard' key={key}>
+                                                    <p>{title}</p>
+                                                    <span>May 19, 2022 </span>
+                                                </div>
+                                                })
+                                            }
                                         </div>
                                     </div>
-                                </div>
+                                    :null
+                                }
                                 <div className='wantTravelTo'>
                                     <h2>Want to travel to Canada?</h2>
-                                    <button>Check Eligibility</button>
+                                    <button onClick={()=>router.push('/eligibility')}>Check Eligibility</button>
                                 </div>
                             </div>
                         </div>

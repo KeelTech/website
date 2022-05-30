@@ -100,7 +100,10 @@ const CheckEligibily = ()=>{
                 <p dangerouslySetInnerHTML={{__html: body}}></p>
             </>
         }
-        return <></>
+        return <>
+            <h1>Want To Immigrate To Canada?</h1>
+            <p>Keel connects you with Canada’s <span className="coloredHeading">best licensed immigration consultants.</span></p>
+        </>
         
     },[activeComponents])
 

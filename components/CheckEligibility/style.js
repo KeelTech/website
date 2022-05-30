@@ -75,6 +75,9 @@ export const container = css`
         gap: 30px;
         margin: 35px 0px;
       }
+      .coloredHeading{
+        color: #e74c3c;
+      }
       
       .inputForm input:focus + label {
         top: -10px;

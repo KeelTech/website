@@ -1,7 +1,15 @@
+import { useEffect } from 'react';
+import { useRouter } from 'next/router'
+
 import { container } from './style.js';
 
 const BlogsDet = ({ blogData }) => {
-    const { body } = blogData||{}
+    const { body, title } = blogData||{}
+    const router = useRouter()
+
+    useEffect(()=>{
+        router.push(`/blogs/${title}`, undefined, { shallow: true });
+    },[]);
     return (
         <section className={container}>
             <div className="container">

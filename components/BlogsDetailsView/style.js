@@ -5,6 +5,12 @@ export const container = css`
     @media (max-width:767px){
       padding:30px 0px;
     }
+    .blogImgDataCont {
+      img{
+        max-width: 100%;
+        height: auto;
+      }
+    }
     
     .blogGrid {display: grid;grid-template-columns: repeat(3,1fr);align-items: stretch;
       grid-row-gap: 28px;grid-column-gap: 14px;}
@@ -21,9 +27,37 @@ export const container = css`
   .recentPost {transition: background .3s,border .3s,border-radius .3s,box-shadow .3s;
     padding: 40px 40px;box-shadow: 0 0 10px 0 rgb(0 0 0 / 15%);border-radius: 4px;}
 
-    .blogDetailsCont {width: 80%;margin: auto;}
+    .blogDetailsCont {width: 80%;margin: auto;
+      img{
+        max-width: 100%;
+        height: auto;
+        border-radius: 4px;
+        box-shadow: 2px 2px 11px #959595;
+      }
+      section{
+        padding:15px 0px;
+      }
+      h1{
+        margin:10px 0px;
+      }
+      ul{
+        list-style:none;
+      }
+      ol li {font-weight: 400;
+        color: #292d34;
+        font-size: 17px;
+        line-height: 24px;
+        margin-bottom: 20px;
+      }
+      p {font-weight: 400;color: #292d34;
+    
+        font-size: 17px;
+        line-height: 24px;margin-bottom: 20px;}
+        h3 {font-size: 22px;font-weight: 700; margin-bottom:15px;}
 
-.imgDtsl {}
+    }
+
+
 
 .blogImgDataCont img {width: 100%;border-radius: 4px;}
 

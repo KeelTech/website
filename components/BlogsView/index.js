@@ -22,7 +22,7 @@ const Blogs = ({data}) => {
                                         const { blog_img, title, id } = val;
                                         return <div className='blogCard' key={key} onClick={()=>router.push(`/blogs/${id}`)}>
                                             <div className='blogImg'>
-                                                <img className='img-fluid' src={blog_img} />
+                                                <img className='img-fluid' src={blog_img} alt="title"/>
                                                 {/* <span>Canada Immigration</span> */}
                                             </div>
                                             <p>{title}</p>

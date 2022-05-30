@@ -2,14 +2,13 @@ import { container } from './style.js';
 
 const BlogsDet = ({ blogData }) => {
     const { body } = blogData||{}
-
     return (
         <section className={container}>
             <div className="container">
                 <div className='blogDetailsCont'>
                     <div className='blogImgDataCont'></div>
                     {
-                        body?<p dangerouslySetInnerHTML={{ __html: body }}></p>:null
+                        body?<div dangerouslySetInnerHTML={{ __html: body }}></div>:null
                     }
                 </div>
             </div>

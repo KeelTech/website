@@ -1,25 +1,28 @@
-import { useState, useEffect } from 'react';
-import { useRouter } from 'next/router'
 import { getBlogDetail } from '@/actions/index.js';
 import BlogsDetails from '@/components/BlogsDetailsView';
 
-const BlogsDet = ()=>{
-    const router = useRouter()
-    const { id } = router.query
-    const [blogData, setBlogData] = useState({});
+const BlogsDet = ({data})=>{
     
-    useEffect(()=>{
-        getBlogDetail({id}, (resp)=>{
-            if(resp?.data?.[0]){
-                setBlogData(resp.data[0]);
-                console.log(resp);
-            }
-        })
-    },[])
-
     return(
-        <BlogsDetails blogData={blogData}/>
+        <BlogsDetails blogData={data}/>
     )
+}
+
+export async function getServerSideProps(context) {
+    const id = context?.params?.id??'';
+    const resp = await getBlogDetail({id})
+    if(resp?.data?.[0]){
+        return {
+            props:{
+                data: resp.data[0]
+            } 
+        }
+    }
+    return {
+        props: {
+            data: {}
+        }
+    }
 }
 
 

@@ -94,11 +94,14 @@ const CheckEligibily = ()=>{
     const renderHomeText = useCallback(()=>{
         const homeWidget = activeComponents?.filter(x=>x.id===3);
         if(homeWidget.length){
-            const { title, body } = homeWidget[0];
-            return <>
-                <h1>{title}</h1>
-                <p dangerouslySetInnerHTML={{__html: body}}></p>
-            </>
+            const { title, body, is_active } = homeWidget[0];
+            if(is_active){
+                return <>
+                    <h1>{title}</h1>
+                    <p dangerouslySetInnerHTML={{__html: body}}></p>
+                </>
+            }
+            return <></>
         }
         return <>
             <h1>Want To Immigrate To Canada?</h1>

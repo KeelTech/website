@@ -6,7 +6,6 @@ import { container } from './style.js';
 
 const Blogs = ({data}) => {
     const router = useRouter()
-
     return (
         <>
             <section className={container}>
@@ -38,10 +37,12 @@ const Blogs = ({data}) => {
                                         <div className="listRecent">
                                             {
                                                 data.slice(0,3).map((val, key)=>{
-                                                    const { title } = val; 
+                                                    const { title, created_at } = val; 
                                                     return  <div className='postCard' key={key}>
                                                     <p>{title}</p>
-                                                    <span>May 19, 2022 </span>
+                                                    {
+                                                        created_at?<span>{created_at}</span>:null
+                                                    }
                                                 </div>
                                                 })
                                             }

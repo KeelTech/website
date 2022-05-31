@@ -9,10 +9,16 @@ const Testimonials = ()=>{
     const renderWidget = useMemo(()=>{
         const widgetText = activeComponents?.filter(x=>x.id===2);
         if(widgetText.length){
-            const { title, body } = widgetText[0];
+            const { title, body, is_active } = widgetText[0];
+            if(is_active){
+                return {
+                    title,
+                    body
+                }
+            }
             return {
-                title,
-                body
+                title: '',
+                body: ''
             }
         }
         return {

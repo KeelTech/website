@@ -66,5 +66,11 @@ export const container = css`
   .blogGrid{
     grid-template-columns: repeat(1,1fr);
   }
+  .blogsHeading h1{
+    margin-bottom:0px;
+  }
+  .blogsContainer{
+    padding-top:50px;
+  }
 }
 `

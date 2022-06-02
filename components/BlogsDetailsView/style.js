@@ -27,10 +27,10 @@ export const container = css`
   .recentPost {transition: background .3s,border .3s,border-radius .3s,box-shadow .3s;
     padding: 40px 40px;box-shadow: 0 0 10px 0 rgb(0 0 0 / 15%);border-radius: 4px;}
 
-    .blogDetailsCont {width: 80%;margin: auto;
+    .blogDetailsCont {width: 100%;margin: auto;
       img{
         max-width: 100%;
-        height: auto;
+        height: auto !important;
         border-radius: 4px;
         box-shadow: 2px 2px 11px #959595;
       }

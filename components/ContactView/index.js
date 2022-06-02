@@ -19,8 +19,8 @@ const Contact = () => {
                 }
             }
             return {
-                title: '',
-                body: ''
+                title:'Contact Us',
+                body: 'Please contact us for more Details'
             }
         }
         return {

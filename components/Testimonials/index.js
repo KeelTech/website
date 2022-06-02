@@ -17,8 +17,8 @@ const Testimonials = ()=>{
                 }
             }
             return {
-                title: '',
-                body: ''
+                body:'All in one application management platform is a dream come true. Used this for my brother. Wish I had this when I was trying to immigrate. Love the service! ',
+                title: "TESTIMONIALS"
             }
         }
         return {

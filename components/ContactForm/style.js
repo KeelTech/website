@@ -9,8 +9,16 @@ export const container = css`
   .contactLeftCont h4 {
     font-size: 28px;
     font-weight: 600;
+    
   }
-  
+  .contactLeftCont{
+  img{
+    width: 80%;
+    padding: 60px;
+    margin: auto;
+    display: block;
+  }
+}
   .contactForm {
     border: 2px solid #ba2323;
     padding: 20px;

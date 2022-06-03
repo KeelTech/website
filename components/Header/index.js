@@ -2,6 +2,7 @@ import { useState, useMemo } from 'react';
 import Link from 'next/link';
 import {useRouter} from 'next/router';
 
+
 import { container } from './style.js';
 
 
@@ -46,7 +47,7 @@ const Header = () => {
                                 <div className="navListingMobile">
                                     <ul className='mainList'>
                                         <Link href="/">
-                                            <img className="sideBarLogo cursor-pointer" alt="Logo" src="https://getkeel.com/wp-content/uploads/2021/07/Logo-1-1-1024x367.jpg" />
+                                            <img className="sideBarLogo cursor-pointer" alt="Logo" src={'./images'} />
                                         </Link>
                                         <li>
                                             <Link href="/">
@@ -78,7 +79,7 @@ const Header = () => {
                             </div>
                         </div>
                         <Link href="/">
-                        <img className="img-fluid cursor-pointer" src="https://getkeel.com/wp-content/uploads/2021/07/Logo-1-1-1024x367.jpg" />
+                        <img className="img-fluid cursor-pointer" src={'/images/keelLogo.svg'} />
                         </Link>
                     </div>
                     <div className="navListing">

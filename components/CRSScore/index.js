@@ -20,18 +20,18 @@ const CRSScore = ()=>{
                         <ul>
                             <li>
                                 <Image width={35} height={35} className="img-fluid"
-                                    src="https://getkeel.com/wp-content/uploads/2021/06/Step-1.svg" />
+                                    src="/images/Home/Step-1.svg" />
                                 <p>Check your eligibility and book a free counselling session</p>
                             </li>
                             <li>
                                 <Image width={48} height={48} className="img-fluid"
-                                    src="https://getkeel.com/wp-content/uploads/2021/06/step-2.svg" />
+                                    src="/images/Home/step-2.svg" />
                                 <p>Get on a call with a licensed Canadian immigration consultant to understand your
                                     options</p>
                             </li>
                             <li>
                                 <Image width={48} height={48} className="img-fluid"
-                                    src="https://getkeel.com/wp-content/uploads/2021/06/step-3.svg" />
+                                    src="/images/Home/step-3.svg" />
                                 <p>Get matched with the best expert consultant personalized to your application needs
                                 </p>
                             </li>

@@ -108,7 +108,7 @@ const ContactForm = ()=>{
                 <div className="col-md-6 col-12 hideOnOther">
                     <div className="contactLeftCont">
                         <h4>Contact us</h4>
-                        <img className="img-fluid" src="/images/box.png" />
+                        <img className="img-fluid" src="/images/Home/contact-form.svg" />
                     </div>
                 </div>
                 <div className="col-md-6 col-12 reuseForm">

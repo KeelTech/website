@@ -81,6 +81,7 @@ export const contactSection = css`
   font-weight: 500;
 }
     .contactForm {
+      background:white;
       border: 2px solid #ba2323;
       padding: 20px;
       border-radius: 10px;
@@ -201,11 +202,32 @@ textarea.customTextArea:focus + label {
               flex-direction: column;
     }
     
-
+    .contactMainHeading {
+      
+      min-height: 200px;
+      background: white;
+      overflow: hidden;
+      margin-bottom: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &:before{
+        content:'';
+        background:url(/images/Contact/contact.svg);
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: .1;
+      }
+    }
 .contactMainHeading h2 {
   font-size: 50px;
   font-weight: 600;
-  margin-bottom:60px;
+  // margin-bottom:60px;
+  position:relative;
+  &
 }
 
 

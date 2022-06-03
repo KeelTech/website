@@ -31,7 +31,7 @@ const CanadaImmigration = ()=>{
                 </div>
                 <div className="col-md-6">
                     <div className="rightImagePanel">
-                        <img className="img-fluid" src="https://getkeel.com/wp-content/uploads/2021/06/canadian-flag.jpg"/>
+                        <img className="img-fluid" src="/images/our-services/canadaFlag.svg"/>
                     </div>
                 </div>
             </div>

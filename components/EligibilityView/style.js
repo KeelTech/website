@@ -334,6 +334,12 @@ export const improveScore = css`
     max-width: 100%;
     height: auto;
   }
+  .scroreImgCont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
   
  h4.sectionSubHeading {
     font-size: 28px;

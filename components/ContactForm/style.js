@@ -20,6 +20,7 @@ export const container = css`
   }
 }
   .contactForm {
+    background:white;
     border: 2px solid #ba2323;
     padding: 20px;
     border-radius: 10px;

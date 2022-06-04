@@ -1,15 +1,42 @@
 import { useEffect } from 'react';
 import { useRouter } from 'next/router'
+import { getCookie, setCookie } from '@/helpers/utils.js';
 
 import { container } from './style.js';
 
-const BlogsDet = ({ blogData }) => {
-    const { body, title } = blogData||{}
+const BlogsDet = ({ blogData, pathUrl}) => {
+    const { body, title, id } = blogData||{}
     const router = useRouter()
-
+    
     useEffect(()=>{
-        router.push(`/blogs/${title}`, undefined, { shallow: true });
-    },[]);
+        if(id){
+            const val = getCookie('blogData');
+            const urlToPush = title?.replaceAll('?','').replaceAll(' ','-')+'-blogInfo';
+            const isCustomUrl = pathUrl.includes('-blogInfo');
+            var blogData;
+            try{
+                if(val?.length){
+                    blogData = JSON.parse(val);
+                    if(!isCustomUrl){
+                        if(!blogData[urlToPush]){
+                            blogData[urlToPush] = id;
+                            setCookie('blogData', JSON.stringify(blogData))
+                        }
+                        router.push(`/blogs/${urlToPush}`, undefined, { shallow: true });
+                    }
+                }else{
+                    if(!isCustomUrl){
+                        const data = {};
+                        data[urlToPush] = id;
+                        setCookie('blogData', JSON.stringify(data))
+                        router.push(`/blogs/${urlToPush}`, undefined, { shallow: true });
+                    }
+                }
+            }catch(e){
+
+            }
+        }
+    },[id]);
     return (
         <section className={container}>
             <div className="container">

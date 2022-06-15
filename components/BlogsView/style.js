@@ -58,6 +58,47 @@ export const container = css`
 {
   padding-left: 40px;
 }
+.recentMobile{
+  display:none;
+}
+.recentMobile h3 {
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.recntSlideMain {
+  display: flex;
+  gap: 14px;
+  padding: 21px 0;
+  border-bottom: 1px solid #8484842e;
+  margin-bottom: 30px;
+  overflow: auto;
+}
+
+.slideCards {
+  min-height: 320px;
+  position: relative;
+  width: 240px;
+  flex-shrink: 0;
+  box-shadow: 0 0 10px 0 rgb(0 0 0 / 15%);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.slideCards img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.slideCards p {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  padding: 10px;
+  background: #00000040;
+  margin: 0;
+  font-size: 16px;
+}
 @media (max-width:767px) {
   .col-md-4.col-12.pl-web-40px {padding-left: 15px;
     padding-top:30px;
@@ -68,9 +109,16 @@ export const container = css`
   }
   .blogsHeading h1{
     margin-bottom:0px;
+    font-size:40px;
   }
   .blogsContainer{
     padding-top:50px;
+  }
+  .col-md-4.col-12.pl-web-40px .recentPost{
+    display:none;
+  }
+  .recentMobile{
+    display:block;
   }
 }
 `

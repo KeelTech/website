@@ -24,6 +24,7 @@ export default class AppDocument extends Document {
       <Html>
         <Head />
         <link rel="shortcut icon" href="../images/fav.ico" />
+        <link rel="manifest" href="/manifest.json"/>
         <body className="demmm">
           <Main />
           <NextScript />

@@ -64,12 +64,12 @@ const Header = () => {
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link href="/eligibility">
+                                            <Link href="/check-eligibility">
                                                 <a onClick={toggleNavBar}>Check Eligibility</a>
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link href="/contact">
+                                            <Link href="/contact-us">
                                                 <a onClick={toggleNavBar}>Contact</a>
                                             </Link>
                                         </li>
@@ -99,12 +99,12 @@ const Header = () => {
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/eligibility">
+                                <Link href="/check-eligibility">
                                     <a className={activeTab==3?"actTab":""}>Check Eligibility</a>
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/contact">
+                                <Link href="/contact-us">
                                     <a className={activeTab==4?"actTab":""}>Contact</a>
                                 </Link>
                             </li>

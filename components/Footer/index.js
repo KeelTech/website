@@ -62,17 +62,17 @@ const Footer = () => {
                             <ul>
                                 <li> <Link href="/">Home</Link></li>
                                 <li> <Link href="/services">Services</Link></li>
-                                <li><Link href="/eligibility">Check Eligibility</Link></li>
-                                <li><Link href="/contact">Contact</Link></li>
+                                <li><Link href="/check-eligibility">Check Eligibility</Link></li>
+                                <li><Link href="/contact-us">Contact</Link></li>
                             </ul>
                         </div>
                     </div>
                     <div className="col-12">
                         <div className='terms'>
                             <ul>
-                                <li> <Link href="/terms">Terms & Conditions</Link></li>
-                                <li><Link href="/privacy">Privacy Policy</Link></li>
-                                <li><Link href="/refund">Refund and cancellation policy</Link></li>
+                                <li> <Link href="/terms-and-conditions">Terms & Conditions</Link></li>
+                                <li><Link href="/privacy-policy">Privacy Policy</Link></li>
+                                <li><Link href="/refund-policy">Refund and cancellation policy</Link></li>
                                 <li><Link href="/about">About us</Link></li>
                             </ul>
                         </div>

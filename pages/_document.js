@@ -25,6 +25,9 @@ export default class AppDocument extends Document {
         <Head />
         <link rel="shortcut icon" href="../images/fav.ico" />
         <link rel="manifest" href="/manifest.json"/>
+        <meta name="apple-mobile-web-app-capable" content="yes"/>
+        <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+        <link rel="apple-touch-icon" href="/With_bg.png" sizes="144x144"/>
         <body className="demmm">
           <Main />
           <NextScript />

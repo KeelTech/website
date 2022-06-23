@@ -15,7 +15,7 @@ const Blogs = ({ data }) => {
                     </div>
                     <div className='blogsContainer'>
                         <div className='recentMobile'>
-                            <h3>Recent Posts</h3>
+                            {/* <h3>Recent Posts</h3> */}
                             <div className='recntSlideMain'>
                                 {data.map((val, key) => {
                                     const { blog_img, title, id } = val;
@@ -30,13 +30,16 @@ const Blogs = ({ data }) => {
                             <div className='col-md-8 col-12'>
                                 <div className='blogGrid'>
                                     {data.map((val, key) => {
-                                        const { blog_img, title, id } = val;
+                                        const { blog_img, title, id,created_at } = val;
                                         return <div className='blogCard' key={key} onClick={() => router.push(`/blogs/${id}`)}>
                                             <div className='blogImg'>
                                                 <img className='img-fluid' src={blog_img} alt="title" />
                                                 {/* <span>Canada Immigration</span> */}
                                             </div>
-                                            <p>{title}</p>
+                                            <p>{title}
+                                            <span className='createdTIme'>
+                                                {created_at}</span>
+                                            </p>    
                                         </div>
                                     })}
                                 </div>

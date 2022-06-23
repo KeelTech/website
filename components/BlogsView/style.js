@@ -99,6 +99,12 @@ export const container = css`
   margin: 0;
   font-size: 16px;
 }
+span.createdTIme{
+  display: block;
+  margin-top: 10px;
+  font-size: 12px;
+  color: #787878;
+}
 @media (max-width:767px) {
   .col-md-4.col-12.pl-web-40px {padding-left: 15px;
     padding-top:30px;
@@ -120,5 +126,40 @@ export const container = css`
   .recentMobile{
     display:block;
   }
+  .blogCard {
+    display: flex;
+}
+
+.blogImg img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.blogImg {
+    padding: 10px;
+    display: flex;
+    flex-shrink: 0;
+}
+
+.blogCard p {
+    font-size: 14px !important;
+    line-height: 22px !important;
+    font-weight: 500;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+.blogCard {
+  box-shadow: 0 0 10px 0 #00000026;
+  border-radius: 10px;
+}
+span.createdTIme {
+  font-size: 12px;
+  font-weight: 400;
+}
 }
 `

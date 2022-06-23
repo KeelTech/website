@@ -63,7 +63,7 @@ const Eligibility = ()=>{
                         <p>This Express Entry Calculator tool lets you estimate your Comprehensive Ranking System (CRS)
                             score for Express Entry immigration to Canada.
                         </p>
-                        <button className="submitBtn">Send</button>
+                        {/* <button className="submitBtn">Send</button> */}
                     </div>
                 </div>
                 <div className="col-md-6">

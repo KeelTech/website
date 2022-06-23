@@ -67,7 +67,7 @@ const Blogs = ({ data }) => {
                                 }
                                 <div className='wantTravelTo'>
                                     <h2>Want to travel to Canada?</h2>
-                                    <button onClick={() => router.push('/eligibility')}>Check Eligibility</button>
+                                    <button onClick={() => router.push('/check-eligibility')}>Check Eligibility</button>
                                 </div>
                             </div>
                         </div>

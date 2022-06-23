@@ -7,7 +7,7 @@ const CanadaImmigration = ()=>{
     const router = useRouter();
 
     const handleCtaClick = ()=>{
-        router.push('/eligibility');
+        router.push('/check-eligibility');
     }
 
     return(

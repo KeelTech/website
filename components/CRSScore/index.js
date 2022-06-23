@@ -1,8 +1,15 @@
 import Image from 'next/image'
+import { useRouter } from 'next/router';
 
 import { container } from './style.js';
 
 const CRSScore = ()=>{
+
+    const router = useRouter();
+
+    const handleCtaClick = ()=>{
+        router.push('/check-eligibility');
+    }
 
     return (
     <section className={container}>
@@ -12,7 +19,7 @@ const CRSScore = ()=>{
                 <div className="col-md-6 col-12">
                     <div className="getStrtBtn">
                         <h4>How do I get started?</h4>
-                        <button>Check CRS Score</button>
+                        <button onClick={handleCtaClick}>Check CRS Score</button>
                     </div>
                 </div>
                 <div className="col-md-6 col-12">

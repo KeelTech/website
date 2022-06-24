@@ -5,12 +5,12 @@ import {useRouter} from 'next/router';
 import { container } from './style.js';
 
 
-const Header = () => {
-    const [activeNav, setNav] = useState(false)
+const Header = ({ activeNav, toggleNavBar }) => {
+    //const [activeNav, setNav] = useState(false)
     const router = useRouter()
-    const toggleNavBar = ()=>{
-        setNav(val=>!val)
-    }
+    // const toggleNavBar = ()=>{
+    //     setNav(val=>!val)
+    // }
 
     const activeTab = useMemo(()=>{
         const pathName = router.pathname;

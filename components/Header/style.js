@@ -122,6 +122,7 @@ input{
     opacity: 1;
     transform: rotate(45deg) translate(0px, 2px);
     background: #232323;
+    display:none;
     &:nth-last-child(3) {
       opacity: 0;
       transform: rotate(0deg) scale(0.2, 0.2);

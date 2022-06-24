@@ -5,12 +5,12 @@ import { useRouter } from 'next/router';
 import { container } from './style.js';
 
 
-const Header = () => {
-    const [activeNav, setNav] = useState(false)
+const Header = ({ activeNav, toggleNavBar }) => {
+    //const [activeNav, setNav] = useState(false)
     const router = useRouter()
-    const toggleNavBar = () => {
-        setNav(val => !val)
-    }
+    // const toggleNavBar = ()=>{
+    //     setNav(val=>!val)
+    // }
 
     const activeTab = useMemo(() => {
         const pathName = router.pathname;
@@ -49,7 +49,7 @@ const Header = () => {
                                             <img className="sideBarLogo cursor-pointer" alt="Logo" src="https://getkeel.com/wp-content/uploads/2021/07/Logo-1-1-1024x367.jpg" />
                                         </Link>
                                         <span onClick={toggleNavBar} className='closeSide'>
-                                            <img className="sideBarLogo cursor-pointer" alt="Logo" src="../../images/left-arrow.svg" />
+                                            <img className="img-fluid" alt="Logo" src="../../images/left-arrow.svg" />
 
                                         </span>
                                         <li>

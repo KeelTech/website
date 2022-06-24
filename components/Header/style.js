@@ -50,6 +50,7 @@ export const container = css`
           pointer-events: none;
           visibility: hidden;
           position: fixed;
+          z-index:9;
           // img.sideBarLogo{
           //   display:none;
           // }
@@ -57,7 +58,7 @@ export const container = css`
             position: absolute;
             width: 320px;
             margin: 0 0 0 0px;
-            padding: 85px 10px;
+            padding: 55px 10px;
             background: #ffffff;
             list-style-type: none;
             -webkit-font-smoothing: antialiased;
@@ -216,4 +217,16 @@ span{
         text-decoration: none;
         color: #c32020;
       }
+
+      span.closeSide {
+        position: absolute;
+        right: 20px;
+        top: 72px;
+    }
+    
+    span.closeSide img {
+        width: 25px !important;
+        margin: 0px !important;
+        cursor: pointer;
+    }
 `

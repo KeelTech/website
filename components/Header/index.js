@@ -46,7 +46,7 @@ const Header = ({ activeNav, toggleNavBar }) => {
                                 <div className="navListingMobile">
                                     <ul className='mainList'>
                                         <Link href="/">
-                                            <img className="sideBarLogo cursor-pointer" alt="Logo" src="https://getkeel.com/wp-content/uploads/2021/07/Logo-1-1-1024x367.jpg" />
+                                            <img className="sideBarLogo cursor-pointer" alt="Logo" src="../../keelLogo.svg" />
                                         </Link>
                                         <span onClick={toggleNavBar} className='closeSide'>
                                             <img className="img-fluid" alt="Logo" src="../../images/left-arrow.svg" />
@@ -82,7 +82,7 @@ const Header = ({ activeNav, toggleNavBar }) => {
                             </div>
                         </div>
                         <Link href="/">
-                            <img className="img-fluid cursor-pointer" src="https://getkeel.com/wp-content/uploads/2021/07/Logo-1-1-1024x367.jpg" />
+                            <img className="img-fluid cursor-pointer" src="../../keelLogo.svg" />
                         </Link>
                     </div>
                     <div className="navListing">

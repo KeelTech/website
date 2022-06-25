@@ -5,6 +5,7 @@ import { validateEmail } from '@/helpers/utils.js';
 import { createLead } from '@/actions/index.js';
 import CustomToaster from '@/components/CustomToaster';
 import { useAppContext } from '@/context/index.js';
+import ImgBan from '../../public/images/Feature-1.png'
 
 import { container } from './style.js';
 
@@ -142,7 +143,7 @@ const CheckEligibily = ()=>{
                 </div>
                 <div className="col-md-6 col-12">
                     <div className="animatedGif">
-                        <Image layout="responsive" src="https://getkeel.com/wp-content/uploads/2022/01/Feature-1.png" className="img-fluid" width={450} height={450} priority/>
+                        <Image layout="responsive" src={ImgBan} className="img-fluid" width={450} height={450} priority/>
                     </div>
                 </div>
             </div>

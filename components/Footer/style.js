@@ -93,6 +93,7 @@ color:#e5a0a0;
     gap: 20px;
     font-size: 12px;
     color: #e5a0a0;
+    flex-wrap:wrap;
 }
 
 .terms ul li {
@@ -101,5 +102,25 @@ color:#e5a0a0;
 
 .terms ul li:hover {
     color: white;
+}
+li {}
+
+.terms ul li {
+    position: relative;
+    flex-shrink: 0;
+}
+
+.terms ul li:before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background: #e5a0a0;
+    z-index: 99;
+    right: -10px;
+}
+
+.terms ul li:last-child:before {
+    display: none;
 }
 `

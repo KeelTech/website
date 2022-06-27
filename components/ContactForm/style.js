@@ -32,5 +32,5 @@ export const container = css`
     justify-content: center;
 }
 
-.contactsImg img {min-width: 280px;}
+.contactsImg img {width: 280px;}
 `

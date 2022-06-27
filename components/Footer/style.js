@@ -80,7 +80,7 @@ export const container = css`
     border-top: 1px solid #db414196;
     li{
       a{
-color:#e5a0a0;
+color:#fdfcfccc;
       }
     }
 }

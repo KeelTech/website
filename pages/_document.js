@@ -21,7 +21,7 @@ export default class AppDocument extends Document {
 
   render() {
     return (
-      <Html>
+      <Html lang='en'>
         <Head />
         <link rel="shortcut icon" href="../images/fav.ico" />
         <link rel="manifest" href="/manifest.json"/>

@@ -31,7 +31,7 @@ const CanadaImmigration = ()=>{
                 </div>
                 <div className="col-md-6">
                     <div className="rightImagePanel">
-                        <img className="img-fluid" src="/images/canadaFlag.svg"/>
+                        <img className="img-fluid" src="/images/canadaFlag.svg" alt="immigration"/>
                     </div>
                 </div>
             </div>

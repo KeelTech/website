@@ -27,6 +27,11 @@ const Header = ({ activeNav, toggleNavBar }) => {
         return activeTabNo;
     }, [router.pathname])
 
+    const handleNavigation= (path)=>{
+        toggleNavBar();
+        router.push(path);
+    }
+
     const handleRedirection = () => {
         window.open('https://app.getkeel.com/?_ga=2.120116556.539293979.1650623580-1070651863.1634566153', '_blank');
     }
@@ -52,37 +57,27 @@ const Header = ({ activeNav, toggleNavBar }) => {
                                             <img className="img-fluid" alt="Logo" src="../../images/left-arrow.svg" />
 
                                         </span>
-                                        <li>
-                                            <Link href="/">
-                                                <a onClick={toggleNavBar}>Home</a>
-                                            </Link>
+                                        <li onClick={()=>handleNavigation('/')}>
+                                            <a>Home</a>
                                         </li>
-                                        <li>
-                                            <Link href="/blogs">
-                                                <a onClick={toggleNavBar}>Blogs</a>
-                                            </Link>
+                                        <li onClick={()=>handleNavigation('/blogs')}>
+                                            <a>Blogs</a>
                                         </li>
-                                        <li>
-                                            <Link href="/services">
-                                                <a onClick={toggleNavBar}>Services</a>
-                                            </Link>
+                                        <li onClick={()=>handleNavigation('/services')}>
+                                            <a>Services</a>
                                         </li>
-                                        <li>
-                                            <Link href="/check-eligibility">
-                                                <a onClick={toggleNavBar}>Check Eligibility</a>
-                                            </Link>
+                                        <li onClick={()=>handleNavigation('/check-eligibility')}>
+                                            <a >Check Eligibility</a>
                                         </li>
-                                        <li>
-                                            <Link href="/contact-us">
-                                                <a onClick={toggleNavBar}>Contact</a>
-                                            </Link>
+                                        <li onClick={()=>handleNavigation('/contact-us')}>
+                                            <a>Contact</a>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         <Link href="/">
-                            <img className="img-fluid cursor-pointer" src="../../keelLogo.svg" />
+                            <img className="img-fluid cursor-pointer" src="../../keelLogo.svg" alt="keel"/>
                         </Link>
                     </div>
                     <div className="navListing">

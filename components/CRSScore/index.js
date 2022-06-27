@@ -26,16 +26,16 @@ const CRSScore = ()=>{
                     <div className="listEmlText">
                         <ul>
                             <li>
-                                <img classNme="img-fluid" src="/images/Step-1.svg" />
+                                <img className="img-fluid" src="/images/Step-1.svg" alt="eligibility" />
                                 <p>Check your eligibility and book a free counselling session</p>
                             </li>
                             <li>
-                                <img classNme="img-fluid" src="/images/step-2.svg" />
+                                <img className="img-fluid" src="/images/step-2.svg" alt="eligibility"/>
                                 <p>Get on a call with a licensed Canadian immigration consultant to understand your
                                     options</p>
                             </li>
                             <li>
-                                <img classNme="img-fluid" src="/images/step-3.svg" />
+                                <img className="img-fluid" src="/images/step-3.svg" alt="eligibility"/>
                                 <p>Get matched with the best expert consultant personalized to your application needs
                                 </p>
                             </li>

@@ -109,7 +109,7 @@ const ContactForm = () => {
                         <div className="contactLeftCont">
                             <h4>Contact us</h4>
                             <div className='contactsImg'>
-                                <img className="img-fluid" src="/images/contact-form.svg" />
+                                <img className="img-fluid" src="/images/contact-form.svg" alt="contacts"/>
                             </div>
                         </div>
                     </div>

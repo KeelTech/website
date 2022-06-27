@@ -45,7 +45,7 @@ const Testimonials = ()=>{
                             <div className="testiMoCard">
                                 <p dangerouslySetInnerHTML={{__html: renderWidget.body}}></p>
                                     <div className="testiUsr">
-                                        <img className="img-fluid"
+                                        <img className="img-fluid" alt="testimonials"
                                             src="https://getkeel.com/wp-content/uploads/2021/05/close-up-handsome-male-fashion-model-face-with-bea-DCZ9NLF.jpg" />
                                         <p>Maddy</p>
                                     </div>

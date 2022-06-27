@@ -19,6 +19,10 @@ export default function Layout({ children, dataProps }) {
     setNav(val=>!val)
   }
 
+  const closeNavBar = ()=>{
+    setNav(false);
+  }
+
   const handlers = useSwipeable({
     onSwipedLeft: ()=>toggleNavBar(),
     onSwipedRight: ()=>toggleNavBar(),
@@ -26,7 +30,7 @@ export default function Layout({ children, dataProps }) {
 
   return (
     <div {...handlers}>
-      <Header activeNav={activeNav} toggleNavBar={toggleNavBar}/>
+      <Header activeNav={activeNav} toggleNavBar={toggleNavBar} closeNavBar={closeNavBar}/>
       <main>{children}</main>
       <Footer />
     </div>

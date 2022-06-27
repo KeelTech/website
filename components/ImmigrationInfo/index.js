@@ -12,7 +12,7 @@ const ImmigrationInfo = ()=>{
             <div className="row vr-gap-50">
                 <div className="col-md-6 col-12">
                     <div className="immgImageBlock">
-                        <img className="img-fluid" src="/Frame5.svg" />
+                        <img className="img-fluid" src="/Frame5.svg" alt="eligibility"/>
                     </div>
                 </div>
                 <div className="col-md-6 col-12">
@@ -29,12 +29,12 @@ const ImmigrationInfo = ()=>{
                 </div>
                 <div className="col-md-6 col-12">
                     <div className="immgImageBlock">
-                        <img className="img-fluid" src="/Frame2.svg" />
+                        <img className="img-fluid" src="/Frame2.svg" alt="eligibility"/>
                     </div>
                 </div>
                 <div className="col-md-6 col-12">
                     <div className="immgImageBlock">
-                    <img className="img-fluid" src="/Frame3.svg" />
+                    <img className="img-fluid" src="/Frame3.svg" alt="eligibility"/>
                     </div>
                 </div>
                 <div className="col-md-6 col-12">
@@ -51,7 +51,7 @@ const ImmigrationInfo = ()=>{
                 </div>
                 <div className="col-md-6 col-12">
                     <div className="immgImageBlock">
-                    <img className="img-fluid" src="/Frame4.svg" />
+                    <img className="img-fluid" src="/Frame4.svg" alt="eligibility"/>
                     </div>
                 </div>
             </div>

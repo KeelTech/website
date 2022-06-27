@@ -63,6 +63,10 @@ p.blackSubPera {
 .listEmlText ul {
     list-style: none;
   }
+  .listEmlText ul li img {
+    width: 70px;
+    flex-shrink: 0;
+}
   
   .listEmlText ul li {
     display: -webkit-box;
@@ -412,4 +416,5 @@ export const improveScore = css`
   div.course-panel p {
     padding: 20px 0;
   }  
+  
 `

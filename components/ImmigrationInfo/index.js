@@ -12,7 +12,7 @@ const ImmigrationInfo = ()=>{
             <div className="row vr-gap-50">
                 <div className="col-md-6 col-12">
                     <div className="immgImageBlock">
-                        <Image width={655} height={281} className="img-fluid" src="https://getkeel.com/wp-content/uploads/2021/06/licensed.svg" />
+                        <img className="img-fluid" src="/Frame5.svg" />
                     </div>
                 </div>
                 <div className="col-md-6 col-12">
@@ -29,12 +29,12 @@ const ImmigrationInfo = ()=>{
                 </div>
                 <div className="col-md-6 col-12">
                     <div className="immgImageBlock">
-                        <Image width={655} height={281} className="img-fluid" src="https://getkeel.com/wp-content/uploads/2021/06/dont-settle.svg" />
+                        <img className="img-fluid" src="/Frame2.svg" />
                     </div>
                 </div>
                 <div className="col-md-6 col-12">
                     <div className="immgImageBlock">
-                        <Image width={655} height={281} className="img-fluid" src="https://getkeel.com/wp-content/uploads/2021/06/money-precious.svg" />
+                    <img className="img-fluid" src="/Frame3.svg" />
                     </div>
                 </div>
                 <div className="col-md-6 col-12">
@@ -51,7 +51,7 @@ const ImmigrationInfo = ()=>{
                 </div>
                 <div className="col-md-6 col-12">
                     <div className="immgImageBlock">
-                        <Image width={655} height={281} className="img-fluid" src="https://getkeel.com/wp-content/uploads/2021/06/dont-riun.svg" />
+                    <img className="img-fluid" src="/Frame4.svg" />
                     </div>
                 </div>
             </div>

@@ -23,19 +23,19 @@ const Eligibility = ()=>{
                 <div className="col-md-6 col-12">
                     <div className="listEmlText">
                         <img className="img-fluid iframeImg"
-                            src="https://getkeel.com/wp-content/uploads/2021/06/Saly-1.png" />
+                            src="/images/rocket-1.svg" />
                         <ul>
                             <li>
                                 <img className="img-fluid"
-                                    src="https://getkeel.com/wp-content/uploads/2021/06/Step-1-1.svg"/> 
+                                    src="/images/Step-1.svg"/> 
                                 <p>Get Your CRS Score by chat</p>
                             </li>
                             <li>
-                                <img className="img-fluid" src="https://getkeel.com/wp-content/uploads/2021/06/step-2.svg"/>
+                                <img className="img-fluid" src="/images/step-2.svg"/>
                                 <p>Fast, Confidential & Free</p>
                             </li>
                             <li>
-                                <img className="img-fluid" src="https://getkeel.com/wp-content/uploads/2021/06/step-3.svg"/>
+                                <img className="img-fluid" src="/images/step-3.svg"/>
                                 <p>Know your Options
                                 </p>
                             </li>
@@ -68,7 +68,7 @@ const Eligibility = ()=>{
                 </div>
                 <div className="col-md-6">
                     <div className="rightImagePanel">
-                        <img className="img-fluid" style={{width: '320px'}} src="/images/crs.png"/>
+                        <img className="img-fluid" style={{width: '320px'}} src="/images/rsscore.svg"/>
                     </div>
                 </div>
             </div>
@@ -76,10 +76,10 @@ const Eligibility = ()=>{
     </section>
     <section className={improveScore}>
         <div className="container">
-            <div className="row">
+            <div className="row align-center">
                 <div className="col-md-6">
                     <div className="scroreImgCont">
-                        <img className="img-fluid" style={{width: '320px'}} src="/images/plane.png"/>
+                        <img className="img-fluid" style={{width: '320px'}} src="/images/crs.svg"/>
                     </div>
                 </div>
                 <div className="col-md-6">

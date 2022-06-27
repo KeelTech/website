@@ -81,6 +81,7 @@ export const contactSection = css`
   font-weight: 500;
 }
     .contactForm {
+      background:white;
       border: 2px solid #ba2323;
       padding: 20px;
       border-radius: 10px;

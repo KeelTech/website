@@ -948,6 +948,7 @@ section.contact {
   border-radius: 10px;
   -webkit-box-shadow: 1px 1px 14px 10px #f0ecec;
           box-shadow: 1px 1px 14px 10px #f0ecec;
+  background: white;
 }
 
 footer {

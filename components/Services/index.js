@@ -18,37 +18,37 @@ const Services = ()=>{
                 <div className="row">
                     <div className="col-md-4  col-12">
                         <div className="servicCard">
-                            <img className="img-fluid" src="https://getkeel.com/wp-content/uploads/2021/06/service1.svg" />
+                            <img className="img-fluid" src="/images/service1.svg" />
                             <p>Express Entry Program</p>
                         </div>
                     </div>
                     <div className="col-md-4  col-12">
                         <div className="servicCard">
-                            <img className="img-fluid" src="https://getkeel.com/wp-content/uploads/2021/06/skill2.svg" />
+                            <img className="img-fluid" src="/images/skill2.svg" />
                             <p>Federal Skilled Worker</p>
                         </div>
                     </div>
                     <div className="col-md-4  col-12">
                         <div className="servicCard">
-                            <img className="img-fluid" src="https://getkeel.com/wp-content/uploads/2021/06/skill3.svg" />
+                            <img className="img-fluid" src="/images/skill3.svg" />
                             <p>Business Immigration</p>
                         </div>
                     </div>
                     <div className="col-md-4  col-12">
                         <div className="servicCard">
-                            <img className="img-fluid" src="https://getkeel.com/wp-content/uploads/2021/06/skill4.svg" />
+                            <img className="img-fluid" src="/images/skill4.svg" />
                             <p>Provincial Nominee Programs</p>
                         </div>
                     </div>
                     <div className="col-md-4  col-12">
                         <div className="servicCard">
-                            <img className="img-fluid" src="https://getkeel.com/wp-content/uploads/2021/06/skill5.svg" />
+                            <img className="img-fluid" src="/images/skill5.svg" />
                             <p>Sponsoring Your Family</p>
                         </div>
                     </div>
                     <div className="col-md-4  col-12">
                         <div className="servicCard">
-                            <img className="img-fluid" src="https://getkeel.com/wp-content/uploads/2021/06/skill6.svg" />
+                            <img className="img-fluid" src="/images/skill6.svg" />
                             <p>Canadian Experience Class</p>
                         </div>
                     </div>

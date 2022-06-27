@@ -143,7 +143,7 @@ const CheckEligibily = ()=>{
                 </div>
                 <div className="col-md-6 col-12">
                     <div className="animatedGif">
-                        <Image layout="responsive" src={ImgBan} className="img-fluid" width={450} height={450} priority/>
+                        <Image layout="responsive" src={ImgBan} className="img-fluid" width={450} height={450} priority alt="check eligibility"/>
                     </div>
                 </div>
             </div>

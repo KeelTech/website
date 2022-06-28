@@ -231,7 +231,10 @@ span{
     }
     @media (max-width:992px){
       .navBarMain {
-        min-height: 60px;
+        min-height: 60px !important;
+    }
+    nav{
+      box-shadow:2px 2px 5px #0000000a;
     }
      }
 `

@@ -16,6 +16,9 @@ export const container = css`
         font-size: 40px;
         color: #262e33;
         font-weight: 600;
+        @media (max-width:992px){
+          font-size:30px;
+        }
       }
       
       .immigrateForm h1 span {
@@ -27,6 +30,9 @@ export const container = css`
         font-size: 18px;
         font-weight: 500;
         margin: 20px 0;
+        @media (max-width:992px){
+          font-size:16px;
+        }
       }
       
       .immigrateForm p span {

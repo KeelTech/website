@@ -210,7 +210,7 @@ span{
         padding: 15px 10px;
         border-radius: 4px;
         @media (max-width:992px){
-          padding:12px 10px;
+          padding:8px 10px;
         }
       }
       li a{
@@ -229,4 +229,9 @@ span{
         margin: 0px !important;
         cursor: pointer;
     }
+    @media (max-width:992px){
+      .navBarMain {
+        min-height: 60px;
+    }
+     }
 `

@@ -17,13 +17,13 @@ const ImmigrationInfo = ()=>{
                 </div>
                 <div className="col-md-6 col-12">
                     <div className="immgTextBlock">
-                        <h2>Only Licensed Consultants</h2>
+                        <h3>Only Licensed Consultants</h3>
                         <p>No more ghost consultants ghosting you! </p>
                     </div>
                 </div>
                 <div className="col-md-6 col-12">
                     <div className="immgTextBlock">
-                        <h2>Don't Settle for the consultant "near you" </h2>
+                        <h3>Don't Settle for the consultant "near you" </h3>
                         <p>Best advice from the comfort of your home! </p>
                     </div>
                 </div>
@@ -39,13 +39,13 @@ const ImmigrationInfo = ()=>{
                 </div>
                 <div className="col-md-6 col-12">
                     <div className="immgTextBlock">
-                        <h2>Your Money Is Precious </h2>
+                        <h3>Your Money Is Precious </h3>
                         <p>Know your chances before starting your application </p>
                     </div>
                 </div>
                 <div className="col-md-6 col-12">
                     <div className="immgTextBlock">
-                        <h2>Don't Run For Updates For Months </h2>
+                        <h3>Don't Run For Updates For Months </h3>
                         <p>End to end application management at one platform </p>
                     </div>
                 </div>

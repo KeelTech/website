@@ -58,19 +58,19 @@ const Header = ({ activeNav, toggleNavBar }) => {
 
                                         </span>
                                         <li onClick={()=>handleNavigation('/')}>
-                                            <a>Home</a>
+                                            <a href="/" onClick={(e)=>e.preventDefault()}>Home</a>
                                         </li>
                                         <li onClick={()=>handleNavigation('/blogs')}>
-                                            <a>Blogs</a>
+                                            <a href="/blogs" onClick={(e)=>e.preventDefault()}>Blogs</a>
                                         </li>
                                         <li onClick={()=>handleNavigation('/services')}>
-                                            <a>Services</a>
+                                            <a href="/services" onClick={(e)=>e.preventDefault()}>Services</a>
                                         </li>
                                         <li onClick={()=>handleNavigation('/check-eligibility')}>
-                                            <a >Check Eligibility</a>
+                                            <a href="/check-eligibility" onClick={(e)=>e.preventDefault()}>Check Eligibility</a>
                                         </li>
                                         <li onClick={()=>handleNavigation('/contact-us')}>
-                                            <a>Contact</a>
+                                            <a href="/contact-us" onClick={(e)=>e.preventDefault()}>Contact</a>
                                         </li>
                                     </ul>
                                 </div>

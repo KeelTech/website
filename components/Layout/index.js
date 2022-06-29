@@ -23,9 +23,15 @@ export default function Layout({ children, dataProps }) {
     setNav(false);
   }
 
+  const handleSwipeLeft = ()=>{
+    if(activeNav){
+      toggleNavBar();
+    }
+  }
+
   const handlers = useSwipeable({
-    onSwipedLeft: ()=>toggleNavBar(),
-    onSwipedRight: ()=>toggleNavBar(),
+    onSwipedLeft: handleSwipeLeft,
+    onSwipedRight: toggleNavBar,
   });
 
   return (

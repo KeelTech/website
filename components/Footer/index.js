@@ -57,7 +57,7 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-12">
+                    {/* <div className="col-12">
                         <div className="redirection">
                             <ul>
                                 <li> <Link href="/">Home</Link></li>
@@ -66,7 +66,7 @@ const Footer = () => {
                                 <li><Link href="/contact-us">Contact</Link></li>
                             </ul>
                         </div>
-                    </div>
+                    </div> */}
                     <div className="col-12">
                         <div className='terms'>
                             <ul>

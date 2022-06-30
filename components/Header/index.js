@@ -109,7 +109,9 @@ const Header = ({ activeNav, toggleNavBar }) => {
                             </li>
                         </ul>
                     </div>
-                    <button className="getStarted" onClick={handleRedirection}>Get Started</button>
+                    <button className="getStarted" onClick={handleRedirection}>
+                        <img className='img-fluid mobIContop' src='/images/keel-plane-white.svg'/>
+                        <span>Get Started</span></button>
                 </div>
             </div>
         </nav>

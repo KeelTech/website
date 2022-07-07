@@ -40,6 +40,9 @@ export const container = css`
         color: #666;
     }
     
+    .terms ul li:before{
+        display:none;
+    }
     .msger-chat {
         flex: 1;
         overflow-y: auto;

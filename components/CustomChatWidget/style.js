@@ -57,6 +57,7 @@ export const container = css`
     .msger-chat::-webkit-scrollbar-thumb {
         background: #bdbdbd;
     }
+    
     .msg {
         display: flex;
         align-items: flex-start;

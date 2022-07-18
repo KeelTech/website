@@ -254,6 +254,7 @@ span{
         height:38px;
         background:none;
         padding:8px;
+        display:none;
         }
       .getStarted span{
       display:none;

@@ -2,6 +2,7 @@ import Layout from '@/components/Layout'
 import { AppWrapper } from '../context/index.js'; // import based on where you put it
 import { getActiveComponents } from '@/actions/index.js';
 import '../styles/global.css';
+import '../styles/globalNew.css';
 
 export default function App(props){
     const { Component, pageProps, dataProps } = props;

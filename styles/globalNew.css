@@ -419,12 +419,69 @@ section.processSection {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  height: 260px;
+  height: 440px;
   overflow: auto;
+  position: relative;
+}
+.processStepCont:before {
+  content: '';
+  position: absolute;
+  height: 98px;
+  width: 100%;
+  background: #ffffffb0;
+  z-index: 9;
+  top: 0;
+}
+.verticalMainCont {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.verticalImg {
+  display: flex;
+  width: 40%;
+  align-items: center;
+}
+.verticalCarausalOuter {
+  padding-left: 35px;
+  position: relative;
+}
+
+.verticalCarausalOuter:before {
+  content: '';
+  height: 100%;
+  width: 6px;
+  position: absolute;
+  left: 0;
+  background: linear-gradient(180deg, rgba(193, 139, 189, 0) 0%, rgba(162, 136, 196, 0.38) 21.57%, #7C84CD 48.43%, rgba(94, 129, 211, 0.38) 69.1%, rgba(47, 124, 222, 0) 102.32%);
+}
+.verticalCarausalOuter::after {
+  content: '';
+  position: absolute;
+  left: -14px;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  bottom: 0;
+  margin: auto;
+  background: url(/assets/plan.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 9;
+}
+.processStepCont:after {
+  content: '';
+  position: absolute;
+  height: 98px;
+  width: 100%;
+  background: #ffffffb0;
+  z-index: 9;
+  bottom: 0;
 }
 
 .processStepGrid {
-  /*background: linear-gradient(90deg, #f6e8f5 1.59%, #dcebff 84.61%), url(".jpg");*/
+  background: linear-gradient(90deg, #f6e8f5 1.59%, #dcebff 84.61%);
   padding: 8px;
   border-radius: 30px;
   width: 100%;
@@ -481,7 +538,7 @@ img.quoteImg.img-fluid {
   display: flex;
   align-items: center;
   padding-left: 100px;
-  /*background: linear-gradient(90deg, #C18BBD 1.59%, #2F7CDE 84.61%), url(".jpg");*/
+  background: linear-gradient(90deg, #C18BBD 1.59%, #2F7CDE 84.61%);
   background-position: 100% 0;
   background-repeat: no-repeat;
   background-size: 50%;
@@ -503,6 +560,7 @@ img.quoteImg.img-fluid {
   height: 100%;
   gap: 40px;
   padding: 20px 20px;
+  padding-right: 0px;
 }
 
 .carsCustmGrid {
@@ -510,7 +568,7 @@ img.quoteImg.img-fluid {
   box-shadow: 0px 0px 23.625px rgba(0, 0, 0, 0.05);
   border-radius: 12px;
   width: 100%;
-  max-width: 700px;
+  /* max-width: 700px; */
   flex-shrink: 0;
   padding: 40px;
 }
@@ -598,6 +656,7 @@ img.quoteImg.img-fluid {
 
 .rescGrdData p {
   font-size: 16px;
+  color: white;
 }
 
 .followUsContImg ul {
@@ -800,7 +859,7 @@ button.batchActBtn {
 .batchGrids {
   box-shadow: 0px 6.86179px 34.3089px rgba(0, 0, 0, 0.1);
   border-radius: 23px;
-  /*background: linear-gradient(90deg, #f6e8f5 1.59%, #dcebff 84.61%), url(".jpg");*/
+  background: linear-gradient(90deg, #f6e8f5 1.59%, #dcebff 84.61%);
   padding: 8px;
 }
 
@@ -1234,7 +1293,7 @@ img.sideBarLogo {
     width: 100%;
   }
   section.customer {
-    display: none;
+    /* display: none; */
   }
   h4.grdHdng {
     font-size: 58px;
@@ -1449,6 +1508,51 @@ img.sideBarLogo {
     flex-shrink: 0;
     width: auto;
   }
+  .custCarusalCont {
+    flex-wrap: wrap;
+    padding: 0;
+    background-size: contain;
+}
+
+img.quoteImg.img-fluid {
+    display: none;
+}
+
+.leftCrData {
+    padding: 15px 10px;
+    text-align: center;
+}
+.leftCrData h4{
+  color: white;
+}
+
+.caraCustMain {
+    padding: 20px 0px;
+}
+
+.carsCustmGrid {
+    margin-left: 15px;
+    padding: 22px;
+}
+.carsCustmGrid p {
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.carsCustmGrid .usrNames p {
+  font-size: 14px;
+}
+
+.usrNames h5 {
+  font-size: 18px;
+}
+
+.usrDtls img {
+  width: 52px;
+}
+.verticalImg{
+  display: none;
+}
 }
 @media (max-width: 400px) {
   h4.grdHdng {
@@ -1487,6 +1591,9 @@ img.sideBarLogo {
   }
   .formMain {
     flex-direction: column-reverse;
+  }
+  .verticalImg{
+    display: none;
   }
 }
 section.followUsSection {
@@ -1576,7 +1683,7 @@ section.universitiesSection {
 }
 
 .unvGrdnntOuter {
-  /*background: linear-gradient(90deg, #f6e8f5 1.59%, #dcebff 84.61%), url(".jpg");*/
+  background: linear-gradient(90deg, #f6e8f5 1.59%, #dcebff 84.61%);
   padding: 8px;
   border-radius: 10px 22px;
 }
@@ -1678,7 +1785,7 @@ button.seeAllBtn {
 }
 
 .hpyGrids {
- /* background: linear-gradient(90deg, #f6e8f5 1.59%, #dcebff 84.61%), url(".jpg");*/
+ background: linear-gradient(90deg, #f6e8f5 1.59%, #dcebff 84.61%);
   padding: 8px;
   border-radius: 30px;
   width: 100%;
@@ -1827,4 +1934,7 @@ button.acrdTabAct {
 
 .acrdGrd h3 span:hover img {
   filter: invert(1);
+}
+.followUsContImg {
+  padding: 20px 0;
 }

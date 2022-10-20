@@ -13,6 +13,12 @@ html {
   background: #ffffff;
   color: #242424;
 }
+@media (min-width: 1400px) and (min-width: 1920px) {
+  body {
+    max-width: 1600px;
+    margin: auto;
+  }
+}
 
 .forMobile {
   display: none;
@@ -63,7 +69,17 @@ ul li {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+@media (max-width:767px) {
+  /* Handle */
+::-webkit-scrollbar-thumb {
+  background: transparent;
+}
 
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: transparent;
+}
+}
 .img-fluid {
   max-width: 100%;
   height: auto;
@@ -317,7 +333,7 @@ h4.grdHdng {
 }
 
 .storyContent h5 span {
-  background: linear-gradient(180deg, #c18bbd 0%, #2f7cde 100%);
+  background: #24292F;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -1634,7 +1650,7 @@ section.studyBannerSection {
 }
 
 .stdyBanText h1 span {
-  background: linear-gradient(180deg, #c18bbd 0%, #2f7cde 100%);
+  background: #24292F;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -1753,7 +1769,7 @@ ul.rngkList {
   background: transparent;
   display: flex;
   align-items: center;
-  background: linear-gradient(180deg, #c18bbd 0%, #2f7cde 100%);
+  background: #24292F;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 12px;
@@ -1772,7 +1788,7 @@ button.seeAllBtn {
   background: transparent;
   display: flex;
   align-items: center;
-  background: linear-gradient(180deg, #c18bbd 0%, #2f7cde 100%);
+  background: #24292F;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 16px;

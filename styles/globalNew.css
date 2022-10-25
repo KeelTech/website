@@ -13,7 +13,7 @@ html {
   background: #ffffff;
   color: #242424;
 }
-@media (min-width: 1400px) and (min-width: 1920px) {
+@media (min-width: 1400px) and (min-width: 1820px) {
   body {
     max-width: 1600px;
     margin: auto;

@@ -12,7 +12,7 @@ const Footer = ()=>{
     return (
         <footer className="footerMain">
         <div className="container">
-            <div className="formMain">
+            <div className="formMain d-none">
                 <div className="formCntnt">
                     <p>We Are Here To Make Your Canada Immigration Journey Possible</p>
                 </div>

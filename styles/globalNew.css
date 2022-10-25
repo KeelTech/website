@@ -1247,371 +1247,7 @@ img.sideBarLogo {
   margin: auto;
 }
 
-/* ================= HamburgerMenu */
-@media (max-width: 767px) {
-  h1.bannerHeading {
-    font-size: 36px;
-  }
-  p.bannerParaSub {
-    font-size: 16px;
-  }
-  .bannerButton button {
-    font-size: 14px;
-    width: auto;
-    min-width: auto;
-    padding: 10px 10px;
-  }
-  .ourStoryColmn {
-    flex-wrap: wrap;
-  }
-  .storyImg {
-    width: 100%;
-  }
-  .storyContent.pl-30 {
-    width: 100%;
-  }
-  .servicesCont {
-    flex-wrap: wrap;
-  }
-  .storyContent.customService {
-    width: 100%;
-  }
-  .serviceSlider {
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  section.outStory {
-    padding: 40px 0px;
-  }
-  section.services {
-    padding: 40px 0px;
-  }
-  section.processSection {
-    padding: 40px 0px;
-  }
-  .banImgsGrid {
-    flex-wrap: wrap;
-  }
-  .bannerButton {
-    flex-wrap: wrap;
-  }
-  ul.pageRedrct {
-    flex-wrap: wrap;
-  }
-  .formMain {
-    flex-wrap: wrap;
-  }
-  .formCntnt {
-    width: 100%;
-  }
-  .formInputMain {
-    width: 100%;
-  }
-  section.customer {
-    /* display: none; */
-  }
-  h4.grdHdng {
-    font-size: 58px;
-    line-height: 50px;
-  }
-  .formCntnt p {
-    padding: 0;
-    font-size: 28px;
-    line-height: 42px;
-  }
-  img.rectImgBtm.img-fluid {
-    display: none;
-  }
-  img.rectImgTop.img-fluid {
-    display: none;
-  }
-  .logo img {
-    width: 80px;
-  }
-  button.getStrt {
-    font-size: 14px;
-    padding: 10px 20px;
-  }
-  .navBar {
-    min-height: 60px;
-  }
-  footer.footerMain {
-    background-position: center center;
-    background-size: cover;
-  }
-  .storyContent.pl-30 {
-    padding-left: 0 !important;
-  }
-  .prcStpIn h5 {
-    font-size: 22px;
-  }
-  .formInputMain {
-    padding: 12px;
-  }
-  .logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  .membersListCont {
-    flex-wrap: wrap;
-  }
-  .memLists {
-    width: calc(50% - 15px);
-  }
-  .studyBannerCont {
-    flex-wrap: wrap;
-  }
-  .stdyBanText {
-    width: 100% !important;
-    text-align: center;
-  }
-  .stdyBanText h1 {
-    font-size: 38px !important;
-    line-height: 52px !important;
-  }
-  section.universitiesSection {
-    padding: 40px 0px;
-  }
-  .stdyBanText p {
-    font-size: 16px;
-  }
-  .formInputMain.studyInputs {
-    flex-wrap: wrap;
-  }
-  .universitiesGridCont.fourGrid {
-    grid-template-columns: 1fr;
-  }
-  .crerGrid p {
-    font-size: 28px;
-    line-height: 42px;
-  }
-  h1.conHed {
-    font-size: 38px;
-  }
-  p.contSubPera {
-    font-size: 16px;
-    line-height: 22px;
-  }
-  ul.contLst {
-    margin-top: 20px;
-    gap: 13px;
-  }
-  ul.contLst li p {
-    font-size: 14px;
-  }
-  ul.contLst li img {
-    width: 16px;
-    margin-top: 5px;
-  }
-  .studyBanImg {
-    width: 100%;
-    margin-top: 20px;
-  }
-  .buttonGrid {
-    flex-wrap: wrap;
-  }
-  .buttonGrid button {
-    font-size: 14px;
-  }
-  .carsBatchCont {
-    flex-wrap: wrap;
-  }
-  .happyContent {
-    flex-wrap: wrap;
-  }
-  .hpyGridCont {
-    flex-wrap: wrap;
-  }
-  .hpyGrids {
-    width: 100%;
-    max-width: unset;
-  }
-  .accrdTabs {
-    flex-wrap: wrap;
-  }
-  .accrdTabs button {
-    width: 100%;
-    font-size: 14px;
-    min-height: 40px;
-  }
-  .acrdnGridsCont {
-    flex-wrap: wrap;
-  }
-  .acrdGrd {
-    width: 100% !important;
-  }
-  .keelFoot p {
-    padding: 0px;
-  }
-  .memLists {
-    text-align: center;
-  }
-  .banImgsGrid img {
-    width: 50px;
-  }
-  .banImgsGrid {
-    gap: 12px;
-    margin-top: 20px;
-  }
-  .serviceSlider {
-    flex-wrap: initial;
-    overflow: auto;
-    justify-content: unset;
-    padding-bottom: 12px;
-  }
-  ul.pageRedrct li {
-    position: relative;
-    gap: 10px;
-  }
-  ul.pageRedrct li:before {
-    content: "";
-    height: 80%;
-    width: 1px;
-    background: #9c9c9c;
-    position: absolute;
-    right: -7px;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-  }
-  ul.pageRedrct {
-    gap: 15px;
-  }
-  ul.pageRedrct li:last-child:before {
-    display: none;
-  }
-  .memLists span {
-    font-size: 12px;
-  }
-  .memLists p {
-    font-size: 14px;
-  }
-  section.mainBannerSection {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-  .forWeb {
-    display: none !important;
-  }
-  .forMobile {
-    display: block !important;
-  }
-  .prcStpIn {
-    padding: 12px;
-  }
-  span.stepNum {
-    margin-bottom: 15px;
-  }
-  section.customer {
-    padding: 40px 0px;
-  }
-  .caraCustMain {
-    /* overflow: auto; */
-    /* width: 100%; */
-  }
-  .carsCustmGrid {
-    /* flex-shrink: 0; */
-  }
-  section.resourceSection {
-    padding: 40px 0px;
-  }
-  .blogGridsSection {
-    overflow: auto;
-  }
-  .blogGrid {
-    flex-shrink: 0;
-    width: auto;
-  }
-  .custCarusalCont {
-    flex-wrap: wrap;
-    padding: 0;
-    background-size: contain;
-}
 
-img.quoteImg.img-fluid {
-    display: none;
-}
-
-.leftCrData {
-    padding: 15px 10px;
-    text-align: center;
-}
-.leftCrData h4{
-  color: white;
-}
-
-.caraCustMain {
-    padding: 20px 0px;
-}
-
-.carsCustmGrid {
-    margin-left: 15px;
-    padding: 22px;
-}
-.carsCustmGrid p {
-  font-size: 14px;
-  line-height: 26px;
-}
-
-.carsCustmGrid .usrNames p {
-  font-size: 14px;
-}
-
-.usrNames h5 {
-  font-size: 18px;
-}
-
-.usrDtls img {
-  width: 52px;
-}
-.verticalImg{
-  display: none;
-}
-}
-@media (max-width: 400px) {
-  h4.grdHdng {
-    font-size: 48px;
-  }
-  ul.pageRedrct li a, .keelFoot p {
-    font-size: 12px;
-  }
-  h4.grdHdng {
-    font-size: 48px;
-  }
-  .bannerLast p {
-    font-size: 18px;
-  }
-  .storyContent h5 {
-    font-size: 34px;
-  }
-  .storyContent p {
-    font-size: 16px;
-  }
-  .srvcGrid h5 {
-    font-size: 24px;
-  }
-  .srvcGrid {
-    flex-shrink: 0;
-  }
-  .formCntnt p {
-    font-size: 24px;
-    line-height: 36px;
-  }
-  .prcStpIn h5 {
-    font-size: 20px;
-  }
-  footer.footerMain {
-    padding-top: 40px;
-  }
-  .formMain {
-    flex-direction: column-reverse;
-  }
-  .verticalImg{
-    display: none;
-  }
-}
 section.followUsSection {
   padding: 40px 0px;
 }
@@ -1953,4 +1589,414 @@ button.acrdTabAct {
 }
 .followUsContImg {
   padding: 20px 0;
+}
+.batchesSection{
+  padding: 80px 0px;
+}
+section.faqSection {
+  padding: 80px 0px;
+}
+/* ================= HamburgerMenu */
+@media (max-width: 767px) {
+  h1.bannerHeading {
+    font-size: 36px;
+  }
+  section.studyBannerSection ,.batchesSection,section.faqSection{
+padding: 40px 0px;
+  }
+  p.bannerParaSub {
+    font-size: 16px;
+  }
+  .subheadWithBtn button {
+    font-size: 12px;
+    flex-shrink: 0;
+}
+
+.subheadWithBtn button img {
+    width: 12px;
+}
+  .bannerButton button {
+    font-size: 14px;
+    width: auto;
+    min-width: auto;
+    padding: 10px 10px;
+  }
+  .ourStoryColmn {
+    flex-wrap: wrap;
+  }
+  .storyImg {
+    width: 100%;
+  }
+  .storyContent.pl-30 {
+    width: 100%;
+  }
+  .servicesCont {
+    flex-wrap: wrap;
+  }
+  .storyContent.customService {
+    width: 100%;
+  }
+  .serviceSlider {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  section.outStory {
+    padding: 40px 0px;
+  }
+  section.services {
+    padding: 40px 0px;
+  }
+  section.processSection {
+    padding: 40px 0px;
+  }
+  .banImgsGrid {
+    flex-wrap: wrap;
+  }
+  .bannerButton {
+    flex-wrap: wrap;
+  }
+  ul.pageRedrct {
+    flex-wrap: wrap;
+  }
+  .formMain {
+    flex-wrap: wrap;
+  }
+  .formCntnt {
+    width: 100%;
+  }
+  .formInputMain {
+    width: 100%;
+  }
+  section.customer {
+    /* display: none; */
+  }
+  h4.grdHdng {
+    font-size: 58px;
+    line-height: 50px;
+  }
+  .formCntnt p {
+    padding: 0;
+    font-size: 28px;
+    line-height: 42px;
+  }
+  img.rectImgBtm.img-fluid {
+    display: none;
+  }
+  img.rectImgTop.img-fluid {
+    display: none;
+  }
+  .logo img {
+    width: 80px;
+  }
+  button.getStrt {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+  .navBar {
+    min-height: 60px;
+  }
+  footer.footerMain {
+    background-position: center center;
+    background-size: cover;
+  }
+  .storyContent.pl-30 {
+    padding-left: 0 !important;
+  }
+  .prcStpIn h5 {
+    font-size: 22px;
+  }
+  .formInputMain {
+    padding: 12px;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .membersListCont {
+    flex-wrap: wrap;
+  }
+  .memLists {
+    width: calc(50% - 15px);
+  }
+  .studyBannerCont {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+  .stdyBanText {
+    width: 100% !important;
+    text-align: center;
+  }
+  .stdyBanText h1 {
+    font-size: 32px !important;
+    line-height: 46px !important;
+  }
+  section.universitiesSection {
+    padding: 40px 0px;
+  }
+  .stdyBanText p {
+    font-size: 16px;
+    margin: 5px 0px;
+  }
+  .formInputMain.studyInputs {
+    flex-wrap: wrap;
+  }
+  .universitiesGridCont.fourGrid {
+    grid-template-columns: 1fr;
+  }
+  .crerGrid p {
+    font-size: 28px;
+    line-height: 42px;
+  }
+  h1.conHed {
+    font-size: 38px;
+  }
+  p.contSubPera {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  ul.contLst {
+    margin-top: 20px;
+    gap: 13px;
+  }
+  ul.contLst li p {
+    font-size: 14px;
+  }
+  ul.contLst li img {
+    width: 16px;
+    margin-top: 5px;
+  }
+  .studyBanImg {
+    width: 100% !important;
+    margin-bottom: 20px;
+  }
+  .buttonGrid {
+    flex-wrap: wrap;
+  }
+  .buttonGrid button {
+    font-size: 14px;
+  }
+  .carsBatchCont {
+    /* flex-wrap: wrap; */
+    overflow: auto;
+    justify-content: start;
+  }
+  .batchGrids {
+    width: 100%;
+    max-width: 220px;
+    flex-shrink: 0;
+}
+  .happyContent {
+    /* flex-wrap: wrap; */
+    flex-direction: initial;
+    overflow: auto;
+  }
+  .hpyGridCont {
+    /* flex-wrap: wrap; */
+    flex-shrink: 0;
+  }
+  .hpyGrids {
+    width: 100%;
+    max-width: 330px;
+  }
+  .accrdTabs {
+    flex-wrap: wrap;
+  }
+  .accrdTabs button {
+    width: 100%;
+    font-size: 14px;
+    min-height: 40px;
+  }
+  .acrdnGridsCont {
+    flex-wrap: wrap;
+  }
+  .acrdGrd {
+    width: 100% !important;
+  }
+  .keelFoot p {
+    padding: 0px;
+  }
+  .memLists {
+    text-align: center;
+  }
+  .banImgsGrid img {
+    width: 50px;
+  }
+  .banImgsGrid {
+    gap: 12px;
+    margin-top: 20px;
+  }
+  .serviceSlider.customGrdnGrids {
+    flex-wrap: initial;
+    overflow: auto;
+    justify-content: unset;
+    padding-bottom: 12px;
+  }
+  .serviceSlider.customGrdnGrids .srvcGrid {
+    width: 100%;
+    min-height: 370px;
+    flex-shrink: 0;
+    max-width: 240px;
+}
+.universitiesGridCont {
+  display: flex;
+  overflow: auto;
+}
+
+.unvGrdnntOuter {
+  width: 100%;
+  flex-shrink: 0;
+  max-width: 350px;
+}
+  ul.pageRedrct li {
+    position: relative;
+    gap: 10px;
+  }
+  ul.pageRedrct li:before {
+    content: "";
+    height: 80%;
+    width: 1px;
+    background: #9c9c9c;
+    position: absolute;
+    right: -7px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  ul.pageRedrct {
+    gap: 15px;
+  }
+  ul.pageRedrct li:last-child:before {
+    display: none;
+  }
+  .memLists span {
+    font-size: 12px;
+  }
+  .memLists p {
+    font-size: 14px;
+  }
+  section.mainBannerSection {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .forWeb {
+    display: none !important;
+  }
+  .forMobile {
+    display: block !important;
+  }
+  .prcStpIn {
+    padding: 12px;
+  }
+  span.stepNum {
+    margin-bottom: 15px;
+  }
+  section.customer {
+    padding: 40px 0px;
+  }
+  .caraCustMain {
+    /* overflow: auto; */
+    /* width: 100%; */
+  }
+  .carsCustmGrid {
+    /* flex-shrink: 0; */
+  }
+  section.resourceSection {
+    padding: 40px 0px;
+  }
+  .blogGridsSection {
+    overflow: auto;
+  }
+  .blogGrid {
+    flex-shrink: 0;
+    width: auto;
+  }
+  .custCarusalCont {
+    flex-wrap: wrap;
+    padding: 0;
+    background-size: contain;
+}
+
+img.quoteImg.img-fluid {
+    display: none;
+}
+
+.leftCrData {
+    padding: 15px 10px;
+    text-align: center;
+}
+.leftCrData h4{
+  color: white;
+}
+
+.caraCustMain {
+    padding: 20px 0px;
+}
+
+.carsCustmGrid {
+    margin-left: 15px;
+    padding: 22px;
+}
+.carsCustmGrid p {
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.carsCustmGrid .usrNames p {
+  font-size: 14px;
+}
+
+.usrNames h5 {
+  font-size: 18px;
+}
+
+.usrDtls img {
+  width: 52px;
+}
+.verticalImg{
+  display: none;
+}
+}
+@media (max-width: 400px) {
+  h4.grdHdng {
+    font-size: 48px;
+  }
+  ul.pageRedrct li a, .keelFoot p {
+    font-size: 12px;
+  }
+  h4.grdHdng {
+    font-size: 48px;
+  }
+  .bannerLast p {
+    font-size: 18px;
+  }
+  .storyContent h5 {
+    font-size: 34px;
+  }
+  .storyContent p {
+    font-size: 16px;
+  }
+  .srvcGrid h5 {
+    font-size: 24px;
+  }
+  .srvcGrid {
+    flex-shrink: 0;
+  }
+  .formCntnt p {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .prcStpIn h5 {
+    font-size: 20px;
+  }
+  footer.footerMain {
+    padding-top: 40px;
+  }
+  .formMain {
+    flex-direction: column-reverse;
+  }
+  .verticalImg{
+    display: none;
+  }
 }

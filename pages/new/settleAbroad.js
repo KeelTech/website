@@ -1,4 +1,8 @@
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
 
+// Import Swiper styles
+import 'swiper/css';
 const SettleAbroad = () => {
 
     return (
@@ -16,7 +20,8 @@ const SettleAbroad = () => {
                             <button>Get Free Consultation</button>
                         </div>
                         <div className="studyBanImg">
-                            <img className="img-fluid" src="/assets/studyabroad.png" />
+                            {/* <img className="img-fluid" src="/assets/studyabroad.png" /> */}
+                            <img className="img-fluid" src="/assets/ban.png" />
                         </div>
                     </div>
                     <div className="bannerLast">

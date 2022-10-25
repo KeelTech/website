@@ -20,7 +20,7 @@ const HomeView = () => {
                             </div>
                             <div className="bannerMidImg">
                                 <img className="img-fluid forWeb" src="/assets/bgUp.png" />
-                                <img className="img-fluid forMobile" src="/assets/homeMob.png" />
+                                <img className="img-fluid forMobile" src="/assets/Hero-section.png" />
                             </div>
                             <div className="bannerLast">
                                 <p>Our students finished University to work at global offices of</p>

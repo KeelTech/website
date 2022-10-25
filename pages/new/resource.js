@@ -14,7 +14,8 @@ const Resource = ()=>{
                     <button>Explore Resources</button>
                 </div>
                 <div className="studyBanImg">
-                    <img className="img-fluid" src="/assets/studyabroad.png" />
+                    {/* <img className="img-fluid" src="/assets/studyabroad.png" /> */}
+                    <img className="img-fluid" src="/assets/recs.png" />
                 </div>
             </div>
         </div>

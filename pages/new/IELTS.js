@@ -7,10 +7,9 @@ const IELTS = ()=>{
         <div className="container">
             <div className="studyBannerCont">
                 <div className="stdyBanText">
-                    <h1>Learn from the
-                        <span>Top 0.01% </span>
-                        IELTS Coaches India
-                        settle abroad platform
+                    <h1>Achieve your desired score
+                        <span>in 4 weeks</span>
+                       
                     </h1>
                     <p>Live Classes</p>
                     <p>1:1 Session with experts</p>
@@ -38,8 +37,8 @@ const IELTS = ()=>{
         <div className="container">
             <div className="storyContent full-width text-center">
                 <h4 className="grdHdng">Batches</h4>
-                <h5>Upcoming IELTS <span>Academic Batches</span></h5>
-                <p>Decrease the burden of managing active work in issues and pull requests by providing a separate space
+                <h5>Upcoming IELTS <span>Batches</span></h5>
+                <p>The Days Of Stressful And Confusing IELTS Preparation Are Finally Over!
                 </p>
             </div>
             <div className="batchesCarausal">
@@ -121,8 +120,7 @@ const IELTS = ()=>{
             <div className="storyContent full-width text-center">
                 <h4 className="grdHdng">Customers</h4>
                 <h5>Happy <span>Keelers</span></h5>
-                <p>We believe with right exposure you can do wonders <br />for yourself and your family hence we help
-                    you make choices that</p>
+                <p>Take Out The Guesswork From Your Next IELTS Exam With Keel And Get Desired Results. Listen to our happy Keelers.</p>
             </div>
             <div className="happyContent">
                 <div className="hpyGridCont">

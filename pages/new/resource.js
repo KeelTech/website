@@ -8,9 +8,9 @@ const Resource = ()=>{
             <div className="studyBannerCont">
                 <div className="stdyBanText">
                     <h1>One stop destination for all your 
-                        <span>Immigration resources</span>
+                        <span> Immigration Queries</span>
                     </h1>
-                    <p>Keel is your destination for information you can trust, expert guidance, and newcomer offers.</p>
+                    <p>Keel is there to help you every step of the way from the day you think of settling abroad till the time you actually start your brand new life</p>
                     <button>Explore Resources</button>
                 </div>
                 <div className="studyBanImg">
@@ -29,7 +29,7 @@ const Resource = ()=>{
                         <h5>Latest <span>Blogs</span></h5>
                         <button>See All <img className="img-fluid" src="/assets/arrowDark.svg"/></button>
                     </div>
-                    <p>We believe with right exposure you can do wonders for yourself and your <br/>family hence we help you make choices that</p>
+                    <p>Check out our blogs here</p>
                 </div>
                 <div className="blogGridsSection">
                     <div className="blogGrid">

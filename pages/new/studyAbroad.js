@@ -11,12 +11,12 @@ const StudyAbroad = () => {
                 <div class="container">
                     <div class="studyBannerCont">
                         <div class="stdyBanText">
-                            <h1>World’s most
-                                <span>Student Friendly</span>
-                                study abroad platform
+                            <h1>World’s largest
+                                <span> Personalised </span>
+                                study abroad counselling platform
                             </h1>
-                            <p>We are world’s no.1 Tech enabled and customer
-                                tech enabled and customer </p>
+                            <p>Mentoring | Profile Building | Test Preparations | End to End Visa Solutions
+                            </p>
                             <button>Get Free Consultation</button>
                         </div>
                         <div class="studyBanImg">
@@ -41,8 +41,7 @@ const StudyAbroad = () => {
                         <div class="storyContent full-width">
                             <h4 class="grdHdng">Universities</h4>
                             <h5><span>Top Universities & Colleges </span>to Study Abroad Exist</h5>
-                            <p>We believe with right exposure you can do wonders for yourself and your family hence we help you
-                                make choices that</p>
+                            <p>If you have the will to get into your dream university, we have a way to make it happen.</p>
                         </div>
                         <div class="formInputMain studyInputs">
                             <div class="inputForm">
@@ -213,10 +212,9 @@ const StudyAbroad = () => {
                     <div className="processMain">
                         <div className="processCont">
                             <div className="storyContent full-width">
-                                <h4 className="grdHdng">Process</h4>
-                                <h5>The <span>Process</span></h5>
-                                <p>Decrease the burden of managing active work in issues and pull <br />requests by providing a
-                                    separate space</p>
+                                <h4 className="grdHdng">Steps</h4>
+                                <h5>How it<span> Works</span></h5>
+                                <p>"A journey of a thousand miles begins with a single step." - Lao Tzu </p>
                             </div>
                         </div>
                         <div className='verticalMainCont'>
@@ -233,9 +231,9 @@ const StudyAbroad = () => {
                                             <div className="processStepGrid">
                                                 <div className="prcStpIn">
                                                     <span className="stepNum">Step 1</span>
-                                                    <h5>Get in touch with Consultant</h5>
-                                                    <p>Decrease the burden of managing active work in issues and pull requests by providing a
-                                                        separate space decrease the burden of managing active work in issues and pull requests </p>
+                                                    <h5>Research and Discovery</h5>
+                                                    <p>Explore your options: In terms of right courses, Universities, country and so on.
+</p>
                                                 </div>
                                             </div>
                                         </SwiperSlide>
@@ -243,9 +241,8 @@ const StudyAbroad = () => {
                                             <div className="processStepGrid">
                                                 <div className="prcStpIn">
                                                     <span className="stepNum">Step 2</span>
-                                                    <h5>Get in touch with Consultant</h5>
-                                                    <p>Decrease the burden of managing active work in issues and pull requests by providing a
-                                                        separate space decrease the burden of managing active work in issues and pull requests </p>
+                                                    <h5>Career guidance from the top 1%</h5>
+                                                    <p>Choose your path: After talking to mentors from Google, Uber, Microsoft and more.</p>
                                                 </div>
                                             </div>
                                         </SwiperSlide>
@@ -253,9 +250,17 @@ const StudyAbroad = () => {
                                             <div className="processStepGrid">
                                                 <div className="prcStpIn">
                                                     <span className="stepNum">Step 3</span>
-                                                    <h5>Get in touch with Consultant</h5>
-                                                    <p>Decrease the burden of managing active work in issues and pull requests by providing a
-                                                        separate space decrease the burden of managing active work in issues and pull requests </p>
+                                                    <h5>Take all the right steps </h5>
+                                                    <p>Start your Journey: By creating a profile that showcases your best self.</p>
+                                                </div>
+                                            </div>
+                                        </SwiperSlide>
+                                        <SwiperSlide>
+                                            <div className="processStepGrid">
+                                                <div className="prcStpIn">
+                                                    <span className="stepNum">Step 4</span>
+                                                    <h5>Test preparations and submitting the application</h5>
+                                                    <p>Say hi to your dream life: By getting your desired scores and filing an application that stands out.</p>
                                                 </div>
                                             </div>
                                         </SwiperSlide>
@@ -653,10 +658,9 @@ const StudyAbroad = () => {
                 <div className="container">
                     <div className="processCont">
                         <div className="storyContent full-width">
-                            <h4 className="grdHdng">Process</h4>
-                            <h5>The <span>Process</span></h5>
-                            <p>Decrease the burden of managing active work in issues and pull <br />requests by providing a
-                                separate space</p>
+                            <h4 className="grdHdng">Steps</h4>
+                            <h5>How it <span>Works</span></h5>
+                            <p>"A journey of a thousand miles begins with a single step." - Lao Tzu</p>
                         </div>
                     </div>
                     <div className="processStepCont">

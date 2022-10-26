@@ -263,47 +263,18 @@ const HomeView = () => {
                     </div>
                 </div>
                 <div className="followUsContImg">
-                    {/* <ul> */}
-                    <Swiper
-                        spaceBetween={10}
-                        slidesPerView={4.5}
-                        breakpoints={{
-                            360: {
-                                slidesPerView: 2.5,
-                                spaceBetween: 20,
-                            },
-                            420: {
-                                slidesPerView: 3,
-                                spaceBetween: 20,
-                            },
-                            640: {
-                                slidesPerView: 3,
-                                spaceBetween: 20,
-                            },
-                            768: {
-                                slidesPerView: 4,
-                                spaceBetween: 40,
-                            },
-                            1024: {
-                                slidesPerView: 5,
-                                spaceBetween: 50,
-                            },
-                        }}
-                    >
-                        <SwiperSlide><a href=""><img className='img-fluid' src="/assets/fl3.png" alt="" /></a></SwiperSlide>
-                        <SwiperSlide><a href=""><img className='img-fluid' src="/assets/fl3.png" alt="" /></a></SwiperSlide>
-                        <SwiperSlide><a href=""><img className='img-fluid' src="/assets/fl3.png" alt="" /></a></SwiperSlide>
-                        <SwiperSlide><a href=""><img className='img-fluid' src="/assets/fl3.png" alt="" /></a></SwiperSlide>
-                        <SwiperSlide><a href=""><img className='img-fluid' src="/assets/fl2.png" alt="" /></a></SwiperSlide>
-                        <SwiperSlide><a href=""><img className='img-fluid' src="/assets/fl3.png" alt="" /></a></SwiperSlide>
-                        <SwiperSlide><a href=""><img className='img-fluid' src="/assets/fl4.png" alt="" /></a></SwiperSlide>
-                        <SwiperSlide><a href=""><img className='img-fluid' src="/assets/fl5.png" alt="" /></a></SwiperSlide>
-                        <SwiperSlide><a href=""><img className='img-fluid' src="/assets/fl6.png" alt="" /></a></SwiperSlide>
-                        <SwiperSlide><a href=""><img className='img-fluid' src="/assets/fl7.png" alt="" /></a></SwiperSlide>
-                        <SwiperSlide><a href=""><img className='img-fluid' src="/assets/fl8.png" alt="" /></a></SwiperSlide>
-
-                    </Swiper>
-                    {/* </ul> */}
+                    <ul>
+                        <li><a href=""><img src="/assets/fl3.png" alt="" /></a></li>
+                        <li><a href=""><img src="/assets/fl2.png" alt="" /></a></li>
+                        <li><a href=""><img src="/assets/fl3.png" alt="" /></a></li>
+                        <li><a href=""><img src="/assets/fl4.png" alt="" /></a></li>
+                        <li><a href=""><img src="/assets/fl5.png" alt="" /></a></li>
+                        <li><a href=""><img src="/assets/fl6.png" alt="" /></a></li>
+                        <li><a href=""><img src="/assets/fl7.png" alt="" /></a></li>
+                        <li><a href=""><img src="/assets/fl8.png" alt="" /></a></li>
+                        <li><a href=""><img src="/assets/fl3.png" alt="" /></a></li>
+                        <li><a href=""><img src="/assets/fl4.png" alt="" /></a></li>
+                    </ul>
                 </div>
             </section>
         </>

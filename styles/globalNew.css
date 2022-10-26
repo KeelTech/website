@@ -63,11 +63,13 @@ ul li {
 ::-webkit-scrollbar-thumb {
   background: #848484;
   border-radius: 10px;
+  background: transparent;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+  background: transparent;
 }
 @media (max-width:767px) {
   /* Handle */
@@ -1596,12 +1598,21 @@ button.acrdTabAct {
 section.faqSection {
   padding: 80px 0px;
 }
+section.happyCustomers{
+  padding: 80px 0px;
+}
+.accrdTabs{
+  display: none;
+}
 /* ================= HamburgerMenu */
 @media (max-width: 767px) {
   h1.bannerHeading {
     font-size: 36px;
   }
-  section.studyBannerSection ,.batchesSection,section.faqSection{
+.processStepGrid{
+  flex-shrink: 0;
+}
+  section.studyBannerSection ,.batchesSection,section.faqSection,section.happyCustomers{
 padding: 40px 0px;
   }
   p.bannerParaSub {

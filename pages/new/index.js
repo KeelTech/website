@@ -1,9 +1,11 @@
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { useRouter } from 'next/router';
 
 // Import Swiper styles
 import 'swiper/css';
 const HomeView = () => {
+    const router = useRouter()
 
     return (
         <>
@@ -15,8 +17,8 @@ const HomeView = () => {
                             <p className="bannerParaSub">We are world’s no.1 Tech enabled and customer friendly study abroad and
                                 migration Consulatnts</p>
                             <div className="bannerButton">
-                                <button>Study Abroad</button>
-                                <button>Settle Abroad</button>
+                                <button onClick={()=>router.push(`/new/studyAbroad`)}>Study Abroad</button>
+                                <button onClick={()=>router.push(`/new/settleAbroad`)}>Settle Abroad</button>
                             </div>
                             <div className="bannerMidImg">
                                 <img className="img-fluid forWeb" src="/assets/bgUp.png" />

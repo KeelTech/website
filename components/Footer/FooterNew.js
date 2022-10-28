@@ -49,9 +49,9 @@ const Footer = ()=>{
                 <li onClick={()=>handleNavigation('/blogs')}>
                     <a href="/blogs" onClick={(e)=>e.preventDefault()}>Blogs</a>
                 </li>
-                <li onClick={()=>handleNavigation('/resource')}>
+                {/* <li onClick={()=>handleNavigation('/resource')}>
                     <a href="/services" onClick={(e)=>e.preventDefault()}>Services</a>
-                </li>
+                </li> */}
                 <li onClick={()=>handleNavigation('/resource')}>
                     <a href="/check-eligibility" onClick={(e)=>e.preventDefault()}>Check Eligibility</a>
                 </li>
@@ -60,6 +60,9 @@ const Footer = ()=>{
                 </li>
                 <li onClick={()=>handleNavigation('/career')}>
                     <a href="/contact-us" onClick={(e)=>e.preventDefault()}>Career</a>
+                </li>
+                <li onClick={()=>handleNavigation('/about')}>
+                    <a href="/contact-us" onClick={(e)=>e.preventDefault()}>About Us</a>
                 </li>
                 </ul>
                 <p>Lörem ipsum od ohet dilogi. Bell trabel, samuligt, ohöbel utom diska. Jinesade bel när feras redorade

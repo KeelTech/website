@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
 *,
 *::after,
 *::after {
@@ -13,6 +14,7 @@ html {
   background: #ffffff;
   color: #242424;
 }
+
 @media (min-width: 1400px) and (min-width: 1620px) {
   body {
     max-width: 1600px;
@@ -36,6 +38,7 @@ button {
 ul {
   list-style: none;
 }
+
 ul li {
   list-style: none;
 }
@@ -71,17 +74,20 @@ ul li {
   background: #555;
   background: transparent;
 }
+
 @media (max-width:767px) {
+
   /* Handle */
-::-webkit-scrollbar-thumb {
-  background: transparent;
+  ::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: transparent;
+  }
 }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: transparent;
-}
-}
 .img-fluid {
   max-width: 100%;
   height: auto;
@@ -120,31 +126,37 @@ ul li {
     max-width: 540px;
   }
 }
+
 @media (min-width: 768px) {
   .container {
     max-width: 720px;
   }
 }
+
 @media (min-width: 992px) {
   .container {
     max-width: 960px;
   }
 }
+
 @media (min-width: 1200px) {
   .container {
     max-width: 1170px;
   }
 }
+
 @media (min-width: 1400px) {
   .container {
     max-width: 1280px;
   }
 }
+
 @media (min-width: 1400px) and (min-width: 1920px) {
   .container {
     max-width: 1600px;
   }
 }
+
 header {
   position: -webkit-sticky;
   position: sticky;
@@ -269,7 +281,7 @@ p.bannerParaSub {
 .banImgsGrid img {
   width: 20%;
   -o-object-fit: scale-down;
-     object-fit: scale-down;
+  object-fit: scale-down;
 }
 
 section.outStory {
@@ -441,6 +453,7 @@ section.processSection {
   overflow: auto;
   position: relative;
 }
+
 .processStepCont:before {
   content: '';
   position: absolute;
@@ -450,6 +463,7 @@ section.processSection {
   z-index: 9;
   top: 0;
 }
+
 .verticalMainCont {
   display: flex;
   align-items: center;
@@ -461,6 +475,7 @@ section.processSection {
   width: 40%;
   align-items: center;
 }
+
 .verticalCarausalOuter {
   padding-left: 35px;
   position: relative;
@@ -474,6 +489,7 @@ section.processSection {
   left: 0;
   background: linear-gradient(180deg, rgba(193, 139, 189, 0) 0%, rgba(162, 136, 196, 0.38) 21.57%, #7C84CD 48.43%, rgba(94, 129, 211, 0.38) 69.1%, rgba(47, 124, 222, 0) 102.32%);
 }
+
 .verticalCarausalOuter::after {
   content: '';
   position: absolute;
@@ -488,6 +504,7 @@ section.processSection {
   background-size: contain;
   z-index: 9;
 }
+
 .processStepCont:after {
   content: '';
   position: absolute;
@@ -741,7 +758,7 @@ footer.footerMain {
   left: 45px;
 }
 
-.inputForm.mobileInp input:focus ~ label {
+.inputForm.mobileInp input:focus~label {
   left: 14px;
 }
 
@@ -758,7 +775,7 @@ footer.footerMain {
   font-size: 14px;
 }
 
-.inputForm input:focus ~ label {
+.inputForm input:focus~label {
   background: white;
   top: -10px;
   font-size: 14px;
@@ -784,7 +801,7 @@ footer.footerMain {
   min-height: 140px;
 }
 
-.inputForm textarea:focus ~ label {
+.inputForm textarea:focus~label {
   background: white;
   top: -10px;
   font-size: 14px;
@@ -1003,6 +1020,7 @@ section.careerFull {
   min-height: 50px;
   font-size: 18px;
   margin-top: 30px;
+  padding: 5px 20px;
 }
 
 .serviceSlider.customGrdnGrids {
@@ -1010,6 +1028,7 @@ section.careerFull {
   justify-content: center;
   margin-top: 30px;
 }
+
 .serviceSlider.customGrdnGrids .srvcGrid {
   width: 33%;
   min-height: 370px;
@@ -1067,10 +1086,12 @@ p.topMargin {
   .hamBurger {
     display: block;
   }
+
   .navBar ul {
     display: none;
   }
 }
+
 #menuToggle {
   display: block;
   position: relative;
@@ -1079,8 +1100,8 @@ p.topMargin {
   z-index: 1;
   -webkit-user-select: none;
   -moz-user-select: none;
-   -ms-user-select: none;
-       user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 #menuToggle a {
@@ -1143,18 +1164,18 @@ p.topMargin {
   transform-origin: 0 100%;
 }
 
-#menuToggle input:checked ~ span.bars {
+#menuToggle input:checked~span.bars {
   opacity: 1;
   transform: rotate(45deg) translate(0px, 2px);
   background: #232323;
 }
 
-#menuToggle input:checked ~ span.bars:nth-last-child(3) {
+#menuToggle input:checked~span.bars:nth-last-child(3) {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
 }
 
-#menuToggle input:checked ~ span.bars:nth-last-child(2) {
+#menuToggle input:checked~span.bars:nth-last-child(2) {
   transform: rotate(-45deg) translate(0, -1px);
 }
 
@@ -1190,6 +1211,7 @@ img.sideBarLogo {
   padding: 5px 10px;
   padding-left: 20px;
 }
+
 #menu li a {
   font-size: 14px;
 }
@@ -1217,7 +1239,7 @@ img.sideBarLogo {
   border-bottom: transparent;
 }
 
-#menuToggle input:checked ~ #menu {
+#menuToggle input:checked~#menu {
   display: block;
   position: fixed;
   height: 100%;
@@ -1229,7 +1251,7 @@ img.sideBarLogo {
   margin: auto;
 }
 
-#menuToggle input:checked ~ #menu ul {
+#menuToggle input:checked~#menu ul {
   transform: none;
   display: flex;
   flex-direction: column;
@@ -1237,7 +1259,7 @@ img.sideBarLogo {
   height: 100%;
 }
 
-.inputChecked{
+.inputChecked {
   display: none;
   position: fixed;
   height: 100%;
@@ -1439,7 +1461,7 @@ button.seeAllBtn {
 }
 
 .hpyGrids {
- background: linear-gradient(90deg, #f6e8f5 1.59%, #dcebff 84.61%);
+  background: linear-gradient(90deg, #f6e8f5 1.59%, #dcebff 84.61%);
   padding: 8px;
   border-radius: 30px;
   width: 100%;
@@ -1591,30 +1613,37 @@ button.acrdTabAct {
 .acrdGrd h3 span:hover img {
   filter: invert(1);
 }
+
 .followUsContImg {
   padding: 20px 0;
 }
-.batchesSection{
+
+.batchesSection {
   padding: 80px 0px;
 }
+
 section.faqSection {
   padding: 80px 0px;
 }
-section.happyCustomers,section.resourceSection{
+
+section.happyCustomers,
+section.resourceSection {
   padding: 80px 0px;
 }
-.accrdTabs{
+
+.accrdTabs {
   display: none;
 }
-.careerFull{
+
+.careerFull {
   background: url(/assets/bg-elements.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
 }
-.ieltsListBan{
 
-}
+.ieltsListBan {}
+
 ul.ieltsListBan {
   margin: 15px 0;
   display: flex;
@@ -1626,279 +1655,525 @@ ul.ieltsListBan li {
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
-/* identical to box height */
+  /* identical to box height */
   color: #57606A;
   display: flex;
   gap: 10px;
   align-items: center;
   text-align: left;
 }
-.customPeraAbout{
-  max-width:900px; margin: 20px auto;
+
+.customPeraAbout {
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+/* The container */
+.checkBoxContainer {
+  display: block;
+  position: relative;
+  padding-left: 18px;
+  cursor: pointer;
+  font-size: 22px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.chkCont {
+  display: flex;
+  gap: 8px;
+  margin-top: 5px;
+}
+button.cmSubmit {
+  width: 100%;
+  border-radius: 8px;
+  color: #FFFFFF;
+  font-size: 16px;
+  padding: 13px 35px;
+  border: none;
+  background: linear-gradient(90deg, #5e98e1 1.59%, #2F7CDE 84.61%);
+  margin-top: 20px;
+}
+/* Hide the browser's default radio button */
+.checkBoxContainer input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 14px;
+  width: 14px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.checkBoxContainer:hover input~.checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.checkBoxContainer input:checked~.checkmark {
+  background-color: #2F7CDE;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.checkBoxContainer input:checked~.checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.checkBoxContainer .checkmark:after {
+  top: 1px;
+  left: 1px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #2F7CDE;
+  border: 1px solid white;
+}
+
+.communityForm {
+  width: 60%;
+}
+
+.comFomCont {
+  background: white;
+  border-radius: 7px;
+  box-shadow: 0px 0px 10px #f8f8f8;
+  padding: 45px;
+}
+
+.cmForm {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px 20px;
+}
+
+.cmForm .inputForm {
+  position: relative;
+  width: calc(50% - 10px);
+}
+
+.radioCheck {
+  margin-top: 20px;
+}
+
+.radioCheck p {
+  font-weight: 400;
+  font-size: 11.0202px;
+  line-height: 17px;
+  /* identical to box height */
+  letter-spacing: 0.11em;
+  color: #57606A;
+}
+.comFomCont {
+  padding: 25px;
+}
+
+section.communitySection {
+  padding: 80px 0px;
+}
+
+.cmnuCont {
+  display: flex;
+}
+
+.cmnuImgSec {
+  padding: 10px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 /* ================= HamburgerMenu */
 @media (max-width: 767px) {
   h1.bannerHeading {
     font-size: 36px;
   }
-  .stdyBanText button{
+  .comFomCont {
+    padding: 25px;
+}
+.cmnuImgSec {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.cmnuCont {
+  flex-wrap: wrap;
+}
+
+section.communitySection {
+  padding: 40px 0px;
+}
+div.noRevrsMob{
+  flex-direction: unset;
+}
+  .cmForm .inputForm{
+    width: 100%;
+  }
+  .communityForm {
+    width: 100%;
+    margin-top: 30px;
+}
+
+  .formMain {
+    flex-direction: column-reverse;
+  }
+
+  .stdyBanText button {
     margin: 10px 0px;
   }
-.processStepGrid{
-  flex-shrink: 0;
-}
-  section.studyBannerSection ,.batchesSection,section.faqSection,section.happyCustomers,section.resourceSection,section.followUsSection{
-padding: 40px 0px;
+
+  .processStepGrid {
+    flex-shrink: 0;
   }
+
+  section.studyBannerSection,
+  .batchesSection,
+  section.faqSection,
+  section.happyCustomers,
+  section.resourceSection,
+  section.followUsSection {
+    padding: 40px 0px;
+  }
+
   p.bannerParaSub {
     font-size: 16px;
   }
+
   .subheadWithBtn button {
     font-size: 12px;
     flex-shrink: 0;
-}
+  }
 
-.subheadWithBtn button img {
+  .subheadWithBtn button img {
     width: 12px;
-}
+  }
+
   .bannerButton button {
     font-size: 14px;
     width: auto;
     min-width: auto;
     padding: 10px 10px;
   }
+
   .ourStoryColmn {
     flex-wrap: wrap;
   }
+
   .storyImg {
     width: 100%;
   }
+
   .storyContent.pl-30 {
     width: 100%;
   }
+
   .servicesCont {
     flex-wrap: wrap;
   }
+
   .storyContent.customService {
     width: 100%;
   }
+
   .serviceSlider {
     width: 100%;
     flex-wrap: wrap;
     justify-content: center;
   }
+
   section.outStory {
     padding: 40px 0px;
   }
+
   section.services {
     padding: 40px 0px;
   }
+
   section.processSection {
     padding: 40px 0px;
   }
+
   .banImgsGrid {
     flex-wrap: wrap;
   }
+
   .bannerButton {
     flex-wrap: wrap;
   }
+
   ul.pageRedrct {
     flex-wrap: wrap;
   }
+
   .formMain {
     flex-wrap: wrap;
   }
+
   .formCntnt {
     width: 100%;
   }
+
   .formInputMain {
     width: 100%;
   }
+
   section.customer {
     /* display: none; */
   }
+
   h4.grdHdng {
     font-size: 58px;
     line-height: 50px;
   }
+
   .formCntnt p {
     padding: 0;
     font-size: 28px;
     line-height: 42px;
   }
+
   img.rectImgBtm.img-fluid {
     display: none;
   }
+
   img.rectImgTop.img-fluid {
     display: none;
   }
+
   .logo img {
     width: 80px;
   }
+
   button.getStrt {
     font-size: 14px;
     padding: 10px 20px;
   }
+
   .navBar {
     min-height: 60px;
   }
+
   footer.footerMain {
     background-position: center center;
     background-size: cover;
   }
+
   .storyContent.pl-30 {
     padding-left: 0 !important;
   }
+
   .prcStpIn h5 {
     font-size: 22px;
   }
+
   .formInputMain {
     padding: 12px;
   }
+
   .logo {
     display: flex;
     align-items: center;
     gap: 10px;
   }
+
   .membersListCont {
     flex-wrap: wrap;
   }
+
   .memLists {
     width: calc(50% - 15px);
   }
+
   .studyBannerCont {
     flex-wrap: wrap;
     flex-direction: column-reverse;
   }
+
   .stdyBanText {
     width: 100% !important;
     text-align: center;
   }
+
   .stdyBanText h1 {
     font-size: 32px !important;
     line-height: 46px !important;
   }
+
   section.universitiesSection {
     padding: 40px 0px;
   }
+
   .stdyBanText p {
     font-size: 16px;
     margin: 5px 0px;
   }
+
   .formInputMain.studyInputs {
     flex-wrap: wrap;
   }
+
   .universitiesGridCont.fourGrid {
     grid-template-columns: 1fr;
   }
+
   .crerGrid p {
     font-size: 28px;
     line-height: 42px;
   }
+
   h1.conHed {
     font-size: 38px;
   }
+
   p.contSubPera {
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 16px !important;
+    line-height: 22px !important;
   }
+
   ul.contLst {
     margin-top: 20px;
     gap: 13px;
   }
+
   ul.contLst li p {
     font-size: 14px;
   }
+
   ul.contLst li img {
     width: 16px;
     margin-top: 5px;
   }
+
   .studyBanImg {
     width: 100% !important;
     margin-bottom: 20px;
   }
+
   .buttonGrid {
     flex-wrap: wrap;
   }
+
   .buttonGrid button {
     font-size: 14px;
   }
+
   .carsBatchCont {
     /* flex-wrap: wrap; */
     overflow: auto;
     justify-content: start;
   }
+
   .batchGrids {
     width: 100%;
     max-width: 220px;
     flex-shrink: 0;
-}
+  }
+
   .happyContent {
     /* flex-wrap: wrap; */
-    flex-direction: initial;
+    /* flex-direction: initial;
+    overflow: auto; */
     overflow: auto;
+    height: 270px;
   }
+
   .hpyGridCont {
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     flex-shrink: 0;
   }
+
   .hpyGrids {
     width: 100%;
     max-width: 330px;
   }
+
   .accrdTabs {
     flex-wrap: wrap;
   }
+
   .accrdTabs button {
     width: 100%;
     font-size: 14px;
     min-height: 40px;
   }
+
   .acrdnGridsCont {
     flex-wrap: wrap;
   }
+
   .acrdGrd {
     width: 100% !important;
   }
+
   .keelFoot p {
     padding: 0px;
   }
+
   .memLists {
     text-align: center;
   }
+
   .banImgsGrid img {
     width: 50px;
   }
+
   .banImgsGrid {
     gap: 12px;
     margin-top: 20px;
   }
+
   .serviceSlider.customGrdnGrids {
     flex-wrap: initial;
     overflow: auto;
     justify-content: unset;
     padding-bottom: 12px;
   }
+
   .serviceSlider.customGrdnGrids .srvcGrid {
     width: 100%;
     min-height: 370px;
     flex-shrink: 0;
     max-width: 240px;
-}
-.universitiesGridCont {
-  display: flex;
-  overflow: auto;
-}
+  }
 
-.unvGrdnntOuter {
-  width: 100%;
-  flex-shrink: 0;
-  max-width: 350px;
-}
+  .universitiesGridCont {
+    display: flex;
+    overflow: auto;
+    flex-wrap: wrap;
+    height: 430px;
+    padding-top: 0px;
+    margin-top: 30px;
+  }
+
+  .unvGrdnntOuter {
+    width: 100%;
+    flex-shrink: 0;
+    max-width: 350px;
+  }
+
   ul.pageRedrct li {
     position: relative;
     gap: 10px;
   }
+
   ul.pageRedrct li:before {
     content: "";
     height: 80%;
@@ -1910,139 +2185,172 @@ padding: 40px 0px;
     bottom: 0;
     margin: auto;
   }
+
   ul.pageRedrct {
     gap: 15px;
   }
+
   ul.pageRedrct li:last-child:before {
     display: none;
   }
+
   .memLists span {
     font-size: 12px;
   }
+
   .memLists p {
     font-size: 14px;
   }
+
   section.mainBannerSection {
     padding-top: 40px;
     padding-bottom: 40px;
   }
+
   .forWeb {
     display: none !important;
   }
+
   .forMobile {
     display: block !important;
   }
+
   .prcStpIn {
     padding: 12px;
   }
+
   span.stepNum {
     margin-bottom: 15px;
   }
+
   section.customer {
     padding: 40px 0px;
   }
+
   .caraCustMain {
     /* overflow: auto; */
     /* width: 100%; */
   }
+
   .carsCustmGrid {
     /* flex-shrink: 0; */
   }
+
   section.resourceSection {
     padding: 40px 0px;
   }
+
   .blogGridsSection {
     overflow: auto;
   }
+
   .blogGrid {
     flex-shrink: 0;
     width: auto;
   }
+
   .custCarusalCont {
     flex-wrap: wrap;
     padding: 0;
     background-size: contain;
-}
+  }
 
-img.quoteImg.img-fluid {
+  img.quoteImg.img-fluid {
     display: none;
-}
+  }
 
-.leftCrData {
+  .leftCrData {
     padding: 15px 10px;
     text-align: center;
-}
-.leftCrData h4{
-  color: white;
-}
+  }
 
-.caraCustMain {
+  .leftCrData h4 {
+    color: white;
+  }
+
+  .caraCustMain {
     padding: 20px 0px;
-}
+  }
 
-.carsCustmGrid {
+  .carsCustmGrid {
     margin-left: 15px;
     padding: 22px;
-}
-.carsCustmGrid p {
-  font-size: 14px;
-  line-height: 26px;
+  }
+
+  .carsCustmGrid p {
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  .carsCustmGrid .usrNames p {
+    font-size: 14px;
+  }
+
+  .usrNames h5 {
+    font-size: 18px;
+  }
+
+  .usrDtls img {
+    width: 52px;
+  }
+
+  .verticalImg {
+    display: none;
+  }
 }
 
-.carsCustmGrid .usrNames p {
-  font-size: 14px;
-}
-
-.usrNames h5 {
-  font-size: 18px;
-}
-
-.usrDtls img {
-  width: 52px;
-}
-.verticalImg{
-  display: none;
-}
-}
 @media (max-width: 400px) {
   h4.grdHdng {
     font-size: 48px;
   }
-  ul.pageRedrct li a, .keelFoot p {
+
+  ul.pageRedrct li a,
+  .keelFoot p {
     font-size: 12px;
   }
+
   h4.grdHdng {
     font-size: 48px;
   }
+
   .bannerLast p {
     font-size: 18px;
   }
+
   .storyContent h5 {
     font-size: 34px;
   }
+
   .storyContent p {
     font-size: 16px;
   }
+
   .srvcGrid h5 {
     font-size: 24px;
   }
+
   .srvcGrid {
     flex-shrink: 0;
   }
+
   .formCntnt p {
     font-size: 24px;
     line-height: 36px;
   }
+
   .prcStpIn h5 {
     font-size: 20px;
   }
+
   footer.footerMain {
     padding-top: 40px;
   }
+
   .formMain {
     flex-direction: column-reverse;
   }
-  .verticalImg{
+
+  .verticalImg {
     display: none;
   }
 }

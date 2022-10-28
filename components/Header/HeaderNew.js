@@ -35,9 +35,9 @@ const Header = ({toggleNavBar, activeNav})=>{
                                 <li onClick={()=>handleNavigation('/blogs')}>
                                     <a href="/blogs" onClick={(e)=>e.preventDefault()}>Blogs</a>
                                 </li>
-                                <li onClick={()=>handleNavigation('/blogs')}>
+                                {/* <li onClick={()=>handleNavigation('/blogs')}>
                                     <a href="/services" onClick={(e)=>e.preventDefault()}>Services</a>
-                                </li>
+                                </li> */}
                                 <li onClick={()=>handleNavigation('/blogs')}>
                                     <a href="/check-eligibility" onClick={(e)=>e.preventDefault()}>Check Eligibility</a>
                                 </li>
@@ -63,9 +63,9 @@ const Header = ({toggleNavBar, activeNav})=>{
                     <li onClick={()=>handleNavigation('/blogs')}>
                         <a href="/blogs" onClick={(e)=>e.preventDefault()}>Blogs</a>
                     </li>
-                    <li onClick={()=>handleNavigation('/resource')}>
+                    {/* <li onClick={()=>handleNavigation('/resource')}>
                         <a href="/services" onClick={(e)=>e.preventDefault()}>Services</a>
-                    </li>
+                    </li> */}
                     <li onClick={()=>handleNavigation('/resource')}>
                         <a href="/check-eligibility" onClick={(e)=>e.preventDefault()}>Check Eligibility</a>
                     </li>

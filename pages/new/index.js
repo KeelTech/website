@@ -270,10 +270,10 @@ const HomeView = () => {
                         <li><a href=""><img src="/assets/fl2.png" alt="" /></a></li>
                         <li><a href=""><img src="/assets/fl3.png" alt="" /></a></li>
                         <li><a href=""><img src="/assets/fl4.png" alt="" /></a></li>
-                        <li><a href=""><img src="/assets/fl5.png" alt="" /></a></li>
-                        <li><a href=""><img src="/assets/fl6.png" alt="" /></a></li>
-                        <li><a href=""><img src="/assets/fl7.png" alt="" /></a></li>
-                        <li><a href=""><img src="/assets/fl8.png" alt="" /></a></li>
+                        {/* <li><a href=""><img src="/assets/fl5.png" alt="" /></a></li> */}
+                        {/* <li><a href=""><img src="/assets/fl6.png" alt="" /></a></li> */}
+                        {/* <li><a href=""><img src="/assets/fl7.png" alt="" /></a></li> */}
+                        {/* <li><a href=""><img src="/assets/fl8.png" alt="" /></a></li> */}
                         <li><a href=""><img src="/assets/fl3.png" alt="" /></a></li>
                         <li><a href=""><img src="/assets/fl4.png" alt="" /></a></li>
                     </ul>

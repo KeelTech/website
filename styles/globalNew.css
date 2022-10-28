@@ -13,7 +13,7 @@ html {
   background: #ffffff;
   color: #242424;
 }
-@media (min-width: 1400px) and (min-width: 1820px) {
+@media (min-width: 1400px) and (min-width: 1620px) {
   body {
     max-width: 1600px;
     margin: auto;
@@ -137,7 +137,7 @@ ul li {
 }
 @media (min-width: 1400px) {
   .container {
-    max-width: 1370px;
+    max-width: 1280px;
   }
 }
 @media (min-width: 1400px) and (min-width: 1920px) {
@@ -1251,7 +1251,7 @@ img.sideBarLogo {
 
 
 section.followUsSection {
-  padding: 40px 0px;
+  padding: 80px 0px;
 }
 
 footer.footerMain.forContactPage .formMain {
@@ -1538,7 +1538,9 @@ button.acrdTabAct {
   box-shadow: 0px 3px 9px rgba(8, 15, 52, 0.06);
   border-radius: 10px;
   padding: 30px 23px;
-  width: calc(50% - 15px);
+  /* width: calc(50% - 15px); */
+  width: 85%;
+  margin: auto;
 }
 
 .acrdGrd h3 {
@@ -1598,21 +1600,54 @@ button.acrdTabAct {
 section.faqSection {
   padding: 80px 0px;
 }
-section.happyCustomers{
+section.happyCustomers,section.resourceSection{
   padding: 80px 0px;
 }
 .accrdTabs{
   display: none;
+}
+.careerFull{
+  background: url(/assets/bg-elements.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+.ieltsListBan{
+
+}
+ul.ieltsListBan {
+  margin: 15px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+ul.ieltsListBan li {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+/* identical to box height */
+  color: #57606A;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  text-align: left;
+}
+.customPeraAbout{
+  max-width:900px; margin: 20px auto;
 }
 /* ================= HamburgerMenu */
 @media (max-width: 767px) {
   h1.bannerHeading {
     font-size: 36px;
   }
+  .stdyBanText button{
+    margin: 10px 0px;
+  }
 .processStepGrid{
   flex-shrink: 0;
 }
-  section.studyBannerSection ,.batchesSection,section.faqSection,section.happyCustomers{
+  section.studyBannerSection ,.batchesSection,section.faqSection,section.happyCustomers,section.resourceSection,section.followUsSection{
 padding: 40px 0px;
   }
   p.bannerParaSub {

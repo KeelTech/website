@@ -108,7 +108,7 @@ const Resource = ()=>{
             </div>
         </div>
     </section>
-    <section className="resourceSection">
+    <section className="resourceSection d-none">
         <div className="container">
             <div className="resrcCont">
                 <div className="storyContent full-width">

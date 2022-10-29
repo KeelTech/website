@@ -1,3 +1,18 @@
+import { useState } from 'react';
+import { FAQ_ACCORDION } from '@/helpers/constant.js';
+
+const Accordion = ({title, value, index})=>{
+    const [active, setActive] = useState(false);
+
+    return (
+        <div className={`acrdGrd ${active?'acrdAct':''}`} key={index}>
+        <h3 onClick={()=>setActive(val=>!val)}>{title}
+            <span> <img className="img-fluid" src="/assets/acrdIco.svg" /></span>
+        </h3>
+        <p>{value}</p>
+    </div>
+    )
+}
 
 const IELTS = () => {
 
@@ -245,103 +260,12 @@ const IELTS = () => {
                             <button>Section 3</button>
                         </div>
                         <div className="acrdnGridsCont">
-                            <div className="acrdGrd acrdAct">
-                                <h3>What is Webflow and why is it the best website builder?
-                                    <span> <img className="img-fluid" src="/assets/acrdIco.svg" /></span>
-                                </h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                    laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            </div>
-                            <div className="acrdGrd">
-                                <h3>What is Webflow and why is it the best website builder?
-                                    <span> <img className="img-fluid" src="/assets/acrdIco.svg" /></span>
-                                </h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                    laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            </div>
-                            <div className="acrdGrd">
-                                <h3>What is Webflow and why is it the best website builder?
-                                    <span> <img className="img-fluid" src="/assets/acrdIco.svg" /></span>
-                                </h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                    laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            </div>
-                            <div className="acrdGrd">
-                                <h3>What is Webflow and why is it the best website builder?
-                                    <span> <img className="img-fluid" src="/assets/acrdIco.svg" /></span>
-                                </h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                    laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            </div>
-                            <div className="acrdGrd">
-                                <h3>What is Webflow and why is it the best website builder?
-                                    <span> <img className="img-fluid" src="/assets/acrdIco.svg" /></span>
-                                </h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                    laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            </div>
-                            <div className="acrdGrd">
-                                <h3>What is Webflow and why is it the best website builder?
-                                    <span> <img className="img-fluid" src="/assets/acrdIco.svg" /></span>
-                                </h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                    laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            </div>
-                            <div className="acrdGrd">
-                                <h3>What is Webflow and why is it the best website builder?
-                                    <span> <img className="img-fluid" src="/assets/acrdIco.svg" /></span>
-                                </h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                    laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            </div>
-                            <div className="acrdGrd">
-                                <h3>What is Webflow and why is it the best website builder?
-                                    <span> <img className="img-fluid" src="/assets/acrdIco.svg" /></span>
-                                </h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                    laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            </div>
-                            <div className="acrdGrd">
-                                <h3>What is Webflow and why is it the best website builder?
-                                    <span> <img className="img-fluid" src="/assets/acrdIco.svg" /></span>
-                                </h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                    laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            </div>
-                            <div className="acrdGrd">
-                                <h3>What is Webflow and why is it the best website builder?
-                                    <span> <img className="img-fluid" src="/assets/acrdIco.svg" /></span>
-                                </h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                    laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            </div>
-                            <div className="acrdGrd">
-                                <h3>What is Webflow and why is it the best website builder?
-                                    <span> <img className="img-fluid" src="/assets/acrdIco.svg" /></span>
-                                </h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                    laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            </div>
-                            <div className="acrdGrd">
-                                <h3>What is Webflow and why is it the best website builder?
-                                    <span> <img className="img-fluid" src="/assets/acrdIco.svg" /></span>
-                                </h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                    laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            </div>
-
+                            {
+                                FAQ_ACCORDION.map((val, index)=>{
+                                    const { title, value } = val;
+                                    return <Accordion title={title} value={value} index={index}/>
+                                })
+                            }
                         </div>
                     </div>
                 </div>

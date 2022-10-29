@@ -51,7 +51,7 @@ const Contact = ()=>{
                     <button className="submitBtn">Send</button>
                 </div>
             </div>
-            <div className="keelFoot">
+            {/* <div className="keelFoot">
                 <img className="img-fluid" src="/assets/Logo.svg" />
                 <ul className="pageRedrct">
                     <li><a>Home</a></li>
@@ -69,7 +69,7 @@ const Contact = ()=>{
                     <li><a><img className="img-fluid" src="/assets/link.svg" /></a></li>
                     <li><a><img className="img-fluid" src="/assets/inst.svg" /></a></li>
                 </ul>
-            </div>
+            </div> */}
         </div>
     </footer>
     </>

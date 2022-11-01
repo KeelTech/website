@@ -22,7 +22,7 @@ const SubmitCta = ({clickSubmit})=>{
     )
 }
 
-const CustomChatWidget = ()=>{
+const CustomChatWidget = ({newChat})=>{
     const [showLoader, setLoader] = useState(false);
     const [showSuccess, setSuccess] = useState(false);
     const [questionList, setQuestions] = useState([]);
@@ -155,7 +155,7 @@ const CustomChatWidget = ()=>{
         return ''
     },[selectedQuestionList])
     return(
-        <div className={container}>
+        <div className={`${container} ${newChat?'newChat':''}`}>
             {
                 showLoader && <LoadingWidget/>
             }

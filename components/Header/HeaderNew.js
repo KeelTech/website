@@ -18,8 +18,8 @@ const Header = ({toggleNavBar, activeNav})=>{
                             <input type="checkbox" onClick={toggleNavBar} className={activeNav ? 'inputChecked' : ''}/>
                             <span className="bars"></span>
                             <span className="bars"></span><span className="bars"></span>
-                            <div id="menu"><a href="/"/>
-                                <ul className="mainList">
+                            <div id="menu" onClick={toggleNavBar}><a href="/"/>
+                                <ul className="mainList" onClick={(e)=>e.stopPropagation()}>
                                 <li className="mainLogo" onClick={()=>handleNavigation('')}>
                                     <a href="" onClick={(e)=>e.preventDefault()}>
                                         <img className="sideBarLogo" alt="Logo"
@@ -38,8 +38,8 @@ const Header = ({toggleNavBar, activeNav})=>{
                                 {/* <li onClick={()=>handleNavigation('/blogs')}>
                                     <a href="/services" onClick={(e)=>e.preventDefault()}>Services</a>
                                 </li> */}
-                                <li onClick={()=>handleNavigation('/blogs')}>
-                                    <a href="/check-eligibility" onClick={(e)=>e.preventDefault()}>Check Eligibility</a>
+                                <li onClick={()=>handleNavigation('/check-eligibility')}>
+                                    <a href="/new/check-eligibility" onClick={(e)=>e.preventDefault()}>Check Eligibility</a>
                                 </li>
                                 <li onClick={()=>handleNavigation('/contact')}>
                                     <a href="/contact-us" onClick={(e)=>e.preventDefault()}>Contact</a>
@@ -66,7 +66,7 @@ const Header = ({toggleNavBar, activeNav})=>{
                     {/* <li onClick={()=>handleNavigation('/resource')}>
                         <a href="/services" onClick={(e)=>e.preventDefault()}>Services</a>
                     </li> */}
-                    <li onClick={()=>handleNavigation('/resource')}>
+                    <li onClick={()=>handleNavigation('/check-eligibility')}>
                         <a href="/check-eligibility" onClick={(e)=>e.preventDefault()}>Check Eligibility</a>
                     </li>
                     <li onClick={()=>handleNavigation('/contact')}>

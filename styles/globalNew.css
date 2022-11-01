@@ -399,7 +399,7 @@ section.services {
 
 .srvcGrid h5 {
   font-weight: 600;
-  font-size: 28px;
+  font-size: 22px;
   line-height: 35px;
   letter-spacing: -0.03em;
   color: #FFFFFF;
@@ -1509,6 +1509,7 @@ button.seeAllBtn {
   border-radius: 30px;
   width: 100%;
   max-width: 33%;
+  display: grid;
 }
 
 .hpyOuter {

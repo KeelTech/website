@@ -8,14 +8,16 @@ const metaInfo = {
     ogUrl: "https://getkeel.com/check-eligibility"
 }
 
-const Eligibility = ()=>{
+const Eligibility = () => {
 
-    return(
+    return (
         <>
-            <MetaTags metaInfo={metaInfo}/>
-            <EligibilityView/>
+            <MetaTags metaInfo={metaInfo} />
+            <div className='elgbForNew'>
+                <EligibilityView />
+            </div>
         </>
-        
+
     )
 }
 

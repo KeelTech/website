@@ -9,7 +9,7 @@ const Header = ({toggleNavBar, activeNav})=>{
     }
 
     return(
-        <header>
+        <header className='newWebHead'>
             <div className="container">
                 <div className="navBar">
                     <div className="logo">

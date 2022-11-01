@@ -164,6 +164,9 @@ header {
   top: 0;
   background: white;
 }
+.newWebHead{
+  z-index: 999;
+}
 
 .navBar {
   display: flex;
@@ -663,6 +666,7 @@ img.quoteImg.img-fluid {
 
 .blogGridsSection {
   padding: 60px 0px;
+  padding-bottom: 0px;
   display: flex;
   gap: 30px;
 }
@@ -2401,3 +2405,31 @@ div.noRevrsMob{
     display: none;
   }
 }
+
+/* ===only for checkElig */
+div.elgbForNew h2.subHeadings.mb-20 {
+  color: #262e33;
+}
+
+div.elgbForNew .nameInp input {
+  border-color: #2f7cde !important;
+}
+
+div.elgbForNew img.img-fluid.iframeImg {
+  filter: drop-shadow(2px 4px 6px black);
+}
+
+div.elgbForNew .listEmlText ul li img {
+}
+
+div.elgbForNew .nameInp svg {
+  fill: #2f7cde !important;
+}
+
+.chooseOpt button {
+  border-color: #2f7cde !important;
+  color: #2f7cde !important;
+}
+
+.msg-img {}
+/* ===only for checkElig */

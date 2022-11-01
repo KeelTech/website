@@ -160,13 +160,13 @@ const HomeView = () => {
                             <h4>Thousands of Happy Customers across the globe!</h4>
                         </div>
                         <div className="caraCustMain">
-                            <Swiper
+                            {/* <Swiper
                                 spaceBetween={15}
                                 slidesPerView={1.2}
                                 onSlideChange={() => console.log('slide change')}
                                 onSwiper={(swiper) => console.log(swiper)}
-                            >
-                                <SwiperSlide>
+                            > */}
+                                {/* <SwiperSlide> */}
                                     <div className="carsCustmGrid">
                                         <div className="usrDtls">
                                             <img className="img-fluid" src="/assets/pep.png" />
@@ -179,8 +179,8 @@ const HomeView = () => {
                                             vel. Sunt est qui ab non dolores repellat rem impedit dolores. Ut ea rerum cum eum. Alias
                                             dolores tempore illo accusantium est et voluptatem voluptas.</p>
                                     </div>
-                                </SwiperSlide>
-                                <SwiperSlide>
+                                {/* </SwiperSlide> */}
+                                {/* <SwiperSlide> */}
                                     <div className="carsCustmGrid">
                                         <div className="usrDtls">
                                             <img className="img-fluid" src="/assets/pep.png" />
@@ -193,8 +193,8 @@ const HomeView = () => {
                                             vel. Sunt est qui ab non dolores repellat rem impedit dolores. Ut ea rerum cum eum. Alias
                                             dolores tempore illo accusantium est et voluptatem voluptas.</p>
                                     </div>
-                                </SwiperSlide>
-                                <SwiperSlide>
+                                {/* </SwiperSlide> */}
+                                {/* <SwiperSlide> */}
                                     <div className="carsCustmGrid">
                                         <div className="usrDtls">
                                             <img className="img-fluid" src="/assets/pep.png" />
@@ -207,9 +207,9 @@ const HomeView = () => {
                                             vel. Sunt est qui ab non dolores repellat rem impedit dolores. Ut ea rerum cum eum. Alias
                                             dolores tempore illo accusantium est et voluptatem voluptas.</p>
                                     </div>
-                                </SwiperSlide>
+                                {/* </SwiperSlide> */}
 
-                            </Swiper>
+                            {/* </Swiper> */}
                         </div>
                     </div>
                 </div>

@@ -13,9 +13,9 @@ const HomeView = () => {
                 <div className="container">
                     <div className="mainBanner">
                         <div className="bannerTopHeading">
-                            <h1 className="bannerHeading">Immigrate <span>to Study|</span></h1>
-                            <p className="bannerParaSub">We are world’s no.1 Tech enabled and customer friendly study abroad and
-                                migration Consulatnts</p>
+                            <h1 className="bannerHeading">Move to the country of your dreams to <span>Study|</span></h1>
+                            {/* Study | Settle | Work  */}
+                            <p className="bannerParaSub">We are India’s largest tech-enabled study abroad platform supported by an army of experts</p>
                             <div className="bannerButton">
                                 <button onClick={()=>router.push(`/new/studyAbroad`)}>Study Abroad</button>
                                 <button onClick={()=>router.push(`/new/settleAbroad`)}>Settle Abroad</button>
@@ -25,7 +25,7 @@ const HomeView = () => {
                                 <img className="img-fluid forMobile" src="/assets/Hero-section.png" />
                             </div>
                             <div className="bannerLast">
-                                <p>Our students finished University to work at global offices of</p>
+                                <p>Our students finished Universities and are drawing hefty salaries at global offices of </p>
                                 <div className="banImgsGrid">
                                     <img src="/assets/ms.png" alt="" className="img-fluid" />
                                     <img src="/assets/uber.png" alt="" className="img-fluid" />
@@ -49,10 +49,14 @@ const HomeView = () => {
                         <div className="storyContent pl-30">
                             <h4 className="grdHdng">Our Story</h4>
                             <h5>Here’s why we <span>Exist</span></h5>
-                            <p>We believe with right exposure you can do wonders for yourself and your family hence we help you
-                                make choices that resonate with your aspirations and dreams. Once that happens your chances of
-                                realising your potential increases exponentially. You control and determine your destiny, not
-                                your birthplace. You become a #global-citizen.</p>
+                            <p>We believe that grades aren’t the true representation of what you are capable of achieving. With the right guidance and a nudge in the right direction, you can reach up to your full potential and become a part of an elite global group of future leaders.  
+                            <br/>
+                            <br/>
+                            We exist to help students like you around the world pursue the career of their interest, study at their dream universities and settle in the country of their choice. We undertake this journey with you so that you achieve your dreams for yourself and your family.
+                            <br/>
+                            <br/>
+                            You can be whoever you want in this world, start your journey today!
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -61,24 +65,47 @@ const HomeView = () => {
                 <div className="container">
                     <div className="servicesCont">
                         <div className="storyContent customService">
-                            <h4 className="grdHdng">Services</h4>
-                            <h5>Our <span>Services</span></h5>
-                            <p>Decrease the burden of managing active work in issues and pull requests by providing a separate
-                                space</p>
+                            <h4 className="grdHdng">Offerings</h4>
+                            <h5>What do you <span>want to do?</span></h5>
+                            <p>Our team at Keel is obsessed with making your journey a smooth ride. We are committed to be there with you every step of the way.</p>
                         </div>
                         <div className="serviceSlider">
                             <div className="srvcGrid">
-                                <h5>Pre Immigration</h5>
+                                <h5>Discovery call</h5>
                                 <button>Know more<img className="img-fluid" src="/assets/arrow.svg" /></button>
                             </div>
                             <div className="srvcGrid grdntTwo">
-                                <h5>Immigration</h5>
+                                <h5>Career counselling</h5>
                                 <button>Know more<img className="img-fluid" src="/assets/arrow.svg" /></button>
                             </div>
                             <div className="srvcGrid gdntThird">
-                                <h5>Post Immigration</h5>
+                                <h5>University/college shortlisting</h5>
                                 <button>Know more<img className="img-fluid" src="/assets/arrow.svg" /></button>
                             </div>
+                            {/* <div className="srvcGrid gdntThird">
+                                <h5>Statement of Purpose (SOP)</h5>
+                                <button>Know more<img className="img-fluid" src="/assets/arrow.svg" /></button>
+                            </div>
+                            <div className="srvcGrid gdntThird">
+                                <h5>Letter of Recommendation (LOR)</h5>
+                                <button>Know more<img className="img-fluid" src="/assets/arrow.svg" /></button>
+                            </div>
+                            <div className="srvcGrid gdntThird">
+                                <h5>Scholarship application</h5>
+                                <button>Know more<img className="img-fluid" src="/assets/arrow.svg" /></button>
+                            </div>
+                            <div className="srvcGrid gdntThird">
+                                <h5>Test preparation </h5>
+                                <button>Know more<img className="img-fluid" src="/assets/arrow.svg" /></button>
+                            </div>
+                            <div className="srvcGrid gdntThird">
+                                <h5>Study visa</h5>
+                                <button>Know more<img className="img-fluid" src="/assets/arrow.svg" /></button>
+                            </div>
+                            <div className="srvcGrid gdntThird">
+                                <h5>Financing and more</h5>
+                                <button>Know more<img className="img-fluid" src="/assets/arrow.svg" /></button>
+                            </div> */}
                         </div>
                     </div>
                 </div>
@@ -90,8 +117,7 @@ const HomeView = () => {
                             <div className="storyContent full-width">
                                 <h4 className="grdHdng">Process</h4>
                                 <h5>The <span>Process</span></h5>
-                                <p>Decrease the burden of managing active work in issues and pull <br />requests by providing a
-                                    separate space</p>
+                                <p>“A journey of a thousand miles begins with a single step.” - Lao Tzu</p>
                             </div>
                         </div>
                         <div className='verticalMainCont'>
@@ -108,9 +134,8 @@ const HomeView = () => {
                                             <div className="processStepGrid">
                                                 <div className="prcStpIn">
                                                     <span className="stepNum">Step 1</span>
-                                                    <h5>Get in touch with Consultant</h5>
-                                                    <p>Decrease the burden of managing active work in issues and pull requests by providing a
-                                                        separate space decrease the burden of managing active work in issues and pull requests </p>
+                                                    <h5>Research and Discovery</h5>
+                                                    <p>Explore your options: In terms of right courses, Universities, country and so on.</p>
                                                 </div>
                                             </div>
                                         </SwiperSlide>
@@ -118,9 +143,8 @@ const HomeView = () => {
                                             <div className="processStepGrid">
                                                 <div className="prcStpIn">
                                                     <span className="stepNum">Step 2</span>
-                                                    <h5>Get in touch with Consultant</h5>
-                                                    <p>Decrease the burden of managing active work in issues and pull requests by providing a
-                                                        separate space decrease the burden of managing active work in issues and pull requests </p>
+                                                    <h5>Career guidance from the top 1%</h5>
+                                                    <p>Choose your path: After talking to mentors from Google, Uber, Microsoft and more.</p>
                                                 </div>
                                             </div>
                                         </SwiperSlide>
@@ -128,9 +152,17 @@ const HomeView = () => {
                                             <div className="processStepGrid">
                                                 <div className="prcStpIn">
                                                     <span className="stepNum">Step 3</span>
-                                                    <h5>Get in touch with Consultant</h5>
-                                                    <p>Decrease the burden of managing active work in issues and pull requests by providing a
-                                                        separate space decrease the burden of managing active work in issues and pull requests </p>
+                                                    <h5>Take all the right steps </h5>
+                                                    <p>Start your Journey: By creating a profile that showcases your best self.</p>
+                                                </div>
+                                            </div>
+                                        </SwiperSlide>
+                                        <SwiperSlide>
+                                            <div className="processStepGrid">
+                                                <div className="prcStpIn">
+                                                    <span className="stepNum">Step 4</span>
+                                                    <h5>Test preparations and submitting the application</h5>
+                                                    <p>Say hi to your dream life: By getting your desired scores and filing an application that stands out.</p>
                                                 </div>
                                             </div>
                                         </SwiperSlide>
@@ -150,8 +182,7 @@ const HomeView = () => {
                         <div className="storyContent full-width">
                             <h4 className="grdHdng">Customers</h4>
                             <h5>Happy <span>Keelers</span></h5>
-                            <p>Decrease the burden of managing active work in issues and pull requests <br />by providing a
-                                separate space</p>
+                            <p>Our team at Keel works day and night to make our students’ dreams come true. Hear what they are saying about us.</p>
                         </div>
                     </div>
                     <div className="custCarusalCont">
@@ -171,13 +202,11 @@ const HomeView = () => {
                                         <div className="usrDtls">
                                             <img className="img-fluid" src="/assets/pep.png" />
                                             <div className="usrNames">
-                                                <h5>Esther Hills</h5>
-                                                <p>Lead Intranet Technician</p>
+                                                <h5>Sheetal Mehta</h5>
+                                                <p>Migrated to Canada</p>
                                             </div>
                                         </div>
-                                        <p>Omnis totam molestiae delectus nemo alias nesciunt harum et. Nobis dolorum excepturi quod
-                                            vel. Sunt est qui ab non dolores repellat rem impedit dolores. Ut ea rerum cum eum. Alias
-                                            dolores tempore illo accusantium est et voluptatem voluptas.</p>
+                                        <p>It was always my dream to study abroad and build a life there. A friend recommended me to Keel and it was a smooth sail from there. They made the whole process fairly simple and transparent for me. Thank you team Keel.</p>
                                     </div>
                                 {/* </SwiperSlide> */}
                                 {/* <SwiperSlide> */}
@@ -185,13 +214,11 @@ const HomeView = () => {
                                         <div className="usrDtls">
                                             <img className="img-fluid" src="/assets/pep.png" />
                                             <div className="usrNames">
-                                                <h5>Esther Hills</h5>
-                                                <p>Lead Intranet Technician</p>
+                                                <h5>Rajat Gupta</h5>
+                                                <p>Migrated to Australia</p>
                                             </div>
                                         </div>
-                                        <p>Omnis totam molestiae delectus nemo alias nesciunt harum et. Nobis dolorum excepturi quod
-                                            vel. Sunt est qui ab non dolores repellat rem impedit dolores. Ut ea rerum cum eum. Alias
-                                            dolores tempore illo accusantium est et voluptatem voluptas.</p>
+                                        <p> My study abroad application was rejected twice and I just could not afford another rejection. Just then, I came across Keel through a friend and they helped me with each and every step. I have finally got admission in my dream university. Sky's the limit for me now. </p>
                                     </div>
                                 {/* </SwiperSlide> */}
                                 {/* <SwiperSlide> */}
@@ -199,13 +226,11 @@ const HomeView = () => {
                                         <div className="usrDtls">
                                             <img className="img-fluid" src="/assets/pep.png" />
                                             <div className="usrNames">
-                                                <h5>Esther Hills</h5>
-                                                <p>Lead Intranet Technician</p>
+                                                <h5>Ruchi Parmar</h5>
+                                                <p>Migrated to UK</p>
                                             </div>
                                         </div>
-                                        <p>Omnis totam molestiae delectus nemo alias nesciunt harum et. Nobis dolorum excepturi quod
-                                            vel. Sunt est qui ab non dolores repellat rem impedit dolores. Ut ea rerum cum eum. Alias
-                                            dolores tempore illo accusantium est et voluptatem voluptas.</p>
+                                        <p>After my +2, I was so confused about everything. I knew I wanted to study abroad but there were just too many questions. Which course? Which country? Which University?  Keel helped me with all my questions and also helped me make fast decisions. Thank you team Keel for giving me the right kickstart. </p>
                                     </div>
                                 {/* </SwiperSlide> */}
 

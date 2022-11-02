@@ -65,8 +65,7 @@ const Footer = ()=>{
                     <a href="/contact-us" onClick={(e)=>e.preventDefault()}>About Us</a>
                 </li>
                 </ul>
-                <p>Lörem ipsum od ohet dilogi. Bell trabel, samuligt, ohöbel utom diska. Jinesade bel när feras redorade
-                    i belogi. FAR paratyp i muvåning, och pesask vyfisat. Viktiga poddradio har un mad och inde. </p>
+                <p>Results that speak loud and clear. Join the league of the top 1% achievers in the world!</p>
                 <ul className="footSocialLIst">
                     <li><a><img className="img-fluid" src="/assets/face.svg" /></a></li>
                     <li><a><img className="img-fluid" src="/assets/twt.svg" /></a></li>

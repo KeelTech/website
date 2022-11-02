@@ -430,9 +430,7 @@ const SettleAbroad = () => {
                                 <h3>When should I start my application?
                                     <span> <img className="img-fluid" src="/assets/acrdIco.svg" /></span>
                                 </h3>
-                                <p>The official website of the Government of Canada does not specify any age limit to apply for Canada PR. However, age can play an important role in your overall CRS score. Also, after a specific age, applicants find it tougher to meet the criteria for 67 points. This is because they will not obtain any points for their age.
-
-The recommended age limit to apply for Canada PR is 46 years because applicants above this age do not get any CRS points for this factor.</p>
+                                <p>The official website of the Government of Canada does not specify any age limit to apply for Canada PR. However, age can play an important role in your overall CRS score. Also, after a specific age, applicants find it tougher to meet the criteria for 67 points. This is because they will not obtain any points for their age. The recommended age limit to apply for Canada PR is 46 years because applicants above this age do not get any CRS points for this factor.</p>
                             </div>
                             <div className="acrdGrd">
                                 <h3>Do you provide post migration support?
@@ -447,15 +445,16 @@ The recommended age limit to apply for Canada PR is 46 years because applicants 
                                 <p>Also known as ‘paradise for immigrants,' Canada's immigrant friendly policy makes it a lucrative place to live and settle, especially with a family. Every year, Canada surprises the world by increasing its annual immigrant intake. 
 
                                 Benefits of Canada PR:
-
-                                - Right to Live and Work in Canada
-                                - Extend or renew your visa after 5 years
-                                - Allows you to bring your family along!
-                                - Free Education for children
-                                - Universal Healthcare
-                                - Road to Canadian Citizenship
-                                - Freedom to Start a Business
-                                - Freedom to move
+                                <ul>
+                                    <li>Right to Live and Work in Canada</li>
+                                    <li>Extend or renew your visa after 5 years</li>
+                                    <li>Allows you to bring your family along!</li>
+                                    <li>Free Education for children</li>
+                                    <li>Universal Healthcare</li>
+                                    <li>Road to Canadian Citizenship</li>
+                                    <li>Freedom to Start a Business</li>
+                                    <li>Freedom to move</li>
+                                </ul>
 
                                 and many more.</p>
                             </div>

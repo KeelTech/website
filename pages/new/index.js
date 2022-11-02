@@ -82,30 +82,6 @@ const HomeView = () => {
                                 <h5>University/college shortlisting</h5>
                                 <button>Know more<img className="img-fluid" src="/assets/arrow.svg" /></button>
                             </div>
-                            {/* <div className="srvcGrid gdntThird">
-                                <h5>Statement of Purpose (SOP)</h5>
-                                <button>Know more<img className="img-fluid" src="/assets/arrow.svg" /></button>
-                            </div>
-                            <div className="srvcGrid gdntThird">
-                                <h5>Letter of Recommendation (LOR)</h5>
-                                <button>Know more<img className="img-fluid" src="/assets/arrow.svg" /></button>
-                            </div>
-                            <div className="srvcGrid gdntThird">
-                                <h5>Scholarship application</h5>
-                                <button>Know more<img className="img-fluid" src="/assets/arrow.svg" /></button>
-                            </div>
-                            <div className="srvcGrid gdntThird">
-                                <h5>Test preparation </h5>
-                                <button>Know more<img className="img-fluid" src="/assets/arrow.svg" /></button>
-                            </div>
-                            <div className="srvcGrid gdntThird">
-                                <h5>Study visa</h5>
-                                <button>Know more<img className="img-fluid" src="/assets/arrow.svg" /></button>
-                            </div>
-                            <div className="srvcGrid gdntThird">
-                                <h5>Financing and more</h5>
-                                <button>Know more<img className="img-fluid" src="/assets/arrow.svg" /></button>
-                            </div> */}
                         </div>
                     </div>
                 </div>

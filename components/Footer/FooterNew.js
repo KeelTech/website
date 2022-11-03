@@ -52,7 +52,7 @@ const Footer = ()=>{
                 {/* <li onClick={()=>handleNavigation('/resource')}>
                     <a href="/services" onClick={(e)=>e.preventDefault()}>Services</a>
                 </li> */}
-                <li onClick={()=>handleNavigation('/resource')}>
+                <li onClick={()=>handleNavigation('/check-eligibility')}>
                     <a href="/check-eligibility" onClick={(e)=>e.preventDefault()}>Check Eligibility</a>
                 </li>
                 <li onClick={()=>handleNavigation('/contact')}>

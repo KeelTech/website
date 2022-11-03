@@ -1,6 +1,9 @@
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
+import Accordian from '@/components/Accordian/newAccordian';
+import { StudyAbroadAccordianData } from '@/helpers/constant.js'
+
 // Import Swiper styles
 import 'swiper/css';
 const StudyAbroad = () => {
@@ -402,52 +405,7 @@ const StudyAbroad = () => {
                             <button>Section 2</button>
                             <button>Section 3</button>
                         </div>
-                        <div className="acrdnGridsCont">
-                            <div className="acrdGrd acrdAct">
-                                <h3>Why Keel?
-                                    <span> <img className="img-fluid" src="/assets/acrdIco.svg" /></span>
-                                </h3>
-                                <p>Keel is India’s largest tech-enabled study abroad platform supported by top 0.01% experts in the world. We help students around the globe realise their true potential by facilitating them to pursue the career of their dreams, study at their dream universities and settle in the country of their choice. </p>
-                            </div>
-                            <div className="acrdGrd">
-                                <h3>Can you know me of a few organisations I can reach out to for evaluation of my transcripts and academic credentials?
-                                    <span> <img className="img-fluid" src="/assets/acrdIco.svg" /></span>
-                                </h3>
-                                <p>There are number of organisations that help with the same and our customer success manager can guide you through the process. If a University has a particular organisation to evaluate and convert the GPA, they usually provide you the list themselves.</p>
-                            </div>
-                            <div className="acrdGrd">
-                                <h3>Do you provide post study abroad support?
-                                    <span> <img className="img-fluid" src="/assets/acrdIco.svg" /></span>
-                                </h3>
-                                <p>Yes, we provide post study abroad support. We also post resources in the form of blogs and videos that will help you kickstart your study abroad journey the right way.</p>
-                            </div>
-                            <div className="acrdGrd">
-                                <h3>What are the benefits of study abroad?
-                                    <span> <img className="img-fluid" src="/assets/acrdIco.svg" /></span>
-                                </h3>
-                                <p>Ten benefits to studying abroad
-
-                                    <ol>
-                                        <li>See the World and truly become a global citizen with a better future for the upcoming generations.</li>
-                                        <li>World-class education with a diverse community of people.</li>
-                                        <li>Take in a New Culture.</li>
-                                        <li>Hone Your Language Skills.</li>
-                                        <li>Lucrative Career Opportunities from top companies in the world.</li>
-                                        <li>Find New Interests.</li>
-                                        <li>Make Lifelong Friends.</li>
-                                        <li>Personal Development.</li>
-                                        <li>Be a part of global alumni network.</li>
-                                        <li>Life experiences that can help you in your personal and professional growth.</li>
-                                    </ol></p>
-                            </div>
-                            <div className="acrdGrd">
-                                <h3>Why do I need application assistance?
-                                    <span> <img className="img-fluid" src="/assets/acrdIco.svg" /></span>
-                                </h3>
-                                <p>The foremost thing to know before deciding to go for professional help is that your dream university might not appreciate a sloppily filled application with avoidable mistakes. Such small things could not only lead to rejection but also can lower your chances of fulfilling your study abroad dream. Keel has a team of experts who have years of experience in filing study abroad application. Our team walks you through the entire process and review everything minutely to make sure there is no error. </p>
-                            </div>
-
-                        </div>
+                        <Accordian data={StudyAbroadAccordianData}/>
                     </div>
                 </div>
             </section>

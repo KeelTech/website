@@ -1,6 +1,9 @@
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
+import Accordian from '@/components/Accordian/newAccordian';
+import { SettleAbroadAccordianData } from '@/helpers/constant.js'
+
 // Import Swiper styles
 import 'swiper/css';
 const SettleAbroad = () => {
@@ -413,60 +416,7 @@ const SettleAbroad = () => {
                         <h4 className="grdHdng">FAQ</h4>
                         <h5>We are happy to <span>Help</span></h5>
                     </div>
-                    <div className="accordionCont">
-                        <div className="accrdTabs">
-                            <button className="acrdTabAct">Section 1</button>
-                            <button>Section 2</button>
-                            <button>Section 3</button>
-                        </div>
-                        <div className="acrdnGridsCont">
-                            <div className="acrdGrd acrdAct">
-                                <h3>Why keel?
-                                    <span> <img className="img-fluid" src="/assets/acrdIco.svg" /></span>
-                                </h3>
-                                <p>Keel is India’s only immigration tech company that provides Licensed Canadian Immigration consultants to help you file your Canadian PR application in a transparent, quick and hassle-free manner. Keel is working towards creating a 360 degree platform for you where you get everything Canada related at one place that is from preparing for IELTS to finding a job once you settle in Canada.</p>
-                            </div>
-                            <div className="acrdGrd">
-                                <h3>When should I start my application?
-                                    <span> <img className="img-fluid" src="/assets/acrdIco.svg" /></span>
-                                </h3>
-                                <p>The official website of the Government of Canada does not specify any age limit to apply for Canada PR. However, age can play an important role in your overall CRS score. Also, after a specific age, applicants find it tougher to meet the criteria for 67 points. This is because they will not obtain any points for their age. The recommended age limit to apply for Canada PR is 46 years because applicants above this age do not get any CRS points for this factor.</p>
-                            </div>
-                            <div className="acrdGrd">
-                                <h3>Do you provide post migration support?
-                                    <span> <img className="img-fluid" src="/assets/acrdIco.svg" /></span>
-                                </h3>
-                                <p>Yes, we provide post migrations support. We also post resources in the form of blogs and videos that will help you kickstart your career in Canada the right way.</p>
-                            </div>
-                            <div className="acrdGrd">
-                                <h3>What are the benefits of a PR?
-                                    <span> <img className="img-fluid" src="/assets/acrdIco.svg" /></span>
-                                </h3>
-                                <p>Also known as ‘paradise for immigrants,' Canada's immigrant friendly policy makes it a lucrative place to live and settle, especially with a family. Every year, Canada surprises the world by increasing its annual immigrant intake. 
-
-                                Benefits of Canada PR:
-                                <ul>
-                                    <li>Right to Live and Work in Canada</li>
-                                    <li>Extend or renew your visa after 5 years</li>
-                                    <li>Allows you to bring your family along!</li>
-                                    <li>Free Education for children</li>
-                                    <li>Universal Healthcare</li>
-                                    <li>Road to Canadian Citizenship</li>
-                                    <li>Freedom to Start a Business</li>
-                                    <li>Freedom to move</li>
-                                </ul>
-
-                                and many more.</p>
-                            </div>
-                            <div className="acrdGrd">
-                                <h3>Can you get me a job?
-                                    <span> <img className="img-fluid" src="/assets/acrdIco.svg" /></span>
-                                </h3>
-                                <p>No, we don’t provide Overseas Jobs via our panel. We help you kickstart your career by providing valuable resources and assistance in Resume and LinkedIn profile building. We also provide you a ready-to-help community that can help you get a job through a very powerful mode - REFERRALS.</p>
-                            </div>
-
-                        </div>
-                    </div>
+                    <Accordian data={SettleAbroadAccordianData}/>
                 </div>
             </section>
         </>

@@ -1541,14 +1541,12 @@ button.seeAllBtn {
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-  /* identical to box height, or 125% */
   text-transform: capitalize;
   color: #24292F;
 }
 
 .hpLft button {
   background: linear-gradient(90deg, #C18BBD 1.59%, #2F7CDE 84.61%);
-  /* background: linear-gradient(90deg, #5e98e1 1.59%, #2F7CDE 84.61%); */
   opacity: 0.76;
   border-radius: 4px;
   color: white;

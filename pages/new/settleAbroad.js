@@ -37,7 +37,7 @@ const SettleAbroad = () => {
                     </div>
                 </div>
             </section>
-            <section className="universitiesSection">
+            <section className="universitiesSection d-none">
                 <div className="container">
                     <div className="universitiesCont">
                         <div className="storyContent full-width">

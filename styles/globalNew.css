@@ -248,7 +248,8 @@ p.bannerParaSub {
   color: white;
   font-size: 16px;
   font-weight: 400;
-  background: linear-gradient(90deg, #45BFA2 0%, #7FC8BB 99.79%), linear-gradient(270deg, #45A9BF 0.21%, #93B6D6 100%), linear-gradient(90deg, #C18BBD 1.59%, #2F7CDE 84.61%);
+  /* background: linear-gradient(90deg, #45BFA2 0%, #7FC8BB 99.79%), linear-gradient(270deg, #45A9BF 0.21%, #93B6D6 100%), linear-gradient(90deg, #C18BBD 1.59%, #2F7CDE 84.61%); */
+  background: linear-gradient(90deg, #5e98e1 1.59%, #2F7CDE 84.61%);
 }
 
 .bannerMidImg {
@@ -934,6 +935,7 @@ button.batchActBtn {
 
 .batchInner button {
   background: linear-gradient(90deg, #C18BBD 1.59%, #2F7CDE 84.61%);
+  background: linear-gradient(90deg, #5e98e1 1.59%, #2F7CDE 84.61%);
   border-radius: 6px;
   color: white;
   padding: 2px 10px;
@@ -1022,6 +1024,7 @@ section.careerFull {
 
 .crerGrid button {
   background: linear-gradient(90deg, #C18BBD 1.59%, #2F7CDE 84.61%);
+  background: linear-gradient(90deg, #5e98e1 1.59%, #2F7CDE 84.61%);
   border-radius: 8px;
   color: white;
   border: none;
@@ -1366,6 +1369,7 @@ section.studyBannerSection {
 
 .stdyBanText button {
   background: linear-gradient(90deg, #C18BBD 1.59%, #2F7CDE 84.61%);
+  background: linear-gradient(90deg, #5e98e1 1.59%, #2F7CDE 84.61%);
   border-radius: 8px;
   border: none;
   color: white;
@@ -1544,6 +1548,7 @@ button.seeAllBtn {
 
 .hpLft button {
   background: linear-gradient(90deg, #C18BBD 1.59%, #2F7CDE 84.61%);
+  /* background: linear-gradient(90deg, #5e98e1 1.59%, #2F7CDE 84.61%); */
   opacity: 0.76;
   border-radius: 4px;
   color: white;
@@ -1943,10 +1948,13 @@ div.noRevrsMob{
 
   .serviceSlider {
     width: 100%;
-    flex-wrap: wrap;
-    justify-content: center;
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    overflow: auto;
   }
-
+.srvcGrid{
+  flex-shrink: 0;
+}
   section.outStory {
     padding: 40px 0px;
   }

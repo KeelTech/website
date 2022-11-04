@@ -290,10 +290,10 @@ const StudyAbroad = () => {
                             <div className="hpyGrids">
                                 <div className="hpyOuter">
                                     <div className="hpyInr">
-                                        <p>We believe with right exposure you can do wonders for yourself and your family</p>
+                                        <p>It was always my dream to study abroad and build a life there. A friend recommended me to Keel and it was a smooth sail from there. They made the whole process fairly simple and transparent for me. Thank you team Keel. </p>
                                         <div className="hpyFoot">
                                             <div className="hpLft">
-                                                <h5>Shubh Wadekar</h5>
+                                                <h5>Sheetal Mehta</h5>
                                                 <button>Studying in UK</button>
                                             </div>
                                             <img className="img-fluid hpyRht" src="/assets/hpy.svg" />
@@ -304,55 +304,11 @@ const StudyAbroad = () => {
                             <div className="hpyGrids">
                                 <div className="hpyOuter">
                                     <div className="hpyInr">
-                                        <p>We believe with right exposure you can do wonders for yourself and your family</p>
+                                        <p> My study abroad application was rejected twice and I just could not afford another rejection. Just then, I came across Keel through a friend and they helped me with each and every step. I have finally got admission in my dream university. Sky's the limit for me now. </p>
                                         <div className="hpyFoot">
                                             <div className="hpLft">
-                                                <h5>Shubh Wadekar</h5>
-                                                <button>Studying in UK</button>
-                                            </div>
-                                            <img className="img-fluid hpyRht" src="/assets/hpy.svg" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="hpyGridCont">
-                            <div className="hpyGrids">
-                                <div className="hpyOuter">
-                                    <div className="hpyInr">
-                                        <p>We believe with right exposure you can do wonders for yourself and your family</p>
-                                        <div className="hpyFoot">
-                                            <div className="hpLft">
-                                                <h5>Shubh Wadekar</h5>
-                                                <button>Studying in UK</button>
-                                            </div>
-                                            <img className="img-fluid hpyRht" src="/assets/hpy.svg" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="hpyGrids">
-                                <div className="hpyOuter">
-                                    <div className="hpyInr">
-                                        <p>We believe with right exposure you can do wonders for yourself and your family</p>
-                                        <div className="hpyFoot">
-                                            <div className="hpLft">
-                                                <h5>Shubh Wadekar</h5>
-                                                <button>Studying in UK</button>
-                                            </div>
-                                            <img className="img-fluid hpyRht" src="/assets/hpy.svg" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="hpyGrids">
-                                <div className="hpyOuter">
-                                    <div className="hpyInr">
-                                        <p>We believe with right exposure you can do wonders for yourself and your family</p>
-                                        <div className="hpyFoot">
-                                            <div className="hpLft">
-                                                <h5>Shubh Wadekar</h5>
-                                                <button>Studying in UK</button>
+                                                <h5>Rajat Gupta</h5>
+                                                <button>Studying in USA</button>
                                             </div>
                                             <img className="img-fluid hpyRht" src="/assets/hpy.svg" />
                                         </div>
@@ -364,11 +320,11 @@ const StudyAbroad = () => {
                             <div className="hpyGrids">
                                 <div className="hpyOuter">
                                     <div className="hpyInr">
-                                        <p>We believe with right exposure you can do wonders for yourself and your family</p>
+                                        <p> After my +2, I was so confused about everything. I knew I wanted to study abroad but there were just too many questions. Which course? Which country? Which University?  Keel helped me with all my questions and also helped me make fast decisions. Thank you team Keel for giving me the right kickstart. </p>
                                         <div className="hpyFoot">
                                             <div className="hpLft">
-                                                <h5>Shubh Wadekar</h5>
-                                                <button>Studying in UK</button>
+                                                <h5>Ruchi Parmar</h5>
+                                                <button>Studying in Canada</button>
                                             </div>
                                             <img className="img-fluid hpyRht" src="/assets/hpy.svg" />
                                         </div>
@@ -378,11 +334,57 @@ const StudyAbroad = () => {
                             <div className="hpyGrids">
                                 <div className="hpyOuter">
                                     <div className="hpyInr">
-                                        <p>We believe with right exposure you can do wonders for yourself and your family</p>
+                                        <p>The foremost question I had with Keel was, “I have just 2 weeks. Will you be able to pull it off?” They smiled and said, “Give us a chance!” And  I can’t be more thrilled with the way they handled my study abroad application. Thank you team Keel for all the help. </p>
+                                        <div className="hpyFoot">
+                                            <div className="hpLft">
+                                                <h5>Luv Gupta</h5>
+                                                <button>Studying in Italy</button>
+                                            </div>
+                                            <img className="img-fluid hpyRht" src="/assets/hpy.svg" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="hpyGrids">
+                                <div className="hpyOuter">
+                                    <div className="hpyInr">
+                                        <p>I have been postponing my study abroad  dream for the longest time. 
+                                        There never was enough time to prepare for IELTS, research about the universities and really make it happen. Entered Keel (they were recommended by a  friend of course). In my first call only, I knew I had found the right people to help me fulfil my dream of settling abroad. Thank you team Keel for helping me every step of the way.
+                                        </p>
+                                        <div className="hpyFoot">
+                                            <div className="hpLft">
+                                                <h5>Luveen Mishra</h5>
+                                                <button>Studying in Japan</button>
+                                            </div>
+                                            <img className="img-fluid hpyRht" src="/assets/hpy.svg" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="hpyGridCont">
+                            <div className="hpyGrids">
+                                <div className="hpyOuter">
+                                    <div className="hpyInr">
+                                        <p>The counselors at Keel are highly trained and professional. I got the best advice in terms of Universities. I was so overwhelmed with all the options and Keel helped me every step of the way. </p>
+                                        <div className="hpyFoot">
+                                            <div className="hpLft">
+                                                <h5>Nitish Jha</h5>
+                                                <button>Studying in Australia</button>
+                                            </div>
+                                            <img className="img-fluid hpyRht" src="/assets/hpy.svg" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="hpyGrids">
+                                <div className="hpyOuter">
+                                    <div className="hpyInr">
+                                        <p>Keel has helped me with all the study abroad process. They helped me file the application, prepare for IELTS and create a profile. I am now waiting for the admit letter. Thank you team Keel!</p>
                                         <div className="hpyFoot">
                                             <div className="hpLft">
                                                 <h5>Shubh Wadekar</h5>
-                                                <button>Studying in UK</button>
+                                                <button>Studying in Germany</button>
                                             </div>
                                             <img className="img-fluid hpyRht" src="/assets/hpy.svg" />
                                         </div>

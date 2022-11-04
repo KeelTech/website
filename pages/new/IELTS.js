@@ -132,11 +132,11 @@ const IELTS = () => {
                             <div className="hpyGrids">
                                 <div className="hpyOuter">
                                     <div className="hpyInr">
-                                        <p>We believe with right exposure you can do wonders for yourself and your family</p>
+                                        <p>Hi team Keel! I'm really happy with the way they are thoroughly covering the basics of each section and then moving on to rigorous practice sessions. The doubt resolving sessions are especially helping me get better clearance. I am confident, I am going to get a good score. </p>
                                         <div className="hpyFoot">
                                             <div className="hpLft">
-                                                <h5>Shubh Wadekar</h5>
-                                                <button>Studying in UK</button>
+                                                <h5>Deep Saxena</h5>
+                                                <button>Scored 8,8,7,7</button>
                                             </div>
                                             <img className="img-fluid hpyRht" src="/assets/hpy.svg" />
                                         </div>
@@ -146,55 +146,11 @@ const IELTS = () => {
                             <div className="hpyGrids">
                                 <div className="hpyOuter">
                                     <div className="hpyInr">
-                                        <p>We believe with right exposure you can do wonders for yourself and your family</p>
+                                        <p>My experience with Keel has been great! The live sessions along with session recordings,  mock tests, and the practice material are well curated suited to each students’  needs. I loved the fact that they offered to provide a 1:1 session for the areas I need extra work on. I recently gave the test and got 8,8,7,7. Thank you team Keel for all the help. </p>
                                         <div className="hpyFoot">
                                             <div className="hpLft">
-                                                <h5>Shubh Wadekar</h5>
-                                                <button>Studying in UK</button>
-                                            </div>
-                                            <img className="img-fluid hpyRht" src="/assets/hpy.svg" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="hpyGridCont">
-                            <div className="hpyGrids">
-                                <div className="hpyOuter">
-                                    <div className="hpyInr">
-                                        <p>We believe with right exposure you can do wonders for yourself and your family</p>
-                                        <div className="hpyFoot">
-                                            <div className="hpLft">
-                                                <h5>Shubh Wadekar</h5>
-                                                <button>Studying in UK</button>
-                                            </div>
-                                            <img className="img-fluid hpyRht" src="/assets/hpy.svg" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="hpyGrids">
-                                <div className="hpyOuter">
-                                    <div className="hpyInr">
-                                        <p>We believe with right exposure you can do wonders for yourself and your family</p>
-                                        <div className="hpyFoot">
-                                            <div className="hpLft">
-                                                <h5>Shubh Wadekar</h5>
-                                                <button>Studying in UK</button>
-                                            </div>
-                                            <img className="img-fluid hpyRht" src="/assets/hpy.svg" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="hpyGrids">
-                                <div className="hpyOuter">
-                                    <div className="hpyInr">
-                                        <p>We believe with right exposure you can do wonders for yourself and your family</p>
-                                        <div className="hpyFoot">
-                                            <div className="hpLft">
-                                                <h5>Shubh Wadekar</h5>
-                                                <button>Studying in UK</button>
+                                                <h5>Divya Sharma</h5>
+                                                <button>Scored 8,7,7,8</button>
                                             </div>
                                             <img className="img-fluid hpyRht" src="/assets/hpy.svg" />
                                         </div>
@@ -206,11 +162,11 @@ const IELTS = () => {
                             <div className="hpyGrids">
                                 <div className="hpyOuter">
                                     <div className="hpyInr">
-                                        <p>We believe with right exposure you can do wonders for yourself and your family</p>
+                                        <p>Thank you Keel for helping and guiding me to prepare for my IELTS exam. Just one month of dedicated classes worked wonders for me and helped me achieve an overall 8+ band in IELTs increasing my chances of getting an ITA in the next draw. Thank you team Keel.</p>
                                         <div className="hpyFoot">
                                             <div className="hpLft">
-                                                <h5>Shubh Wadekar</h5>
-                                                <button>Studying in UK</button>
+                                                <h5>Harsh Aggarwal</h5>
+                                                <button>Scored 8,7,7,7</button>
                                             </div>
                                             <img className="img-fluid hpyRht" src="/assets/hpy.svg" />
                                         </div>
@@ -220,11 +176,55 @@ const IELTS = () => {
                             <div className="hpyGrids">
                                 <div className="hpyOuter">
                                     <div className="hpyInr">
-                                        <p>We believe with right exposure you can do wonders for yourself and your family</p>
+                                        <p>I would like to thank Keel for helping me achieve an overall score of 7.5 in just 3 weeks. Time was of an essence for my study abroad application and  the dedication of the team did not fail me. I recently got an admit from my dream University. Thank you team for  making  dreams reality for students.</p>
                                         <div className="hpyFoot">
                                             <div className="hpLft">
-                                                <h5>Shubh Wadekar</h5>
-                                                <button>Studying in UK</button>
+                                                <h5>Anushi Sen</h5>
+                                                <button>Scored 8,7,7,7</button>
+                                            </div>
+                                            <img className="img-fluid hpyRht" src="/assets/hpy.svg" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="hpyGrids">
+                                <div className="hpyOuter">
+                                    <div className="hpyInr">
+                                        <p>My experience with Keel was amazing. I loved the faculty from day one. I learnt about my improvement areas in the first week only thanks to a 1:1 session with Shreya ma’am. After that, it was just hard work and right guidance that helped me  achieve my desired score.</p>
+                                        <div className="hpyFoot">
+                                            <div className="hpLft">
+                                                <h5>Neha Suri</h5>
+                                                <button>Scored 8,7,8,7</button>
+                                            </div>
+                                            <img className="img-fluid hpyRht" src="/assets/hpy.svg" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="hpyGridCont">
+                            <div className="hpyGrids">
+                                <div className="hpyOuter">
+                                    <div className="hpyInr">
+                                        <p>The biggest challenge in front of me was how to prepare for IELTS with a 9 to 9 job. Keel gave me the much needed flexible weekend batch with pre-recorded sessions  that helped me learn at my pace. The doubt resolving sessions helped me make progress in my studies and within two months, not only I was able to score a good IELTS score but also filed for my Canada PR application with them. </p>
+                                        <div className="hpyFoot">
+                                            <div className="hpLft">
+                                                <h5>Amit Vats</h5>
+                                                <button>Scored 8,7,7,7</button>
+                                            </div>
+                                            <img className="img-fluid hpyRht" src="/assets/hpy.svg" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="hpyGrids">
+                                <div className="hpyOuter">
+                                    <div className="hpyInr">
+                                        <p>I had a great experience in my IELTS classes. The classes were interactive, fun and easy to understand. The faculty always resolved all our doubts with patience.</p>
+                                        <div className="hpyFoot">
+                                            <div className="hpLft">
+                                                <h5>Ruchi Gupta</h5>
+                                                <button>Scored 8,7,7,8</button>
                                             </div>
                                             <img className="img-fluid hpyRht" src="/assets/hpy.svg" />
                                         </div>

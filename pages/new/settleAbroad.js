@@ -28,11 +28,14 @@ const SettleAbroad = () => {
                     <div className="bannerLast">
                         <p>Our customers successfully migrated to Canada from these countries</p>
                         <div className="banImgsGrid">
-                            <img src="/assets/unvrscty5.png" alt="" className="img-fluid" />
-                            <img src="/assets/unvrscty1.png" alt="" className="img-fluid" />
-                            <img src="/assets/unvrscty2.png" alt="" className="img-fluid" />
-                            <img src="/assets/unvrscty3.png" alt="" className="img-fluid" />
-                            <img src="/assets/unvrscty4.png" alt="" className="img-fluid" />
+                            <img src="/assets/flg5.png" alt="" className="img-fluid" />
+                            <img src="/assets/flg1.png" alt="" className="img-fluid" />
+                            <img src="/assets/flg2.png" alt="" className="img-fluid" />
+                            <img src="/assets/flg3.png" alt="" className="img-fluid" />
+                            <img src="/assets/flg4.png" alt="" className="img-fluid" />
+                            <img src="/assets/flg7.png" alt="" className="img-fluid" />
+                            <img src="/assets/flg6.png" alt="" className="img-fluid" />
+                            <img src="/assets/flg8.png" alt="" className="img-fluid" />
                         </div>
                     </div>
                 </div>
@@ -215,6 +218,64 @@ const SettleAbroad = () => {
                     <div className="processMain">
                         <div className="processCont">
                             <div className="storyContent full-width">
+                                <h4 className="grdHdng">Score 8777 and more </h4>
+                                <h5>Near-to-real classroom experience </h5>
+                                <p>We believe with right exposure you can do wonders for yourself and your family hence we help you make choices that</p>
+                            </div>
+                        </div>
+                        <div className='verticalMainCont customVerticalSection'>
+                            <div className='verticalCarausalOuter customVerticalOuter'>
+                                <div className="processStepCont">
+
+
+                                    <div className="processStepGrid">
+                                        <div className="prcStpIn">
+
+                                            <h5>Flexible Batches</h5>
+                                            <p>Explore your options: In terms of right courses, Universities, country and so on.</p>
+                                        </div>
+                                    </div>
+
+
+                                    <div className="processStepGrid">
+                                        <div className="prcStpIn">
+
+                                            <h5>Live Classes</h5>
+                                            <p>Choose your path: After talking to mentors from Google, Uber, Microsoft and more.</p>
+                                        </div>
+                                    </div>
+
+
+                                    <div className="processStepGrid">
+                                        <div className="prcStpIn">
+
+                                            <h5>Expert Material</h5>
+                                            <p>No more ghost consultants ghosting you!</p>
+                                        </div>
+                                    </div>
+
+
+                                    <div className="processStepGrid">
+                                        <div className="prcStpIn">
+
+                                            <h5>Notes Academic & General Training</h5>
+                                            <p>Say hi to your dream life: By getting your desired scores and filing an application that stands out.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='verticalImg'>
+                                <img className='img-fluid' src='/assets/ildt.png' />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section className="processSection">
+                <div className="container">
+                    <div className="processMain">
+                        <div className="processCont">
+                            <div className="storyContent full-width">
                                 <h4 className="grdHdng">Process</h4>
                                 <h5>The <span>Process</span></h5>
                                 <p>Take out the stress from your Canada immigration journey with Keel’s tech enabled streamlined immigration process.</p>
@@ -223,14 +284,14 @@ const SettleAbroad = () => {
                         <div className='verticalMainCont'>
                             <div className='verticalCarausalOuter'>
                                 <div className="processStepCont">
-                                    <Swiper
+                                    {/* <Swiper
                                         direction={"vertical"}
                                         spaceBetween={10}
                                         slidesPerView={1.5}
                                         centeredSlides={true}
                                         className="verticalSwiper"
-                                    >
-                                        <SwiperSlide>
+                                    > */}
+                                        {/* <SwiperSlide> */}
                                             <div className="processStepGrid">
                                                 <div className="prcStpIn">
                                                     <span className="stepNum">Step 1</span>
@@ -238,8 +299,8 @@ const SettleAbroad = () => {
                                                     <p>Take out the stress from your Canada immigration journey with Keel’s tech enabled streamlined immigration process. </p>
                                                 </div>
                                             </div>
-                                        </SwiperSlide>
-                                        <SwiperSlide>
+                                        {/* </SwiperSlide> */}
+                                        {/* <SwiperSlide> */}
                                             <div className="processStepGrid">
                                                 <div className="prcStpIn">
                                                     <span className="stepNum">Step 2</span>
@@ -247,8 +308,8 @@ const SettleAbroad = () => {
                                                     <p>Connect with our Licensed Immigration Consultant and understand the immigration process.</p>
                                                 </div>
                                             </div>
-                                        </SwiperSlide>
-                                        <SwiperSlide>
+                                        {/* </SwiperSlide> */}
+                                        {/* <SwiperSlide> */}
                                             <div className="processStepGrid">
                                                 <div className="prcStpIn">
                                                     <span className="stepNum">Step 3</span>
@@ -256,8 +317,8 @@ const SettleAbroad = () => {
                                                     <p>Get your desired IELTS score with the help of the top 0.01% of IELTS coaches in India.</p>
                                                 </div>
                                             </div>
-                                        </SwiperSlide>
-                                        <SwiperSlide>
+                                        {/* </SwiperSlide> */}
+                                        {/* <SwiperSlide> */}
                                             <div className="processStepGrid">
                                                 <div className="prcStpIn">
                                                     <span className="stepNum">Step 4</span>
@@ -265,8 +326,8 @@ const SettleAbroad = () => {
                                                     <p>And let them do all the heavy-lifting in your file preparation. </p>
                                                 </div>
                                             </div>
-                                        </SwiperSlide>
-                                        <SwiperSlide>
+                                        {/* </SwiperSlide> */}
+                                        {/* <SwiperSlide> */}
                                             <div className="processStepGrid">
                                                 <div className="prcStpIn">
                                                     <span className="stepNum">Step 5</span>
@@ -274,8 +335,8 @@ const SettleAbroad = () => {
                                                     <p>Our Licensed Immigration Consultants prepare and file your application on your behalf. </p>
                                                 </div>
                                             </div>
-                                        </SwiperSlide>
-                                        <SwiperSlide>
+                                        {/* </SwiperSlide> */}
+                                        {/* <SwiperSlide> */}
                                             <div className="processStepGrid">
                                                 <div className="prcStpIn">
                                                     <span className="stepNum">Step 6</span>
@@ -283,8 +344,8 @@ const SettleAbroad = () => {
                                                     <p>Start your dream life in Canada and get support from a ready-to-help community.</p>
                                                 </div>
                                             </div>
-                                        </SwiperSlide>
-                                    </Swiper>
+                                        {/* </SwiperSlide> */}
+                                    {/* </Swiper> */}
                                 </div>
                             </div>
                             <div className='verticalImg'>

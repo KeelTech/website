@@ -99,14 +99,14 @@ const HomeView = () => {
                         <div className='verticalMainCont'>
                             <div className='verticalCarausalOuter'>
                                 <div className="processStepCont">
-                                    <Swiper
+                                    {/* <Swiper
                                         direction={"vertical"}
                                         spaceBetween={10}
                                         slidesPerView={1.5}
                                         centeredSlides={true}
                                         className="verticalSwiper"
-                                    >
-                                        <SwiperSlide>
+                                    > */}
+                                        {/* <SwiperSlide> */}
                                             <div className="processStepGrid">
                                                 <div className="prcStpIn">
                                                     <span className="stepNum">Step 1</span>
@@ -114,8 +114,8 @@ const HomeView = () => {
                                                     <p>Explore your options: In terms of right courses, Universities, country and so on.</p>
                                                 </div>
                                             </div>
-                                        </SwiperSlide>
-                                        <SwiperSlide>
+                                        {/* </SwiperSlide> */}
+                                        {/* <SwiperSlide> */}
                                             <div className="processStepGrid">
                                                 <div className="prcStpIn">
                                                     <span className="stepNum">Step 2</span>
@@ -123,8 +123,8 @@ const HomeView = () => {
                                                     <p>Choose your path: After talking to mentors from Google, Uber, Microsoft and more.</p>
                                                 </div>
                                             </div>
-                                        </SwiperSlide>
-                                        <SwiperSlide>
+                                        {/* </SwiperSlide> */}
+                                        {/* <SwiperSlide> */}
                                             <div className="processStepGrid">
                                                 <div className="prcStpIn">
                                                     <span className="stepNum">Step 3</span>
@@ -132,8 +132,8 @@ const HomeView = () => {
                                                     <p>Start your Journey: By creating a profile that showcases your best self.</p>
                                                 </div>
                                             </div>
-                                        </SwiperSlide>
-                                        <SwiperSlide>
+                                        {/* </SwiperSlide> */}
+                                        {/* <SwiperSlide> */}
                                             <div className="processStepGrid">
                                                 <div className="prcStpIn">
                                                     <span className="stepNum">Step 4</span>
@@ -141,8 +141,8 @@ const HomeView = () => {
                                                     <p>Say hi to your dream life: By getting your desired scores and filing an application that stands out.</p>
                                                 </div>
                                             </div>
-                                        </SwiperSlide>
-                                    </Swiper>
+                                        {/* </SwiperSlide> */}
+                                    {/* </Swiper> */}
                                 </div>
                             </div>
                             <div className='verticalImg'>

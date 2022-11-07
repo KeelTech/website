@@ -10,7 +10,7 @@ const IELTS = () => {
                 <div className="container">
                     <div className="studyBannerCont">
                         <div className="stdyBanText">
-                            <h1>Achieve your desired score 
+                            <h1>Achieve your desired score
                                 <span> in 4 weeks</span>
 
                             </h1>
@@ -34,6 +34,64 @@ const IELTS = () => {
                             <img src="/assets/cr2.png" alt="" className="img-fluid" />
                             <img src="/assets/cr3.png" alt="" className="img-fluid" />
                             <img src="/assets/cr4.png" alt="" className="img-fluid" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section className="processSection">
+                <div className="container">
+                    <div className="processMain">
+                        <div className="processCont">
+                            <div className="storyContent full-width">
+                                <h4 className="grdHdng">Score 8777 and more </h4>
+                                <h5>Near-to-real classroom experience </h5>
+                                <p>We believe with right exposure you can do wonders for yourself and your family hence we help you make choices that</p>
+                            </div>
+                        </div>
+                        <div className='verticalMainCont customVerticalSection'>
+                            <div className='verticalCarausalOuter customVerticalOuter'>
+                                <div className="processStepCont">
+
+
+                                    <div className="processStepGrid">
+                                        <div className="prcStpIn">
+
+                                            <h5>Flexible Batches</h5>
+                                            <p>Explore your options: In terms of right courses, Universities, country and so on.</p>
+                                        </div>
+                                    </div>
+
+
+                                    <div className="processStepGrid">
+                                        <div className="prcStpIn">
+
+                                            <h5>Live Classes</h5>
+                                            <p>Choose your path: After talking to mentors from Google, Uber, Microsoft and more.</p>
+                                        </div>
+                                    </div>
+
+
+                                    <div className="processStepGrid">
+                                        <div className="prcStpIn">
+
+                                            <h5>Expert Material</h5>
+                                            <p>No more ghost consultants ghosting you!</p>
+                                        </div>
+                                    </div>
+
+
+                                    <div className="processStepGrid">
+                                        <div className="prcStpIn">
+
+                                            <h5>Notes Academic & General Training</h5>
+                                            <p>Say hi to your dream life: By getting your desired scores and filing an application that stands out.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='verticalImg'>
+                                <img className='img-fluid' src='/assets/ildt.png' />
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -264,7 +322,7 @@ const IELTS = () => {
                         <h4 className="grdHdng">FAQ</h4>
                         <h5>We are happy to <span>Help</span></h5>
                     </div>
-                    <Accordian data={IELTSAccordianData}/>
+                    <Accordian data={IELTSAccordianData} />
                 </div>
             </section>
         </>

@@ -458,7 +458,7 @@ section.processSection {
   position: relative;
 }
 
-.processStepCont:before {
+/* .processStepCont:before {
   content: '';
   position: absolute;
   height: 98px;
@@ -466,7 +466,7 @@ section.processSection {
   background: #ffffffb0;
   z-index: 9;
   top: 0;
-}
+} */
 
 .verticalMainCont {
   display: flex;
@@ -481,8 +481,9 @@ section.processSection {
 }
 
 .verticalCarausalOuter {
-  padding-left: 35px;
+  /* padding-left: 35px; */
   position: relative;
+  isolation: isolate;
 }
 
 .verticalCarausalOuter:before {
@@ -491,6 +492,9 @@ section.processSection {
   width: 6px;
   position: absolute;
   left: 0;
+  right: 0;
+  margin: auto;
+  z-index: -1;
   background: linear-gradient(180deg, rgba(193, 139, 189, 0) 0%, rgba(162, 136, 196, 0.38) 21.57%, #7C84CD 48.43%, rgba(94, 129, 211, 0.38) 69.1%, rgba(47, 124, 222, 0) 102.32%);
 }
 
@@ -506,10 +510,12 @@ section.processSection {
   background: url(/assets/plan.svg);
   background-repeat: no-repeat;
   background-size: contain;
-  z-index: 9;
+  z-index: -1;
+  left: 5px;
+    right: 0;
 }
 
-.processStepCont:after {
+/* .processStepCont:after {
   content: '';
   position: absolute;
   height: 98px;
@@ -517,7 +523,7 @@ section.processSection {
   background: #ffffffb0;
   z-index: 9;
   bottom: 0;
-}
+} */
 
 .processStepGrid {
   background: linear-gradient(90deg, #f6e8f5 1.59%, #dcebff 84.61%);
@@ -1849,6 +1855,37 @@ section.communitySection {
   align-items: center;
   justify-content: center;
 }
+.verticalCarausalOuter.customVerticalOuter div.processStepCont {
+  height: auto;
+}
+
+.verticalCarausalOuter.customVerticalOuter:before {
+  display: none;
+}
+
+.verticalCarausalOuter.customVerticalOuter:after {
+  display: none;
+}
+
+.prcStpIn {}
+
+.verticalCarausalOuter.customVerticalOuter div.prcStpIn {
+  position: relative;
+  padding-left: 35px;
+}
+
+.verticalCarausalOuter.customVerticalOuter div.prcStpIn:before {
+  content: '';
+  position: absolute;
+  height: 70%;
+  width: 6px;
+  top: 0;
+  margin: auto;
+  bottom: 0;
+  background: linear-gradient(180deg, #C18BBD 0%, #c3cfde 98.9%), #E9EBF8;
+  border-radius: 30px;
+  left: 14px;
+}
 /* ================= HamburgerMenu */
 @media (max-width: 767px) {
   h1.bannerHeading {
@@ -2147,7 +2184,7 @@ div.noRevrsMob{
     /* flex-direction: initial;
     overflow: auto; */
     overflow: auto;
-    height: 270px;
+    height: 440px;
   }
 
   .hpyGridCont {

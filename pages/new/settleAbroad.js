@@ -313,7 +313,7 @@ const SettleAbroad = () => {
                                                 <h5>Vignesh Macharla</h5>
                                                 <button>Engineer</button>
                                             </div>
-                                            <img className="img-fluid hpyRht" src="/assets/hpy.svg" />
+                                            <img className="img-fluid hpyRht" src="/assets/settleAbroad/vignesh-macharla.png" />
                                         </div>
                                     </div>
                                 </div>
@@ -327,7 +327,7 @@ const SettleAbroad = () => {
                                                 <h5>Durgesh Kumar</h5>
                                                 <button>Doctor</button>
                                             </div>
-                                            <img className="img-fluid hpyRht" src="/assets/hpy.svg" />
+                                            <img className="img-fluid hpyRht" src="/assets/settleAbroad/durgesh-kumar.png" />
                                         </div>
                                     </div>
                                 </div>
@@ -343,7 +343,7 @@ const SettleAbroad = () => {
                                                 <h5>Ronit Kakkar</h5>
                                                 <button>Investor</button>
                                             </div>
-                                            <img className="img-fluid hpyRht" src="/assets/hpy.svg" />
+                                            <img className="img-fluid hpyRht" src="/assets/settleAbroad/ronit-kakkar.png" />
                                         </div>
                                     </div>
                                 </div>
@@ -357,7 +357,7 @@ const SettleAbroad = () => {
                                                 <h5>Chanak Gupta</h5>
                                                 <button>Nurse</button>
                                             </div>
-                                            <img className="img-fluid hpyRht" src="/assets/hpy.svg" />
+                                            <img className="img-fluid hpyRht" src="/assets/settleAbroad/chanak-gupta.png" />
                                         </div>
                                     </div>
                                 </div>
@@ -371,7 +371,7 @@ const SettleAbroad = () => {
                                                 <h5>Sanjay Kulkarni</h5>
                                                 <button>Architect</button>
                                             </div>
-                                            <img className="img-fluid hpyRht" src="/assets/hpy.svg" />
+                                            <img className="img-fluid hpyRht" src="/assets/settleAbroad/sanjay-kulkarni.png" />
                                         </div>
                                     </div>
                                 </div>
@@ -387,7 +387,7 @@ const SettleAbroad = () => {
                                                 <h5>Tanu Kasal</h5>
                                                 <button>Doctor</button>
                                             </div>
-                                            <img className="img-fluid hpyRht" src="/assets/hpy.svg" />
+                                            <img className="img-fluid hpyRht" src="/assets/settleAbroad/tanu-kasal.png" />
                                         </div>
                                     </div>
                                 </div>
@@ -401,7 +401,7 @@ const SettleAbroad = () => {
                                                 <h5>Rakesh Shivhare</h5>
                                                 <button>Business Man</button>
                                             </div>
-                                            <img className="img-fluid hpyRht" src="/assets/hpy.svg" />
+                                            <img className="img-fluid hpyRht" src="/assets/settleAbroad/rakesh-shivhare.png" />
                                         </div>
                                     </div>
                                 </div>

@@ -10,8 +10,8 @@ const IELTS = () => {
                 <div className="container">
                     <div className="studyBannerCont">
                         <div className="stdyBanText">
-                            <h1>Achieve your desired score
-                                <span>in 4 weeks</span>
+                            <h1>Achieve your desired score 
+                                <span> in 4 weeks</span>
 
                             </h1>
                             <ul className="ieltsListBan">
@@ -138,7 +138,7 @@ const IELTS = () => {
                                                 <h5>Deep Saxena</h5>
                                                 <button>Scored 8,8,7,7</button>
                                             </div>
-                                            <img className="img-fluid hpyRht" src="/assets/hpy.svg" />
+                                            <img className="img-fluid hpyRht" src="/assets/ielts/deep-saxena.png" />
                                         </div>
                                     </div>
                                 </div>
@@ -152,7 +152,7 @@ const IELTS = () => {
                                                 <h5>Divya Sharma</h5>
                                                 <button>Scored 8,7,7,8</button>
                                             </div>
-                                            <img className="img-fluid hpyRht" src="/assets/hpy.svg" />
+                                            <img className="img-fluid hpyRht" src="/assets/ielts/divya-sharma.png" />
                                         </div>
                                     </div>
                                 </div>
@@ -168,7 +168,7 @@ const IELTS = () => {
                                                 <h5>Harsh Aggarwal</h5>
                                                 <button>Scored 8,7,7,7</button>
                                             </div>
-                                            <img className="img-fluid hpyRht" src="/assets/hpy.svg" />
+                                            <img className="img-fluid hpyRht" src="/assets/ielts/harsh-aggarwal.png" />
                                         </div>
                                     </div>
                                 </div>
@@ -182,7 +182,7 @@ const IELTS = () => {
                                                 <h5>Anushi Sen</h5>
                                                 <button>Scored 8,7,7,7</button>
                                             </div>
-                                            <img className="img-fluid hpyRht" src="/assets/hpy.svg" />
+                                            <img className="img-fluid hpyRht" src="/assets/ielts/anushi-sen.png" />
                                         </div>
                                     </div>
                                 </div>
@@ -196,7 +196,7 @@ const IELTS = () => {
                                                 <h5>Neha Suri</h5>
                                                 <button>Scored 8,7,8,7</button>
                                             </div>
-                                            <img className="img-fluid hpyRht" src="/assets/hpy.svg" />
+                                            <img className="img-fluid hpyRht" src="/assets/ielts/neha-suri.png" />
                                         </div>
                                     </div>
                                 </div>
@@ -212,7 +212,7 @@ const IELTS = () => {
                                                 <h5>Amit Vats</h5>
                                                 <button>Scored 8,7,7,7</button>
                                             </div>
-                                            <img className="img-fluid hpyRht" src="/assets/hpy.svg" />
+                                            <img className="img-fluid hpyRht" src="/assets/ielts/amit-vats.png" />
                                         </div>
                                     </div>
                                 </div>
@@ -226,7 +226,7 @@ const IELTS = () => {
                                                 <h5>Ruchi Gupta</h5>
                                                 <button>Scored 8,7,7,8</button>
                                             </div>
-                                            <img className="img-fluid hpyRht" src="/assets/hpy.svg" />
+                                            <img className="img-fluid hpyRht" src="/assets/ielts/ruchi-gupta.png" />
                                         </div>
                                     </div>
                                 </div>

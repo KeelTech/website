@@ -176,7 +176,7 @@ const HomeView = () => {
                                 {/* <SwiperSlide> */}
                                     <div className="carsCustmGrid">
                                         <div className="usrDtls">
-                                            <img className="img-fluid" src="/assets/pep.png" />
+                                            <img className="img-fluid" src="/assets/sheetal-mehta.png" />
                                             <div className="usrNames">
                                                 <h5>Sheetal Mehta</h5>
                                                 <p>Migrated to Canada</p>
@@ -188,7 +188,7 @@ const HomeView = () => {
                                 {/* <SwiperSlide> */}
                                     <div className="carsCustmGrid">
                                         <div className="usrDtls">
-                                            <img className="img-fluid" src="/assets/pep.png" />
+                                            <img className="img-fluid" src="/assets/rajat-gupta.png" />
                                             <div className="usrNames">
                                                 <h5>Rajat Gupta</h5>
                                                 <p>Migrated to Australia</p>
@@ -200,7 +200,7 @@ const HomeView = () => {
                                 {/* <SwiperSlide> */}
                                     <div className="carsCustmGrid">
                                         <div className="usrDtls">
-                                            <img className="img-fluid" src="/assets/pep.png" />
+                                            <img className="img-fluid" src="/assets/ruchi-parmar.png" />
                                             <div className="usrNames">
                                                 <h5>Ruchi Parmar</h5>
                                                 <p>Migrated to UK</p>

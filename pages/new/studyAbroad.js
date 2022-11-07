@@ -296,7 +296,7 @@ const StudyAbroad = () => {
                                                 <h5>Sheetal Mehta</h5>
                                                 <button>Studying in UK</button>
                                             </div>
-                                            <img className="img-fluid hpyRht" src="/assets/hpy.svg" />
+                                            <img className="img-fluid hpyRht" src="/assets/studyAbroad/sheetal-mehta.png" />
                                         </div>
                                     </div>
                                 </div>
@@ -310,7 +310,7 @@ const StudyAbroad = () => {
                                                 <h5>Rajat Gupta</h5>
                                                 <button>Studying in USA</button>
                                             </div>
-                                            <img className="img-fluid hpyRht" src="/assets/hpy.svg" />
+                                            <img className="img-fluid hpyRht" src="/assets/studyAbroad/rajat-gupta.png" />
                                         </div>
                                     </div>
                                 </div>
@@ -326,7 +326,7 @@ const StudyAbroad = () => {
                                                 <h5>Ruchi Parmar</h5>
                                                 <button>Studying in Canada</button>
                                             </div>
-                                            <img className="img-fluid hpyRht" src="/assets/hpy.svg" />
+                                            <img className="img-fluid hpyRht" src="/assets/studyAbroad/ruchi-parmar.png" />
                                         </div>
                                     </div>
                                 </div>
@@ -340,7 +340,7 @@ const StudyAbroad = () => {
                                                 <h5>Luv Gupta</h5>
                                                 <button>Studying in Italy</button>
                                             </div>
-                                            <img className="img-fluid hpyRht" src="/assets/hpy.svg" />
+                                            <img className="img-fluid hpyRht" src="/assets/studyAbroad/luv-gupta.png" />
                                         </div>
                                     </div>
                                 </div>
@@ -356,7 +356,7 @@ const StudyAbroad = () => {
                                                 <h5>Luveen Mishra</h5>
                                                 <button>Studying in Japan</button>
                                             </div>
-                                            <img className="img-fluid hpyRht" src="/assets/hpy.svg" />
+                                            <img className="img-fluid hpyRht" src="/assets/studyAbroad/luveen-mishra.png" />
                                         </div>
                                     </div>
                                 </div>
@@ -372,7 +372,7 @@ const StudyAbroad = () => {
                                                 <h5>Nitish Jha</h5>
                                                 <button>Studying in Australia</button>
                                             </div>
-                                            <img className="img-fluid hpyRht" src="/assets/hpy.svg" />
+                                            <img className="img-fluid hpyRht" src="/assets/studyAbroad/nitish-jha.png" />
                                         </div>
                                     </div>
                                 </div>
@@ -383,10 +383,10 @@ const StudyAbroad = () => {
                                         <p>Keel has helped me with all the study abroad process. They helped me file the application, prepare for IELTS and create a profile. I am now waiting for the admit letter. Thank you team Keel!</p>
                                         <div className="hpyFoot">
                                             <div className="hpLft">
-                                                <h5>Shubh Wadekar</h5>
+                                                <h5>Janak Pandya</h5>
                                                 <button>Studying in Germany</button>
                                             </div>
-                                            <img className="img-fluid hpyRht" src="/assets/hpy.svg" />
+                                            <img className="img-fluid hpyRht" src="/assets/studyAbroad/janak-pandya.png" />
                                         </div>
                                     </div>
                                 </div>

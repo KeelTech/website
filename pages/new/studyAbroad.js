@@ -23,7 +23,7 @@ const StudyAbroad = () => {
                             <button>Get Free Consultation</button>
                         </div>
                         <div className="studyBanImg">
-                            <img className="img-fluid" src="/assets/stweb.png" />
+                            <img className="img-fluid" src="/assets/study-abroad-hero-web.png" />
                         </div>
                     </div>
                     <div className="bannerLast">

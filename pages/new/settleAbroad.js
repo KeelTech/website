@@ -22,7 +22,7 @@ const SettleAbroad = () => {
                         </div>
                         <div className="studyBanImg">
                             {/* <img className="img-fluid" src="/assets/studyabroad.png" /> */}
-                            <img className="img-fluid" src="/assets/ban.png" />
+                            <img className="img-fluid" src="/assets/settle-abroad-hero-web.png" />
                         </div>
                     </div>
                     <div className="bannerLast">

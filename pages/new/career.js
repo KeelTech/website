@@ -14,20 +14,7 @@ const Career = ()=>{
                     <button>Explore Jobs</button>
                 </div>
                 <div className="studyBanImg">
-                    <img className="img-fluid" src="/assets/abrod.png" />
-                </div>
-            </div>
-            <div className="bannerLast">
-                <p>Our students finished University to work at global offices of</p>
-                <div className="banImgsGrid">
-                    <img src="/assets/flg5.png" alt="" className="img-fluid"/>
-                    <img src="/assets/flg1.png" alt="" className="img-fluid"/>
-                    <img src="/assets/flg2.png" alt="" className="img-fluid"/>
-                    <img src="/assets/flg3.png" alt="" className="img-fluid"/>
-                    <img src="/assets/flg4.png" alt="" className="img-fluid"/>
-                    <img src="/assets/flg6.png" alt="" className="img-fluid"/>
-                    <img src="/assets/flg7.png" alt="" className="img-fluid"/>
-                    <img src="/assets/flg1.png" alt="" className="img-fluid"/>
+                    <img className="img-fluid" src="/assets/career-hero.png" />
                 </div>
             </div>
         </div>

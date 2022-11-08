@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 import Accordian from '@/components/Accordian/newAccordian';
 import { SettleAbroadAccordianData } from '@/helpers/constant.js'
+import GetConsultationCTA from '@/components/GetConsultationCTA';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -18,7 +19,7 @@ const SettleAbroad = () => {
                             Canada Immigration platform
                             </h1>
                             <p>We are a first-of-its-kind tech enabled team of Licensed Immigration Consultants obsessed with making your Canada dream come true. </p>
-                            <button>Get Free Consultation</button>
+                            <GetConsultationCTA/>
                         </div>
                         <div className="studyBanImg">
                             {/* <img className="img-fluid" src="/assets/studyabroad.png" /> */}

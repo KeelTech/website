@@ -98,3 +98,23 @@ export const getBlogDetail = (dataParams={}, cb=null)=>{
         if(cb)cb(null, true);
     })
 }
+
+export const sendOTP = (dataParams, cb=null)=>{
+    API_POST(`${API_END_POINT}/user/otp/generate`,
+        dataParams
+    ).then((response)=>{
+        if(cb)cb(response, null);
+    }).catch((e)=>{
+        if(cb)cb(null, true);
+    })
+  }
+  
+  export const verifyOTP = (dataParams, cb=null)=>{
+    API_POST(`${API_END_POINT}/user/otp/verify`,
+        dataParams
+    ).then((response)=>{
+        if(cb)cb(response, null);
+    }).catch((e)=>{
+        if(cb)cb(null, true);
+    })
+  }

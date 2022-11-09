@@ -1,5 +1,5 @@
 
-const Resource = () => {
+const Community = () => {
 
     return (
         <>
@@ -127,4 +127,4 @@ const Resource = () => {
     )
 }
 
-export default Resource;
+export default Community;

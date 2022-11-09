@@ -17,8 +17,8 @@ const HomeView = () => {
                             {/* Study | Settle | Work  */}
                             <p className="bannerParaSub">We are India’s largest tech-enabled study abroad platform supported by an army of experts</p>
                             <div className="bannerButton">
-                                <button onClick={()=>router.push(`/new/studyAbroad`)}>Study Abroad</button>
-                                <button onClick={()=>router.push(`/new/settleAbroad`)}>Settle Abroad</button>
+                                <button onClick={() => router.push(`/new/studyAbroad`)}>Study Abroad</button>
+                                <button onClick={() => router.push(`/new/settleAbroad`)}>Settle Abroad</button>
                             </div>
                             <div className="bannerMidImg">
                                 <img className="img-fluid forWeb" src="/assets/bgUp.png" />
@@ -49,13 +49,13 @@ const HomeView = () => {
                         <div className="storyContent pl-30">
                             <h4 className="grdHdng">Our Story</h4>
                             <h5>Here’s why we <span>Exist</span></h5>
-                            <p>We believe that grades aren’t the true representation of what you are capable of achieving. With the right guidance and a nudge in the right direction, you can reach up to your full potential and become a part of an elite global group of future leaders.  
-                            <br/>
-                            <br/>
-                            We exist to help students like you around the world pursue the career of their interest, study at their dream universities and settle in the country of their choice. We undertake this journey with you so that you achieve your dreams for yourself and your family.
-                            <br/>
-                            <br/>
-                            You can be whoever you want in this world, start your journey today!
+                            <p>We believe that grades aren’t the true representation of what you are capable of achieving. With the right guidance and a nudge in the right direction, you can reach up to your full potential and become a part of an elite global group of future leaders.
+                                <br />
+                                <br />
+                                We exist to help students like you around the world pursue the career of their interest, study at their dream universities and settle in the country of their choice. We undertake this journey with you so that you achieve your dreams for yourself and your family.
+                                <br />
+                                <br />
+                                You can be whoever you want in this world, start your journey today!
                             </p>
                         </div>
                     </div>
@@ -90,65 +90,107 @@ const HomeView = () => {
                 <div className="container">
                     <div className="processMain">
                         <div className="processCont">
-                            <div className="storyContent full-width">
+                            <div className="storyContent full-width text-center">
                                 <h4 className="grdHdng">Process</h4>
                                 <h5>The <span>Process</span></h5>
                                 <p>“A journey of a thousand miles begins with a single step.” - Lao Tzu</p>
                             </div>
                         </div>
-                        <div className='verticalMainCont'>
+                        <div className='midScrollCont'>
+                            <div className='leftprsCont'>
+                                <div className="processStepGrid">
+                                    <div className="prcStpIn">
+                                        <span className="stepNum">Step 1</span>
+                                        <h5>Research and Discovery</h5>
+                                        <p>Explore your options: In terms of right courses, Universities, country and so on.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='rightPrsCont'>
+                                <div className='verticalImg'>
+                                    <img className='img-fluid' src='/assets/prcs.png' />
+                                </div>
+                            </div>
+                            <div className='rightPrsCont'>
+                                <div className='verticalImg'>
+                                    <img className='img-fluid' src='/assets/prcs.png' />
+                                </div>
+                            </div>
+                            <div className='leftprsCont'>
+                                <div className="processStepGrid">
+                                    <div className="prcStpIn">
+                                        <span className="stepNum">Step 1</span>
+                                        <h5>Research and Discovery</h5>
+                                        <p>Explore your options: In terms of right courses, Universities, country and so on.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='leftprsCont'>
+                                <div className="processStepGrid">
+                                    <div className="prcStpIn">
+                                        <span className="stepNum">Step 1</span>
+                                        <h5>Research and Discovery</h5>
+                                        <p>Explore your options: In terms of right courses, Universities, country and so on.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='rightPrsCont'>
+                                <div className='verticalImg'>
+                                    <img className='img-fluid' src='/assets/prcs.png' />
+                                </div>
+                            </div>
+                            <div className='rightPrsCont'>
+                                <div className='verticalImg'>
+                                    <img className='img-fluid' src='/assets/prcs.png' />
+                                </div>
+                            </div>
+                            <div className='leftprsCont'>
+                                <div className="processStepGrid">
+                                    <div className="prcStpIn">
+                                        <span className="stepNum">Step 1</span>
+                                        <h5>Research and Discovery</h5>
+                                        <p>Explore your options: In terms of right courses, Universities, country and so on.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {/* <div className='verticalMainCont'>
                             <div className='verticalCarausalOuter'>
                                 <div className="processStepCont">
-                                    {/* <Swiper
-                                        direction={"vertical"}
-                                        spaceBetween={10}
-                                        slidesPerView={1.5}
-                                        centeredSlides={true}
-                                        className="verticalSwiper"
-                                    > */}
-                                        {/* <SwiperSlide> */}
-                                            <div className="processStepGrid">
-                                                <div className="prcStpIn">
-                                                    <span className="stepNum">Step 1</span>
-                                                    <h5>Research and Discovery</h5>
-                                                    <p>Explore your options: In terms of right courses, Universities, country and so on.</p>
-                                                </div>
-                                            </div>
-                                        {/* </SwiperSlide> */}
-                                        {/* <SwiperSlide> */}
-                                            <div className="processStepGrid">
-                                                <div className="prcStpIn">
-                                                    <span className="stepNum">Step 2</span>
-                                                    <h5>Career guidance from the top 1%</h5>
-                                                    <p>Choose your path: After talking to mentors from Google, Uber, Microsoft and more.</p>
-                                                </div>
-                                            </div>
-                                        {/* </SwiperSlide> */}
-                                        {/* <SwiperSlide> */}
-                                            <div className="processStepGrid">
-                                                <div className="prcStpIn">
-                                                    <span className="stepNum">Step 3</span>
-                                                    <h5>Take all the right steps </h5>
-                                                    <p>Start your Journey: By creating a profile that showcases your best self.</p>
-                                                </div>
-                                            </div>
-                                        {/* </SwiperSlide> */}
-                                        {/* <SwiperSlide> */}
-                                            <div className="processStepGrid">
-                                                <div className="prcStpIn">
-                                                    <span className="stepNum">Step 4</span>
-                                                    <h5>Test preparations and submitting the application</h5>
-                                                    <p>Say hi to your dream life: By getting your desired scores and filing an application that stands out.</p>
-                                                </div>
-                                            </div>
-                                        {/* </SwiperSlide> */}
-                                    {/* </Swiper> */}
+                                    <div className="processStepGrid">
+                                        <div className="prcStpIn">
+                                            <span className="stepNum">Step 1</span>
+                                            <h5>Research and Discovery</h5>
+                                            <p>Explore your options: In terms of right courses, Universities, country and so on.</p>
+                                        </div>
+                                    </div>
+                                    <div className="processStepGrid">
+                                        <div className="prcStpIn">
+                                            <span className="stepNum">Step 2</span>
+                                            <h5>Career guidance from the top 1%</h5>
+                                            <p>Choose your path: After talking to mentors from Google, Uber, Microsoft and more.</p>
+                                        </div>
+                                    </div>
+                                    <div className="processStepGrid">
+                                        <div className="prcStpIn">
+                                            <span className="stepNum">Step 3</span>
+                                            <h5>Take all the right steps </h5>
+                                            <p>Start your Journey: By creating a profile that showcases your best self.</p>
+                                        </div>
+                                    </div>
+                                    <div className="processStepGrid">
+                                        <div className="prcStpIn">
+                                            <span className="stepNum">Step 4</span>
+                                            <h5>Test preparations and submitting the application</h5>
+                                            <p>Say hi to your dream life: By getting your desired scores and filing an application that stands out.</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div className='verticalImg'>
                                 <img className='img-fluid' src='/assets/ver.png' />
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </section>
@@ -173,42 +215,42 @@ const HomeView = () => {
                                 onSlideChange={() => console.log('slide change')}
                                 onSwiper={(swiper) => console.log(swiper)}
                             > */}
-                                {/* <SwiperSlide> */}
-                                    <div className="carsCustmGrid">
-                                        <div className="usrDtls">
-                                            <img className="img-fluid" src="/assets/sheetal-mehta.png" />
-                                            <div className="usrNames">
-                                                <h5>Sheetal Mehta</h5>
-                                                <p>Migrated to Canada</p>
-                                            </div>
-                                        </div>
-                                        <p>It was always my dream to study abroad and build a life there. A friend recommended me to Keel and it was a smooth sail from there. They made the whole process fairly simple and transparent for me. Thank you team Keel.</p>
+                            {/* <SwiperSlide> */}
+                            <div className="carsCustmGrid">
+                                <div className="usrDtls">
+                                    <img className="img-fluid" src="/assets/sheetal-mehta.png" />
+                                    <div className="usrNames">
+                                        <h5>Sheetal Mehta</h5>
+                                        <p>Migrated to Canada</p>
                                     </div>
-                                {/* </SwiperSlide> */}
-                                {/* <SwiperSlide> */}
-                                    <div className="carsCustmGrid">
-                                        <div className="usrDtls">
-                                            <img className="img-fluid" src="/assets/rajat-gupta.png" />
-                                            <div className="usrNames">
-                                                <h5>Rajat Gupta</h5>
-                                                <p>Migrated to Australia</p>
-                                            </div>
-                                        </div>
-                                        <p> My study abroad application was rejected twice and I just could not afford another rejection. Just then, I came across Keel through a friend and they helped me with each and every step. I have finally got admission in my dream university. Sky's the limit for me now. </p>
+                                </div>
+                                <p>It was always my dream to study abroad and build a life there. A friend recommended me to Keel and it was a smooth sail from there. They made the whole process fairly simple and transparent for me. Thank you team Keel.</p>
+                            </div>
+                            {/* </SwiperSlide> */}
+                            {/* <SwiperSlide> */}
+                            <div className="carsCustmGrid">
+                                <div className="usrDtls">
+                                    <img className="img-fluid" src="/assets/rajat-gupta.png" />
+                                    <div className="usrNames">
+                                        <h5>Rajat Gupta</h5>
+                                        <p>Migrated to Australia</p>
                                     </div>
-                                {/* </SwiperSlide> */}
-                                {/* <SwiperSlide> */}
-                                    <div className="carsCustmGrid">
-                                        <div className="usrDtls">
-                                            <img className="img-fluid" src="/assets/ruchi-parmar.png" />
-                                            <div className="usrNames">
-                                                <h5>Ruchi Parmar</h5>
-                                                <p>Migrated to UK</p>
-                                            </div>
-                                        </div>
-                                        <p>After my +2, I was so confused about everything. I knew I wanted to study abroad but there were just too many questions. Which course? Which country? Which University?  Keel helped me with all my questions and also helped me make fast decisions. Thank you team Keel for giving me the right kickstart. </p>
+                                </div>
+                                <p> My study abroad application was rejected twice and I just could not afford another rejection. Just then, I came across Keel through a friend and they helped me with each and every step. I have finally got admission in my dream university. Sky's the limit for me now. </p>
+                            </div>
+                            {/* </SwiperSlide> */}
+                            {/* <SwiperSlide> */}
+                            <div className="carsCustmGrid">
+                                <div className="usrDtls">
+                                    <img className="img-fluid" src="/assets/ruchi-parmar.png" />
+                                    <div className="usrNames">
+                                        <h5>Ruchi Parmar</h5>
+                                        <p>Migrated to UK</p>
                                     </div>
-                                {/* </SwiperSlide> */}
+                                </div>
+                                <p>After my +2, I was so confused about everything. I knew I wanted to study abroad but there were just too many questions. Which course? Which country? Which University?  Keel helped me with all my questions and also helped me make fast decisions. Thank you team Keel for giving me the right kickstart. </p>
+                            </div>
+                            {/* </SwiperSlide> */}
 
                             {/* </Swiper> */}
                         </div>

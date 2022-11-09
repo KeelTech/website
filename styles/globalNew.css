@@ -514,7 +514,56 @@ section.processSection {
   left: 5px;
     right: 0;
 }
+.midScrollCont {
+  display: flex;
+  gap: 80px;
+  flex-wrap: wrap;
+  position: relative;
+  isolation: isolate;
+}
 
+.leftprsCont {
+  width: calc(50% - 40px);
+}
+
+.rightPrsCont {
+  width: calc(50% - 40px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.midScrollCont:after {
+  content: '';
+  position: absolute;
+  left: -14px;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  bottom: 0;
+  margin: auto;
+  background: url(/assets/plan.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: -1;
+  left: 5px;
+  right: 0;
+  position: sticky;
+  background-position: center;
+  bottom: 20%;
+}
+
+.midScrollCont:before {
+  content: '';
+  height: 100%;
+  width: 6px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: -1;
+  background: linear-gradient(180deg, rgba(193, 139, 189, 0) 0%, rgba(162, 136, 196, 0.38) 21.57%, #7C84CD 48.43%, rgba(94, 129, 211, 0.38) 69.1%, rgba(47, 124, 222, 0) 102.32%);
+}
 /* .processStepCont:after {
   content: '';
   position: absolute;

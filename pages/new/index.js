@@ -109,22 +109,22 @@ const HomeView = () => {
                                 </div>
                                 <div className='rightPrsCont'>
                                     <div className='verticalImg'>
-                                        <img className='img-fluid' src='/assets/prcs.png' />
+                                        <img className='img-fluid' src='/assets/home/home-process-1.jpg' />
                                     </div>
                                 </div>
                             </div>
                             <div className='inrScrollBox reverseMobile'>
                                 <div className='rightPrsCont'>
                                     <div className='verticalImg'>
-                                        <img className='img-fluid' src='/assets/prcs.png' />
+                                        <img className='img-fluid' src='/assets/home/home-process-2.jpg' />
                                     </div>
                                 </div>
                                 <div className='leftprsCont'>
                                     <div className="processStepGrid">
                                         <div className="prcStpIn">
-                                            <span className="stepNum">Step 1</span>
-                                            <h5>Research and Discovery</h5>
-                                            <p>Explore your options: In terms of right courses, Universities, country and so on.</p>
+                                            <span className="stepNum">Step 2</span>
+                                            <h5>Career guidance from the top 1%</h5>
+                                            <p>Choose your path: After talking to mentors from Google, Uber, Microsoft and more.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -133,30 +133,30 @@ const HomeView = () => {
                                 <div className='leftprsCont'>
                                     <div className="processStepGrid">
                                         <div className="prcStpIn">
-                                            <span className="stepNum">Step 1</span>
-                                            <h5>Research and Discovery</h5>
-                                            <p>Explore your options: In terms of right courses, Universities, country and so on.</p>
+                                            <span className="stepNum">Step 3</span>
+                                            <h5>Take all the right steps</h5>
+                                            <p>Start your Journey: By creating a profile that showcases your best self.</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div className='rightPrsCont'>
                                     <div className='verticalImg'>
-                                        <img className='img-fluid' src='/assets/prcs.png' />
+                                        <img className='img-fluid' src='/assets/home/home-process-3.jpg'/>
                                     </div>
                                 </div>
                             </div>
                             <div className='inrScrollBox reverseMobile'>
                                 <div className='rightPrsCont'>
                                     <div className='verticalImg'>
-                                        <img className='img-fluid' src='/assets/prcs.png' />
+                                        <img className='img-fluid' src='/assets/home/home-process-4.jpg' />
                                     </div>
                                 </div>
                                 <div className='leftprsCont'>
                                     <div className="processStepGrid">
                                         <div className="prcStpIn">
-                                            <span className="stepNum">Step 1</span>
+                                            <span className="stepNum">Step 4</span>
                                             <h5>Research and Discovery</h5>
-                                            <p>Explore your options: In terms of right courses, Universities, country and so on.</p>
+                                            <p>Say hi to your dream life: By getting your desired scores and filing an application that stands out.</p>
                                         </div>
                                     </div>
                                 </div>

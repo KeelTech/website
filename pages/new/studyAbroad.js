@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 import Accordian from '@/components/Accordian/newAccordian';
 import { StudyAbroadAccordianData } from '@/helpers/constant.js'
+import GetConsultationCTA from '@/components/GetConsultationCTA';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -20,7 +21,7 @@ const StudyAbroad = () => {
                             </h1>
                             <p>Mentoring | Profile Building | Test Preparations | End to End Visa Solutions
                             </p>
-                            <button>Get Free Consultation</button>
+                            <GetConsultationCTA/>
                         </div>
                         <div className="studyBanImg">
                             <img className="img-fluid" src="/assets/study-abroad-hero-web.png" />

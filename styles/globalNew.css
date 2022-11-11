@@ -164,7 +164,8 @@ header {
   top: 0;
   background: white;
 }
-.newWebHead{
+
+.newWebHead {
   z-index: 999;
 }
 
@@ -512,14 +513,16 @@ section.processSection {
   background-size: contain;
   z-index: -1;
   left: 5px;
-    right: 0;
+  right: 0;
 }
+
 .midScrollCont {
   display: flex;
   gap: 80px;
   flex-wrap: wrap;
   position: relative;
   isolation: isolate;
+  margin-top: 40px;
 }
 
 .leftprsCont {
@@ -564,6 +567,7 @@ section.processSection {
   z-index: -1;
   background: linear-gradient(180deg, rgba(193, 139, 189, 0) 0%, rgba(162, 136, 196, 0.38) 21.57%, #7C84CD 48.43%, rgba(94, 129, 211, 0.38) 69.1%, rgba(47, 124, 222, 0) 102.32%);
 }
+
 /* .processStepCont:after {
   content: '';
   position: absolute;
@@ -640,10 +644,12 @@ img.quoteImg.img-fluid {
   margin: 90px 0px;
   margin-bottom: 0px;
 }
-.leftCrData{
+
+.leftCrData {
   width: 320px;
   flex-shrink: 0;
 }
+
 .leftCrData h4 {
   font-weight: 500;
   font-size: 24px;
@@ -1360,6 +1366,7 @@ img.sideBarLogo {
   margin: 0;
   height: 100%;
 }
+
 .inputChecked {
   display: none;
   position: fixed;
@@ -1784,11 +1791,13 @@ ul.ieltsListBan li {
   -ms-user-select: none;
   user-select: none;
 }
+
 .chkCont {
   display: flex;
   gap: 8px;
   margin-top: 5px;
 }
+
 button.cmSubmit {
   width: 100%;
   border-radius: 8px;
@@ -1799,6 +1808,7 @@ button.cmSubmit {
   background: linear-gradient(90deg, #5e98e1 1.59%, #2F7CDE 84.61%);
   margin-top: 20px;
 }
+
 /* Hide the browser's default radio button */
 .checkBoxContainer input {
   position: absolute;
@@ -1885,6 +1895,7 @@ button.cmSubmit {
   letter-spacing: 0.11em;
   color: #57606A;
 }
+
 .comFomCont {
   padding: 25px;
 }
@@ -1904,6 +1915,7 @@ section.communitySection {
   align-items: center;
   justify-content: center;
 }
+
 .verticalCarausalOuter.customVerticalOuter div.processStepCont {
   height: auto;
 }
@@ -1935,39 +1947,92 @@ section.communitySection {
   border-radius: 30px;
   left: 14px;
 }
+.inrScrollBox {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 80px;
+}
+.inrScrollBox div.verticalImg{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 /* ================= HamburgerMenu */
 @media (max-width: 767px) {
+  .leftprsCont {
+    width: 100%;
+}
+.inrScrollBox{
+  gap: 30px;
+}
+.rightPrsCont {
+    width: 100%;
+}
+.inrScrollBox.reverseMobile {
+  flex-direction: column-reverse;
+}
+
+.verticalImg {
+    display: block !important;
+}
+
+.rightPrsCont .verticalImg {
+    width: 100%;
+    text-align: center;
+}
+
+.midScrollCont {
+    padding-left: 35px;
+    gap: 30px;
+}
+
+.midScrollCont:before {
+    left: 10px;
+    right: unset;
+}
+
+.midScrollCont:after {
+    margin-left: -42px;
+}
   h1.bannerHeading {
     font-size: 36px;
   }
+
   .comFomCont {
     padding: 25px;
-}
-.leftCrData{
-  width: 100%;
-}
-.cmnuImgSec {
-  width: 100%;
-  margin-bottom: 30px;
-}
+  }
 
-.cmnuCont {
-  flex-wrap: wrap;
-}
-
-section.communitySection {
-  padding: 40px 0px;
-}
-div.noRevrsMob{
-  flex-direction: unset;
-}
-  .cmForm .inputForm{
+  .leftCrData {
     width: 100%;
   }
+
+  .cmnuImgSec {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .cmnuCont {
+    flex-wrap: wrap;
+  }
+
+  section.communitySection {
+    padding: 40px 0px;
+  }
+
+  div.noRevrsMob {
+    flex-direction: unset;
+  }
+
+  .cmForm .inputForm {
+    width: 100%;
+  }
+
   .communityForm {
     width: 100%;
     margin-top: 30px;
-}
+  }
 
   .formMain {
     flex-direction: column-reverse;
@@ -2036,9 +2101,11 @@ div.noRevrsMob{
     /* justify-content: center; */
     overflow: auto;
   }
-.srvcGrid{
-  flex-shrink: 0;
-}
+
+  .srvcGrid {
+    flex-shrink: 0;
+  }
+
   section.outStory {
     padding: 40px 0px;
   }
@@ -2512,8 +2579,7 @@ div.elgbForNew img.img-fluid.iframeImg {
   filter: drop-shadow(2px 4px 6px black);
 }
 
-div.elgbForNew .listEmlText ul li img {
-}
+div.elgbForNew .listEmlText ul li img {}
 
 div.elgbForNew .nameInp svg {
   fill: #2f7cde !important;
@@ -2522,7 +2588,7 @@ div.elgbForNew .nameInp svg {
 .chooseOpt button {
   border-color: #2f7cde !important;
   color: #2f7cde !important;
-} 
+}
 
 .commonPopUpOverlay {
   position: fixed;
@@ -2532,7 +2598,7 @@ div.elgbForNew .nameInp svg {
   right: 0;
   margin: auto;
   background: #000000c9;
-  z-index: 99;
+  z-index: 999;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2540,14 +2606,69 @@ div.elgbForNew .nameInp svg {
 
 .commonPopUpConten {
   min-width: 320px;
+  width: 95%;
   background: #ffffff;
   border: 1px solid #c7cacc;
   box-shadow: 4px 4px 8px #1e1e1e;
   border-radius: 4px;
   padding: 25px 30px;
   text-align: center;
-  max-width: 380px;
+  max-width: 580px;
   position: relative;
+}
+
+.formSettle h3 {
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+}
+
+.formSettle .formInputMain {
+  box-shadow: unset;
+  width: 100%;
+  padding: 0px;
+}
+
+.formSettle button.submitBtn {
+  width: 100%;
+  max-width: unset;
+}
+
+.formSettle h3 {
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.formSettle .formInputMain {
+  box-shadow: unset;
+  width: 100%;
+  padding: 0px;
+}
+
+.formSettle button.submitBtn {
+  width: 100%;
+  max-width: unset;
+}
+
+button.vryFy {
+  background: no-repeat;
+  color: #2F7CDE;
+  padding: 0;
+  margin: 0;
+  width: unset;
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+}
+
+.inputForm.OTPInput input {
+  padding-right: 100px;
+}
+
+.formSettle .formInputMain {
+  border: unset;
 }
 
 .closePop {
@@ -2555,8 +2676,10 @@ div.elgbForNew .nameInp svg {
   right: 5px;
   cursor: pointer;
   top: 5px;
-  height: 20px;
+  height: 25px;
 }
 
 .msg-img {}
+
+
 /* ===only for checkElig */

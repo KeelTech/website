@@ -3,7 +3,7 @@ import { useState, useRef } from 'react';
 import { sendOTP, verifyOTP } from '@/actions';
 import CustomToaster from '@/components/CustomToaster';
 
-const NumberVerification = ()=>{
+const NumberVerification = () => {
 
     const [number, setNumber] = useState('');
     const [otp, setOTP] = useState('');
@@ -22,11 +22,11 @@ const NumberVerification = ()=>{
         })
     }
 
-    const sendOTPClicked = ()=>{
+    const sendOTPClicked = () => {
         const postParams = {
             phone_number: number
         }
-        if(!number){
+        if (!number) {
             setToasterInfo({
                 isVisible: true,
                 isError: true,
@@ -39,9 +39,9 @@ const NumberVerification = ()=>{
             return;
         }
         setLoading(true);
-        sendOTP(postParams, (resp, err)=>{
+        sendOTP(postParams, (resp, err) => {
             setLoading(false);
-            if(resp){
+            if (resp) {
                 // setDataParams((oldState)=>{
                 //     return {...oldState, ...{phone_number: {
                 //         value: mobileNo,
@@ -57,7 +57,7 @@ const NumberVerification = ()=>{
                     isSuccess: true,
                     msg: 'OTP Sent Successfully'
                 });
-            }else{
+            } else {
                 setToasterInfo({
                     isVisible: true,
                     isError: true,
@@ -71,11 +71,11 @@ const NumberVerification = ()=>{
         })
     }
 
-    const verifyOTPClicked = ()=>{
+    const verifyOTPClicked = () => {
         const postParams = {
             otp
         }
-        if(!otp){
+        if (!otp) {
             setToasterInfo({
                 isVisible: true,
                 isError: true,
@@ -88,9 +88,9 @@ const NumberVerification = ()=>{
             return;
         }
         setLoading(true);
-        verifyOTP(postParams, (resp, err)=>{
+        verifyOTP(postParams, (resp, err) => {
             setLoading(false);
-            if(resp){
+            if (resp) {
                 // setDataParams((oldState)=>{
                 //     return {...oldState, ...{phone_number: {
                 //         value: mobileNo,
@@ -106,7 +106,7 @@ const NumberVerification = ()=>{
                     isSuccess: true,
                     msg: 'OTP Verified Successfully'
                 });
-            }else{
+            } else {
                 setToasterInfo({
                     isVisible: true,
                     isError: true,
@@ -120,40 +120,66 @@ const NumberVerification = ()=>{
         })
     }
 
-    const handleNumberInputChange = (e)=>{
+    const handleNumberInputChange = (e) => {
         const val = e.target.value;
-        if(val.length>10) return null;
+        if (val.length > 10) return null;
         setNumber(val);
     }
 
-    const handleKeyPress =(e)=>{
+    const handleKeyPress = (e) => {
         const key = e.key;
-        if(key=='Enter'){
+        if (key == 'Enter') {
             sendOTPClicked();
             otpInput.current.focus();
         }
     }
 
-    const handleOtpKeyPress = (e)=>{
+    const handleOtpKeyPress = (e) => {
         const key = e.key;
-        if(key=='Enter'){
+        if (key == 'Enter') {
             verifyOTPClicked();
         }
     }
 
-    return(
+    return (
         <>
             <CustomToaster {...toasterInfo} hideToaster={hideToaster} />
-            <div className="inputForm mobileInp">
-                <input type="number" onChange={handleNumberInputChange} value={number} onKeyPress={handleKeyPress}/>
+            {/* <div className="inputForm mobileInp">
+                <input type="number" onChange={handleNumberInputChange} value={number} onKeyPress={handleKeyPress} />
                 <p>Send OTP</p>
-                <label className={number?'fillInput':''}>Contact Number</label>
+                <label className={number ? 'fillInput' : ''}>Contact Number</label>
             </div>
             <div className="inputForm mobileInp">
-                <input type="number" onChange={(e)=>setOTP(e.target.value)} value={otp} ref={otpInput} onKeyPress={handleOtpKeyPress}/>
-                <label className={otp?'fillInput':''}>Contact Number</label>
+                <input type="number" onChange={(e) => setOTP(e.target.value)} value={otp} ref={otpInput} onKeyPress={handleOtpKeyPress} />
+                <label className={otp ? 'fillInput' : ''}>Contact Number</label>
             </div>
-            <p onClick={verifyOTPClicked}>Submit OTP</p>
+            <p onClick={verifyOTPClicked}>Submit OTP</p> */}
+            <div className='formSettle'>
+               <h3>Don't miss your free call</h3>
+                <div className="formInputMain">
+                    <div className="inputForm">
+                        <input type="text" />
+                        <label>Full Name</label>
+                    </div>
+                    <div className="inputForm mobileInp">
+                        <input type="number" onChange={handleNumberInputChange} value={number} onKeyPress={handleKeyPress} />
+                        <label className={number ? 'fillInput' : ''}>Contact Number</label>
+                        <img className="img-fluid" src="/assets/ind.svg" />
+                        <button className='vryFy'>Send OTP</button>
+                    </div>
+                    <div className="inputForm OTPInput">
+                        <input type="number" onChange={(e) => setOTP(e.target.value)} value={otp} ref={otpInput} onKeyPress={handleOtpKeyPress} />
+                        <label className={otp ? 'fillInput' : ''}>OTP</label>
+                        <button className='vryFy'>Verify</button>
+                    </div>
+                    <div className="inputForm">
+                        <input type="email" />
+                        <label>Email</label>
+                    </div>
+                    <button className="submitBtn">Send</button>
+                </div>
+            </div>
+
         </>
     )
 }

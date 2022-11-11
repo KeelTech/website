@@ -97,59 +97,67 @@ const HomeView = () => {
                             </div>
                         </div>
                         <div className='midScrollCont'>
-                            <div className='leftprsCont'>
-                                <div className="processStepGrid">
-                                    <div className="prcStpIn">
-                                        <span className="stepNum">Step 1</span>
-                                        <h5>Research and Discovery</h5>
-                                        <p>Explore your options: In terms of right courses, Universities, country and so on.</p>
+                            <div className='inrScrollBox'>
+                                <div className='leftprsCont'>
+                                    <div className="processStepGrid">
+                                        <div className="prcStpIn">
+                                            <span className="stepNum">Step 1</span>
+                                            <h5>Research and Discovery</h5>
+                                            <p>Explore your options: In terms of right courses, Universities, country and so on.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='rightPrsCont'>
+                                    <div className='verticalImg'>
+                                        <img className='img-fluid' src='/assets/prcs.png' />
                                     </div>
                                 </div>
                             </div>
-                            <div className='rightPrsCont'>
-                                <div className='verticalImg'>
-                                    <img className='img-fluid' src='/assets/prcs.png' />
+                            <div className='inrScrollBox reverseMobile'>
+                                <div className='rightPrsCont'>
+                                    <div className='verticalImg'>
+                                        <img className='img-fluid' src='/assets/prcs.png' />
+                                    </div>
                                 </div>
-                            </div>
-                            <div className='rightPrsCont'>
-                                <div className='verticalImg'>
-                                    <img className='img-fluid' src='/assets/prcs.png' />
-                                </div>
-                            </div>
-                            <div className='leftprsCont'>
-                                <div className="processStepGrid">
-                                    <div className="prcStpIn">
-                                        <span className="stepNum">Step 1</span>
-                                        <h5>Research and Discovery</h5>
-                                        <p>Explore your options: In terms of right courses, Universities, country and so on.</p>
+                                <div className='leftprsCont'>
+                                    <div className="processStepGrid">
+                                        <div className="prcStpIn">
+                                            <span className="stepNum">Step 1</span>
+                                            <h5>Research and Discovery</h5>
+                                            <p>Explore your options: In terms of right courses, Universities, country and so on.</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div className='leftprsCont'>
-                                <div className="processStepGrid">
-                                    <div className="prcStpIn">
-                                        <span className="stepNum">Step 1</span>
-                                        <h5>Research and Discovery</h5>
-                                        <p>Explore your options: In terms of right courses, Universities, country and so on.</p>
+                            <div className='inrScrollBox'>
+                                <div className='leftprsCont'>
+                                    <div className="processStepGrid">
+                                        <div className="prcStpIn">
+                                            <span className="stepNum">Step 1</span>
+                                            <h5>Research and Discovery</h5>
+                                            <p>Explore your options: In terms of right courses, Universities, country and so on.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='rightPrsCont'>
+                                    <div className='verticalImg'>
+                                        <img className='img-fluid' src='/assets/prcs.png' />
                                     </div>
                                 </div>
                             </div>
-                            <div className='rightPrsCont'>
-                                <div className='verticalImg'>
-                                    <img className='img-fluid' src='/assets/prcs.png' />
+                            <div className='inrScrollBox reverseMobile'>
+                                <div className='rightPrsCont'>
+                                    <div className='verticalImg'>
+                                        <img className='img-fluid' src='/assets/prcs.png' />
+                                    </div>
                                 </div>
-                            </div>
-                            <div className='rightPrsCont'>
-                                <div className='verticalImg'>
-                                    <img className='img-fluid' src='/assets/prcs.png' />
-                                </div>
-                            </div>
-                            <div className='leftprsCont'>
-                                <div className="processStepGrid">
-                                    <div className="prcStpIn">
-                                        <span className="stepNum">Step 1</span>
-                                        <h5>Research and Discovery</h5>
-                                        <p>Explore your options: In terms of right courses, Universities, country and so on.</p>
+                                <div className='leftprsCont'>
+                                    <div className="processStepGrid">
+                                        <div className="prcStpIn">
+                                            <span className="stepNum">Step 1</span>
+                                            <h5>Research and Discovery</h5>
+                                            <p>Explore your options: In terms of right courses, Universities, country and so on.</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

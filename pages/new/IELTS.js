@@ -90,7 +90,7 @@ const IELTS = () => {
                                 </div>
                             </div>
                             <div className='verticalImg'>
-                                <img className='img-fluid' src='/assets/ildt.png' />
+                                <img className='img-fluid' src='/assets/ielts-usp.png' />
                             </div>
                         </div>
                     </div>

@@ -232,8 +232,8 @@ const SettleAbroad = () => {
                                     <div className="processStepGrid">
                                         <div className="prcStpIn">
 
-                                            <h5>Flexible Batches</h5>
-                                            <p>Explore your options: In terms of right courses, Universities, country and so on.</p>
+                                            <h5>Licensed Consultants only</h5>
+                                            <p>To guide you through the process </p>
                                         </div>
                                     </div>
 
@@ -241,8 +241,8 @@ const SettleAbroad = () => {
                                     <div className="processStepGrid">
                                         <div className="prcStpIn">
 
-                                            <h5>Live Classes</h5>
-                                            <p>Choose your path: After talking to mentors from Google, Uber, Microsoft and more.</p>
+                                            <h5>Timely updates</h5>
+                                            <p>To keep you informed on the progress of your Canada PR application </p>
                                         </div>
                                     </div>
 
@@ -250,8 +250,8 @@ const SettleAbroad = () => {
                                     <div className="processStepGrid">
                                         <div className="prcStpIn">
 
-                                            <h5>Expert Material</h5>
-                                            <p>No more ghost consultants ghosting you!</p>
+                                            <h5>Precise filing</h5>
+                                            <p>Means less chances of rejection </p>
                                         </div>
                                     </div>
 
@@ -259,8 +259,8 @@ const SettleAbroad = () => {
                                     <div className="processStepGrid">
                                         <div className="prcStpIn">
 
-                                            <h5>Notes Academic & General Training</h5>
-                                            <p>Say hi to your dream life: By getting your desired scores and filing an application that stands out.</p>
+                                            <h5>Stress-free</h5>
+                                            <p>A transparent immigration process to guide you through the process</p>
                                         </div>
                                     </div>
                                 </div>

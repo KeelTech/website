@@ -57,7 +57,7 @@ const IELTS = () => {
                                         <div className="prcStpIn">
 
                                             <h5>Flexible Batches</h5>
-                                            <p>Explore your options: In terms of right courses, Universities, country and so on.</p>
+                                            <p>Study in your peak focus hours and make the most of every class.</p>
                                         </div>
                                     </div>
 
@@ -66,7 +66,7 @@ const IELTS = () => {
                                         <div className="prcStpIn">
 
                                             <h5>Live Classes</h5>
-                                            <p>Choose your path: After talking to mentors from Google, Uber, Microsoft and more.</p>
+                                            <p>Get your doubts resolved in real time and keep making real progress everyday</p>
                                         </div>
                                     </div>
 
@@ -75,7 +75,7 @@ const IELTS = () => {
                                         <div className="prcStpIn">
 
                                             <h5>Expert Material</h5>
-                                            <p>No more ghost consultants ghosting you!</p>
+                                            <p>Curated by top 0.1% IELTS coaches in India</p>
                                         </div>
                                     </div>
 
@@ -83,8 +83,8 @@ const IELTS = () => {
                                     <div className="processStepGrid">
                                         <div className="prcStpIn">
 
-                                            <h5>Notes Academic & General Training</h5>
-                                            <p>Say hi to your dream life: By getting your desired scores and filing an application that stands out.</p>
+                                            <h5>Self-paced Classes</h5>
+                                            <p>Learn at your own comfort with session recordings</p>
                                         </div>
                                     </div>
                                 </div>

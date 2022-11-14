@@ -23,8 +23,8 @@ const IELTS = () => {
                             <button>Book a Demo Class</button>
                         </div>
                         <div className="studyBanImg">
-                            <img className="img-fluid forWeb" src="/assets/name.png" />
-                            <img className="img-fluid forMobile" src="/assets/ielts.png" />
+                            <img className="img-fluid forWeb" src="/assets/ielts-header-desktop.png" />
+                            <img className="img-fluid forMobile" src="/assets/ielts-header.png" />
                         </div>
                     </div>
                     <div className="bannerLast">

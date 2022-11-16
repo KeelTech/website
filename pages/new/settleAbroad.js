@@ -279,7 +279,7 @@ const SettleAbroad = () => {
                             <div className="storyContent full-width text-center">
                                 <h4 className="grdHdng">Process</h4>
                                 <h5>The <span>Process</span></h5>
-                                <p>“A journey of a thousand miles begins with a single step.” - Lao Tzu</p>
+                                <p>Take out the stress from your Canada immigration journey with Keel’s tech enabled streamlined immigration process. </p>
                             </div>
                         </div>
                         <div className='midScrollCont'>
@@ -288,8 +288,8 @@ const SettleAbroad = () => {
                                     <div className="processStepGrid">
                                         <div className="prcStpIn">
                                             <span className="stepNum">Step 1</span>
-                                            <h5>Research and Discovery</h5>
-                                            <p>Explore your options: In terms of right courses, Universities, country and so on.</p>
+                                            <h5>Check your eligibility</h5>
+                                            <p>To find out which migration route would work best for you.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -309,8 +309,8 @@ const SettleAbroad = () => {
                                     <div className="processStepGrid">
                                         <div className="prcStpIn">
                                             <span className="stepNum">Step 2</span>
-                                            <h5>Career guidance from the top 1%</h5>
-                                            <p>Choose your path: After talking to mentors from Google, Uber, Microsoft and more.</p>
+                                            <h5>Connect with a Licensed Consultant</h5>
+                                            <p>Connect with our Licensed Immigration Consultant and understand the immigration process.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -320,8 +320,8 @@ const SettleAbroad = () => {
                                     <div className="processStepGrid">
                                         <div className="prcStpIn">
                                             <span className="stepNum">Step 3</span>
-                                            <h5>Take all the right steps</h5>
-                                            <p>Start your Journey: By creating a profile that showcases your best self.</p>
+                                            <h5>IELTS preparation</h5>
+                                            <p>Get your desired IELTS score with the help of the top 0.01% of IELTS coaches in India. </p>
                                         </div>
                                     </div>
                                 </div>
@@ -341,8 +341,40 @@ const SettleAbroad = () => {
                                     <div className="processStepGrid">
                                         <div className="prcStpIn">
                                             <span className="stepNum">Step 4</span>
-                                            <h5>Research and Discovery</h5>
-                                            <p>Say hi to your dream life: By getting your desired scores and filing an application that stands out.</p>
+                                            <h5>Work with a dedicated team</h5>
+                                            <p>And let them do all the heavy-lifting in your file preparation. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='inrScrollBox'>
+                                <div className='leftprsCont'>
+                                    <div className="processStepGrid">
+                                        <div className="prcStpIn">
+                                            <span className="stepNum">Step 5</span>
+                                            <h5>Submit the application </h5>
+                                            <p>Our Licensed Immigration Consultants prepare and file your application on your behalf. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='rightPrsCont'>
+                                    <div className='verticalImg'>
+                                        <img className='img-fluid' src='/assets/home/home-process-3.jpg'/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='inrScrollBox reverseMobile'>
+                                <div className='rightPrsCont'>
+                                    <div className='verticalImg'>
+                                        <img className='img-fluid' src='/assets/home/home-process-4.jpg' />
+                                    </div>
+                                </div>
+                                <div className='leftprsCont'>
+                                    <div className="processStepGrid">
+                                        <div className="prcStpIn">
+                                            <span className="stepNum">Step 6</span>
+                                            <h5>Start a new life </h5>
+                                            <p>Start your dream life in Canada and get support from a ready-to-help community.</p>
                                         </div>
                                     </div>
                                 </div>

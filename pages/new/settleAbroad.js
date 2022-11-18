@@ -265,7 +265,7 @@ const SettleAbroad = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className='verticalImg'>
+                            <div className='verticalImg hideMobile'>
                                 <img className='img-fluid' src='/assets/ildt.png' />
                             </div>
                         </div>

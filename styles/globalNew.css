@@ -1959,10 +1959,45 @@ section.communitySection {
   align-items: center;
   justify-content: center;
 }
+.ageGender {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.ageGender .inputForm {
+  width: calc(50% - 15px);
+}
+
+.ageGender .inptSelect {
+  width: calc(50% - 15px);
+}
+
+.inptSelect select {
+  border: 1px solid #E8E8E8;
+  border-radius: 8px;
+  width: 100%;
+  min-height: 55px;
+  padding: 12px;
+  font-size: 14px;
+  outline: none;
+  -moz-appearance:none; /* Firefox */
+  -webkit-appearance:none; /* Safari and Chrome */
+  appearance:none;
+  background: transparent;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 15px;
+    color: #262e33;
+}
 /* ================= HamburgerMenu */
 @media (max-width: 767px) {
   .leftprsCont {
     width: 100%;
+}
+.verticalImg.hideMobile{
+  display: none !important;
 }
 .inrScrollBox{
   gap: 30px;

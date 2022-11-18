@@ -155,11 +155,24 @@ const NumberVerification = () => {
             </div>
             <p onClick={verifyOTPClicked}>Submit OTP</p> */}
             <div className='formSettle'>
-               <h3>Don't miss your free call</h3>
+                <h3>Don't miss your free call</h3>
                 <div className="formInputMain">
                     <div className="inputForm">
                         <input type="text" />
                         <label>Full Name</label>
+                    </div>
+                    <div className='ageGender'>
+                        <div className="inputForm">
+                            <input type="number" />
+                            <label>Age</label>
+                        </div>
+                        <div className='inptSelect'>
+                            <select>
+                                <option value="" disabled selected>Select your option</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                            </select>
+                        </div>
                     </div>
                     <div className="inputForm mobileInp">
                         <input type="number" onChange={handleNumberInputChange} value={number} onKeyPress={handleKeyPress} />

@@ -103,6 +103,7 @@ export const sendOTP = (dataParams, cb=null)=>{
     API_POST(`${API_END_POINT}/user/otp/generate`,
         dataParams
     ).then((response)=>{
+        console.log("response", response);
         if(cb)cb(response, null);
     }).catch((e)=>{
         if(cb)cb(null, true);
@@ -117,4 +118,12 @@ export const sendOTP = (dataParams, cb=null)=>{
     }).catch((e)=>{
         if(cb)cb(null, true);
     })
+  }
+
+  export const createLeadSquareLead = (dataParams, cb=null, headers)=>{
+    const { accessKey, secretKey, payload } = dataParams;
+    return API_POST(`https://asyncapi-in21.leadsquared.com?accessKey=${accessKey}&secretKey=${secretKey}`,
+        payload,
+        headers
+    )
   }

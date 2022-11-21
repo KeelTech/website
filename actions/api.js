@@ -20,14 +20,15 @@ export const API_POST = (url, data, headers={})=>{
             cache: 'no-cache',
             headers: {
                 'Content-Type': 'application/json',
+                ...headers
             },
             body: JSON.stringify(data)
         })
         .then(response => response.json())
         .then((resp)=>{
-            resolve(resp)
+            resolve(resp);
         }).catch((e)=>{
-            reject();
+            reject(e);
         })
     })
 }

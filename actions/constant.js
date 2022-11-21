@@ -1,4 +1,7 @@
 export const API_END_POINT = process.env.NEXT_PUBLIC_API_END_POINT;
+export const LEAD_SQUARED_ACCESS_ID = `u$${process.env.NEXT_PUBLIC_LEAD_SQUARED_ACCESS_ID}`;
+export const LEAD_SQUARED_SECRET_KEY = process.env.NEXT_PUBLIC_LEAD_SQUARED_SECRET_KEY;
+export const LEAD_SQUARED_X_API = process.env.NEXT_PUBLIC_LEAD_SQUARED_X_API;
 
 export const INTRO_ACCORDIAN = [
     {

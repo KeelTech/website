@@ -23,17 +23,17 @@ const IELTS = () => {
                             <button>Book a Demo Class</button>
                         </div>
                         <div className="studyBanImg">
-                            <img className="img-fluid forWeb" src="/assets/ielts-header-desktop.png" />
-                            <img className="img-fluid forMobile" src="/assets/ielts-header.png" />
+                            <img className="img-fluid forWeb" src="/assets/ielts-header-desktop.webp" />
+                            <img className="img-fluid forMobile" src="/assets/ielts-header.webp" />
                         </div>
                     </div>
                     <div className="bannerLast">
                         <p>We are certified by:</p>
                         <div className="banImgsGrid">
-                            <img src="/assets/cr1.png" alt="" className="img-fluid" />
-                            <img src="/assets/cr2.png" alt="" className="img-fluid" />
-                            <img src="/assets/cr3.png" alt="" className="img-fluid" />
-                            <img src="/assets/cr4.png" alt="" className="img-fluid" />
+                            <img src="/assets/cr1.webp" alt="" className="img-fluid" />
+                            <img src="/assets/cr2.webp" alt="" className="img-fluid" />
+                            <img src="/assets/cr3.webp" alt="" className="img-fluid" />
+                            <img src="/assets/cr4.webp" alt="" className="img-fluid" />
                         </div>
                     </div>
                 </div>
@@ -90,7 +90,7 @@ const IELTS = () => {
                                 </div>
                             </div>
                             <div className='verticalImg'>
-                                <img className='img-fluid' src='/assets/ielts-usp.png' />
+                                <img className='img-fluid' src='/assets/ielts-usp.webp' />
                             </div>
                         </div>
                     </div>
@@ -112,7 +112,7 @@ const IELTS = () => {
                         <div className="carsBatchCont">
                             <div className="batchGrids">
                                 <div className="batchInner">
-                                    <img className="img-fluid" src="/assets/batch.png" />
+                                    <img className="img-fluid" src="/assets/batch.webp" />
                                     <ul>
                                         <li>
                                             <img className="img-fluid" src="/assets/calendar.svg" />
@@ -128,7 +128,7 @@ const IELTS = () => {
                             </div>
                             <div className="batchGrids">
                                 <div className="batchInner">
-                                    <img className="img-fluid" src="/assets/batch.png" />
+                                    <img className="img-fluid" src="/assets/batch.webp" />
                                     <ul>
                                         <li>
                                             <img className="img-fluid" src="/assets/calendar.svg" />
@@ -144,7 +144,7 @@ const IELTS = () => {
                             </div>
                             <div className="batchGrids">
                                 <div className="batchInner">
-                                    <img className="img-fluid" src="/assets/batch.png" />
+                                    <img className="img-fluid" src="/assets/batch.webp" />
                                     <ul>
                                         <li>
                                             <img className="img-fluid" src="/assets/calendar.svg" />
@@ -160,7 +160,7 @@ const IELTS = () => {
                             </div>
                             <div className="batchGrids">
                                 <div className="batchInner">
-                                    <img className="img-fluid" src="/assets/batch.png" />
+                                    <img className="img-fluid" src="/assets/batch.webp" />
                                     <ul>
                                         <li>
                                             <img className="img-fluid" src="/assets/calendar.svg" />
@@ -196,7 +196,7 @@ const IELTS = () => {
                                                 <h5>Deep Saxena</h5>
                                                 <button>Scored 8,8,7,7</button>
                                             </div>
-                                            <img className="img-fluid hpyRht" src="/assets/ielts/deep-saxena.png" />
+                                            <img className="img-fluid hpyRht" src="/assets/ielts/deep-saxena.webp" />
                                         </div>
                                     </div>
                                 </div>
@@ -210,7 +210,7 @@ const IELTS = () => {
                                                 <h5>Divya Sharma</h5>
                                                 <button>Scored 8,7,7,8</button>
                                             </div>
-                                            <img className="img-fluid hpyRht" src="/assets/ielts/divya-sharma.png" />
+                                            <img className="img-fluid hpyRht" src="/assets/ielts/divya-sharma.webp" />
                                         </div>
                                     </div>
                                 </div>
@@ -226,7 +226,7 @@ const IELTS = () => {
                                                 <h5>Harsh Aggarwal</h5>
                                                 <button>Scored 8,7,7,7</button>
                                             </div>
-                                            <img className="img-fluid hpyRht" src="/assets/ielts/harsh-aggarwal.png" />
+                                            <img className="img-fluid hpyRht" src="/assets/ielts/harsh-aggarwal.webp" />
                                         </div>
                                     </div>
                                 </div>
@@ -240,7 +240,7 @@ const IELTS = () => {
                                                 <h5>Anushi Sen</h5>
                                                 <button>Scored 8,7,7,7</button>
                                             </div>
-                                            <img className="img-fluid hpyRht" src="/assets/ielts/anushi-sen.png" />
+                                            <img className="img-fluid hpyRht" src="/assets/ielts/anushi-sen.webp" />
                                         </div>
                                     </div>
                                 </div>
@@ -254,7 +254,7 @@ const IELTS = () => {
                                                 <h5>Neha Suri</h5>
                                                 <button>Scored 8,7,8,7</button>
                                             </div>
-                                            <img className="img-fluid hpyRht" src="/assets/ielts/neha-suri.png" />
+                                            <img className="img-fluid hpyRht" src="/assets/ielts/neha-suri.webp" />
                                         </div>
                                     </div>
                                 </div>
@@ -270,7 +270,7 @@ const IELTS = () => {
                                                 <h5>Amit Vats</h5>
                                                 <button>Scored 8,7,7,7</button>
                                             </div>
-                                            <img className="img-fluid hpyRht" src="/assets/ielts/amit-vats.png" />
+                                            <img className="img-fluid hpyRht" src="/assets/ielts/amit-vats.webp" />
                                         </div>
                                     </div>
                                 </div>
@@ -284,7 +284,7 @@ const IELTS = () => {
                                                 <h5>Ruchi Gupta</h5>
                                                 <button>Scored 8,7,7,8</button>
                                             </div>
-                                            <img className="img-fluid hpyRht" src="/assets/ielts/ruchi-gupta.png" />
+                                            <img className="img-fluid hpyRht" src="/assets/ielts/ruchi-gupta.webp" />
                                         </div>
                                     </div>
                                 </div>

@@ -10,7 +10,7 @@ const Resource = () => {
                         <h5>About <span>Keel</span></h5>
                         <p className="customPeraAbout">Ask questions, share ideas, and build connections with each other—all right next to your code. GitHub Discussions enables healthy and productive software collaboration. Ask questions, share ideas, and build connections with each other—all right next to your code. GitHub Discussions enables healthy and productive software collaboration.</p>
                     </div>
-                    <img className="img-fluid aboutUsImg" src="/assets/about.png" />
+                    <img className="img-fluid aboutUsImg" src="/assets/about.webp" />
                 </div>
             </section>
             <section className="aboutMembers">
@@ -24,32 +24,32 @@ const Resource = () => {
                     </div>
                     <div className="membersListCont">
                         <div className="memLists">
-                            <img className="img-fluid" src="/assets/mem.png" />
+                            <img className="img-fluid" src="/assets/mem.webp" />
                             <p>Shubh Wadekar</p>
                             <span>PRODUCT DESIGNER</span>
                         </div>
                         <div className="memLists">
-                            <img className="img-fluid" src="/assets/mem.png" />
+                            <img className="img-fluid" src="/assets/mem.webp" />
                             <p>Shubh Wadekar</p>
                             <span>PRODUCT DESIGNER</span>
                         </div>
                         <div className="memLists">
-                            <img className="img-fluid" src="/assets/mem.png" />
+                            <img className="img-fluid" src="/assets/mem.webp" />
                             <p>Shubh Wadekar</p>
                             <span>PRODUCT DESIGNER</span>
                         </div>
                         <div className="memLists">
-                            <img className="img-fluid" src="/assets/mem.png" />
+                            <img className="img-fluid" src="/assets/mem.webp" />
                             <p>Shubh Wadekar</p>
                             <span>PRODUCT DESIGNER</span>
                         </div>
                         <div className="memLists">
-                            <img className="img-fluid" src="/assets/mem.png" />
+                            <img className="img-fluid" src="/assets/mem.webp" />
                             <p>Shubh Wadekar</p>
                             <span>PRODUCT DESIGNER</span>
                         </div>
                         <div className="memLists">
-                            <img className="img-fluid" src="/assets/mem.png" />
+                            <img className="img-fluid" src="/assets/mem.webp" />
                             <p>Shubh Wadekar</p>
                             <span>PRODUCT DESIGNER</span>
                         </div>
@@ -67,32 +67,32 @@ const Resource = () => {
                     </div>
                     <div className="membersListCont">
                         <div className="memLists">
-                            <img className="img-fluid" src="/assets/mem.png" />
+                            <img className="img-fluid" src="/assets/mem.webp" />
                             <p>Shubh Wadekar</p>
                             <span>PRODUCT DESIGNER</span>
                         </div>
                         <div className="memLists">
-                            <img className="img-fluid" src="/assets/mem.png" />
+                            <img className="img-fluid" src="/assets/mem.webp" />
                             <p>Shubh Wadekar</p>
                             <span>PRODUCT DESIGNER</span>
                         </div>
                         <div className="memLists">
-                            <img className="img-fluid" src="/assets/mem.png" />
+                            <img className="img-fluid" src="/assets/mem.webp" />
                             <p>Shubh Wadekar</p>
                             <span>PRODUCT DESIGNER</span>
                         </div>
                         <div className="memLists">
-                            <img className="img-fluid" src="/assets/mem.png" />
+                            <img className="img-fluid" src="/assets/mem.webp" />
                             <p>Shubh Wadekar</p>
                             <span>PRODUCT DESIGNER</span>
                         </div>
                         <div className="memLists">
-                            <img className="img-fluid" src="/assets/mem.png" />
+                            <img className="img-fluid" src="/assets/mem.webp" />
                             <p>Shubh Wadekar</p>
                             <span>PRODUCT DESIGNER</span>
                         </div>
                         <div className="memLists">
-                            <img className="img-fluid" src="/assets/mem.png" />
+                            <img className="img-fluid" src="/assets/mem.webp" />
                             <p>Shubh Wadekar</p>
                             <span>PRODUCT DESIGNER</span>
                         </div>
@@ -110,32 +110,32 @@ const Resource = () => {
                     </div>
                     <div className="membersListCont">
                         <div className="memLists">
-                            <img className="img-fluid" src="/assets/mem.png" />
+                            <img className="img-fluid" src="/assets/mem.webp" />
                             <p>Shubh Wadekar</p>
                             <span>PRODUCT DESIGNER</span>
                         </div>
                         <div className="memLists">
-                            <img className="img-fluid" src="/assets/mem.png" />
+                            <img className="img-fluid" src="/assets/mem.webp" />
                             <p>Shubh Wadekar</p>
                             <span>PRODUCT DESIGNER</span>
                         </div>
                         <div className="memLists">
-                            <img className="img-fluid" src="/assets/mem.png" />
+                            <img className="img-fluid" src="/assets/mem.webp" />
                             <p>Shubh Wadekar</p>
                             <span>PRODUCT DESIGNER</span>
                         </div>
                         <div className="memLists">
-                            <img className="img-fluid" src="/assets/mem.png" />
+                            <img className="img-fluid" src="/assets/mem.webp" />
                             <p>Shubh Wadekar</p>
                             <span>PRODUCT DESIGNER</span>
                         </div>
                         <div className="memLists">
-                            <img className="img-fluid" src="/assets/mem.png" />
+                            <img className="img-fluid" src="/assets/mem.webp" />
                             <p>Shubh Wadekar</p>
                             <span>PRODUCT DESIGNER</span>
                         </div>
                         <div className="memLists">
-                            <img className="img-fluid" src="/assets/mem.png" />
+                            <img className="img-fluid" src="/assets/mem.webp" />
                             <p>Shubh Wadekar</p>
                             <span>PRODUCT DESIGNER</span>
                         </div>

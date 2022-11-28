@@ -14,7 +14,7 @@ const Career = ()=>{
                     <button>Explore Jobs</button>
                 </div>
                 <div className="studyBanImg">
-                    <img className="img-fluid" src="/assets/career-hero.png" />
+                    <img className="img-fluid" src="/assets/career-hero.webp" />
                 </div>
             </div>
         </div>
@@ -122,7 +122,7 @@ const Career = ()=>{
                         </div>
                     </div>
                 </div>
-                <button className="seeAllBtn">See All <img className="img-fluid" src="/assets/vtR.png" /></button>
+                <button className="seeAllBtn">See All <img className="img-fluid" src="/assets/vtR.webp" /></button>
             </div>
         </div>
     </section>

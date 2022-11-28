@@ -24,17 +24,17 @@ const StudyAbroad = () => {
                             <GetConsultationCTA />
                         </div>
                         <div className="studyBanImg">
-                            <img className="img-fluid" src="/assets/study-abroad-hero-web.png" />
+                            <img className="img-fluid" src="/assets/study-abroad-hero-web.webp" />
                         </div>
                     </div>
                     <div className="bannerLast">
                         <p>Our students finished University to work at global offices of</p>
                         <div className="banImgsGrid">
-                            <img src="/assets/unvrscty5.png" alt="" className="img-fluid" />
-                            <img src="/assets/unvrscty1.png" alt="" className="img-fluid" />
-                            <img src="/assets/unvrscty2.png" alt="" className="img-fluid" />
-                            <img src="/assets/unvrscty3.png" alt="" className="img-fluid" />
-                            <img src="/assets/unvrscty4.png" alt="" className="img-fluid" />
+                            <img src="/assets/unvrscty5.webp" alt="" className="img-fluid" />
+                            <img src="/assets/unvrscty1.webp" alt="" className="img-fluid" />
+                            <img src="/assets/unvrscty2.webp" alt="" className="img-fluid" />
+                            <img src="/assets/unvrscty3.webp" alt="" className="img-fluid" />
+                            <img src="/assets/unvrscty4.webp" alt="" className="img-fluid" />
                         </div>
                     </div>
                 </div>
@@ -64,7 +64,7 @@ const StudyAbroad = () => {
                         <div className="universitiesGridCont">
                             <div className="unvGrdnntOuter">
                                 <div className="unvGrids">
-                                    <img className="img-fluid" src="/assets/university.png" />
+                                    <img className="img-fluid" src="/assets/university.webp" />
                                     <div className="unvGrdCont">
                                         <span className="unvGrdnt">UK</span>
                                         <h4>University of Oxford</h4>
@@ -82,13 +82,13 @@ const StudyAbroad = () => {
                                                 <p>$45k</p>
                                             </li>
                                         </ul>
-                                        <button>View University <img className="img-fluid" src="/assets/vtR.png" /></button>
+                                        <button>View University <img className="img-fluid" src="/assets/vtR.webp" /></button>
                                     </div>
                                 </div>
                             </div>
                             <div className="unvGrdnntOuter">
                                 <div className="unvGrids">
-                                    <img className="img-fluid" src="/assets/university.png" />
+                                    <img className="img-fluid" src="/assets/university.webp" />
                                     <div className="unvGrdCont">
                                         <span className="unvGrdnt">UK</span>
                                         <h4>University of Oxford</h4>
@@ -106,13 +106,13 @@ const StudyAbroad = () => {
                                                 <p>$45k</p>
                                             </li>
                                         </ul>
-                                        <button>View University <img className="img-fluid" src="/assets/vtR.png" /></button>
+                                        <button>View University <img className="img-fluid" src="/assets/vtR.webp" /></button>
                                     </div>
                                 </div>
                             </div>
                             <div className="unvGrdnntOuter">
                                 <div className="unvGrids">
-                                    <img className="img-fluid" src="/assets/university.png" />
+                                    <img className="img-fluid" src="/assets/university.webp" />
                                     <div className="unvGrdCont">
                                         <span className="unvGrdnt">UK</span>
                                         <h4>University of Oxford</h4>
@@ -130,13 +130,13 @@ const StudyAbroad = () => {
                                                 <p>$45k</p>
                                             </li>
                                         </ul>
-                                        <button>View University <img className="img-fluid" src="/assets/vtR.png" /></button>
+                                        <button>View University <img className="img-fluid" src="/assets/vtR.webp" /></button>
                                     </div>
                                 </div>
                             </div>
                             <div className="unvGrdnntOuter">
                                 <div className="unvGrids">
-                                    <img className="img-fluid" src="/assets/university.png" />
+                                    <img className="img-fluid" src="/assets/university.webp" />
                                     <div className="unvGrdCont">
                                         <span className="unvGrdnt">UK</span>
                                         <h4>University of Oxford</h4>
@@ -154,13 +154,13 @@ const StudyAbroad = () => {
                                                 <p>$45k</p>
                                             </li>
                                         </ul>
-                                        <button>View University <img className="img-fluid" src="/assets/vtR.png" /></button>
+                                        <button>View University <img className="img-fluid" src="/assets/vtR.webp" /></button>
                                     </div>
                                 </div>
                             </div>
                             <div className="unvGrdnntOuter">
                                 <div className="unvGrids">
-                                    <img className="img-fluid" src="/assets/university.png" />
+                                    <img className="img-fluid" src="/assets/university.webp" />
                                     <div className="unvGrdCont">
                                         <span className="unvGrdnt">UK</span>
                                         <h4>University of Oxford</h4>
@@ -178,13 +178,13 @@ const StudyAbroad = () => {
                                                 <p>$45k</p>
                                             </li>
                                         </ul>
-                                        <button>View University <img className="img-fluid" src="/assets/vtR.png" /></button>
+                                        <button>View University <img className="img-fluid" src="/assets/vtR.webp" /></button>
                                     </div>
                                 </div>
                             </div>
                             <div className="unvGrdnntOuter">
                                 <div className="unvGrids">
-                                    <img className="img-fluid" src="/assets/university.png" />
+                                    <img className="img-fluid" src="/assets/university.webp" />
                                     <div className="unvGrdCont">
                                         <span className="unvGrdnt">UK</span>
                                         <h4>University of Oxford</h4>
@@ -202,12 +202,12 @@ const StudyAbroad = () => {
                                                 <p>$45k</p>
                                             </li>
                                         </ul>
-                                        <button>View University <img className="img-fluid" src="/assets/vtR.png" /></button>
+                                        <button>View University <img className="img-fluid" src="/assets/vtR.webp" /></button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <button className="seeAllBtn">See All <img className="img-fluid" src="/assets/vtR.png" /></button>
+                        <button className="seeAllBtn">See All <img className="img-fluid" src="/assets/vtR.webp" /></button>
                     </div>
                 </div>
             </section>
@@ -234,14 +234,14 @@ const StudyAbroad = () => {
                                 </div>
                                 <div className='rightPrsCont'>
                                     <div className='verticalImg'>
-                                        <img className='img-fluid' src='/assets/home/home-process-1.jpg' />
+                                        <img className='img-fluid' src='/assets/home/home-process-1.webp' />
                                     </div>
                                 </div>
                             </div>
                             <div className='inrScrollBox reverseMobile'>
                                 <div className='rightPrsCont'>
                                     <div className='verticalImg'>
-                                        <img className='img-fluid' src='/assets/home/home-process-2.jpg' />
+                                        <img className='img-fluid' src='/assets/home/home-process-2.webp' />
                                     </div>
                                 </div>
                                 <div className='leftprsCont'>
@@ -266,14 +266,14 @@ const StudyAbroad = () => {
                                 </div>
                                 <div className='rightPrsCont'>
                                     <div className='verticalImg'>
-                                        <img className='img-fluid' src='/assets/home/home-process-3.jpg' />
+                                        <img className='img-fluid' src='/assets/home/home-process-3.webp' />
                                     </div>
                                 </div>
                             </div>
                             <div className='inrScrollBox reverseMobile'>
                                 <div className='rightPrsCont'>
                                     <div className='verticalImg'>
-                                        <img className='img-fluid' src='/assets/home/home-process-4.jpg' />
+                                        <img className='img-fluid' src='/assets/home/home-process-4.webp' />
                                     </div>
                                 </div>
                                 <div className='leftprsCont'>
@@ -351,7 +351,7 @@ const StudyAbroad = () => {
                                 </div>
                             </div>
                             <div className='verticalImg'>
-                                <img className='img-fluid' src='/assets/ver.png' />
+                                <img className='img-fluid' src='/assets/ver.webp' />
                             </div>
                         </div>
                     </div>
@@ -376,7 +376,7 @@ const StudyAbroad = () => {
                                                 <h5>Sheetal Mehta</h5>
                                                 <button>Studying in UK</button>
                                             </div>
-                                            <img className="img-fluid hpyRht" src="/assets/studyAbroad/sheetal-mehta.png" />
+                                            <img className="img-fluid hpyRht" src="/assets/studyAbroad/sheetal-mehta.webp" />
                                         </div>
                                     </div>
                                 </div>
@@ -390,7 +390,7 @@ const StudyAbroad = () => {
                                                 <h5>Rajat Gupta</h5>
                                                 <button>Studying in USA</button>
                                             </div>
-                                            <img className="img-fluid hpyRht" src="/assets/studyAbroad/rajat-gupta.png" />
+                                            <img className="img-fluid hpyRht" src="/assets/studyAbroad/rajat-gupta.webp" />
                                         </div>
                                     </div>
                                 </div>
@@ -406,7 +406,7 @@ const StudyAbroad = () => {
                                                 <h5>Ruchi Parmar</h5>
                                                 <button>Studying in Canada</button>
                                             </div>
-                                            <img className="img-fluid hpyRht" src="/assets/studyAbroad/ruchi-parmar.png" />
+                                            <img className="img-fluid hpyRht" src="/assets/studyAbroad/ruchi-parmar.webp" />
                                         </div>
                                     </div>
                                 </div>
@@ -420,7 +420,7 @@ const StudyAbroad = () => {
                                                 <h5>Luv Gupta</h5>
                                                 <button>Studying in Italy</button>
                                             </div>
-                                            <img className="img-fluid hpyRht" src="/assets/studyAbroad/luv-gupta.png" />
+                                            <img className="img-fluid hpyRht" src="/assets/studyAbroad/luv-gupta.webp" />
                                         </div>
                                     </div>
                                 </div>
@@ -436,7 +436,7 @@ const StudyAbroad = () => {
                                                 <h5>Luveen Mishra</h5>
                                                 <button>Studying in Japan</button>
                                             </div>
-                                            <img className="img-fluid hpyRht" src="/assets/studyAbroad/luveen-mishra.png" />
+                                            <img className="img-fluid hpyRht" src="/assets/studyAbroad/luveen-mishra.webp" />
                                         </div>
                                     </div>
                                 </div>
@@ -452,7 +452,7 @@ const StudyAbroad = () => {
                                                 <h5>Nitish Jha</h5>
                                                 <button>Studying in Australia</button>
                                             </div>
-                                            <img className="img-fluid hpyRht" src="/assets/studyAbroad/nitish-jha.png" />
+                                            <img className="img-fluid hpyRht" src="/assets/studyAbroad/nitish-jha.webp" />
                                         </div>
                                     </div>
                                 </div>
@@ -466,7 +466,7 @@ const StudyAbroad = () => {
                                                 <h5>Janak Pandya</h5>
                                                 <button>Studying in Germany</button>
                                             </div>
-                                            <img className="img-fluid hpyRht" src="/assets/studyAbroad/janak-pandya.png" />
+                                            <img className="img-fluid hpyRht" src="/assets/studyAbroad/janak-pandya.webp" />
                                         </div>
                                     </div>
                                 </div>
@@ -518,7 +518,7 @@ const StudyAbroad = () => {
                         <div className="universitiesGridCont">
                             <div className="unvGrdnntOuter">
                                 <div className="unvGrids">
-                                    <img className="img-fluid" src="/assets/university.png" />
+                                    <img className="img-fluid" src="/assets/university.webp" />
                                     <div className="unvGrdCont">
                                         <span className="unvGrdnt">UK</span>
                                         <h4>University of Oxford</h4>
@@ -536,13 +536,13 @@ const StudyAbroad = () => {
                                                 <p>$45k</p>
                                             </li>
                                         </ul>
-                                        <button>View University <img className="img-fluid" src="/assets/vtR.png" /></button>
+                                        <button>View University <img className="img-fluid" src="/assets/vtR.webp" /></button>
                                     </div>
                                 </div>
                             </div>
                             <div className="unvGrdnntOuter">
                                 <div className="unvGrids">
-                                    <img className="img-fluid" src="/assets/university.png" />
+                                    <img className="img-fluid" src="/assets/university.webp" />
                                     <div className="unvGrdCont">
                                         <span className="unvGrdnt">UK</span>
                                         <h4>University of Oxford</h4>
@@ -560,13 +560,13 @@ const StudyAbroad = () => {
                                                 <p>$45k</p>
                                             </li>
                                         </ul>
-                                        <button>View University <img className="img-fluid" src="/assets/vtR.png" /></button>
+                                        <button>View University <img className="img-fluid" src="/assets/vtR.webp" /></button>
                                     </div>
                                 </div>
                             </div>
                             <div className="unvGrdnntOuter">
                                 <div className="unvGrids">
-                                    <img className="img-fluid" src="/assets/university.png" />
+                                    <img className="img-fluid" src="/assets/university.webp" />
                                     <div className="unvGrdCont">
                                         <span className="unvGrdnt">UK</span>
                                         <h4>University of Oxford</h4>
@@ -584,13 +584,13 @@ const StudyAbroad = () => {
                                                 <p>$45k</p>
                                             </li>
                                         </ul>
-                                        <button>View University <img className="img-fluid" src="/assets/vtR.png" /></button>
+                                        <button>View University <img className="img-fluid" src="/assets/vtR.webp" /></button>
                                     </div>
                                 </div>
                             </div>
                             <div className="unvGrdnntOuter">
                                 <div className="unvGrids">
-                                    <img className="img-fluid" src="/assets/university.png" />
+                                    <img className="img-fluid" src="/assets/university.webp" />
                                     <div className="unvGrdCont">
                                         <span className="unvGrdnt">UK</span>
                                         <h4>University of Oxford</h4>
@@ -608,13 +608,13 @@ const StudyAbroad = () => {
                                                 <p>$45k</p>
                                             </li>
                                         </ul>
-                                        <button>View University <img className="img-fluid" src="/assets/vtR.png" /></button>
+                                        <button>View University <img className="img-fluid" src="/assets/vtR.webp" /></button>
                                     </div>
                                 </div>
                             </div>
                             <div className="unvGrdnntOuter">
                                 <div className="unvGrids">
-                                    <img className="img-fluid" src="/assets/university.png" />
+                                    <img className="img-fluid" src="/assets/university.webp" />
                                     <div className="unvGrdCont">
                                         <span className="unvGrdnt">UK</span>
                                         <h4>University of Oxford</h4>
@@ -632,13 +632,13 @@ const StudyAbroad = () => {
                                                 <p>$45k</p>
                                             </li>
                                         </ul>
-                                        <button>View University <img className="img-fluid" src="/assets/vtR.png" /></button>
+                                        <button>View University <img className="img-fluid" src="/assets/vtR.webp" /></button>
                                     </div>
                                 </div>
                             </div>
                             <div className="unvGrdnntOuter">
                                 <div className="unvGrids">
-                                    <img className="img-fluid" src="/assets/university.png" />
+                                    <img className="img-fluid" src="/assets/university.webp" />
                                     <div className="unvGrdCont">
                                         <span className="unvGrdnt">UK</span>
                                         <h4>University of Oxford</h4>
@@ -656,12 +656,12 @@ const StudyAbroad = () => {
                                                 <p>$45k</p>
                                             </li>
                                         </ul>
-                                        <button>View University <img className="img-fluid" src="/assets/vtR.png" /></button>
+                                        <button>View University <img className="img-fluid" src="/assets/vtR.webp" /></button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <button className="seeAllBtn">See All <img className="img-fluid" src="/assets/vtR.png" /></button>
+                        <button className="seeAllBtn">See All <img className="img-fluid" src="/assets/vtR.webp" /></button>
                     </div>
                 </div>
             </section> */}

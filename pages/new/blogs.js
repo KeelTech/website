@@ -14,8 +14,8 @@ const Resource = ()=>{
                     <button>Explore Resources</button>
                 </div>
                 <div className="studyBanImg">
-                    {/* <img className="img-fluid" src="/assets/studyabroad.png" /> */}
-                    <img className="img-fluid" src="/assets/recs.png" />
+                    {/* <img className="img-fluid" src="/assets/studyabroad.webp" /> */}
+                    <img className="img-fluid" src="/assets/recs.webp" />
                 </div>
             </div>
         </div>
@@ -33,28 +33,28 @@ const Resource = ()=>{
                 </div>
                 <div className="blogGridsSection">
                     <div className="blogGrid">
-                        <img className="img-fluid" src="/assets/resc.png"/>
+                        <img className="img-fluid" src="/assets/resc.webp"/>
                         <div className="rescGrdData">
                             <span>Canada</span>
                             <p>10 Reasons Moving To Canada Can Change Your Life For Good</p>
                         </div>
                     </div>
                     <div className="blogGrid">
-                        <img className="img-fluid" src="/assets/resc.png"/>
+                        <img className="img-fluid" src="/assets/resc.webp"/>
                         <div className="rescGrdData">
                             <span>Canada</span>
                             <p>10 Reasons Moving To Canada Can Change Your Life For Good</p>
                         </div>
                     </div>
                     <div className="blogGrid">
-                        <img className="img-fluid" src="/assets/resc.png"/>
+                        <img className="img-fluid" src="/assets/resc.webp"/>
                         <div className="rescGrdData">
                             <span>Canada</span>
                             <p>10 Reasons Moving To Canada Can Change Your Life For Good</p>
                         </div>
                     </div>
                     <div className="blogGrid">
-                        <img className="img-fluid" src="/assets/resc.png"/>
+                        <img className="img-fluid" src="/assets/resc.webp"/>
                         <div className="rescGrdData">
                             <span>Canada</span>
                             <p>10 Reasons Moving To Canada Can Change Your Life For Good</p>
@@ -77,28 +77,28 @@ const Resource = ()=>{
                 </div>
                 <div className="blogGridsSection">
                     <div className="blogGrid">
-                        <img className="img-fluid" src="/assets/resc.png"/>
+                        <img className="img-fluid" src="/assets/resc.webp"/>
                         <div className="rescGrdData">
                             <span>Canada</span>
                             <p>10 Reasons Moving To Canada Can Change Your Life For Good</p>
                         </div>
                     </div>
                     <div className="blogGrid">
-                        <img className="img-fluid" src="/assets/resc.png"/>
+                        <img className="img-fluid" src="/assets/resc.webp"/>
                         <div className="rescGrdData">
                             <span>Canada</span>
                             <p>10 Reasons Moving To Canada Can Change Your Life For Good</p>
                         </div>
                     </div>
                     <div className="blogGrid">
-                        <img className="img-fluid" src="/assets/resc.png"/>
+                        <img className="img-fluid" src="/assets/resc.webp"/>
                         <div className="rescGrdData">
                             <span>Canada</span>
                             <p>10 Reasons Moving To Canada Can Change Your Life For Good</p>
                         </div>
                     </div>
                     <div className="blogGrid">
-                        <img className="img-fluid" src="/assets/resc.png"/>
+                        <img className="img-fluid" src="/assets/resc.webp"/>
                         <div className="rescGrdData">
                             <span>Canada</span>
                             <p>10 Reasons Moving To Canada Can Change Your Life For Good</p>
@@ -153,14 +153,14 @@ const Resource = ()=>{
         </div>
         <div className="followUsContImg">
             <ul>
-                <li><a href=""><img src="/assets/fl3.png" alt=""/></a></li>
-                <li><a href=""><img src="/assets/fl2.png" alt=""/></a></li>
-                <li><a href=""><img src="/assets/fl3.png" alt=""/></a></li>
-                <li><a href=""><img src="/assets/fl4.png" alt=""/></a></li>
-                <li><a href=""><img src="/assets/fl5.png" alt=""/></a></li>
-                <li><a href=""><img src="/assets/fl6.png" alt=""/></a></li>
-                <li><a href=""><img src="/assets/fl7.png" alt=""/></a></li>
-                <li><a href=""><img src="/assets/fl8.png" alt=""/></a></li>
+                <li><a href=""><img src="/assets/fl3.webp" alt=""/></a></li>
+                <li><a href=""><img src="/assets/fl2.webp" alt=""/></a></li>
+                <li><a href=""><img src="/assets/fl3.webp" alt=""/></a></li>
+                <li><a href=""><img src="/assets/fl4.webp" alt=""/></a></li>
+                <li><a href=""><img src="/assets/fl5.webp" alt=""/></a></li>
+                <li><a href=""><img src="/assets/fl6.webp" alt=""/></a></li>
+                <li><a href=""><img src="/assets/fl7.webp" alt=""/></a></li>
+                <li><a href=""><img src="/assets/fl8.webp" alt=""/></a></li>
             </ul>
         </div>
     </section>

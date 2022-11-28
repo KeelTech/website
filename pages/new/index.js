@@ -21,16 +21,16 @@ const HomeView = () => {
                                 <button onClick={() => router.push(`/new/settleAbroad`)}>Settle Abroad</button>
                             </div>
                             <div className="bannerMidImg">
-                                <img className="img-fluid forWeb" src="/assets/bgUp.png" />
-                                <img className="img-fluid forMobile" src="/assets/Hero-section.png" />
+                                <img className="img-fluid forWeb" src="/assets/bgUp.webp" />
+                                <img className="img-fluid forMobile" src="/assets/Hero-section.webp" />
                             </div>
                             <div className="bannerLast">
                                 <p>Our students finished Universities and are drawing hefty salaries at global offices of </p>
                                 <div className="banImgsGrid">
-                                    <img src="/assets/ms.png" alt="" className="img-fluid" />
-                                    <img src="/assets/uber.png" alt="" className="img-fluid" />
-                                    <img src="/assets/delo.png" alt="" className="img-fluid" />
-                                    <img src="/assets/google.png" alt="" className="img-fluid" />
+                                    <img src="/assets/ms.webp" alt="" className="img-fluid" />
+                                    <img src="/assets/uber.webp" alt="" className="img-fluid" />
+                                    <img src="/assets/delo.webp" alt="" className="img-fluid" />
+                                    <img src="/assets/google.webp" alt="" className="img-fluid" />
                                     <img src="/assets/ama.svg" alt="" className="img-fluid" />
                                 </div>
                             </div>
@@ -42,9 +42,9 @@ const HomeView = () => {
                 <div className="container">
                     <div className="ourStoryColmn">
                         <div className="storyImg">
-                            <img className="rectImgTop img-fluid" src="/assets/rect.png" />
-                            <img className="img-fluid" src="/assets/our.png" />
-                            <img className="rectImgBtm img-fluid" src="/assets/rect.png" />
+                            <img className="rectImgTop img-fluid" src="/assets/rect.webp" />
+                            <img className="img-fluid" src="/assets/our.webp" />
+                            <img className="rectImgBtm img-fluid" src="/assets/rect.webp" />
                         </div>
                         <div className="storyContent pl-30">
                             <h4 className="grdHdng">Our Story</h4>
@@ -109,14 +109,14 @@ const HomeView = () => {
                                 </div>
                                 <div className='rightPrsCont'>
                                     <div className='verticalImg'>
-                                        <img className='img-fluid' src='/assets/home/home-process-1.jpg' />
+                                        <img className='img-fluid' src='/assets/home/home-process-1.webp' />
                                     </div>
                                 </div>
                             </div>
                             <div className='inrScrollBox reverseMobile'>
                                 <div className='rightPrsCont'>
                                     <div className='verticalImg'>
-                                        <img className='img-fluid' src='/assets/home/home-process-2.jpg' />
+                                        <img className='img-fluid' src='/assets/home/home-process-2.webp' />
                                     </div>
                                 </div>
                                 <div className='leftprsCont'>
@@ -141,14 +141,14 @@ const HomeView = () => {
                                 </div>
                                 <div className='rightPrsCont'>
                                     <div className='verticalImg'>
-                                        <img className='img-fluid' src='/assets/home/home-process-3.jpg'/>
+                                        <img className='img-fluid' src='/assets/home/home-process-3.webp'/>
                                     </div>
                                 </div>
                             </div>
                             <div className='inrScrollBox reverseMobile'>
                                 <div className='rightPrsCont'>
                                     <div className='verticalImg'>
-                                        <img className='img-fluid' src='/assets/home/home-process-4.jpg' />
+                                        <img className='img-fluid' src='/assets/home/home-process-4.webp' />
                                     </div>
                                 </div>
                                 <div className='leftprsCont'>
@@ -196,7 +196,7 @@ const HomeView = () => {
                                 </div>
                             </div>
                             <div className='verticalImg'>
-                                <img className='img-fluid' src='/assets/ver.png' />
+                                <img className='img-fluid' src='/assets/ver.webp' />
                             </div>
                         </div> */}
                     </div>
@@ -226,7 +226,7 @@ const HomeView = () => {
                             {/* <SwiperSlide> */}
                             <div className="carsCustmGrid">
                                 <div className="usrDtls">
-                                    <img className="img-fluid" src="/assets/sheetal-mehta.png" />
+                                    <img className="img-fluid" src="/assets/sheetal-mehta.webp" />
                                     <div className="usrNames">
                                         <h5>Sheetal Mehta</h5>
                                         <p>Migrated to Canada</p>
@@ -238,7 +238,7 @@ const HomeView = () => {
                             {/* <SwiperSlide> */}
                             <div className="carsCustmGrid">
                                 <div className="usrDtls">
-                                    <img className="img-fluid" src="/assets/rajat-gupta.png" />
+                                    <img className="img-fluid" src="/assets/rajat-gupta.webp" />
                                     <div className="usrNames">
                                         <h5>Rajat Gupta</h5>
                                         <p>Migrated to Australia</p>
@@ -250,7 +250,7 @@ const HomeView = () => {
                             {/* <SwiperSlide> */}
                             <div className="carsCustmGrid">
                                 <div className="usrDtls">
-                                    <img className="img-fluid" src="/assets/ruchi-parmar.png" />
+                                    <img className="img-fluid" src="/assets/ruchi-parmar.webp" />
                                     <div className="usrNames">
                                         <h5>Ruchi Parmar</h5>
                                         <p>Migrated to UK</p>
@@ -277,28 +277,28 @@ const HomeView = () => {
                         </div>
                         <div className="blogGridsSection">
                             <div className="blogGrid">
-                                <img className="img-fluid" src="/assets/resc.png" />
+                                <img className="img-fluid" src="/assets/resc.webp" />
                                 <div className="rescGrdData">
                                     <span>Canada</span>
                                     <p>10 Reasons Moving To Canada Can Change Your Life For Good</p>
                                 </div>
                             </div>
                             <div className="blogGrid">
-                                <img className="img-fluid" src="/assets/resc.png" />
+                                <img className="img-fluid" src="/assets/resc.webp" />
                                 <div className="rescGrdData">
                                     <span>Canada</span>
                                     <p>10 Reasons Moving To Canada Can Change Your Life For Good</p>
                                 </div>
                             </div>
                             <div className="blogGrid">
-                                <img className="img-fluid" src="/assets/resc.png" />
+                                <img className="img-fluid" src="/assets/resc.webp" />
                                 <div className="rescGrdData">
                                     <span>Canada</span>
                                     <p>10 Reasons Moving To Canada Can Change Your Life For Good</p>
                                 </div>
                             </div>
                             <div className="blogGrid">
-                                <img className="img-fluid" src="/assets/resc.png" />
+                                <img className="img-fluid" src="/assets/resc.webp" />
                                 <div className="rescGrdData">
                                     <span>Canada</span>
                                     <p>10 Reasons Moving To Canada Can Change Your Life For Good</p>
@@ -317,16 +317,16 @@ const HomeView = () => {
                 </div>
                 <div className="followUsContImg">
                     <ul>
-                        <li><a href=""><img src="/assets/fl3.png" alt="" /></a></li>
-                        <li><a href=""><img src="/assets/fl2.png" alt="" /></a></li>
-                        <li><a href=""><img src="/assets/fl3.png" alt="" /></a></li>
-                        <li><a href=""><img src="/assets/fl4.png" alt="" /></a></li>
-                        {/* <li><a href=""><img src="/assets/fl5.png" alt="" /></a></li> */}
-                        {/* <li><a href=""><img src="/assets/fl6.png" alt="" /></a></li> */}
-                        {/* <li><a href=""><img src="/assets/fl7.png" alt="" /></a></li> */}
-                        {/* <li><a href=""><img src="/assets/fl8.png" alt="" /></a></li> */}
-                        <li><a href=""><img src="/assets/fl3.png" alt="" /></a></li>
-                        <li><a href=""><img src="/assets/fl4.png" alt="" /></a></li>
+                        <li><a href=""><img src="/assets/fl3.webp" alt="" /></a></li>
+                        <li><a href=""><img src="/assets/fl2.webp" alt="" /></a></li>
+                        <li><a href=""><img src="/assets/fl3.webp" alt="" /></a></li>
+                        <li><a href=""><img src="/assets/fl4.webp" alt="" /></a></li>
+                        {/* <li><a href=""><img src="/assets/fl5.webp" alt="" /></a></li> */}
+                        {/* <li><a href=""><img src="/assets/fl6.webp" alt="" /></a></li> */}
+                        {/* <li><a href=""><img src="/assets/fl7.webp" alt="" /></a></li> */}
+                        {/* <li><a href=""><img src="/assets/fl8.webp" alt="" /></a></li> */}
+                        <li><a href=""><img src="/assets/fl3.webp" alt="" /></a></li>
+                        <li><a href=""><img src="/assets/fl4.webp" alt="" /></a></li>
                     </ul>
                 </div>
             </section>

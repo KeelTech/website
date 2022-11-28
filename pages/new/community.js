@@ -57,7 +57,7 @@ const Community = () => {
                 <div className="container">
                     <div className="cmnuCont">
                         <div className="cmnuImgSec">
-                            <img className="img-fluid" src="/assets/feature-1.png" />
+                            <img className="img-fluid" src="/assets/feature-1.webp" />
                         </div>
                         <div className="storyContent pl-30">
                             <h4 className="grdHdng">FORUM</h4>
@@ -73,7 +73,7 @@ const Community = () => {
                 <div className="container">
                     <div className="cmnuCont">
                         <div className="cmnuImgSec">
-                            <img className="img-fluid" src="/assets/feature-2.png" />
+                            <img className="img-fluid" src="/assets/feature-2.webp" />
                         </div>
                         <div className="storyContent pl-30">
                             <h4 className="grdHdng">MENTORS</h4>
@@ -88,7 +88,7 @@ const Community = () => {
                 <div className="container">
                     <div className="cmnuCont">
                         <div className="cmnuImgSec">
-                            <img className="img-fluid" src="/assets/feature-3.png" />
+                            <img className="img-fluid" src="/assets/feature-3.webp" />
                         </div>
                         <div className="storyContent pl-30">
                             <h4 className="grdHdng">WORK HARD</h4>
@@ -102,7 +102,7 @@ const Community = () => {
                 <div className="container">
                     <div className="cmnuCont">
                         <div className="cmnuImgSec">
-                            <img className="img-fluid" src="/assets/feature-4.png" />
+                            <img className="img-fluid" src="/assets/feature-4.webp" />
                         </div>
                         <div className="storyContent pl-30">
                             <h4 className="grdHdng">ACHIEVE</h4>

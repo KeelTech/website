@@ -2698,6 +2698,11 @@ button.vryFy {
   cursor: pointer;
 }
 
+button.disableOtp{
+  opacity: 0.3;
+  cursor: default;
+}
+
 .inputForm.OTPInput input {
   padding-right: 100px;
 }
@@ -2715,6 +2720,10 @@ button.vryFy {
 }
 
 .msg-img {}
+
+button.hideCursor{
+  cursor: default;
+}
 
 
 /* ===only for checkElig */

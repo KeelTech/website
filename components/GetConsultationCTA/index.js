@@ -5,11 +5,15 @@ import NumberVerification from '@/components/Forms/NumberVerification.js'
 
 const GetConsultationCTA = () => {
     const [showPopup, setPopup] = useState(false);
+
+    const handleClose = ()=>{
+        setPopup(false)
+    }
     return (
         <>
             <button onClick={() => setPopup(val => !val)}>Get Free Consultation now</button>
-            <PopupOverlay showPopup={showPopup} handleCloseClick={() => setPopup(false)}>
-                <NumberVerification />
+            <PopupOverlay showPopup={showPopup} handleCloseClick={handleClose}>
+                <NumberVerification handleClose={handleClose}/>
             </PopupOverlay>
         </>
     )

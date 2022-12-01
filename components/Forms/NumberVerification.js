@@ -4,7 +4,7 @@ import { sendOTP, verifyOTP, createLeadSquareLead } from '@/actions';
 import { LEAD_SQUARED_ACCESS_ID, LEAD_SQUARED_SECRET_KEY, LEAD_SQUARED_X_API } from '@/actions/constant.js';
 import CustomToaster from '@/components/CustomToaster';
 
-const NumberVerification = () => {
+const NumberVerification = ({handleClose}) => {
 
     const [dataInfo, setDataInfo] = useState({
         number: '',
@@ -15,10 +15,11 @@ const NumberVerification = () => {
         gender: '',
         email: '',
         numberVerified: false,
-        lastVerifiedNumber: ''
+        lastVerifiedNumber: '',
+        disableSendOtp: false
     })
 
-    const { number, otp, loading, name, age, gender, email, numberVerified, lastVerifiedNumber} = dataInfo;
+    const { number, otp, loading, name, age, gender, email, numberVerified, lastVerifiedNumber, disableSendOtp } = dataInfo;
 
     const [toasterInfo, setToasterInfo] = useState({
         isVisible: false,
@@ -40,6 +41,7 @@ const NumberVerification = () => {
     }
 
     const sendOTPClicked = () => {
+        if(disableSendOtp) return;
         const postParams = {
             phone_number: number
         }
@@ -55,7 +57,7 @@ const NumberVerification = () => {
             }, 1000);
             return;
         }
-        setData({loading: true});
+        setData({loading: true, disableSendOtp: true});
         sendOTP(postParams, (resp, err) => {
             setData({loading: false});
             if (resp) {
@@ -72,6 +74,7 @@ const NumberVerification = () => {
                     isSuccess: false,
                     msg: 'Failed To Sent OTP'
                 });
+                setData({disableSendOtp: true});
             }
             setTimeout(() => {
                 hideToaster();
@@ -81,7 +84,8 @@ const NumberVerification = () => {
 
     const verifyOTPClicked = () => {
         const postParams = {
-            otp
+            otp,
+            phone_number: number
         }
         if (!otp) {
             setToasterInfo({
@@ -125,6 +129,7 @@ const NumberVerification = () => {
 
     const handleNumberInputChange = (e) => {
         const val = e.target.value;
+        setData({disableSendOtp: false});
         if (val.length > 10) return null;
         setData({number: val});
     }
@@ -214,8 +219,9 @@ const NumberVerification = () => {
             secretKey: LEAD_SQUARED_SECRET_KEY,
             payload
         }
+
+
         createLeadSquareLead(dataParams, null, headers).then((resp)=>{
-            console.log("response is", resp);
             setToasterInfo({
                 isVisible: true,
                 isError: false,
@@ -224,7 +230,20 @@ const NumberVerification = () => {
             });
             setTimeout(() => {
                 hideToaster();
+                handleClose();
             }, 2000);
+            setData({
+                number: '',
+                otp: '',
+                loading: false,
+                name: '',
+                age: '',
+                gender: '',
+                email: '',
+                numberVerified: false,
+                lastVerifiedNumber: '',
+                disableSendOtp: false
+            })
         }).catch((err)=>{
             console.log("error is", err);
             setToasterInfo({
@@ -279,13 +298,13 @@ const NumberVerification = () => {
                         <input type="number" className={number?"activeInput":''} onChange={handleNumberInputChange} value={number} onKeyPress={handleKeyPress} />
                         <label className={number ? 'fillInput' : ''}>Contact Number</label>
                         <img className="img-fluid" src="/assets/ind.svg" />
-                        <button className='vryFy' onClick={sendOTPClicked}>Send OTP</button>
+                        <button className={`${disableSendOtp?'disableOtp':''} 'vryFy'`} onClick={sendOTPClicked}>Send OTP</button>
                     </div>
                     <div className="inputForm OTPInput">
                         <input type="number" disabled={numberVerified} className={otp?"activeInput":''} onChange={(e) => setData({otp: e.target.value})} value={otp} ref={otpInput} onKeyPress={handleOtpKeyPress}/>
                         <label className={otp ? 'fillInput' : ''}>OTP</label>
                         {
-                            numberVerified?<button className='vryFy'>Verified</button>:<button onClick={verifyOTPClicked} className='vryFy'>Verify</button>
+                            numberVerified?<button className='vryFy hideCursor'>Verified</button>:<button onClick={verifyOTPClicked} className='vryFy'>Verify</button>
                         }
                         
                     </div>

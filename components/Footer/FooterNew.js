@@ -6,7 +6,7 @@ const Footer = ()=>{
 
     const handleNavigation= (path)=>{
         //toggleNavBar();
-        router.push(`/new/${path}`);
+        router.push(`${path}`);
     }
 
     return (

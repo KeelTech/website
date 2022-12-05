@@ -1,4 +1,4 @@
-import EligibilityView from '@/components/EligibilityView/new.js';
+import EligibilityView from '@/components/EligibilityView';
 import MetaTags from '@/components/MetaTags';
 
 const metaInfo = {
@@ -8,16 +8,14 @@ const metaInfo = {
     ogUrl: "https://getkeel.com/check-eligibility"
 }
 
-const Eligibility = () => {
+const Eligibility = ()=>{
 
-    return (
+    return(
         <>
-            <MetaTags metaInfo={metaInfo} />
-            <div className='elgbForNew'>
-                <EligibilityView />
-            </div>
+            <MetaTags metaInfo={metaInfo}/>
+            <EligibilityView/>
         </>
-
+        
     )
 }
 

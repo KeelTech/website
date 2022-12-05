@@ -5,7 +5,7 @@ const Header = ({ toggleNavBar, activeNav }) => {
 
     const handleNavigation = (path) => {
         toggleNavBar();
-        router.push(`/new${path}`);
+        router.push(`${path}`);
     }
 
     return (
@@ -54,7 +54,7 @@ const Header = ({ toggleNavBar, activeNav }) => {
                         <img className="img-fluid" src="/assets/Logo.svg" onClick={() => handleNavigation('/')} />
                     </div>
                     <ul>
-                        <li onClick={() => handleNavigation('')}>
+                        <li onClick={() => handleNavigation('/')}>
                             <a href="/" onClick={(e) => e.preventDefault()}>Home</a>
                         </li>
                         <li onClick={() => handleNavigation('/IELTS')}>

@@ -15,9 +15,10 @@ export default function Layout({ children, dataProps }) {
   const { setActiveComponent } = useAppContext();
   const [activeNav, setNav] = useState(false)
 
-  const isNew = useMemo(()=>{
-    return router.pathname.includes('new');
-  },[])
+  const isNew = true
+  // useMemo(()=>{
+  //   return router.pathname.includes('new');
+  // },[])
 
   useEffect(()=>{
     if(dataProps){

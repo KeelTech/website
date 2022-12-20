@@ -2725,5 +2725,20 @@ button.hideCursor{
   cursor: default;
 }
 
+input.activeInput+label{
+  top:-10px;
+  background-color: #FFF;
+  color: #c32020;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+textarea.activeInput+label{
+  top:-10px;
+  background-color: #FFF;
+  color: #c32020;
+  font-size: 12px;
+  font-weight: 500;
+}
 
 /* ===only for checkElig */

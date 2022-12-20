@@ -34,7 +34,7 @@ export const toasterMsg = props =>css`
     top: 40px;
     top: ${props.isVisible?'118px':'-200px'};
     transition: all 0.6s ease-out;
-    z-index: 99;
+    z-index: 999999;
     @media(max-width: ${tabScreenWidth}){
         justify-content: center;
         right: 0;

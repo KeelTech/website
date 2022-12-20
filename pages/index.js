@@ -1,10 +1,12 @@
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { useRouter } from 'next/router';
+import { getBlogsList } from '@/actions/index.js';
+import BlogNewView from '@/components/BlogsView/BlogNewView';
 
 // Import Swiper styles
 import 'swiper/css';
-const HomeView = () => {
+const HomeView = ({ blogsList }) => {
     const router = useRouter()
 
     return (
@@ -265,49 +267,7 @@ const HomeView = () => {
                     </div>
                 </div>
             </section>
-            <section className="resourceSection">
-                <div className="container">
-                    <div className="resrcCont">
-                        <div className="storyContent full-width">
-                            <h4 className="grdHdng">Resources</h4>
-                            <div className="subheadWithBtn">
-                                <h5>Our <span>Blogs</span></h5>
-                                <button>See All <img className="img-fluid" src="/assets/arrowDark.svg" /></button>
-                            </div>
-                        </div>
-                        <div className="blogGridsSection">
-                            <div className="blogGrid">
-                                <img className="img-fluid" src="/assets/resc.webp" />
-                                <div className="rescGrdData">
-                                    <span>Canada</span>
-                                    <p>10 Reasons Moving To Canada Can Change Your Life For Good</p>
-                                </div>
-                            </div>
-                            <div className="blogGrid">
-                                <img className="img-fluid" src="/assets/resc.webp" />
-                                <div className="rescGrdData">
-                                    <span>Canada</span>
-                                    <p>10 Reasons Moving To Canada Can Change Your Life For Good</p>
-                                </div>
-                            </div>
-                            <div className="blogGrid">
-                                <img className="img-fluid" src="/assets/resc.webp" />
-                                <div className="rescGrdData">
-                                    <span>Canada</span>
-                                    <p>10 Reasons Moving To Canada Can Change Your Life For Good</p>
-                                </div>
-                            </div>
-                            <div className="blogGrid">
-                                <img className="img-fluid" src="/assets/resc.webp" />
-                                <div className="rescGrdData">
-                                    <span>Canada</span>
-                                    <p>10 Reasons Moving To Canada Can Change Your Life For Good</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <BlogNewView blogsList={blogsList} />
             <section className="followUsSection">
                 <div className="container">
                     <div className="storyContent full-width text-center">
@@ -332,6 +292,15 @@ const HomeView = () => {
             </section>
         </>
     )
+}
+
+export async function getServerSideProps(){
+    const blogsList =  await getBlogsList({})
+    return {
+        props: {
+            blogsList
+        }
+    }
 }
 
 export default HomeView;

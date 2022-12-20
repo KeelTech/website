@@ -1,3 +1,5 @@
+import GetConsultationCTA from '@/components/GetConsultationCTA';
+import CommunityForm from '@/components/Forms/CommunityForm';
 
 const Community = () => {
 
@@ -16,40 +18,7 @@ const Community = () => {
                                 <li> <img className="img-fluid" src="/assets/lstChk.svg" />End to End Visa Solutions</li>
                             </ul>
                         </div>
-                        <div className="communityForm">
-                            <div className="comFomCont">
-                                <div className="cmForm">
-                                    <div className="inputForm"><input type="text" /><label>Full Name</label></div>
-                                    <div className="inputForm"><input type="number" /><label>Contact Number</label></div>
-                                    <div className="inputForm"><input type="email" /><label>Email</label></div>
-                                    <div className="inputForm"><input type="text" /><label>Grade/Class(1st year ...)</label></div>
-                                    <div className="inputForm"><input type="text" /><label>University/School</label></div>
-                                    <div className="inputForm"><input type="text" /><label>City</label></div>
-                                    <div className="inputForm"><input type="text" /><label>State</label></div>
-                                    <div className="inputForm"><input type="text" /><label>Pincode</label></div>
-                                </div>
-                                <div className="radioCheck">
-                                    <p>Are you interested in studying/settling abroad? </p>
-                                    <div className="chkCont">
-                                        <div className="customCheck">
-                                            <label className="checkBoxContainer">
-                                                <p>Yes</p>
-                                                <input type="radio" name="radio" />
-                                                <span className="checkmark"></span>
-                                            </label>
-                                        </div>
-                                        <div className="customCheck">
-                                            <label className="checkBoxContainer">
-                                                <p>No</p>
-                                                <input type="radio" name="radio" />
-                                                <span className="checkmark"></span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <button className="cmSubmit">Send</button>
-                            </div>
-                        </div>
+                        <CommunityForm/>
                     </div>
                 </div>
             </section>
@@ -119,7 +88,7 @@ const Community = () => {
                 <div className="container">
                     <div className="crerGrid">
                         <p>“Knowledge Is Power. <br/>” Community Is Strength.</p>
-                        <button>Start your Journey</button>
+                        <GetConsultationCTA text="Start your Journey"/>
                     </div>
                 </div>
             </section>

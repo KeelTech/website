@@ -122,6 +122,7 @@ export const sendOTP = (dataParams, cb=null)=>{
 
   export const createLeadSquareLead = (dataParams, cb=null, headers)=>{
     const { accessKey, secretKey, payload } = dataParams;
+
     return API_POST(`https://asyncapi-in21.leadsquared.com/lead/capture?accessKey=${accessKey}&secretKey=${secretKey}`,
         payload,
         headers

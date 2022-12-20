@@ -79,7 +79,7 @@ const Header = ({ toggleNavBar, activeNav }) => {
                             <a href="/contact-us" onClick={(e) => e.preventDefault()}>Career</a>
                         </li>
                     </ul>
-                    <button className="getStrt">Get Started</button>
+                    <button className="getStrt" onClick={()=>window.open('https://app.getkeel.com/','_blank')}>Get Started</button>
                 </div>
             </div>
         </header>

@@ -23,14 +23,14 @@ const BlogsDet = ({ blogData, pathUrl}) => {
                             blogData[urlToPush] = id;
                             setCookie('blogData', JSON.stringify(blogData))
                         }
-                        router.push(`/blogs/${urlToPush}`, undefined, { shallow: true });
+                        router.replace(`/blogs/${urlToPush}`, undefined, { shallow: true });
                     }
                 }else{
                     if(!isCustomUrl){
                         const data = {};
                         data[urlToPush] = id;
                         setCookie('blogData', JSON.stringify(data))
-                        router.push(`/blogs/${urlToPush}`, undefined, { shallow: true });
+                        router.replace(`/blogs/${urlToPush}`, undefined, { shallow: true });
                     }
                 }
             }catch(e){

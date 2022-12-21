@@ -15,7 +15,7 @@ const HomeView = ({ blogsList }) => {
                 <div className="container">
                     <div className="mainBanner">
                         <div className="bannerTopHeading">
-                            <h1 className="bannerHeading">Move to the country of your dreams to <span>Study|</span></h1>
+                            <h1 className="bannerHeading">Fly to the country of your dreams to <span>Study|</span></h1>
                             {/* Study | Settle | Work  */}
                             <p className="bannerParaSub">We are India’s largest tech-enabled study abroad platform supported by an army of experts</p>
                             <div className="bannerButton">
@@ -27,7 +27,7 @@ const HomeView = ({ blogsList }) => {
                                 <img className="img-fluid forMobile" src="/assets/Hero-section.webp" />
                             </div>
                             <div className="bannerLast">
-                                <p>Our students finished Universities and are drawing hefty salaries at global offices of </p>
+                                <p>Our students finished Universities and are drawing hefty salaries at</p>
                                 <div className="banImgsGrid">
                                     <img src="/assets/ms.webp" alt="" className="img-fluid" />
                                     <img src="/assets/uber.webp" alt="" className="img-fluid" />
@@ -95,7 +95,7 @@ const HomeView = ({ blogsList }) => {
                             <div className="storyContent full-width text-center">
                                 <h4 className="grdHdng">Process</h4>
                                 <h5>The <span>Process</span></h5>
-                                <p>“A journey of a thousand miles begins with a single step.” - Lao Tzu</p>
+                                <p>Take a flight with Keel and land at your dream university</p>
                             </div>
                         </div>
                         <div className='midScrollCont'>
@@ -105,7 +105,7 @@ const HomeView = ({ blogsList }) => {
                                         <div className="prcStpIn">
                                             <span className="stepNum">Step 1</span>
                                             <h5>Research and Discovery</h5>
-                                            <p>Explore your options: In terms of right courses, Universities, country and so on.</p>
+                                            <p>Keel helps you explore the best courses and universities to kickstart your dream career</p>
                                         </div>
                                     </div>
                                 </div>
@@ -126,7 +126,7 @@ const HomeView = ({ blogsList }) => {
                                         <div className="prcStpIn">
                                             <span className="stepNum">Step 2</span>
                                             <h5>Career guidance from the top 1%</h5>
-                                            <p>Choose your path: After talking to mentors from Google, Uber, Microsoft and more.</p>
+                                            <p>Get mentored by leading industry experts from companies like Uber, Microsoft, Deloitte</p>
                                         </div>
                                     </div>
                                 </div>
@@ -137,7 +137,7 @@ const HomeView = ({ blogsList }) => {
                                         <div className="prcStpIn">
                                             <span className="stepNum">Step 3</span>
                                             <h5>Take all the right steps</h5>
-                                            <p>Start your Journey: By creating a profile that showcases your best self.</p>
+                                            <p>We help in optimizing your profile as per international standards that helps you stand out</p>
                                         </div>
                                     </div>
                                 </div>
@@ -157,8 +157,8 @@ const HomeView = ({ blogsList }) => {
                                     <div className="processStepGrid">
                                         <div className="prcStpIn">
                                             <span className="stepNum">Step 4</span>
-                                            <h5>Research and Discovery</h5>
-                                            <p>Say hi to your dream life: By getting your desired scores and filing an application that stands out.</p>
+                                            <h5>Be on top of the game</h5>
+                                            <p>With our guidance throughout the process, your scores and application will be toough to beat</p>
                                         </div>
                                     </div>
                                 </div>
@@ -210,13 +210,13 @@ const HomeView = ({ blogsList }) => {
                         <div className="storyContent full-width">
                             <h4 className="grdHdng">Customers</h4>
                             <h5>Happy <span>Keelers</span></h5>
-                            <p>Our team at Keel works day and night to make our students’ dreams come true. Hear what they are saying about us.</p>
+                            <p>Our team at Keel works day and night to make our students’ dreams come true. Hear what they have to say about us.</p>
                         </div>
                     </div>
                     <div className="custCarusalCont">
                         <img className="quoteImg img-fluid" src="/assets/quote.svg" />
                         <div className="leftCrData">
-                            <h4>Thousands of Happy Customers across the globe!</h4>
+                            <h4>Thousands of Happy Clients across the globe!</h4>
                         </div>
                         <div className="caraCustMain">
                             {/* <Swiper

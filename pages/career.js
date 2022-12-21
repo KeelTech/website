@@ -7,10 +7,9 @@ const Career = ()=>{
         <div className="container">
             <div className="studyBannerCont">
                 <div className="stdyBanText">
-                    <h1>Work with our
-                        World Class Team
+                    <h1>Work with a driven team of industry experts
                     </h1>
-                    <p>We are world’s no.1 Tech enabled and customer tech enabled and customer </p>
+                    <p>Skyrocket your professional journey with Keel and make your best career move</p>
                     <button>Explore Jobs</button>
                 </div>
                 <div className="studyBanImg">
@@ -24,9 +23,9 @@ const Career = ()=>{
             <div className="universitiesCont">
                 <div className="storyContent full-width">
                     <h4 className="grdHdng">Jobs</h4>
-                    <h5>Search <span>Job Vacancies </span></h5>
-                    <p>We believe with right exposure you can do wonders for yourself and your family hence we help you
-                        make choices that</p>
+                    <h5>We are looking for <span>you </span></h5>
+                    {/* <p>We believe with right exposure you can do wonders for yourself and your family hence we help you
+                        make choices that</p> */}
                 </div>
                 <div className="formInputMain studyInputs">
                     <div className="inputForm">

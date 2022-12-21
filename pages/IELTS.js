@@ -44,8 +44,8 @@ const IELTS = () => {
                         <div className="processCont">
                             <div className="storyContent full-width">
                                 <h4 className="grdHdng">Score 8777 and more </h4>
-                                <h5>Near-to-real classroom experience </h5>
-                                <p>We believe with right exposure you can do wonders for yourself and your family hence we help you make choices that</p>
+                                <h5>Experience the joy of a real classroom</h5>
+                                <p>With our well-curated class, we create an experience that is easy to follow</p>
                             </div>
                         </div>
                         <div className='verticalMainCont customVerticalSection'>
@@ -66,7 +66,7 @@ const IELTS = () => {
                                         <div className="prcStpIn">
 
                                             <h5>Live Classes</h5>
-                                            <p>Get your doubts resolved in real time and keep making real progress everyday</p>
+                                            <p>Get your doubts resolved in real time by qualified mentors.</p>
                                         </div>
                                     </div>
 
@@ -75,7 +75,7 @@ const IELTS = () => {
                                         <div className="prcStpIn">
 
                                             <h5>Expert Material</h5>
-                                            <p>Curated by top 0.1% IELTS coaches in India</p>
+                                            <p>Our study materials are curated by top 0.1% IELTS coaches in India</p>
                                         </div>
                                     </div>
 
@@ -84,7 +84,7 @@ const IELTS = () => {
                                         <div className="prcStpIn">
 
                                             <h5>Self-paced Classes</h5>
-                                            <p>Learn at your own comfort with session recordings</p>
+                                            <p>Learn at your own pace and comfort with an access to session recordings</p>
                                         </div>
                                     </div>
                                 </div>
@@ -101,7 +101,7 @@ const IELTS = () => {
                     <div className="storyContent full-width text-center">
                         <h4 className="grdHdng">Batches</h4>
                         <h5>Upcoming IELTS <span>Batches</span></h5>
-                        <p>The Days Of Stressful And Confusing IELTS Preparation Are Finally Over!
+                        <p>Say goodbye to stressful and confusing IELTS preparations
                         </p>
                     </div>
                     <div className="batchesCarausal">
@@ -183,7 +183,7 @@ const IELTS = () => {
                     <div className="storyContent full-width text-center">
                         <h4 className="grdHdng">Customers</h4>
                         <h5>Happy <span>Keelers</span></h5>
-                        <p>Take Out The Guesswork From Your Next IELTS Exam With Keel And Get Desired Results. Listen to our happy Keelers.</p>
+                        <p>We help you get acquainted with IELTS before you attempt it. Here's what our happy KEELERS have to say.</p>
                     </div>
                     <div className="happyContent">
                         <div className="hpyGridCont">

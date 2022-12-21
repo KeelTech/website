@@ -15,8 +15,8 @@ const StudyAbroad = () => {
                 <div className="container">
                     <div className="studyBannerCont">
                         <div className="stdyBanText">
-                            <h1>World’s largest
-                                <span> Personalised </span>
+                            <h1>World’s
+                                <span> largest </span>
                                 study abroad counselling platform
                             </h1>
                             <p>Mentoring | Profile Building | Test Preparations | End to End Visa Solutions
@@ -216,9 +216,9 @@ const StudyAbroad = () => {
                     <div className="processMain">
                         <div className="processCont">
                             <div className="storyContent full-width text-center">
-                                <h4 className="grdHdng">Steps</h4>
-                                <h5>How it<span> Works</span></h5>
-                                <p>"A journey of a thousand miles begins with a single step." - Lao Tzu </p>
+                                <h4 className="grdHdng">Process</h4>
+                                <h5>The Process<span></span></h5>
+                                <p>Take a flight with Keel and land at your dream university</p>
                             </div>
                         </div>
                         <div className='midScrollCont'>
@@ -228,7 +228,7 @@ const StudyAbroad = () => {
                                         <div className="prcStpIn">
                                             <span className="stepNum">Step 1</span>
                                             <h5>Research and Discovery</h5>
-                                            <p>Explore your options: In terms of right courses, Universities, country and so on.</p>
+                                            <p>Keel helps you explore the best courses and universities to kickstart your dream career</p>
                                         </div>
                                     </div>
                                 </div>
@@ -249,7 +249,7 @@ const StudyAbroad = () => {
                                         <div className="prcStpIn">
                                             <span className="stepNum">Step 2</span>
                                             <h5>Career guidance from the top 1%</h5>
-                                            <p>Choose your path: After talking to mentors from Google, Uber, Microsoft and more.</p>
+                                            <p>Get mentored by leading industry experts from companies like Uber, Microsoft, Deloitte</p>
                                         </div>
                                     </div>
                                 </div>
@@ -260,7 +260,7 @@ const StudyAbroad = () => {
                                         <div className="prcStpIn">
                                             <span className="stepNum">Step 3</span>
                                             <h5>Take all the right steps</h5>
-                                            <p>Start your Journey: By creating a profile that showcases your best self.</p>
+                                            <p>We help in optimizing your profile as per international standards that helps you stand out</p>
                                         </div>
                                     </div>
                                 </div>
@@ -280,8 +280,8 @@ const StudyAbroad = () => {
                                     <div className="processStepGrid">
                                         <div className="prcStpIn">
                                             <span className="stepNum">Step 4</span>
-                                            <h5>Research and Discovery</h5>
-                                            <p>Say hi to your dream life: By getting your desired scores and filing an application that stands out.</p>
+                                            <h5>Be on top of the game</h5>
+                                            <p>With our guidance throughout the process, your scores and application will be toough to beat</p>
                                         </div>
                                     </div>
                                 </div>
@@ -362,8 +362,8 @@ const StudyAbroad = () => {
                     <div className="storyContent full-width text-center">
                         <h4 className="grdHdng">Customers</h4>
                         <h5>Happy <span>Keelers</span></h5>
-                        <p>We believe with right exposure you can do wonders <br />for yourself and your family hence we help
-                            you make choices that</p>
+                        <p>Our team at Keel works day and night to make our students’ dreams come true.
+Hear what they have to say about us.</p>
                     </div>
                     <div className="happyContent">
                         <div className="hpyGridCont">

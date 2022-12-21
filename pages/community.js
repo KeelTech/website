@@ -9,7 +9,7 @@ const Community = () => {
                 <div className="container">
                     <div className="studyBannerCont noRevrsMob">
                         <div className="stdyBanText">
-                            <h1>Join the World’s World’s Largest Student Community!
+                            <h1>Join the World’s Largest Student Community!
                             </h1>
                             <ul className="ieltsListBan">
                                 <li> <img className="img-fluid" src="/assets/lstChk.svg" />Mentoring</li>
@@ -31,8 +31,7 @@ const Community = () => {
                         <div className="storyContent pl-30">
                             <h4 className="grdHdng">FORUM</h4>
                             <h5>Enjoy the Power of Community</h5>
-                            <p><b>“Alone we can do so little, together we can do so much.” – Helen Keller</b><br/>
-                            When you lean on other people, you become better than you ever believed possible. Achieve everything you only imagined you could accomplish with a powerful student community.
+                            <p>Showcase your achievements directly to the universities and be a part of the largest community of students. Connect with like-minded students and explore path-breaking experiences to navigate your career.
                             </p>
                         </div>
                     </div>
@@ -47,7 +46,7 @@ const Community = () => {
                         <div className="storyContent pl-30">
                             <h4 className="grdHdng">MENTORS</h4>
                             <h5>Career Guidance from the Top 1%</h5>
-                            <p>No, you don’t need to be a student from the top 10 universities to achieve your dreams of being successful in your life. Get career guidance from mentors from Google, Uber, Microsoft and more.<br/>
+                            <p>Get mentored by world’s leading industry experts like Uber, Microsoft, Deloitte and more. An exclusive opportunity to learn from their experiences and build a framework that will match your dream career.<br/>
                             Get mentored by people who made it to where you want to be.</p>
                         </div>
                     </div>
@@ -61,8 +60,8 @@ const Community = () => {
                         </div>
                         <div className="storyContent pl-30">
                             <h4 className="grdHdng">WORK HARD</h4>
-                            <h5>We all take the Right Steps</h5>
-                            <p>Start the journey towards your dream life today by taking all the necessary steps towards the right direction.</p>
+                            <h5>Take the Right Steps</h5>
+                            <p>Miss no necessary steps towards your goal. With our highly qualified mentors, you’ll have a stepwise-guide to approach the universities. This will help in covering all the aspects of your application and doing everything you possibly can.</p>
                         </div>
                     </div>
                 </div>

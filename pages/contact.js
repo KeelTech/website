@@ -136,7 +136,7 @@ const Contact = ()=>{
             <div className="formMain">
                 <div className="formCntnt">
                     <h1 className="conHed">Contact Us</h1>
-                    <p className="contSubPera">We are world’s no.1 Tech enabled and customer friendly Immigration Platform</p>
+                    <p className="contSubPera">Have any queries? We would love to answer it for you.</p>
                     <ul className="contLst">
                         <li>
                             <img className="img-fluid" src="/assets/mail1.svg" />

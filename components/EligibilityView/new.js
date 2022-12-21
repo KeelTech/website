@@ -99,10 +99,7 @@ const Eligibility = () => {
                                     How Can I Improve My CRS Score?
                                 </h4>
                                 <p className="sectionSubHeading">
-                                    If you want to improve your CRS score to get picked for an Express Entry draw there are
-                                    several ways you can! Improving your CRS score is the best way to increase your chances of
-                                    getting an invitation. Following are some of the ways by wich you can improve your CRS
-                                    Score:
+                                Improving your CRS score is the best way to increase your chances of getting an invitation. If you want to improve your CRS score to get picked for an Express Entry draw, there are several ways you can! Mentioned below are a few of them: 
                                 </p>
                                 <Accordian data={ELIGIBILITY_ACCORDIAN} />
                             </div>

@@ -1,6 +1,7 @@
+import { useRouter } from 'next/router';
 
 const Career = ()=>{
-
+    const router = useRouter()
     return(
         <>
         <section className="studyBannerSection">
@@ -130,7 +131,7 @@ const Career = ()=>{
         <div className="container">
             <div className="crerGrid">
                 <p>If you think you are perfect fit for some <br />other role, feel free to drop us an email</p>
-                <button>Email Now</button>
+                <button onClick={()=>router.push('mailto:hello@getkeel.com')}>Email Now</button>
             </div>
         </div>
     </section>

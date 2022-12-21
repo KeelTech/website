@@ -1,5 +1,6 @@
 import Accordian from '@/components/Accordian/newAccordian';
 import { IELTSAccordianData } from '@/helpers/constant.js'
+import GetConsultationCTA from '@/components/GetConsultationCTA';
 
 
 const IELTS = () => {
@@ -20,7 +21,7 @@ const IELTS = () => {
                                 <li> <img className="img-fluid" src="/assets/lstChk.svg" />50,000+ hours of IELTS training experience</li>
                                 <li> <img className="img-fluid" src="/assets/lstChk.svg" />Session Recordings</li>
                             </ul>
-                            <button>Book a Demo Class</button>
+                            <GetConsultationCTA text="Book a Demo Class"/>
                         </div>
                         <div className="studyBanImg">
                             <img className="img-fluid forWeb" src="/assets/ielts-header-desktop.webp" />

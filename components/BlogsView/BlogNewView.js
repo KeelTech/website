@@ -1,6 +1,7 @@
-
+import { useRouter } from 'next/router';
 
 const BlogNewView = ({ blogsList })=>{
+    const router = useRouter()
     const data = blogsList?.data??[];
     return(
         <section className="resourceSection">
@@ -16,9 +17,9 @@ const BlogNewView = ({ blogsList })=>{
                     <div className="blogGridsSection">
                         {
                             data.map((val, key)=>{
-                                const { blog_img, title } = val;
+                                const { blog_img, title, id } = val;
 
-                                return <div className="blogGrid" key={key}>
+                                return <div className="blogGrid" key={key} onClick={() => router.push(`/blogs/${id}`)}>
                                 <img className="img-fluid" src={blog_img} alt="title" />
                                 <div className="rescGrdData">
                                     <span>Canada</span>

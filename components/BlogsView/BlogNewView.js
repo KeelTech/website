@@ -14,12 +14,12 @@ const BlogNewView = ({ blogsList })=>{
                             {/* <button>See All <img className="img-fluid" src="/assets/arrowDark.svg" /></button> */}
                         </div>
                     </div>
-                    <div className="blogGridsSection">
+                    <div className="blogGridsSection newBlogSection">
                         {
                             data.map((val, key)=>{
                                 const { blog_img, title, id } = val;
 
-                                return <div className="blogGrid" key={key} onClick={() => router.push(`/blogs/${id}`)}>
+                                return <div className="blogGrid newWebBlog" key={key} onClick={() => router.push(`/blogs/${id}`)}>
                                 <img className="img-fluid" src={blog_img} alt="title" />
                                 <div className="rescGrdData">
                                     <span>Canada</span>

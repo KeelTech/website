@@ -51,7 +51,7 @@ const Header = ({ toggleNavBar, activeNav }) => {
                                 </div>
                             </div>
                         </nav>
-                        <img className="img-fluid" src="/assets/Logo.svg" onClick={() => handleNavigation('/')} />
+                        <img className="img-fluid mobileBackStop" src="/assets/Logo.svg" onClick={() => handleNavigation('/')} />
                     </div>
                     <ul>
                         <li onClick={() => handleNavigation('/')}>

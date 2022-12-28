@@ -210,7 +210,7 @@ const SettleAbroad = () => {
                                 </div>
                             </div>
                         </div>
-                        <button className="seeAllBtn">See All <img className="img-fluid" src="/assets/vtR.webp" /></button>
+                        {/* <button className="seeAllBtn">See All <img className="img-fluid" src="/assets/vtR.webp" /></button> */}
                     </div>
                 </div>
             </section>

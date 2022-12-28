@@ -56,7 +56,7 @@ const Resource = () => {
                     </div>
                 </div>
             </section>
-            <section className="aboutMembers">
+            <section className="aboutMembers d-none">
                 <div className="container">
                     <div className="aboutMembersCont">
                         <div className="storyContent full-width">
@@ -99,7 +99,7 @@ const Resource = () => {
                     </div>
                 </div>
             </section>
-            <section className="aboutMembers">
+            <section className="aboutMembers d-none">
                 <div className="container">
                     <div className="aboutMembersCont">
                         <div className="storyContent full-width">

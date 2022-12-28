@@ -295,14 +295,14 @@ const SettleAbroad = () => {
                                 </div>
                                 <div className='rightPrsCont'>
                                     <div className='verticalImg'>
-                                        <img className='img-fluid' src='/assets/home/home-process-1.webp' />
+                                        <img className='img-fluid' src='/assets/settleAbroad/check_your_eligibility.webp' />
                                     </div>
                                 </div>
                             </div>
                             <div className='inrScrollBox reverseMobile'>
                                 <div className='rightPrsCont'>
                                     <div className='verticalImg'>
-                                        <img className='img-fluid' src='/assets/home/home-process-2.webp' />
+                                        <img className='img-fluid' src='/assets/settleAbroad/connect_wiith_a_licensed_consultant.webp' />
                                     </div>
                                 </div>
                                 <div className='leftprsCont'>
@@ -327,14 +327,14 @@ const SettleAbroad = () => {
                                 </div>
                                 <div className='rightPrsCont'>
                                     <div className='verticalImg'>
-                                        <img className='img-fluid' src='/assets/home/home-process-3.webp'/>
+                                        <img className='img-fluid' src='/assets/settleAbroad/ielts_preparation.webp'/>
                                     </div>
                                 </div>
                             </div>
                             <div className='inrScrollBox reverseMobile'>
                                 <div className='rightPrsCont'>
                                     <div className='verticalImg'>
-                                        <img className='img-fluid' src='/assets/home/home-process-4.webp' />
+                                        <img className='img-fluid' src='/assets/settleAbroad/work_with_a_dedicated_team.webp' />
                                     </div>
                                 </div>
                                 <div className='leftprsCont'>
@@ -359,14 +359,14 @@ const SettleAbroad = () => {
                                 </div>
                                 <div className='rightPrsCont'>
                                     <div className='verticalImg'>
-                                        <img className='img-fluid' src='/assets/home/home-process-3.webp'/>
+                                        <img className='img-fluid' src='/assets/settleAbroad/submit_the_application.webp'/>
                                     </div>
                                 </div>
                             </div>
                             <div className='inrScrollBox reverseMobile'>
                                 <div className='rightPrsCont'>
                                     <div className='verticalImg'>
-                                        <img className='img-fluid' src='/assets/home/home-process-4.webp' />
+                                        <img className='img-fluid' src='/assets/settleAbroad/start_a_new_life.webp' />
                                     </div>
                                 </div>
                                 <div className='leftprsCont'>

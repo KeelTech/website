@@ -1,6 +1,12 @@
+import { useRouter } from 'next/router';
 
-const Resource = ()=>{
+import { getBlogsList } from '@/actions/index.js';
 
+const Resource = ({ blogsList })=>{
+    const router = useRouter()
+
+    const blogData = blogsList?.data??[];
+    console.log("blogData", blogData);
     return(
         <>
             <section className="studyBannerSection">
@@ -32,7 +38,20 @@ const Resource = ()=>{
                     <p>Check out our blogs here</p>
                 </div>
                 <div className="blogGridsSection">
-                    <div className="blogGrid">
+                    {
+                        blogData.map((val ,key)=>{
+                            const { blog_img, title, id } = val;
+                            return <div className="blogGrid" key={key} onClick={() => router.push(`/blogs/${id}`)}>
+                            <img className="img-fluid" src={blog_img}/>
+                            <div className="rescGrdData">
+                                <span>Canada</span>
+                                <p>{title}</p>
+                            </div>
+                        </div>
+                        })
+                    }
+                    
+                    {/* <div className="blogGrid">
                         <img className="img-fluid" src="/assets/resc.webp"/>
                         <div className="rescGrdData">
                             <span>Canada</span>
@@ -52,14 +71,7 @@ const Resource = ()=>{
                             <span>Canada</span>
                             <p>10 Reasons Moving To Canada Can Change Your Life For Good</p>
                         </div>
-                    </div>
-                    <div className="blogGrid">
-                        <img className="img-fluid" src="/assets/resc.webp"/>
-                        <div className="rescGrdData">
-                            <span>Canada</span>
-                            <p>10 Reasons Moving To Canada Can Change Your Life For Good</p>
-                        </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>
@@ -71,39 +83,24 @@ const Resource = ()=>{
                     <h4 className="grdHdng">News</h4>
                     <div className="subheadWithBtn">
                         <h5>Immigration <span>News</span></h5>
-                        <button>See All <img className="img-fluid" src="/assets/arrowDark.svg"/></button>
+                        {/* <button>See All <img className="img-fluid" src="/assets/arrowDark.svg"/></button> */}
                     </div>
                     <p>We believe with right exposure you can do wonders for yourself and<br/> your family hence we help you make choices that</p>
                 </div>
                 <div className="blogGridsSection">
-                    <div className="blogGrid">
-                        <img className="img-fluid" src="/assets/resc.webp"/>
-                        <div className="rescGrdData">
-                            <span>Canada</span>
-                            <p>10 Reasons Moving To Canada Can Change Your Life For Good</p>
+                    {
+                        blogData.map((val ,key)=>{
+                            const { blog_img, title, id } = val;
+
+                            return <div className="blogGrid" onClick={() => router.push(`/blogs/${id}`)} key={key}>
+                            <img className="img-fluid" src={blog_img}/>
+                            <div className="rescGrdData">
+                                <span>Canada</span>
+                                <p>{title}</p>
+                            </div>
                         </div>
-                    </div>
-                    <div className="blogGrid">
-                        <img className="img-fluid" src="/assets/resc.webp"/>
-                        <div className="rescGrdData">
-                            <span>Canada</span>
-                            <p>10 Reasons Moving To Canada Can Change Your Life For Good</p>
-                        </div>
-                    </div>
-                    <div className="blogGrid">
-                        <img className="img-fluid" src="/assets/resc.webp"/>
-                        <div className="rescGrdData">
-                            <span>Canada</span>
-                            <p>10 Reasons Moving To Canada Can Change Your Life For Good</p>
-                        </div>
-                    </div>
-                    <div className="blogGrid">
-                        <img className="img-fluid" src="/assets/resc.webp"/>
-                        <div className="rescGrdData">
-                            <span>Canada</span>
-                            <p>10 Reasons Moving To Canada Can Change Your Life For Good</p>
-                        </div>
-                    </div>
+                        })
+                    }
                 </div>
             </div>
         </div>
@@ -166,6 +163,15 @@ const Resource = ()=>{
     </section>
         </>
     )
+}
+
+export async function getServerSideProps(){
+    const blogsList =  await getBlogsList({})
+    return {
+        props: {
+            blogsList
+        }
+    }
 }
 
 export default Resource;

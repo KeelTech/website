@@ -2494,7 +2494,7 @@ section.communitySection {
 
   .blogGridsSection {
     overflow: auto;
-    flex-flow: unset;
+    /* flex-flow: unset; */
   }
 
   .blogGrid {
@@ -2793,7 +2793,7 @@ textarea.activeInput+label{
 }
 @media(max-width:767px) {
   .blogGrid.newWebBlog {
-    width: 220px;
+    width: 100%;
 }
 .newBlogSection{
   padding-bottom: 30px;

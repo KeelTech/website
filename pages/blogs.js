@@ -17,7 +17,7 @@ const Resource = ({ blogsList })=>{
                         <span> Immigration Queries</span>
                     </h1>
                     <p>Keel is there to help you every step of the way from the day you think of settling abroad till the time you actually start your brand new life</p>
-                    <button>Explore Resources</button>
+                    {/* <button>Explore Resources</button> */}
                 </div>
                 <div className="studyBanImg">
                     {/* <img className="img-fluid" src="/assets/studyabroad.webp" /> */}
@@ -32,19 +32,20 @@ const Resource = ({ blogsList })=>{
                 <div className="storyContent full-width">
                     <h4 className="grdHdng">Blogs</h4>
                     <div className="subheadWithBtn">
-                        <h5>Latest <span>Blogs</span></h5>
-                        <button>See All <img className="img-fluid" src="/assets/arrowDark.svg"/></button>
+                        {/* <h5>Latest <span>Blogs</span></h5> */}
+                        {/* <button>See All <img className="img-fluid" src="/assets/arrowDark.svg"/></button> */}
                     </div>
                     <p>Check out our blogs here</p>
                 </div>
-                <div className="blogGridsSection">
+                <div className="blogGridsSection newBlogSection">
                     {
                         blogData.map((val ,key)=>{
                             const { blog_img, title, id } = val;
-                            return <div className="blogGrid" key={key} onClick={() => router.push(`/blogs/${id}`)}>
+                            return <div className="blogGrid newWebBlog" key={key} onClick={() => router.push(`/blogs/${id}`)}>
                             <img className="img-fluid" src={blog_img}/>
                             <div className="rescGrdData">
-                                <span>Canada</span>
+                                {/* <span>Canada</span> */}
+                                <p className='dateCust'>Date</p>
                                 <p>{title}</p>
                             </div>
                         </div>
@@ -76,7 +77,7 @@ const Resource = ({ blogsList })=>{
             </div>
         </div>
     </section>
-    <section className="resourceSection">
+    <section className="resourceSection d-none">
         <div className="container">
             <div className="resrcCont">
                 <div className="storyContent full-width">

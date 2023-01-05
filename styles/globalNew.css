@@ -732,6 +732,11 @@ img.quoteImg.img-fluid {
   padding-bottom: 0px;
   display: flex;
   gap: 30px;
+  flex-flow: wrap;
+}
+.blogGrid.newWebBlog .rescGrdData p.dateCust {
+  color: gray;
+  font-size: 12px;
 }
 
 .blogGrid {
@@ -972,8 +977,9 @@ button.batchActBtn {
 
 .batchInner {
   background: white;
-  border-radius: 23px;
-  padding: 12px;
+  border-radius: 13px;
+  /* padding: 12px; */
+  overflow: hidden;
 }
 
 .batchInner ul {
@@ -981,6 +987,7 @@ button.batchActBtn {
   flex-direction: column;
   gap: 10px;
   margin: 10px 0;
+  padding: 0 12px;
 }
 
 .batchInner ul li {
@@ -2487,6 +2494,7 @@ section.communitySection {
 
   .blogGridsSection {
     overflow: auto;
+    flex-flow: unset;
   }
 
   .blogGrid {
@@ -2755,6 +2763,7 @@ textarea.activeInput+label{
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
+  width: calc(25% - 23px);
 }
 
 .blogGrid.newWebBlog .rescGrdData {

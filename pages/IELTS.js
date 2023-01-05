@@ -113,66 +113,82 @@ const IELTS = () => {
                         <div className="carsBatchCont">
                             <div className="batchGrids">
                                 <div className="batchInner">
-                                    <img className="img-fluid" src="/assets/batch.webp" />
+                                    <img className="img-fluid" src="/assets/admission.svg" />
                                     <ul>
                                         <li>
                                             <img className="img-fluid" src="/assets/calendar.svg" />
-                                            <p>25 Aug 2022 (Thursday)</p>
+                                            <p>Monday</p>
                                         </li>
                                         <li>
                                             <img className="img-fluid" src="/assets/time.svg" />
-                                            <p>2:00PM-3:00PM</p>
+                                            <p>10:00AM-11:30AM</p>
                                         </li>
                                     </ul>
-                                    <button>Join For Free</button>
+                                    {/* <button>Join For Free</button> */}
                                 </div>
                             </div>
                             <div className="batchGrids">
                                 <div className="batchInner">
-                                    <img className="img-fluid" src="/assets/batch.webp" />
+                                    <img className="img-fluid" src="/assets/admission.svg" />
                                     <ul>
                                         <li>
                                             <img className="img-fluid" src="/assets/calendar.svg" />
-                                            <p>25 Aug 2022 (Thursday)</p>
+                                            <p>Wednesday</p>
                                         </li>
                                         <li>
                                             <img className="img-fluid" src="/assets/time.svg" />
-                                            <p>2:00PM-3:00PM</p>
+                                            <p>1:00PM-2:30PM</p>
                                         </li>
                                     </ul>
-                                    <button>Join For Free</button>
+                                    {/* <button>Join For Free</button> */}
                                 </div>
                             </div>
                             <div className="batchGrids">
                                 <div className="batchInner">
-                                    <img className="img-fluid" src="/assets/batch.webp" />
+                                    <img className="img-fluid" src="/assets/admission.svg" />
                                     <ul>
                                         <li>
                                             <img className="img-fluid" src="/assets/calendar.svg" />
-                                            <p>25 Aug 2022 (Thursday)</p>
+                                            <p>Friday</p>
                                         </li>
                                         <li>
                                             <img className="img-fluid" src="/assets/time.svg" />
-                                            <p>2:00PM-3:00PM</p>
+                                            <p>4:00PM-5:30PM</p>
                                         </li>
                                     </ul>
-                                    <button>Join For Free</button>
+                                    {/* <button>Join For Free</button> */}
                                 </div>
                             </div>
                             <div className="batchGrids">
                                 <div className="batchInner">
-                                    <img className="img-fluid" src="/assets/batch.webp" />
+                                    <img className="img-fluid" src="/assets/admission.svg" />
                                     <ul>
                                         <li>
                                             <img className="img-fluid" src="/assets/calendar.svg" />
-                                            <p>25 Aug 2022 (Thursday)</p>
+                                            <p>Saturday</p>
                                         </li>
                                         <li>
                                             <img className="img-fluid" src="/assets/time.svg" />
-                                            <p>2:00PM-3:00PM</p>
+                                            <p>9:00AM-10:30AM</p>
                                         </li>
                                     </ul>
-                                    <button>Join For Free</button>
+                                    {/* <button>Join For Free</button> */}
+                                </div>
+                            </div>
+                            <div className="batchGrids">
+                                <div className="batchInner">
+                                    <img className="img-fluid" src="/assets/admission.svg" />
+                                    <ul>
+                                        <li>
+                                            <img className="img-fluid" src="/assets/calendar.svg" />
+                                            <p>Sunday</p>
+                                        </li>
+                                        <li>
+                                            <img className="img-fluid" src="/assets/time.svg" />
+                                            <p>10:30AM-12:00AM</p>
+                                        </li>
+                                    </ul>
+                                    {/* <button>Join For Free</button> */}
                                 </div>
                             </div>
                         </div>

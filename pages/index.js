@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { useRouter } from 'next/router';
 import { getBlogsList } from '@/actions/index.js';
 import BlogNewView from '@/components/BlogsView/BlogNewView';
+import InstagramPost from '@/components/InstagramPost';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -268,28 +269,7 @@ const HomeView = ({ blogsList }) => {
                 </div>
             </section>
             <BlogNewView blogsList={blogsList} />
-            <section className="followUsSection">
-                <div className="container">
-                    <div className="storyContent full-width text-center">
-                        <h4 className="grdHdng">Follow us on</h4>
-                        <h5>Insta<span>gram</span></h5>
-                    </div>
-                </div>
-                <div className="followUsContImg">
-                    <ul>
-                        <li><a href=""><img src="/assets/fl3.webp" alt="" /></a></li>
-                        <li><a href=""><img src="/assets/fl2.webp" alt="" /></a></li>
-                        <li><a href=""><img src="/assets/fl3.webp" alt="" /></a></li>
-                        <li><a href=""><img src="/assets/fl4.webp" alt="" /></a></li>
-                        {/* <li><a href=""><img src="/assets/fl5.webp" alt="" /></a></li> */}
-                        {/* <li><a href=""><img src="/assets/fl6.webp" alt="" /></a></li> */}
-                        {/* <li><a href=""><img src="/assets/fl7.webp" alt="" /></a></li> */}
-                        {/* <li><a href=""><img src="/assets/fl8.webp" alt="" /></a></li> */}
-                        <li><a href=""><img src="/assets/fl3.webp" alt="" /></a></li>
-                        <li><a href=""><img src="/assets/fl4.webp" alt="" /></a></li>
-                    </ul>
-                </div>
-            </section>
+            <InstagramPost/>
         </>
     )
 }

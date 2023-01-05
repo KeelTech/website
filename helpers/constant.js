@@ -150,3 +150,22 @@ export const IELTSAccordianData = [
         ans: "Upon successful registration, you will receive a confirmation mail. This mail will consist of confirmation to your registration and login details or steps to join the class."
     },
 ]
+import InstagramEmbed from 'react-instagram-embed';
+
+export const INSTAGRAM_POST_DATA = [
+    'https://www.instagram.com/p/CkPuv0Usap5/',
+    'https://www.instagram.com/p/ChZKmQsF93b/',
+    'https://www.instagram.com/p/CmLUhIZJCsE/',
+    'https://www.instagram.com/p/Cim0AwHvCks/',
+    'https://www.instagram.com/p/Cg_Q9SEt2K4/',
+    'https://www.instagram.com/p/CjSipwSvTfC/',
+    'https://www.instagram.com/p/CgmKOToF48y/',
+    'https://www.instagram.com/p/CjH-vJTPyFy/',
+    'https://www.instagram.com/p/Cj2WVN_AIKq/',
+    'https://www.instagram.com/p/Cjr5ZbVvV9R/',
+    'https://www.instagram.com/p/CgPF40Wt14n/',
+    'https://www.instagram.com/p/CjCemtXKEwR/',
+    'https://www.instagram.com/p/CjFZ695PBBl/',
+    'https://www.instagram.com/p/Ci_6l3MvnIO/',
+    'https://www.instagram.com/p/Cl769D0PE73/'
+]

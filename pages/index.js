@@ -267,7 +267,7 @@ const HomeView = ({ blogsList }) => {
                     </div>
                 </div>
             </section>
-            <BlogNewView blogsList={blogsList} />
+            <BlogNewView blogsList={blogsList} showHighlighted/>
             <section className="followUsSection">
                 <div className="container">
                     <div className="storyContent full-width text-center">

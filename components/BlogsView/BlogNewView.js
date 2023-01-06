@@ -1,8 +1,28 @@
 import { useRouter } from 'next/router';
 
-const BlogNewView = ({ blogsList })=>{
+const BlogNewView = ({ blogsList, showHighlighted })=>{
     const router = useRouter()
     const data = blogsList?.data??[];
+
+    const renderItem = (val)=>{
+        const { blog_img, title, id, highlight } = val;
+        let showWidget = true;
+        if(showHighlighted){
+            if(!highlight){
+                showWidget = false;
+            }
+        }
+        if(showWidget){
+            return (<div className="blogGrid newWebBlog" key={id} onClick={() => router.push(`/blogs/${id}`)}>
+                <img className="img-fluid" src={blog_img} alt="title" />
+                <div className="rescGrdData">
+                    <span>Canada</span>
+                    <p>{title}</p>
+                </div>
+            </div>)
+        }
+        return null
+    }
     return(
         <section className="resourceSection">
             <div className="container">
@@ -17,15 +37,7 @@ const BlogNewView = ({ blogsList })=>{
                     <div className="blogGridsSection newBlogSection">
                         {
                             data.map((val, key)=>{
-                                const { blog_img, title, id } = val;
-
-                                return <div className="blogGrid newWebBlog" key={key} onClick={() => router.push(`/blogs/${id}`)}>
-                                <img className="img-fluid" src={blog_img} alt="title" />
-                                <div className="rescGrdData">
-                                    <span>Canada</span>
-                                    <p>{title}</p>
-                                </div>
-                            </div>
+                                return renderItem(val);
                             })
                         }
                     </div>

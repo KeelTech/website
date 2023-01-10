@@ -1,9 +1,36 @@
+import { useRef } from 'react';
 import Accordian from '@/components/Accordian/newAccordian';
 import { IELTSAccordianData } from '@/helpers/constant.js'
 import GetConsultationCTA from '@/components/GetConsultationCTA';
-
+const CLASS_TIMING= [
+    {
+        day: 'Monday',
+        time: '10:00AM-11:30AM'
+    },
+    {
+        day: 'Wednesday',
+        time: '1:00PM-2:30PM'
+    },
+    {
+        day: 'Friday',
+        time: '4:00PM-5:30PM'
+    },
+    {
+        day: 'Saturday',
+        time: '9:00AM-10:30AM'
+    },
+    {
+        day: 'Sunday',
+        time: '10:30AM-12:00AM'
+    }
+]
 
 const IELTS = () => {
+    const otpFormRef = useRef();
+
+    const openLeadForm = ()=>{
+        otpFormRef.current.openPopup();
+    }
 
     return (
         <>
@@ -22,6 +49,7 @@ const IELTS = () => {
                                 <li> <img className="img-fluid" src="/assets/lstChk.svg" />Session Recordings</li>
                             </ul>
                             <GetConsultationCTA text="Book a Demo Class"/>
+                            <GetConsultationCTA ref={otpFormRef} hideText/>
                         </div>
                         <div className="studyBanImg">
                             <img className="img-fluid forWeb" src="/assets/ielts-header-desktop.webp" />
@@ -106,91 +134,32 @@ const IELTS = () => {
                         </p>
                     </div>
                     <div className="batchesCarausal">
-                        <div className="buttonGrid">
+                        {/* <div className="buttonGrid">
                             <button className="batchActBtn">IELTS Plus Course</button>
                             <button>Premium Course</button>
-                        </div>
+                        </div> */}
                         <div className="carsBatchCont">
-                            <div className="batchGrids">
-                                <div className="batchInner">
-                                    <img className="img-fluid" src="/assets/admission.svg" />
-                                    <ul>
-                                        <li>
-                                            <img className="img-fluid" src="/assets/calendar.svg" />
-                                            <p>Monday</p>
-                                        </li>
-                                        <li>
-                                            <img className="img-fluid" src="/assets/time.svg" />
-                                            <p>10:00AM-11:30AM</p>
-                                        </li>
-                                    </ul>
-                                    {/* <button>Join For Free</button> */}
+                            {
+                                CLASS_TIMING.map((val, key)=>{
+                                    const { day, time } = val;
+                                    return <div className="batchGrids" key={key} onClick={openLeadForm}>
+                                    <div className="batchInner">
+                                        <img className="img-fluid" src="/assets/admission.svg" />
+                                        <ul>
+                                            <li>
+                                                <img className="img-fluid" src="/assets/calendar.svg" />
+                                                <p>{day}</p>
+                                            </li>
+                                            <li>
+                                                <img className="img-fluid" src="/assets/time.svg" />
+                                                <p>{time}</p>
+                                            </li>
+                                        </ul>
+                                        {/* <button>Join For Free</button> */}
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="batchGrids">
-                                <div className="batchInner">
-                                    <img className="img-fluid" src="/assets/admission.svg" />
-                                    <ul>
-                                        <li>
-                                            <img className="img-fluid" src="/assets/calendar.svg" />
-                                            <p>Wednesday</p>
-                                        </li>
-                                        <li>
-                                            <img className="img-fluid" src="/assets/time.svg" />
-                                            <p>1:00PM-2:30PM</p>
-                                        </li>
-                                    </ul>
-                                    {/* <button>Join For Free</button> */}
-                                </div>
-                            </div>
-                            <div className="batchGrids">
-                                <div className="batchInner">
-                                    <img className="img-fluid" src="/assets/admission.svg" />
-                                    <ul>
-                                        <li>
-                                            <img className="img-fluid" src="/assets/calendar.svg" />
-                                            <p>Friday</p>
-                                        </li>
-                                        <li>
-                                            <img className="img-fluid" src="/assets/time.svg" />
-                                            <p>4:00PM-5:30PM</p>
-                                        </li>
-                                    </ul>
-                                    {/* <button>Join For Free</button> */}
-                                </div>
-                            </div>
-                            <div className="batchGrids">
-                                <div className="batchInner">
-                                    <img className="img-fluid" src="/assets/admission.svg" />
-                                    <ul>
-                                        <li>
-                                            <img className="img-fluid" src="/assets/calendar.svg" />
-                                            <p>Saturday</p>
-                                        </li>
-                                        <li>
-                                            <img className="img-fluid" src="/assets/time.svg" />
-                                            <p>9:00AM-10:30AM</p>
-                                        </li>
-                                    </ul>
-                                    {/* <button>Join For Free</button> */}
-                                </div>
-                            </div>
-                            <div className="batchGrids">
-                                <div className="batchInner">
-                                    <img className="img-fluid" src="/assets/admission.svg" />
-                                    <ul>
-                                        <li>
-                                            <img className="img-fluid" src="/assets/calendar.svg" />
-                                            <p>Sunday</p>
-                                        </li>
-                                        <li>
-                                            <img className="img-fluid" src="/assets/time.svg" />
-                                            <p>10:30AM-12:00AM</p>
-                                        </li>
-                                    </ul>
-                                    {/* <button>Join For Free</button> */}
-                                </div>
-                            </div>
+                                })
+                            }
                         </div>
                     </div>
                 </div>

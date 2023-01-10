@@ -1,4 +1,5 @@
 import { useRouter } from 'next/router';
+import GetConsultationCTA from '@/components/GetConsultationCTA';
 
 const Career = () => {
     const router = useRouter()
@@ -11,7 +12,7 @@ const Career = () => {
                             <h1>Work with a driven team of industry experts
                             </h1>
                             <p>Skyrocket your professional journey with Keel and make your best career move</p>
-                            <button>Explore Jobs</button>
+                            <GetConsultationCTA text="Explore Jobs"/>
                         </div>
                         <div className="studyBanImg">
                             <img className="img-fluid" src="/assets/career-hero.webp" />

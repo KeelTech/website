@@ -32,6 +32,10 @@ const IELTS = () => {
         otpFormRef.current.openPopup();
     }
 
+    const handleExploreJobClick = ()=>{
+        document.getElementById('batchesView').scrollIntoView();
+    }
+
     return (
         <>
             <section className="studyBannerSection">
@@ -48,7 +52,7 @@ const IELTS = () => {
                                 <li> <img className="img-fluid" src="/assets/lstChk.svg" />50,000+ hours of IELTS training experience</li>
                                 <li> <img className="img-fluid" src="/assets/lstChk.svg" />Session Recordings</li>
                             </ul>
-                            <GetConsultationCTA text="Book a Demo Class"/>
+                            <button onClick={handleExploreJobClick}>Book a Demo Class</button>
                             <GetConsultationCTA ref={otpFormRef} hideText/>
                         </div>
                         <div className="studyBanImg">
@@ -125,7 +129,7 @@ const IELTS = () => {
                     </div>
                 </div>
             </section>
-            <section className="batchesSection">
+            <section className="batchesSection" id="batchesView">
                 <div className="container">
                     <div className="storyContent full-width text-center">
                         <h4 className="grdHdng">Batches</h4>

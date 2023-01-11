@@ -94,7 +94,8 @@ const NumberVerification = ({handleClose}) => {
             return;
         }
         const headers = {
-            "x-api-key": LEAD_SQUARED_X_API
+            "x-api-key": LEAD_SQUARED_X_API,
+            "access-control-allow-origin": "*"
         }
         const payload = [
             {

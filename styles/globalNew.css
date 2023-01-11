@@ -1071,6 +1071,15 @@ button.aplyNbtn {
   -webkit-text-fill-color: transparent;
   margin-top: 30px;
 }
+.inputForm.mobileInp.inputWithOtp button {
+  position: absolute;
+  right: 0;
+  width: 120px;
+  height: 100%;
+  font-size: 14px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
 .cstmFootJob {
   min-height: 180px;
   display: flex;
@@ -2016,6 +2025,12 @@ section.communitySection {
 @media (max-width: 767px) {
   .leftprsCont {
     width: 100%;
+}
+.inputForm.mobileInp.inputWithOtp button{
+  margin: 0px;
+}
+div.commonPopUpConten{
+  padding: 12px;
 }
 .divider{
   margin: 10px 0px;

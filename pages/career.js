@@ -1,8 +1,20 @@
 import { useRouter } from 'next/router';
 import GetConsultationCTA from '@/components/GetConsultationCTA';
+import { useRef } from 'react';
 
 const Career = () => {
     const router = useRouter()
+
+    const handleExploreJobClick = ()=>{
+        document.getElementById('jobView').scrollIntoView();
+    }
+
+    const otpFormRef = useRef();
+
+    const openLeadForm = ()=>{
+        otpFormRef.current.openPopup();
+    }
+
     return (
         <>
             <section className="studyBannerSection">
@@ -12,7 +24,8 @@ const Career = () => {
                             <h1>Work with a driven team of industry experts
                             </h1>
                             <p>Skyrocket your professional journey with Keel and make your best career move</p>
-                            <GetConsultationCTA text="Explore Jobs"/>
+                            <GetConsultationCTA ref={otpFormRef} hideText/>
+                            <button onClick={handleExploreJobClick}>Explore Jobs</button>
                         </div>
                         <div className="studyBanImg">
                             <img className="img-fluid" src="/assets/career-hero.webp" />
@@ -20,7 +33,7 @@ const Career = () => {
                     </div>
                 </div>
             </section>
-            <section className="universitiesSection">
+            <section className="universitiesSection" id="jobView">
                 <div className="container">
                     <div className="universitiesCont">
                         <div className="storyContent full-width">
@@ -43,7 +56,7 @@ const Career = () => {
                                 <label>Email</label>
                             </div>
                         </div>
-                        <div className="universitiesGridCont threeGrid">
+                        <div className="universitiesGridCont threeGrid" >
                             <div className="processStepGrid">
                                 <div className="prcStpIn">
                                     <span className="stepNum">Design</span>
@@ -59,7 +72,7 @@ const Career = () => {
                                             product and engineering teams to define and execute our product design
                                             strategy.
                                         </p>
-                                        <button className="aplyNbtn">Apply Now</button>
+                                        <button className="aplyNbtn" onClick={openLeadForm}>Apply Now</button>
                                     </div>
                                 </div>
                             </div>
@@ -78,7 +91,7 @@ const Career = () => {
                                             should be able to develop and maintain functional and stable web
                                             applications to meet our company’s needs.
                                         </p>
-                                        <button className="aplyNbtn">Apply Now</button>
+                                        <button className="aplyNbtn" onClick={openLeadForm}>Apply Now</button>
                                     </div>
                                 </div>
                             </div>
@@ -97,7 +110,7 @@ const Career = () => {
                                             to translate our company and customer needs into functional and
                                             appealing interactive applications.
                                         </p>
-                                        <button className="aplyNbtn">Apply Now</button>
+                                        <button className="aplyNbtn" onClick={openLeadForm}>Apply Now</button>
                                     </div>
                                 </div>
                             </div>

@@ -139,16 +139,7 @@ const NumberVerification = ({handleClose}) => {
 
 
         createLeadSquareLead(dataParams, null, headers).then((resp)=>{
-            setToasterInfo({
-                isVisible: true,
-                isError: false,
-                isSuccess: true,
-                msg: 'Lead generated successfully'
-            });
-            setTimeout(() => {
-                hideToaster();
-                handleClose();
-            }, 2000);
+            
             setData({
                 number: '',
                 otp: '',
@@ -158,6 +149,28 @@ const NumberVerification = ({handleClose}) => {
                 gender: '',
                 email: ''
             })
+            if(resp && resp.status==1){
+                setToasterInfo({
+                    isVisible: true,
+                    isError: false,
+                    isSuccess: true,
+                    msg: 'Lead generated successfully'
+                });
+                setTimeout(() => {
+                    hideToaster();
+                    handleClose();
+                }, 2000);
+            }else{
+                setToasterInfo({
+                    isVisible: true,
+                    isError: true,
+                    isSuccess: true,
+                    msg: 'Failed to Generate Lead, Please try again later'
+                });
+                setTimeout(() => {
+                    hideToaster();
+                }, 2000);
+            }
             setOtpData({disableSendOtp: false, numberVerified: false, lastVerifiedNumber:''})
         }).catch((err)=>{
             console.log("error is", err);

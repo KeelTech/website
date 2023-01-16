@@ -96,7 +96,7 @@ const OtpVerification = ()=>{
         setData({loading: true});
         verifyOTP(postParams, (resp, err) => {
             setData({loading: false});
-            if (resp) {
+            if (resp && resp.data.includes('validated')) {
                 setData({
                     lastVerifiedNumber: number,
                     numberVerified: true

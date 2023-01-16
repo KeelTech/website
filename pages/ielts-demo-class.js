@@ -28,13 +28,13 @@ const CLASS_TIMING = [
 const IELTS = () => {
     const otpFormRef = useRef();
 
-    const openLeadForm = () => {
-        otpFormRef.current.openPopup();
-    }
+    // const openLeadForm = () => {
+    //     otpFormRef.current.openPopup();
+    // }
 
-    const handleExploreJobClick = () => {
-        document.getElementById('batchesView').scrollIntoView();
-    }
+    // const handleExploreJobClick = () => {
+    //     document.getElementById('batchesView').scrollIntoView();
+    // }
 
     return (
         <>
@@ -50,7 +50,7 @@ const IELTS = () => {
                                 <li> <img className="img-fluid" src="/assets/lstChk.svg" />50,000+ hours of IELTS training experience</li>
                                 <li> <img className="img-fluid" src="/assets/lstChk.svg" />Session Recordings</li>
                             </ul>
-                            <button onClick={handleExploreJobClick}>Book a Demo Class</button>
+                            <GetConsultationCTA text="Book a Demo Class" />
                             <GetConsultationCTA ref={otpFormRef} hideText />
                             {/* <div className='limitedSeats'>
                                 <h4>Limited Seats Left!</h4>
@@ -224,21 +224,6 @@ const IELTS = () => {
                     </div>
                 </div>
             </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             <section className="faqSection">
                 <div className="container">
                     <div className="storyContent full-width text-center">
@@ -253,7 +238,7 @@ const IELTS = () => {
                     <div className="crerGrid customSubFoot">
                         <h4>Learn From The Top 0.01% IELTS Coaches In India​</h4>
                         <p>Fill in your details via this form, we will get back to you.</p>
-                        <button onClick={handleExploreJobClick}>Book a Demo Class</button>
+                        <GetConsultationCTA text="Book a Demo Class" />
                     </div>
                 </div>
             </section>

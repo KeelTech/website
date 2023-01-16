@@ -199,7 +199,7 @@ const StudyAbroad = () => {
                 <div className="container">
                     <div className="cmnuCont">
                         <div className="cmnuImgSec">
-                            <img className="img-fluid" src="/assets/men.png" />
+                            <img className="img-fluid" src="/assets/ielts/online-class-ielts.webp" />
                         </div>
                         <div className="storyContent pl-30 cstmListWithHead">
                             <h4 className='cstmLstHeading'>Learn From The Top 0.01% IELTS Coaches In India</h4>

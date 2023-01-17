@@ -1,0 +1,45 @@
+# Query: <div id="menu"><a href="/">
+# Flags: RegExp
+# ContextLines: 1
+
+8 results - 8 files
+
+about-us.html:
+  19                              class="bars"></span><span class="bars"></span>
+  20:                         <div id="menu">
+  21                              <ul class="mainList">
+
+career.html:
+  20                              class="bars"></span><span class="bars"></span>
+  21:                         <div id="menu">
+  22                              <ul class="mainList">
+
+contact.html:
+  20                              class="bars"></span><span class="bars"></span>
+  21:                         <div id="menu">
+  22                              <ul class="mainList">
+
+ILTS.html:
+  20                              class="bars"></span><span class="bars"></span>
+  21:                         <div id="menu">
+  22                              <ul class="mainList">
+
+index.html:
+  19                              class="bars"></span><span class="bars"></span>
+  20:                         <div id="menu">
+  21                              <ul class="mainList">
+
+resource.html:
+  20                              class="bars"></span><span class="bars"></span>
+  21:                         <div id="menu"><a href="/">
+  22                              <ul class="mainList">
+
+settleAbrod.html:
+  20                              class="bars"></span><span class="bars"></span>
+  21:                         <div id="menu"><a href="/">
+  22                              <ul class="mainList">
+
+studyAbrod.html:
+  20                              class="bars"></span><span class="bars"></span>
+  21:                         <div id="menu"><a href="/">
+  22                              <ul class="mainList">

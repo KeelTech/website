@@ -24,7 +24,7 @@ const StudyAbroad = () => {
                             <GetConsultationCTA />
                         </div>
                         <div className="studyBanImg">
-                            <img className="img-fluid" src="/assets/Frame-4-5.webp" />
+                            <img className="img-fluid stdyCutomImg" src="/assets/Frame-4-5.webp" />
                         </div>
                     </div>
                     <div className="bannerLast">

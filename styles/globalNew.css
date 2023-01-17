@@ -2896,7 +2896,7 @@ h4.cstmLstHeading {
   padding-top: 30px;
 }
 
-.customAboutMe img {max-width: 320px;width: 30%;}
+.customAboutMe img {max-width: 420px;width: 100%;}
 
 .customAboutMe p.customPeraAbout {
   width: 60%;
@@ -2911,12 +2911,44 @@ h4.cstmLstHeading {
 .prcStpIn.newPrcwithImg img {
   width: 50px;
 }
+.stdyCutomImg{
+  width: 100%;
+  max-width: 550px;
+  display: block;
+  margin: auto;
+}
+.limitedSeats {
+  margin-top: 30px;
+}
+
+.limitedSeats h4 {
+  font-weight: 500;
+}
+
+.certify {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.certify img {
+  width: 100%;
+  max-width: 240px;
+}
+
+.certify p {
+  font-size: 16px;
+  font-weight: 400;
+}
 @media (max-width:767px) {
   ul.newListing li p {
     font-size: 16px;
     text-align: center;
 }
-
+.certify{
+  justify-content: center;
+}
 ul.newListing {
     gap: 20px;
 }

@@ -52,20 +52,20 @@ const IELTS = () => {
                             </ul>
                             <GetConsultationCTA text="Book a Demo Class" />
                             <GetConsultationCTA ref={otpFormRef} hideText />
-                            {/* <div className='limitedSeats'>
+                            <div className='limitedSeats'>
                                 <h4>Limited Seats Left!</h4>
                                 <div className='certify'>
                                     <p>Certified by:</p>
                                     <img className='img-fluid' src='/assets/ielts.jpg' />
                                 </div>
-                            </div> */}
+                            </div>
                         </div>
                         <div className="studyBanImg">
                             <img className="img-fluid forWeb" src="/assets/ielts-header-desktop.webp" />
                             <img className="img-fluid forMobile" src="/assets/ielts-header.webp" />
                         </div>
                     </div>
-                    <div className="bannerLast">
+                    {/* <div className="bannerLast">
                         <p>We are certified by:</p>
                         <div className="banImgsGrid">
                             <img src="/assets/cr1.webp" alt="" className="img-fluid" />
@@ -73,7 +73,7 @@ const IELTS = () => {
                             <img src="/assets/cr3.webp" alt="" className="img-fluid" />
                             <img src="/assets/cr4.webp" alt="" className="img-fluid" />
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </section>
             <section className="processSection">

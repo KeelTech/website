@@ -53,7 +53,7 @@ const IELTS = () => {
                                 <li> <img className="img-fluid" src="/assets/lstChk.svg" />Session Recordings</li>
                             </ul>
                             <button onClick={handleExploreJobClick}>Book a Demo Class</button>
-                            <GetConsultationCTA ref={otpFormRef} hideText/>
+                            <GetConsultationCTA ref={otpFormRef} hideText lead_origin='study'/>
                         </div>
                         <div className="studyBanImg">
                             <img className="img-fluid forWeb" src="/assets/ielts-header-desktop.webp" />

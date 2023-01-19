@@ -87,7 +87,7 @@ const Community = () => {
                 <div className="container">
                     <div className="crerGrid">
                         <p>“Knowledge Is Power. <br/>” Community Is Strength.</p>
-                        <GetConsultationCTA text="Start your Journey"/>
+                        <GetConsultationCTA text="Start your Journey" lead_origin='study'/>
                     </div>
                 </div>
             </section>

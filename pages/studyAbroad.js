@@ -21,7 +21,7 @@ const StudyAbroad = () => {
                             </h1>
                             <p>Mentoring | Profile Building | Test Preparations | End to End Visa Solutions
                             </p>
-                            <GetConsultationCTA />
+                            <GetConsultationCTA lead_origin='study'/>
                         </div>
                         <div className="studyBanImg">
                             <img className="img-fluid" src="/assets/study-abroad-hero-web.webp" />

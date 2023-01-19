@@ -19,7 +19,7 @@ const SettleAbroad = () => {
                             Canada Immigration platform
                             </h1>
                             <p>We are a first-of-its-kind tech enabled team of Licensed Immigration Consultants obsessed with making your Canada dream come true.</p>
-                            <GetConsultationCTA/>
+                            <GetConsultationCTA lead_origin='settle'/>
                         </div>
                         <div className="studyBanImg">
                             {/* <img className="img-fluid" src="/assets/studyabroad.webp" /> */}

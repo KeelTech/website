@@ -5,7 +5,7 @@ import { LEAD_SQUARED_ACCESS_ID, LEAD_SQUARED_SECRET_KEY, LEAD_SQUARED_X_API } f
 import CustomToaster from '@/components/CustomToaster';
 import useOtpVerification from '@/helpers/hooks/useOtpVerification.js';
 
-const NumberVerification = ({handleClose}) => {
+const NumberVerification = ({handleClose, lead_origin}) => {
     const { setOtpData, numberVerified, lastVerifiedNumber, disableSendOtp, sendOTPClicked, verifyOTPClicked, otpToasterInfo } = useOtpVerification();
     const [dataInfo, setDataInfo] = useState({
         number: '',
@@ -129,6 +129,10 @@ const NumberVerification = ({handleClose}) => {
             {
                 "Attribute": "SearchBy",
                 "Value": "Phone"
+            },
+            {
+                "Attribute": "lead_origin",
+                "Value": lead_origin
             }
         ]
         const dataParams = {

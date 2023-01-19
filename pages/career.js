@@ -24,7 +24,7 @@ const Career = () => {
                             <h1>Work with a driven team of industry experts
                             </h1>
                             <p>Skyrocket your professional journey with Keel and make your best career move</p>
-                            <GetConsultationCTA ref={otpFormRef} hideText/>
+                            <GetConsultationCTA ref={otpFormRef} hideText lead_origin='job'/>
                             <button onClick={handleExploreJobClick}>Explore Jobs</button>
                         </div>
                         <div className="studyBanImg">

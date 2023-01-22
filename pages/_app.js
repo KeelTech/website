@@ -3,9 +3,15 @@ import { AppWrapper } from '../context/index.js'; // import based on where you p
 import { getActiveComponents } from '@/actions/index.js';
 import '../styles/global.css';
 import '../styles/globalNew.css';
+import TagManager from 'react-gtm-module';
+import { useEffect } from 'react';
 
 export default function App(props){
     const { Component, pageProps, dataProps } = props;
+
+    useEffect(() => {
+        TagManager.initialize({ gtmId: 'NXF24DB' });
+    }, []);
 
     return (
     <AppWrapper>

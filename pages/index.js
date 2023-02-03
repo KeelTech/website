@@ -268,7 +268,7 @@ const HomeView = ({ blogsList }) => {
                 </div>
             </section>
             <BlogNewView blogsList={blogsList} showHighlighted/>
-            <section className="followUsSection">
+            {/* <section className="followUsSection">
                 <div className="container">
                     <div className="storyContent full-width text-center">
                         <h4 className="grdHdng">Follow us on</h4>
@@ -281,15 +281,11 @@ const HomeView = ({ blogsList }) => {
                         <li><a href=""><img src="/assets/fl2.webp" alt="" /></a></li>
                         <li><a href=""><img src="/assets/fl3.webp" alt="" /></a></li>
                         <li><a href=""><img src="/assets/fl4.webp" alt="" /></a></li>
-                        {/* <li><a href=""><img src="/assets/fl5.webp" alt="" /></a></li> */}
-                        {/* <li><a href=""><img src="/assets/fl6.webp" alt="" /></a></li> */}
-                        {/* <li><a href=""><img src="/assets/fl7.webp" alt="" /></a></li> */}
-                        {/* <li><a href=""><img src="/assets/fl8.webp" alt="" /></a></li> */}
                         <li><a href=""><img src="/assets/fl3.webp" alt="" /></a></li>
                         <li><a href=""><img src="/assets/fl4.webp" alt="" /></a></li>
                     </ul>
                 </div>
-            </section>
+            </section> */}
         </>
     )
 }

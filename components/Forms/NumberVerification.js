@@ -1,11 +1,16 @@
 import { useState, useRef, useEffect } from 'react';
+import { useRouter } from "next/router";
 
 import { createLeadSquareLead } from '@/actions';
 import { LEAD_SQUARED_ACCESS_ID, LEAD_SQUARED_SECRET_KEY, LEAD_SQUARED_X_API } from '@/actions/constant.js';
 import CustomToaster from '@/components/CustomToaster';
 import useOtpVerification from '@/helpers/hooks/useOtpVerification.js';
 
-const NumberVerification = ({handleClose, lead_origin}) => {
+const NumberVerification = ({handleClose, lead_origin, isIeltsView=false}) => {
+    var router = useRouter();
+    var utm_medium = router.query["utm_medium"]||"";
+    var utm_source = router.query["utm_source"]||"";
+    var utm_campaign = router.query["utm_campaign"]||"";
     const { setOtpData, numberVerified, lastVerifiedNumber, disableSendOtp, sendOTPClicked, verifyOTPClicked, otpToasterInfo } = useOtpVerification();
     const [dataInfo, setDataInfo] = useState({
         number: '',
@@ -15,9 +20,13 @@ const NumberVerification = ({handleClose, lead_origin}) => {
         age: '',
         gender: '',
         email: '',
+        state: '',
+        city: '',
+        ielts: '',
+        batch: ''
     })
 
-    const { number, otp, name, age, gender, email, } = dataInfo;
+    const { number, otp, name, age, gender, email, state, city, ielts, batch} = dataInfo;
 
     const [toasterInfo, setToasterInfo] = useState({
         isVisible: false,
@@ -133,8 +142,43 @@ const NumberVerification = ({handleClose, lead_origin}) => {
             {
                 "Attribute": "lead_origin",
                 "Value": lead_origin
+            },
+            {
+                "Attribute": "lead_source",
+                "Value": "WEB"
+            },
+            {
+                "Attribute": "source",
+                "Value": utm_source
+            },
+            {
+                "Attribute": "sourceMedium",
+                "Value": utm_medium
+            },
+            {
+                "Attribute": "sourceCampaign",
+                "Value": utm_campaign
+            },
+            {
+                "Attribute": "city",
+                "Value": city
+            },
+            {
+                "Attribute": "state",
+                "Value": state
             }
         ]
+        if(isIeltsView){
+            payload.push({
+                "Attribute": "IELTS",
+                "Value": ielts
+            })
+
+            payload.push({
+                "Attribute": "batch",
+                "Value": batch
+            });
+        }
         const dataParams = {
             accessKey: LEAD_SQUARED_ACCESS_ID,
             secretKey: LEAD_SQUARED_SECRET_KEY,
@@ -194,6 +238,8 @@ const NumberVerification = ({handleClose, lead_origin}) => {
     const otpInput = useRef(null);
     const genderRef = useRef(null)
     const emailRef = useRef(null);
+    const cityRef = useRef(null);
+    const phoneRef = useRef(null);
 
     return (
         <>
@@ -227,8 +273,48 @@ const NumberVerification = ({handleClose, lead_origin}) => {
                         </div>
                     </div>
 
+                    <div className='ageGender'>
+                        <div className="inputForm">
+                            <input type="text" className={state?"activeInput":''} onChange={(e)=>setData({state: e.target.value})} value={state} max="150" onKeyPress={(e)=>{
+                            if(e.key ==="Enter"){
+                                cityRef.current.focus()
+                            }
+                        }}/>
+                            <label>State</label>
+                        </div>
+                        <div className="inputForm">
+                            <input type="text" className={city?"activeInput":''} onChange={(e)=>setData({city: e.target.value})} value={city} max="150" ref={cityRef} onKeyPress={(e)=>{
+                            if(e.key ==="Enter"){
+                                phoneRef.current.focus()
+                            }
+                        }}/>
+                            <label>City</label>
+                        </div>
+                    </div>
+
+                    {
+                        isIeltsView?
+                        <div className='ageGender'>
+                            <div className='inptSelect'>
+                                <select onChange={(e)=>setData({ielts: e.target.value})} value={ielts}>
+                                    <option value="" disabled selected>IELTS</option>
+                                    <option value="IELTS Academic">IELTS Academic</option>
+                                    <option value="IELTS General">IELTS General</option>
+                                </select>
+                            </div>
+                            <div className='inptSelect'>
+                                <select onChange={(e)=>setData({batch: e.target.value})} value={batch}>
+                                    <option value="" disabled selected>Select your batch</option>
+                                    <option value="Weekday">Weekday</option>
+                                    <option value="Weekend">Weekend</option>
+                                </select>
+                            </div>
+                        </div>
+                        :null
+                    }
+
                     <div className="inputForm mobileInp inputWithOtp">
-                        <input type="number" className={number?"activeInput":''} onChange={handleNumberInputChange} value={number} onKeyPress={handleKeyPress} />
+                        <input type="number" ref={phoneRef} className={number?"activeInput":''} onChange={handleNumberInputChange} value={number} onKeyPress={handleKeyPress} />
                         <label className={number ? 'fillInput' : ''}>Contact Number</label>
                         <img className="img-fluid" src="/assets/ind.svg" />
                         <button className={`${disableSendOtp?'disableOtp':''} 'vryFy'`} onClick={sendOTPClicked}>Send OTP</button>

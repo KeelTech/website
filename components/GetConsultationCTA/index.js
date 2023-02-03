@@ -4,7 +4,7 @@ import PopupOverlay from '@/components/PopupOverlay';
 import NumberVerification from '@/components/Forms/NumberVerification.js'
 
 const GetConsultationCTA = forwardRef((props, ref) => {
-    const { text, hideText, className, lead_origin } = props;
+    const { text, hideText, className, lead_origin, isIeltsView } = props;
     const [showPopup, setPopup] = useState(false);
 
     const handleClose = ()=>{
@@ -24,7 +24,7 @@ const GetConsultationCTA = forwardRef((props, ref) => {
                 hideText?null:<button className={className} onClick={togglePopup}>{text?text:'Get Free Consultation now'}</button>
             }
             <PopupOverlay showPopup={showPopup} handleCloseClick={handleClose}>
-                <NumberVerification handleClose={handleClose} lead_origin={lead_origin}/>
+                <NumberVerification handleClose={handleClose} lead_origin={lead_origin} isIeltsView={isIeltsView}/>
             </PopupOverlay>
         </>
     )
@@ -35,7 +35,8 @@ GetConsultationCTA.defaultProps = {
     text: '',
     hideText: false,
     className: '',
-    lead_origin:'web'
+    lead_origin:'web',
+    isIeltsView: false
 }
 
 export default GetConsultationCTA;

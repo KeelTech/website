@@ -1,9 +1,15 @@
 import { useRef, useState } from 'react';
+import { useRouter } from "next/router";
+
 import { createLeadSquareLead } from '@/actions';
 import { LEAD_SQUARED_ACCESS_ID, LEAD_SQUARED_SECRET_KEY, LEAD_SQUARED_X_API } from '@/actions/constant.js';
 import CustomToaster from '@/components/CustomToaster';
 
 const CommunityForm = ()=>{
+    var router = useRouter();
+    var utm_medium = router.query["utm_medium"]||"";
+    var utm_source = router.query["utm_source"]||"";
+    var utm_campaign = router.query["utm_campaign"]||"";
 
     const [val, setValues] = useState({
         name: '', mobile: '', email: '', grade:'', school: '', city: '', state: '', pincode: '', interestedInSettingCanada: ''
@@ -93,7 +99,27 @@ const CommunityForm = ()=>{
             {
                 "Attribute": "InterestedInSettingCanada",
                 "Value": interestedInSettingCanada
-            }
+            },
+            {
+                "Attribute": "source",
+                "Value": utm_source
+            },
+            {
+                "Attribute": "sourceMedium",
+                "Value": utm_medium
+            },
+            {
+                "Attribute": "sourceCampaign",
+                "Value": utm_campaign
+            },
+            {
+                "Attribute": "lead_origin",
+                "Value": 'community'
+            },
+            {
+                "Attribute": "lead_source",
+                "Value": "WEB"
+            },
         ]
         const dataParams = {
             accessKey: LEAD_SQUARED_ACCESS_ID,
@@ -110,7 +136,6 @@ const CommunityForm = ()=>{
             });
             setTimeout(() => {
                 hideToaster();
-                handleClose();
             }, 2000);
             setData({
                 number: '',

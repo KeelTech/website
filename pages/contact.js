@@ -2,13 +2,13 @@ import { useState, useRef } from 'react';
 import { createLeadSquareLead } from '@/actions';
 import { LEAD_SQUARED_ACCESS_ID, LEAD_SQUARED_SECRET_KEY, LEAD_SQUARED_X_API } from '@/actions/constant.js';
 import CustomToaster from '@/components/CustomToaster';
-
-const Contact = ()=>{
+import Head from 'next/head'
+const Contact = () => {
 
     const [val, setValues] = useState({
         name: '', mobile: '', email: '', msg: ''
     });
-    const { name, mobile, email, msg} = val;
+    const { name, mobile, email, msg } = val;
 
     const [toasterInfo, setToasterInfo] = useState({
         isVisible: false,
@@ -23,15 +23,15 @@ const Contact = ()=>{
         })
     }
 
-    const setVal = (newVal)=>{
-        setValues((oldVal)=>{
-            return {...oldVal, ...newVal}
+    const setVal = (newVal) => {
+        setValues((oldVal) => {
+            return { ...oldVal, ...newVal }
         })
     }
 
-    const createLead = ()=>{
+    const createLead = () => {
         //LEAD_SQUARED_ACCESS_ID, LEAD_SQUARED_SECRET_KEY
-        if(!name || !msg || !email || !mobile){
+        if (!name || !msg || !email || !mobile) {
             setToasterInfo({
                 isVisible: true,
                 isError: true,
@@ -80,7 +80,7 @@ const Contact = ()=>{
         }
 
 
-        createLeadSquareLead(dataParams, null, headers).then((resp)=>{
+        createLeadSquareLead(dataParams, null, headers).then((resp) => {
             setToasterInfo({
                 isVisible: true,
                 isError: false,
@@ -103,7 +103,7 @@ const Contact = ()=>{
                 lastVerifiedNumber: '',
                 disableSendOtp: false
             })
-        }).catch((err)=>{
+        }).catch((err) => {
             console.log("error is", err);
             setToasterInfo({
                 isVisible: true,
@@ -126,63 +126,67 @@ const Contact = ()=>{
         if (key == 'Enter') {
             refKey.current.focus();
         }
-    } 
+    }
 
-    return(
-    <>
-        <CustomToaster {...toasterInfo} hideToaster={hideToaster} />
-        <footer className="footerMain forContactPage">
-        <div className="container">
-            <div className="formMain">
-                <div className="formCntnt">
-                    <h1 className="conHed">Contact Us</h1>
-                    <p className="contSubPera">Have any queries? We would love to answer it for you.</p>
-                    <ul className="contLst">
-                        <li>
-                            <img className="img-fluid" src="/assets/mail1.svg" />
-                            <p>hello@getkeel.com</p>
-                        </li>
-                        <li>
-                            <img className="img-fluid" src="/assets/call.svg" />
-                            <p>+91-9810206875, +1-416-277-5284</p>
-                        </li>
-                        <li>
-                            <img className="img-fluid" src="/assets/loc.svg" />
-                            <div>
-                                <p>JMD Empire Square
-                                    201-202, Mehrauli-Gurgaon Road, A Block, DLF Phase 1, Sector 28, Sarhol, Haryana,
-                                    India 122002
-                                </p>
-                                <p className="topMargin">7b Pleasant Blvd, Suite 979, Toronto ON M4T 1K2, Canada</p>
+    return (
+        <>
+            <Head>
+                <title>Canada immigration official website | Keel Study Abroad - Keel </title>
+                <meta content="Are you planning on moving to Canada to study | Get the best advice from the best Canadian immigration consultants | Keel" key="title" />
+            </Head>
+            <CustomToaster {...toasterInfo} hideToaster={hideToaster} />
+            <footer className="footerMain forContactPage">
+                <div className="container">
+                    <div className="formMain">
+                        <div className="formCntnt">
+                            <h1 className="conHed">Contact Us</h1>
+                            <p className="contSubPera">Have any queries? We would love to answer it for you.</p>
+                            <ul className="contLst">
+                                <li>
+                                    <img className="img-fluid" src="/assets/mail1.svg" />
+                                    <p>hello@getkeel.com</p>
+                                </li>
+                                <li>
+                                    <img className="img-fluid" src="/assets/call.svg" />
+                                    <p>+91-9810206875, +1-416-277-5284</p>
+                                </li>
+                                <li>
+                                    <img className="img-fluid" src="/assets/loc.svg" />
+                                    <div>
+                                        <p>JMD Empire Square
+                                            201-202, Mehrauli-Gurgaon Road, A Block, DLF Phase 1, Sector 28, Sarhol, Haryana,
+                                            India 122002
+                                        </p>
+                                        <p className="topMargin">7b Pleasant Blvd, Suite 979, Toronto ON M4T 1K2, Canada</p>
+                                    </div>
+                                </li>
+                            </ul>
+                            {/* <!-- <p>We Are Here To Make Your Canada Immigration Journey Possible</p> --> */}
+                        </div>
+                        <div className="formInputMain">
+                            <div className="inputForm">
+                                <input type="text" className={name ? 'activeInput' : ''} value={name} onChange={(e) => setVal({ name: e.target.value })} onKeyPress={(e) => handleKeyPress(e, mobileRef)} />
+                                <label>Full Name</label>
                             </div>
-                        </li>
-                    </ul>
-                    {/* <!-- <p>We Are Here To Make Your Canada Immigration Journey Possible</p> --> */}
+                            <div className="inputForm mobileInp">
+                                <input type="text" ref={mobileRef} className={mobile ? 'activeInput' : ''} value={mobile} onChange={(e) => setVal({ mobile: e.target.value })} onKeyPress={(e) => handleKeyPress(e, emailRef)} />
+                                <label>Contact Number</label>
+                                <img className="img-fluid" src="/assets/ind.svg" />
+                            </div>
+                            <div className="inputForm">
+                                <input type="email" ref={emailRef} className={email ? 'activeInput' : ''} value={email} onChange={(e) => setVal({ email: e.target.value })} onKeyPress={(e) => handleKeyPress(e, msgRef)} />
+                                <label>Email</label>
+                            </div>
+                            <div className="inputForm">
+                                <textarea value={msg} ref={msgRef} className={msg ? 'activeInput' : ''} onChange={(e) => setVal({ msg: e.target.value })}></textarea>
+                                <label>Message</label>
+                            </div>
+                            <button className="submitBtn" onClick={createLead}>Send</button>
+                        </div>
+                    </div>
                 </div>
-                <div className="formInputMain">
-                    <div className="inputForm">
-                        <input type="text"  className={name?'activeInput':''} value={name} onChange={(e)=>setVal({name:e.target.value})} onKeyPress={(e)=>handleKeyPress(e, mobileRef)}/>
-                        <label>Full Name</label>
-                    </div>
-                    <div className="inputForm mobileInp">
-                        <input type="text" ref={mobileRef} className={mobile?'activeInput':''} value={mobile} onChange={(e)=>setVal({mobile:e.target.value})} onKeyPress={(e)=>handleKeyPress(e, emailRef)}/>
-                        <label>Contact Number</label>
-                        <img className="img-fluid" src="/assets/ind.svg" />
-                    </div>
-                    <div className="inputForm">
-                        <input type="email" ref={emailRef} className={email?'activeInput':''} value={email} onChange={(e)=>setVal({email:e.target.value})} onKeyPress={(e)=>handleKeyPress(e, msgRef)}/>
-                        <label>Email</label>
-                    </div>
-                    <div className="inputForm">
-                        <textarea value={msg} ref={msgRef} className={msg?'activeInput':''} onChange={(e)=>setVal({msg:e.target.value})}></textarea>
-                        <label>Message</label>
-                    </div>
-                    <button className="submitBtn" onClick={createLead}>Send</button>
-                </div>
-            </div>
-        </div>
-    </footer>
-    </>
+            </footer>
+        </>
     )
 }
 

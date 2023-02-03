@@ -4,7 +4,7 @@ import { ELIGIBILITY_ACCORDIAN } from '@/actions/constant.js';
 
 import { promiseSection, applicationPlatform, improveScore } from './style.js';
 import { useState } from 'react';
-
+import Head from 'next/head'
 const Eligibility = () => {
 
     const [switchToggle, setswitchToggle] = useState(false);
@@ -14,6 +14,10 @@ const Eligibility = () => {
     }
     return (
         <>
+            <Head>
+                <title>Check your Eligibility for Canada Immigration | CRS Calculator | Keel </title>
+                <meta content="Calculate your CRS score for Express Entry with our automated CRS Calculator. It will determine your eligibility for Canada's Express Entry and immigration." key="title" />
+            </Head>
             <section className={promiseSection}>
                 <div className="container">
                     <h2 className="subHeadings mb-20">Comprehensive Ranking System
@@ -28,7 +32,7 @@ const Eligibility = () => {
                             </div>
                             <div className={switchToggle ? "iframeContainer forMobileIframe" : "iframeContainer "}>
                                 {/* <iframe src="https://staging.getkeel.com/chat"></iframe> */}
-                                <CustomChatWidget newChat/>
+                                <CustomChatWidget newChat />
                             </div>
                         </div>
                         <div className="col-md-6 col-12">
@@ -99,7 +103,7 @@ const Eligibility = () => {
                                     How Can I Improve My CRS Score?
                                 </h4>
                                 <p className="sectionSubHeading">
-                                Improving your CRS score is the best way to increase your chances of getting an invitation. If you want to improve your CRS score to get picked for an Express Entry draw, there are several ways you can! Mentioned below are a few of them: 
+                                    Improving your CRS score is the best way to increase your chances of getting an invitation. If you want to improve your CRS score to get picked for an Express Entry draw, there are several ways you can! Mentioned below are a few of them:
                                 </p>
                                 <Accordian data={ELIGIBILITY_ACCORDIAN} />
                             </div>

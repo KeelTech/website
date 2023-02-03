@@ -2,6 +2,7 @@ import { useRef } from 'react';
 import Accordian from '@/components/Accordian/newAccordian';
 import { IELTSAccordianData } from '@/helpers/constant.js'
 import GetConsultationCTA from '@/components/GetConsultationCTA';
+import Head from 'next/head'
 const CLASS_TIMING = [
     {
         day: 'Monday',
@@ -38,6 +39,10 @@ const IELTS = () => {
 
     return (
         <>
+            <Head>
+                <title>Immigration to Canada | IELTS Demo Class - Keel </title>
+                <meta content="Moving to Canada? | With industry standard practice material, regular doubt-solving sessions, 20+ IELTS tests, and more, crack your next IELTS exam | Keel " key="title" />
+            </Head>
             <section className="studyBannerSection">
                 <div className="container">
                     <div className="studyBannerCont">

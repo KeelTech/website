@@ -146,7 +146,7 @@ const Resource = ({ blogsList }) => {
                     </div>
                 </div>
             </section>
-            <section className="followUsSection">
+            {/* <section className="followUsSection">
                 <div className="container">
                     <div className="storyContent full-width text-center">
                         <h4 className="grdHdng">Follow us on</h4>
@@ -165,7 +165,7 @@ const Resource = ({ blogsList }) => {
                         <li><a href=""><img src="/assets/fl8.webp" alt="" /></a></li>
                     </ul>
                 </div>
-            </section>
+            </section> */}
         </>
     )
 }

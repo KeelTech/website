@@ -166,12 +166,12 @@ const NumberVerification = ({handleClose, lead_origin, isIeltsView=false}) => {
         ]
         if(isIeltsView){
             payload.push({
-                "Attribute": "IELTS",
+                "Attribute": "mx_IELTS_Type",
                 "Value": ielts
             })
 
             payload.push({
-                "Attribute": "batch",
+                "Attribute": "mx_IELTS_Batch_Preference",
                 "Value": batch
             });
         }

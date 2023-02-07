@@ -6,7 +6,6 @@ const Resource = ({ blogsList }) => {
     const router = useRouter()
 
     const blogData = blogsList?.data ?? [];
-    console.log("blogData", blogData);
     return (
         <>
         <Head>

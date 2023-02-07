@@ -85,11 +85,11 @@ const CommunityForm = ()=>{
                 "Value": school
             },
             {
-                "Attribute": "City",
+                "Attribute": "mx_City",
                 "Value": city
             },
             {
-                "Attribute": "State",
+                "Attribute": "mx_State",
                 "Value": state
             },
             {
@@ -102,7 +102,7 @@ const CommunityForm = ()=>{
             },
             {
                 "Attribute": "source",
-                "Value": utm_source
+                "Value": utm_source?utm_source:"web"
             },
             {
                 "Attribute": "sourceMedium",
@@ -115,11 +115,7 @@ const CommunityForm = ()=>{
             {
                 "Attribute": "lead_origin",
                 "Value": 'community'
-            },
-            {
-                "Attribute": "lead_source",
-                "Value": "WEB"
-            },
+            }
         ]
         const dataParams = {
             accessKey: LEAD_SQUARED_ACCESS_ID,

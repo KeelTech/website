@@ -128,11 +128,11 @@ const NumberVerification = ({handleClose, lead_origin, isIeltsView=false}) => {
                 "Value": "xxxxxxxx-d168-xxxx-9f8b-xxxx97xxxxxx"
             },
             {
-                "Attribute": "age",
+                "Attribute": "mx_Age",
                 "Value": age
             },
             {
-                "Attribute": "gender",
+                "Attribute": "mx_Gender",
                 "Value": gender
             },
             {
@@ -144,12 +144,8 @@ const NumberVerification = ({handleClose, lead_origin, isIeltsView=false}) => {
                 "Value": lead_origin
             },
             {
-                "Attribute": "lead_source",
-                "Value": "WEB"
-            },
-            {
                 "Attribute": "source",
-                "Value": utm_source
+                "Value": utm_source?utm_source:"WEB"
             },
             {
                 "Attribute": "sourceMedium",
@@ -160,11 +156,11 @@ const NumberVerification = ({handleClose, lead_origin, isIeltsView=false}) => {
                 "Value": utm_campaign
             },
             {
-                "Attribute": "city",
+                "Attribute": "mx_City",
                 "Value": city
             },
             {
-                "Attribute": "state",
+                "Attribute": "mx_State",
                 "Value": state
             }
         ]

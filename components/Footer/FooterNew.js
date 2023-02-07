@@ -67,10 +67,10 @@ const Footer = ()=>{
                 </ul>
                 <p>Results that speak loud and clear. Join the league of the top 1% achievers in the world!</p>
                 <ul className="footSocialLIst">
-                    <li><a><img className="img-fluid" src="/assets/face.svg" /></a></li>
-                    <li><a><img className="img-fluid" src="/assets/twt.svg" /></a></li>
-                    <li><a><img className="img-fluid" src="/assets/link.svg" /></a></li>
-                    <li><a><img className="img-fluid" src="/assets/inst.svg" /></a></li>
+                    <li><a href="https://www.facebook.com/getkeelinc" target="_blank"><img className="img-fluid" src="/assets/face.svg"/></a></li>
+                    <li><a href="https://twitter.com/getkeelinc" target="_blank"><img className="img-fluid" src="/assets/twt.svg"/></a></li>
+                    <li><a href="https://ca.linkedin.com/company/getkeel" target="_blank"><img className="img-fluid" src="/assets/link.svg"/></a></li>
+                    <li><a href="https://www.instagram.com/getkeelinc/" target="_blank"><img className="img-fluid" src="/assets/inst.svg" /></a></li>
                 </ul>
             </div>
 

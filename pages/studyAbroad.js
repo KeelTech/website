@@ -27,7 +27,7 @@ const StudyAbroad = () => {
                             <img className="img-fluid" src="/assets/study-abroad-hero-web.webp" />
                         </div>
                     </div>
-                    <div className="bannerLast">
+                    {/* <div className="bannerLast">
                         <p>Our students finished University to work at global offices of</p>
                         <div className="banImgsGrid">
                             <img src="/assets/unvrscty5.webp" alt="" className="img-fluid" />
@@ -36,10 +36,10 @@ const StudyAbroad = () => {
                             <img src="/assets/unvrscty3.webp" alt="" className="img-fluid" />
                             <img src="/assets/unvrscty4.webp" alt="" className="img-fluid" />
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </section>
-            <section className="universitiesSection">
+            {/* <section className="universitiesSection">
                 <div className="container">
                     <div className="universitiesCont">
                         <div className="storyContent full-width">
@@ -207,10 +207,9 @@ const StudyAbroad = () => {
                                 </div>
                             </div>
                         </div>
-                        {/* <button className="seeAllBtn">See All <img className="img-fluid" src="/assets/vtR.webp" /></button> */}
                     </div>
                 </div>
-            </section>
+            </section> */}
             <section className="processSection">
                 <div className="container">
                     <div className="processMain">

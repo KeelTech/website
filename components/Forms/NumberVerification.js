@@ -37,7 +37,7 @@ const NumberVerification = ({handleClose, lead_origin, isIeltsView=false}) => {
 
     const hideToaster = () => {
         setToasterInfo({
-            isVisible: false
+            isVisible: false,
         })
     }
 
@@ -198,7 +198,7 @@ const NumberVerification = ({handleClose, lead_origin, isIeltsView=false}) => {
                     isVisible: true,
                     isError: false,
                     isSuccess: true,
-                    msg: 'Lead generated successfully'
+                    msg: 'Response submitted successfully'
                 });
                 setTimeout(() => {
                     hideToaster();
@@ -209,7 +209,7 @@ const NumberVerification = ({handleClose, lead_origin, isIeltsView=false}) => {
                     isVisible: true,
                     isError: true,
                     isSuccess: true,
-                    msg: 'Failed to Generate Lead, Please try again later'
+                    msg: 'Failed to save response, Please try again later'
                 });
                 setTimeout(() => {
                     hideToaster();
@@ -240,6 +240,9 @@ const NumberVerification = ({handleClose, lead_origin, isIeltsView=false}) => {
     return (
         <>
             <CustomToaster {...toasterInfo} hideToaster={hideToaster} />
+            {
+                toasterInfo.isSuccess && toasterInfo.isVisible?<div className="activeLead"></div>:null
+            }
             <div className='formSettle'>
                 <h3>Don't miss your free call</h3>
                 <div className="formInputMain">

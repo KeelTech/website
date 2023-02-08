@@ -135,6 +135,9 @@ const Contact = () => {
                 <meta content="Are you planning on moving to Canada to study | Get the best advice from the best Canadian immigration consultants | Keel" key="title" />
             </Head>
             <CustomToaster {...toasterInfo} hideToaster={hideToaster} />
+            {
+                toasterInfo.isSuccess && toasterInfo.isVisible?<div className="activeLead"></div>:null
+            }
             <footer className="footerMain forContactPage">
                 <div className="container">
                     <div className="formMain">

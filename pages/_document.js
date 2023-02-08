@@ -22,7 +22,12 @@ export default class AppDocument extends Document {
   render() {
     return (
       <Html lang='en'>
-        <Head />
+        <Head>
+        <script
+          src="https://code.jquery.com/jquery-3.6.0.min.js"
+          integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+          crossorigin="anonymous"></script>
+        </Head> 
         <link rel="shortcut icon" href="../images/fav.ico" />
         <link rel="manifest" href="/manifest.json"/>
         <meta name="apple-mobile-web-app-capable" content="yes"/>

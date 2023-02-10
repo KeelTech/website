@@ -43,24 +43,33 @@ const Footer = ()=>{
                 <li onClick={()=>handleNavigation('/')}>
                     <a href="/" onClick={(e)=>e.preventDefault()}>Home</a>
                 </li>
-                <li onClick={()=>handleNavigation('/IELTS')}>
-                    <a href="/blogs" onClick={(e)=>e.preventDefault()}>IELTS Prep</a>
-                </li>
-                <li onClick={()=>handleNavigation('/blogs')}>
-                    <a href="/blogs" onClick={(e)=>e.preventDefault()}>Blogs</a>
-                </li>
-                {/* <li onClick={()=>handleNavigation('/resource')}>
-                    <a href="/services" onClick={(e)=>e.preventDefault()}>Services</a>
-                </li> */}
-                <li onClick={()=>handleNavigation('/check-eligibility')}>
-                    <a href="/check-eligibility" onClick={(e)=>e.preventDefault()}>Check Eligibility</a>
-                </li>
                 <li onClick={()=>handleNavigation('/contact')}>
                     <a href="/contact-us" onClick={(e)=>e.preventDefault()}>Contact</a>
                 </li>
-                <li onClick={()=>handleNavigation('/career')}>
-                    <a href="/contact-us" onClick={(e)=>e.preventDefault()}>Career</a>
+                <li onClick={()=>handleNavigation('/terms-condition')}>
+                    <a href="/terms-condition" onClick={(e)=>e.preventDefault()}>Terms & condition</a>
                 </li>
+                <li onClick={()=>handleNavigation('/privacy-policy')}>
+                    <a href="/privacy-policy" onClick={(e)=>e.preventDefault()}>Privacy Policy</a>
+                </li>
+                <li onClick={()=>handleNavigation('/return-policy')}>
+                    <a href="/return-policy" onClick={(e)=>e.preventDefault()}>Return Policy</a>
+                </li>
+                {/* <li onClick={()=>handleNavigation('/IELTS')}>
+                    <a href="/blogs" onClick={(e)=>e.preventDefault()}>IELTS Prep</a>
+                </li> */}
+                {/* <li onClick={()=>handleNavigation('/blogs')}>
+                    <a href="/blogs" onClick={(e)=>e.preventDefault()}>Blogs</a>
+                </li> */}
+                {/* <li onClick={()=>handleNavigation('/resource')}>
+                    <a href="/services" onClick={(e)=>e.preventDefault()}>Services</a>
+                </li> */}
+                {/* <li onClick={()=>handleNavigation('/check-eligibility')}>
+                    <a href="/check-eligibility" onClick={(e)=>e.preventDefault()}>Check Eligibility</a>
+                </li> */}
+                {/* <li onClick={()=>handleNavigation('/career')}>
+                    <a href="/contact-us" onClick={(e)=>e.preventDefault()}>Career</a>
+                </li> */}
                 <li onClick={()=>handleNavigation('/about')}>
                     <a href="/contact-us" onClick={(e)=>e.preventDefault()}>About Us</a>
                 </li>

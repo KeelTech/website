@@ -7,7 +7,7 @@ const IELTS = () => {
     return (
         <>
             <Head>
-                <title>Return Policy </title>
+                <title>Refund Policy </title>
             </Head>
             <section>
             <div className="container">

@@ -52,8 +52,8 @@ const Footer = ()=>{
                 <li onClick={()=>handleNavigation('/privacy-policy')}>
                     <a href="/privacy-policy" onClick={(e)=>e.preventDefault()}>Privacy Policy</a>
                 </li>
-                <li onClick={()=>handleNavigation('/return-policy')}>
-                    <a href="/return-policy" onClick={(e)=>e.preventDefault()}>Return Policy</a>
+                <li onClick={()=>handleNavigation('/refund-policy')}>
+                    <a href="/refund-policy" onClick={(e)=>e.preventDefault()}>Refund Policy</a>
                 </li>
                 {/* <li onClick={()=>handleNavigation('/IELTS')}>
                     <a href="/blogs" onClick={(e)=>e.preventDefault()}>IELTS Prep</a>

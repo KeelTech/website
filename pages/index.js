@@ -19,7 +19,7 @@ const HomeView = ({ blogsList }) => {
                             {/* Study | Settle | Work  */}
                             <p className="bannerParaSub">We are India’s largest tech-enabled study abroad platform supported by an army of experts</p>
                             <div className="bannerButton">
-                                <button onClick={() => router.push(`/studyAbroad`)}>Study Abroad</button>
+                                <button onClick={() => router.push(`/keel-study-in-abroad-program`)}>Study Abroad</button>
                                 <button onClick={() => router.push(`/settleAbroad`)}>Settle Abroad</button>
                             </div>
                             <div className="bannerMidImg">

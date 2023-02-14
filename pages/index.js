@@ -17,7 +17,7 @@ const HomeView = ({ blogsList }) => {
         const typedTextSpan = typeTextRef.current;
         const cursorSpan = cursorRef.current;
 
-        const textArray = ["hard", "fun", "a journey", "LIFE"];
+        const textArray = ["Study", "Work", "Settle"];
         const typingDelay = 200;
         const erasingDelay = 100;
         const newTextDelay = 2000; // Delay between current and next text

@@ -3,11 +3,57 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { useRouter } from 'next/router';
 import { getBlogsList } from '@/actions/index.js';
 import BlogNewView from '@/components/BlogsView/BlogNewView';
+import React, { useState, useEffect } from 'react';
+
 
 // Import Swiper styles
 import 'swiper/css';
 const HomeView = ({ blogsList }) => {
     const router = useRouter()
+
+    useEffect(() => {
+        const typedTextSpan = document.querySelector(".typed-text");
+        const cursorSpan = document.querySelector(".cursor");
+
+        const textArray = ["hard", "fun", "a journey", "LIFE"];
+        const typingDelay = 200;
+        const erasingDelay = 100;
+        const newTextDelay = 2000; // Delay between current and next text
+        let textArrayIndex = 0;
+        let charIndex = 0;
+
+        function type() {
+            if (charIndex < textArray[textArrayIndex].length) {
+                if (!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+                typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+                charIndex++;
+                setTimeout(type, typingDelay);
+            }
+            else {
+                cursorSpan.classList.remove("typing");
+                setTimeout(erase, newTextDelay);
+            }
+        }
+
+        function erase() {
+            if (charIndex > 0) {
+                if (!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+                typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
+                charIndex--;
+                setTimeout(erase, erasingDelay);
+            }
+            else {
+                cursorSpan.classList.remove("typing");
+                textArrayIndex++;
+                if (textArrayIndex >= textArray.length) textArrayIndex = 0;
+                setTimeout(type, typingDelay + 1100);
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", function () { // On DOM Load initiate the effect
+            if (textArray.length) setTimeout(type, newTextDelay + 250);
+        });
+    }, []);
 
     return (
         <>
@@ -15,7 +61,7 @@ const HomeView = ({ blogsList }) => {
                 <div className="container">
                     <div className="mainBanner">
                         <div className="bannerTopHeading">
-                            <h1 className="bannerHeading">Fly to the country of your dreams to <span>Study|</span></h1>
+                            <h1 className="bannerHeading">Fly to the country of your dreams to <span className="typed-text"></span><span className="cursor">&nbsp;</span></h1>
                             {/* Study | Settle | Work  */}
                             <p className="bannerParaSub">We are India’s largest tech-enabled study abroad platform supported by an army of experts</p>
                             <div className="bannerButton">
@@ -143,7 +189,7 @@ const HomeView = ({ blogsList }) => {
                                 </div>
                                 <div className='rightPrsCont'>
                                     <div className='verticalImg'>
-                                        <img className='img-fluid' src='/assets/home/home-process-3.webp'/>
+                                        <img className='img-fluid' src='/assets/home/home-process-3.webp' />
                                     </div>
                                 </div>
                             </div>
@@ -267,7 +313,7 @@ const HomeView = ({ blogsList }) => {
                     </div>
                 </div>
             </section>
-            <BlogNewView blogsList={blogsList} showHighlighted/>
+            <BlogNewView blogsList={blogsList} showHighlighted />
             {/* <section className="followUsSection">
                 <div className="container">
                     <div className="storyContent full-width text-center">
@@ -290,8 +336,8 @@ const HomeView = ({ blogsList }) => {
     )
 }
 
-export async function getServerSideProps(){
-    const blogsList =  await getBlogsList({})
+export async function getServerSideProps() {
+    const blogsList = await getBlogsList({})
     return {
         props: {
             blogsList

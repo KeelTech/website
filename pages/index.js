@@ -3,17 +3,19 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { useRouter } from 'next/router';
 import { getBlogsList } from '@/actions/index.js';
 import BlogNewView from '@/components/BlogsView/BlogNewView';
-import React, { useState, useEffect } from 'react';
+import React, { useRef, useEffect } from 'react';
 
 
 // Import Swiper styles
 import 'swiper/css';
 const HomeView = ({ blogsList }) => {
     const router = useRouter()
+    const typeTextRef = useRef();
+    const cursorRef = useRef();
 
     useEffect(() => {
-        const typedTextSpan = document.querySelector(".typed-text");
-        const cursorSpan = document.querySelector(".cursor");
+        const typedTextSpan = typeTextRef.current;
+        const cursorSpan = cursorRef.current;
 
         const textArray = ["hard", "fun", "a journey", "LIFE"];
         const typingDelay = 200;
@@ -49,11 +51,9 @@ const HomeView = ({ blogsList }) => {
                 setTimeout(type, typingDelay + 1100);
             }
         }
-
-        document.addEventListener("DOMContentLoaded", function () { // On DOM Load initiate the effect
-            if (textArray.length) setTimeout(type, newTextDelay + 250);
-        });
+        setTimeout(type, newTextDelay + 250);
     }, []);
+
 
     return (
         <>
@@ -61,7 +61,7 @@ const HomeView = ({ blogsList }) => {
                 <div className="container">
                     <div className="mainBanner">
                         <div className="bannerTopHeading">
-                            <h1 className="bannerHeading">Fly to the country of your dreams to <span className="typed-text"></span><span className="cursor">&nbsp;</span></h1>
+                            <h1 className="bannerHeading">Fly to the country of your dreams to <span ref={typeTextRef} className="typed-text"></span><span ref={cursorRef} className="cursor">&nbsp;</span></h1>
                             {/* Study | Settle | Work  */}
                             <p className="bannerParaSub">We are India’s largest tech-enabled study abroad platform supported by an army of experts</p>
                             <div className="bannerButton">

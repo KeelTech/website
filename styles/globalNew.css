@@ -3247,6 +3247,9 @@ h2.customNewHeading {
   }
 }
 
+/* =======New Page adding========= */
+/* =======Typing text========= */
+
 .bannerTopHeading h1 span.cursor {
   display: inline-block;
   background-color: #EB5757;
@@ -3264,4 +3267,4 @@ h2.customNewHeading {
   99% { background-color: transparent; }
   100%  { background-color: #EB5757; }
 }
-/* =======New Page adding========= */
+/* =======Typing text========= */

@@ -4,6 +4,7 @@ import { useRouter } from 'next/router';
 import { getBlogsList } from '@/actions/index.js';
 import BlogNewView from '@/components/BlogsView/BlogNewView';
 import React, { useRef, useEffect } from 'react';
+import Image from "next/image";
 
 
 // Import Swiper styles
@@ -90,6 +91,33 @@ const HomeView = ({ blogsList }) => {
                 <div className="container">
                     <div className="ourStoryColmn">
                         <div className="storyImg">
+                        {/* <Image
+                            src="/assets/rect.webp" 
+                            alt="process"
+                            width={195}
+                            height={195}
+                            loading="lazy"
+                            className="rectImgTop img-fluid"
+                        /> */}
+                        {/* <Image
+                            src="/assets/our.webp" 
+                            alt="process"
+                            width={315}
+                            height={201}
+                            loading="lazy"
+                            layout="responsive"
+                            className="img-fluid"
+                        /> */}
+                        {/* <img className="img-fluid" src="/assets/our.webp" /> */}
+
+                        {/* <Image
+                            src="/assets/rect.webp" 
+                            alt="process"
+                            width={195}
+                            height={195}
+                            loading="lazy"
+                            className="rectImgBtm img-fluid"
+                        /> */}
                             <img className="rectImgTop img-fluid" src="/assets/rect.webp" />
                             <img className="img-fluid" src="/assets/our.webp" />
                             <img className="rectImgBtm img-fluid" src="/assets/rect.webp" />
@@ -157,14 +185,30 @@ const HomeView = ({ blogsList }) => {
                                 </div>
                                 <div className='rightPrsCont'>
                                     <div className='verticalImg'>
-                                        <img className='img-fluid' src='/assets/home/home-process-1.webp' />
+                                    <Image
+                                        src="/assets/home/home-process-1.webp" 
+                                        alt="process"
+                                        width={305}
+                                        height={148}
+                                        loading="lazy"
+                                        className="img-fluid"
+                                    />
+                                        {/* <img className='img-fluid' src='/assets/home/home-process-1.webp' /> */}
                                     </div>
                                 </div>
                             </div>
                             <div className='inrScrollBox reverseMobile'>
                                 <div className='rightPrsCont'>
                                     <div className='verticalImg'>
-                                        <img className='img-fluid' src='/assets/home/home-process-2.webp' />
+                                    <Image
+                                        src="/assets/home/home-process-2.webp" 
+                                        alt="process"
+                                        width={305}
+                                        height={148}
+                                        loading="lazy"
+                                        className="img-fluid"
+                                    />
+                                        {/* <img className='img-fluid' src='/assets/home/home-process-2.webp' /> */}
                                     </div>
                                 </div>
                                 <div className='leftprsCont'>
@@ -189,7 +233,15 @@ const HomeView = ({ blogsList }) => {
                                 </div>
                                 <div className='rightPrsCont'>
                                     <div className='verticalImg'>
-                                        <img className='img-fluid' src='/assets/home/home-process-3.webp' />
+                                    <Image
+                                        src="/assets/home/home-process-3.webp" 
+                                        alt="process"
+                                        width={305}
+                                        height={148}
+                                        loading="lazy"
+                                        className="img-fluid"
+                                    />
+                                        {/* <img className='img-fluid' src='/assets/home/home-process-3.webp' /> */}
                                     </div>
                                 </div>
                             </div>
@@ -260,7 +312,15 @@ const HomeView = ({ blogsList }) => {
                         </div>
                     </div>
                     <div className="custCarusalCont">
-                        <img className="quoteImg img-fluid" src="/assets/quote.svg" />
+                        {/* <Image
+                            src="/assets/quote.svg" 
+                            alt="user review"
+                            width={213}
+                            height={243}
+                            loading="lazy"
+                            className="quoteImg img-fluid"
+                        /> */}
+                        <img className="quoteImg img-fluid" src="/assets/quote.svg" alt="logo"/>
                         <div className="leftCrData">
                             <h4>Thousands of Happy Clients across the globe!</h4>
                         </div>
@@ -274,7 +334,15 @@ const HomeView = ({ blogsList }) => {
                             {/* <SwiperSlide> */}
                             <div className="carsCustmGrid">
                                 <div className="usrDtls">
-                                    <img className="img-fluid" src="/assets/sheetal-mehta.webp" />
+                                    <Image
+                                        src="/assets/sheetal-mehta.webp" 
+                                        alt="user review"
+                                        width={90}
+                                        height={90}
+                                        loading="lazy"
+                                        className="img-fluid"
+                                    />
+                                    {/* <img className="img-fluid" src="/assets/sheetal-mehta.webp" /> */}
                                     <div className="usrNames">
                                         <h5>Sheetal Mehta</h5>
                                         <p>Migrated to Canada</p>
@@ -286,7 +354,15 @@ const HomeView = ({ blogsList }) => {
                             {/* <SwiperSlide> */}
                             <div className="carsCustmGrid">
                                 <div className="usrDtls">
-                                    <img className="img-fluid" src="/assets/rajat-gupta.webp" />
+                                    <Image
+                                        src="/assets/rajat-gupta.webp" 
+                                        alt="user review"
+                                        width={90}
+                                        height={90}
+                                        loading="lazy"
+                                        className="img-fluid"
+                                    />
+                                    {/* <img className="img-fluid" src="/assets/rajat-gupta.webp" /> */}
                                     <div className="usrNames">
                                         <h5>Rajat Gupta</h5>
                                         <p>Migrated to Australia</p>
@@ -298,7 +374,15 @@ const HomeView = ({ blogsList }) => {
                             {/* <SwiperSlide> */}
                             <div className="carsCustmGrid">
                                 <div className="usrDtls">
-                                    <img className="img-fluid" src="/assets/ruchi-parmar.webp" />
+                                    <Image
+                                        src="/assets/ruchi-parmar.webp" 
+                                        alt="user review"
+                                        width={90}
+                                        height={90}
+                                        loading="lazy"
+                                        className="img-fluid"
+                                    />
+                                    {/* <img className="img-fluid" src="/assets/ruchi-parmar.webp" /> */}
                                     <div className="usrNames">
                                         <h5>Ruchi Parmar</h5>
                                         <p>Migrated to UK</p>

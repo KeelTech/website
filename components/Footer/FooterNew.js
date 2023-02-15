@@ -24,7 +24,7 @@ const Footer = ()=>{
                     <div className="inputForm mobileInp">
                         <input type="text" />
                         <label>Contact Number</label>
-                        <img className="img-fluid" src="/assets/ind.svg" />
+                        <img className="img-fluid" src="/assets/ind.svg" alt="contact"/>
                     </div>
                     <div className="inputForm">
                         <input type="email" />
@@ -38,7 +38,7 @@ const Footer = ()=>{
                 </div>
             </div>
             <div className="keelFoot">
-                <img className="img-fluid" src="/assets/Logo.svg" />
+                <img className="img-fluid" src="/assets/Logo.svg" alt="keel"/>
                 <ul className="pageRedrct">
                 <li onClick={()=>handleNavigation('/')}>
                     <a href="/" onClick={(e)=>e.preventDefault()}>Home</a>
@@ -76,10 +76,10 @@ const Footer = ()=>{
                 </ul>
                 <p>Results that speak loud and clear. Join the league of the top 1% achievers in the world!</p>
                 <ul className="footSocialLIst">
-                    <li><a href="https://www.facebook.com/getkeelinc" target="_blank"><img className="img-fluid" src="/assets/face.svg"/></a></li>
-                    <li><a href="https://twitter.com/getkeelinc" target="_blank"><img className="img-fluid" src="/assets/twt.svg"/></a></li>
-                    <li><a href="https://ca.linkedin.com/company/getkeel" target="_blank"><img className="img-fluid" src="/assets/link.svg"/></a></li>
-                    <li><a href="https://www.instagram.com/getkeelinc/" target="_blank"><img className="img-fluid" src="/assets/inst.svg" /></a></li>
+                    <li><a href="https://www.facebook.com/getkeelinc" target="_blank"><img className="img-fluid" src="/assets/face.svg" alt="facebook"/></a></li>
+                    <li><a href="https://twitter.com/getkeelinc" target="_blank"><img className="img-fluid" src="/assets/twt.svg" alt="twitter"/></a></li>
+                    <li><a href="https://ca.linkedin.com/company/getkeel" target="_blank"><img className="img-fluid" src="/assets/link.svg" alt="linkedin"/></a></li>
+                    <li><a href="https://www.instagram.com/getkeelinc/" target="_blank"><img className="img-fluid" src="/assets/inst.svg" alt="instagram"/></a></li>
                 </ul>
             </div>
 

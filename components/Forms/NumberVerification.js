@@ -315,7 +315,7 @@ const NumberVerification = ({handleClose, lead_origin, isIeltsView=false}) => {
                     <div className="inputForm mobileInp inputWithOtp">
                         <input type="number" ref={phoneRef} className={number?"activeInput":''} onChange={handleNumberInputChange} value={number} onKeyPress={handleKeyPress} />
                         <label className={number ? 'fillInput' : ''}>Contact Number</label>
-                        <img className="img-fluid" src="/assets/ind.svg" />
+                        <img className="img-fluid" src="/assets/ind.svg" alt="mobile"/>
                         <button className={`${disableSendOtp?'disableOtp':''} 'vryFy'`} onClick={sendOTPClicked}>Send OTP</button>
                     </div>
                     <div className="inputForm OTPInput">

@@ -2597,7 +2597,7 @@ section.communitySection {
   }
 
   .usrDtls img {
-    width: 52px;
+    width: 52px !important;
   }
 
   .verticalImg {

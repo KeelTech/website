@@ -26,7 +26,7 @@ const Accordian = ({ data })=>{
                     const showOption = activeList.indexOf(key)>-1;
                     return <div className={`acrdGrd ${showOption?'acrdAct':''}`}  key={key} onClick={()=>handleClick(key)}>
                     <h3>{ques}
-                        <span> <img className="img-fluid" src="/assets/acrdIco.svg" /></span>
+                        <span> <img className="img-fluid" src="/assets/acrdIco.svg" alt="logo"/></span>
                     </h3>
                     {
                         isHtml?<p><div dangerouslySetInnerHTML={{__html: ans}} /></p>:<p>{ans}</p>

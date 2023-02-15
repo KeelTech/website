@@ -70,17 +70,17 @@ const HomeView = ({ blogsList }) => {
                                 <button onClick={() => router.push(`/settleAbroad`)}>Settle Abroad</button>
                             </div>
                             <div className="bannerMidImg">
-                                <img className="img-fluid forWeb" src="/assets/bgUp.webp" />
-                                <img className="img-fluid forMobile" src="/assets/Hero-section.webp" />
+                                <img className="img-fluid forWeb" src="/assets/bgUp.webp" alt="logo"/>
+                                <img className="img-fluid forMobile" src="/assets/Hero-section.webp" alt="logo" />
                             </div>
                             <div className="bannerLast">
                                 <p>Our students finished Universities and are drawing hefty salaries at</p>
                                 <div className="banImgsGrid">
-                                    <img src="/assets/ms.webp" alt="" className="img-fluid" />
-                                    <img src="/assets/uber.webp" alt="" className="img-fluid" />
-                                    <img src="/assets/delo.webp" alt="" className="img-fluid" />
-                                    <img src="/assets/google.webp" alt="" className="img-fluid" />
-                                    <img src="/assets/ama.svg" alt="" className="img-fluid" />
+                                    <img src="/assets/ms.webp" alt="company" className="img-fluid" />
+                                    <img src="/assets/uber.webp" alt="company" className="img-fluid" />
+                                    <img src="/assets/delo.webp" alt="company" className="img-fluid" />
+                                    <img src="/assets/google.webp" alt="company" className="img-fluid" />
+                                    <img src="/assets/ama.svg" alt="company" className="img-fluid" />
                                 </div>
                             </div>
                         </div>
@@ -118,9 +118,9 @@ const HomeView = ({ blogsList }) => {
                             loading="lazy"
                             className="rectImgBtm img-fluid"
                         /> */}
-                            <img className="rectImgTop img-fluid" src="/assets/rect.webp" />
-                            <img className="img-fluid" src="/assets/our.webp" />
-                            <img className="rectImgBtm img-fluid" src="/assets/rect.webp" />
+                            <img className="rectImgTop img-fluid" src="/assets/rect.webp" alt="logo"/>
+                            <img className="img-fluid" src="/assets/our.webp"  alt="logo"/>
+                            <img className="rectImgBtm img-fluid" src="/assets/rect.webp"  alt="logo"/>
                         </div>
                         <div className="storyContent pl-30">
                             <h4 className="grdHdng">Our Story</h4>

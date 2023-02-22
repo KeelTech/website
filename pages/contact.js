@@ -83,6 +83,9 @@ const Contact = () => {
         createLeadSquareLead(dataParams, null, headers).then((resp) => {
 
             if(resp && resp.status==1){
+                if(dataLayer){
+                    dataLayer.push({'event': 'fireForm1'})
+                }
                 setToasterInfo({
                     isVisible: true,
                     isError: false,

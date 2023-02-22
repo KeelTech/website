@@ -194,6 +194,9 @@ const NumberVerification = ({handleClose, lead_origin, isIeltsView=false}) => {
                 email: ''
             })
             if(resp && resp.status==1){
+                if(dataLayer){
+                    dataLayer.push({'event': 'fireForm1'})
+                }
                 setToasterInfo({
                     isVisible: true,
                     isError: false,

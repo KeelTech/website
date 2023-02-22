@@ -99,7 +99,7 @@ const Contact = () => {
                 setToasterInfo({
                     isVisible: true,
                     isError: true,
-                    isSuccess: true,
+                    isSuccess: false,
                     msg: 'Failed to save response, Please try again later'
                 });
                 setTimeout(() => {
@@ -110,7 +110,7 @@ const Contact = () => {
             setToasterInfo({
                 isVisible: true,
                 isError: true,
-                isSuccess: true,
+                isSuccess: false,
                 msg: 'Failed to Generate Lead, Please try again later'
             });
             setTimeout(() => {

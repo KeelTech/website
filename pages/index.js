@@ -70,7 +70,7 @@ const HomeView = ({ blogsList }) => {
                                 <button onClick={() => router.push(`/settleAbroad`)}>Settle Abroad</button>
                             </div>
                             <div className="bannerMidImg">
-                                <img className="img-fluid forWeb" src="/assets/bgUp.webp" alt="logo"/>
+                                <img className="img-fluid forWeb" src="https://keeldocs.s3.amazonaws.com/media/public/homeFront.webp" alt="logo"/>
                                 <img className="img-fluid forMobile" src="/assets/Hero-section.webp" alt="logo" />
                             </div>
                             <div className="bannerLast">
@@ -119,7 +119,7 @@ const HomeView = ({ blogsList }) => {
                             className="rectImgBtm img-fluid"
                         /> */}
                             <img className="rectImgTop img-fluid" src="/assets/rect.webp" alt="logo"/>
-                            <img className="img-fluid" src="/assets/our.webp"  alt="logo"/>
+                            <img className="img-fluid" src="https://keeldocs.s3.amazonaws.com/media/public/home_ourstory.webp"  alt="logo"/>
                             <img className="rectImgBtm img-fluid" src="/assets/rect.webp"  alt="logo"/>
                         </div>
                         <div className="storyContent pl-30">

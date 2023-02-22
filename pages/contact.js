@@ -81,30 +81,29 @@ const Contact = () => {
 
 
         createLeadSquareLead(dataParams, null, headers).then((resp) => {
-            setToasterInfo({
-                isVisible: true,
-                isError: false,
-                isSuccess: true,
-                msg: 'Lead generated successfully'
-            });
-            setTimeout(() => {
-                hideToaster();
-                handleClose();
-            }, 2000);
-            setData({
-                number: '',
-                otp: '',
-                loading: false,
-                name: '',
-                age: '',
-                gender: '',
-                email: '',
-                numberVerified: false,
-                lastVerifiedNumber: '',
-                disableSendOtp: false
-            })
+
+            if(resp && resp.status==1){
+                setToasterInfo({
+                    isVisible: true,
+                    isError: false,
+                    isSuccess: true,
+                    msg: 'Response submitted successfully'
+                });
+                setTimeout(() => {
+                    hideToaster();
+                }, 2000);
+            }else{
+                setToasterInfo({
+                    isVisible: true,
+                    isError: true,
+                    isSuccess: true,
+                    msg: 'Failed to save response, Please try again later'
+                });
+                setTimeout(() => {
+                    hideToaster();
+                }, 2000);
+            }
         }).catch((err) => {
-            console.log("error is", err);
             setToasterInfo({
                 isVisible: true,
                 isError: true,

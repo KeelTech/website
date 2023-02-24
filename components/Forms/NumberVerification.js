@@ -25,7 +25,7 @@ const NumberVerification = ({handleClose, lead_origin, isIeltsView=false}) => {
         ielts: '',
         batch: ''
     })
-
+    const [leadGenerated, setLeadGen] = useState(false);
     const { number, otp, name, age, gender, email, state, city, ielts, batch} = dataInfo;
 
     const [toasterInfo, setToasterInfo] = useState({
@@ -194,9 +194,7 @@ const NumberVerification = ({handleClose, lead_origin, isIeltsView=false}) => {
                 email: ''
             })
             if(resp && resp.status==1){
-                if(dataLayer){
-                    dataLayer.push({'event': 'fireForm1'})
-                }
+                setLeadGen(true);
                 setToasterInfo({
                     isVisible: true,
                     isError: false,
@@ -244,7 +242,7 @@ const NumberVerification = ({handleClose, lead_origin, isIeltsView=false}) => {
         <>
             <CustomToaster {...toasterInfo} hideToaster={hideToaster} />
             {
-                toasterInfo.isSuccess && toasterInfo.isVisible?<div className="activeLead"></div>:null
+                leadGenerated?<div className="activeLead"></div>:null
             }
             <div className='formSettle'>
                 <h3>Don't miss your free call</h3>

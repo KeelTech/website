@@ -16,6 +16,7 @@ const Contact = () => {
         isSuccess: false,
         msg: ''
     })
+    const [leadGenerated, setLeadGen] = useState(false);
 
     const hideToaster = () => {
         setToasterInfo({
@@ -83,9 +84,7 @@ const Contact = () => {
         createLeadSquareLead(dataParams, null, headers).then((resp) => {
 
             if(resp && resp.status==1){
-                if(dataLayer){
-                    dataLayer.push({'event': 'fireForm1'})
-                }
+                setLeadGen(true);
                 setToasterInfo({
                     isVisible: true,
                     isError: false,
@@ -138,7 +137,7 @@ const Contact = () => {
             </Head>
             <CustomToaster {...toasterInfo} hideToaster={hideToaster} />
             {
-                toasterInfo.isSuccess && toasterInfo.isVisible?<div className="activeLead"></div>:null
+                leadGenerated?<div className="activeLead"></div>:null
             }
             <footer className="footerMain forContactPage">
                 <div className="container">

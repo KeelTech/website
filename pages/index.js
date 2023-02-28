@@ -72,8 +72,8 @@ const HomeView = ({ blogsList }) => {
                             {/* Study | Settle | Work  */}
                             <p className="bannerParaSub">We are India’s largest tech-enabled study abroad platform supported by an army of experts</p>
                             <div className="bannerButton">
-                                <button onClick={() => router.push(`/keel-study-in-abroad-program`)}>Study Abroad</button>
-                                <button onClick={() => router.push(`/settleAbroad`)}>Settle Abroad</button>
+                                <a className='hmBtsNew' onClick={() => router.push(`/keel-study-in-abroad-program`)}>Study Abroad</a>
+                                <a className='hmBtsNew' onClick={() => router.push(`/settleAbroad`)}>Settle Abroad</a>
                             </div>
                             <div className="bannerMidImg">
                                 <img className="img-fluid forWeb" src="https://keeldocs.s3.amazonaws.com/media/public/homeFront.webp" alt="logo"/>

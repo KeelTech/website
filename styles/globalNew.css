@@ -252,6 +252,7 @@ p.bannerParaSub {
   font-weight: 400;
   /* background: linear-gradient(90deg, #45BFA2 0%, #7FC8BB 99.79%), linear-gradient(270deg, #45A9BF 0.21%, #93B6D6 100%), linear-gradient(90deg, #C18BBD 1.59%, #2F7CDE 84.61%); */
   background: linear-gradient(90deg, #5e98e1 1.59%, #2F7CDE 84.61%);
+  box-shadow: 2px 1px 6px #626262c7, 4px 3px 8px #62626212, inset -2px -2px 0px #00000026;
 }
 
 .bannerMidImg {

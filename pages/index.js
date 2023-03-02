@@ -5,6 +5,7 @@ import { getBlogsList } from '@/actions/index.js';
 import React, { useState, useRef, useEffect } from 'react';
 import useOnScreen from "@/helpers/hooks/useOnScreen.js";
 import LazyLoadedHomeComponent from '@/components/LazyLoadedComponent/Home'
+import MetaTags from '@/components/MetaTags';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -61,9 +62,15 @@ const HomeView = ({ blogsList }) => {
         if (!isChild3Ref)
             setIsChild3Ref(child3RefValue);
      }, [child3RefValue])
-
+     const metaInfo = {
+        description: "Fly to the country of your dreams to Study ",
+        title: 'Getkeel | Immigrate to Canada',
+        ogDescription: "We are India’s largest tech-enabled study abroad platform supported by an army of experts",
+        ogUrl: "https://getkeel.com/"
+    }
     return (
         <>
+        <MetaTags metaInfo={metaInfo}/>
             <section className="mainBannerSection">
                 <div className="container">
                     <div className="mainBanner">
@@ -72,21 +79,21 @@ const HomeView = ({ blogsList }) => {
                             {/* Study | Settle | Work  */}
                             <p className="bannerParaSub">We are India’s largest tech-enabled study abroad platform supported by an army of experts</p>
                             <div className="bannerButton">
-                                <a className='hmBtsNew' onClick={() => router.push(`/keel-study-in-abroad-program`)}>Study Abroad</a>
-                                <a className='hmBtsNew' onClick={() => router.push(`/settleAbroad`)}>Settle Abroad</a>
+                                <button onClick={() => router.push(`/keel-study-in-abroad-program`)}>Study Abroad</button>
+                                <button onClick={() => router.push(`/settleAbroad`)}>Settle Abroad</button>
                             </div>
                             <div className="bannerMidImg">
-                                <img className="img-fluid forWeb" src="https://keeldocs.s3.amazonaws.com/media/public/homeFront.webp" alt="logo"/>
-                                <img className="img-fluid forMobile" src="/assets/Hero-section.webp" alt="logo" />
+                                <img className="img-fluid forWeb" src="https://keeldocs.s3.amazonaws.com/media/public/homeFront.webp" alt="home website benner keel"/>
+                                <img className="img-fluid forMobile" src="/assets/Hero-section.webp" alt="home mobile benner keel" />
                             </div>
                             <div className="bannerLast">
                                 <p>Our students finished Universities and are drawing hefty salaries at</p>
                                 <div className="banImgsGrid">
-                                    <img src="/assets/ms.webp" alt="company" className="img-fluid" />
-                                    <img src="/assets/uber.webp" alt="company" className="img-fluid" />
-                                    <img src="/assets/delo.webp" alt="company" className="img-fluid" />
-                                    <img src="/assets/google.webp" alt="company" className="img-fluid" />
-                                    <img src="/assets/ama.svg" alt="company" className="img-fluid" />
+                                    <img src="/assets/ms.webp" alt="microsoft " className="img-fluid" />
+                                    <img src="/assets/uber.webp" alt="uber" className="img-fluid" />
+                                    <img src="/assets/delo.webp" alt="delo" className="img-fluid" />
+                                    <img src="/assets/google.webp" alt="google" className="img-fluid" />
+                                    <img src="/assets/ama.svg" alt="amazon" className="img-fluid" />
                                 </div>
                             </div>
                         </div>
@@ -124,8 +131,8 @@ const HomeView = ({ blogsList }) => {
                             loading="lazy"
                             className="rectImgBtm img-fluid"
                         /> */}
-                            <img className="rectImgTop img-fluid" src="/assets/rect.webp" alt="logo"/>
-                            <img className="img-fluid" src="https://keeldocs.s3.amazonaws.com/media/public/home_ourstory.webp"  alt="logo"/>
+                            <img className="rectImgTop img-fluid" src="/assets/rect.webp" alt="logo rectangle"/>
+                            <img className="img-fluid" src="https://keeldocs.s3.amazonaws.com/media/public/home_ourstory.webp"  alt="logo home our story"/>
                             <img className="rectImgBtm img-fluid" src="/assets/rect.webp"  alt="logo"/>
                         </div>
                         <div className="storyContent pl-30">

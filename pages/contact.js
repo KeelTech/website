@@ -154,6 +154,7 @@ const Contact = () => {
                                     <img className="img-fluid" src="/assets/call.svg" />
                                     <p>+91-9810206875, +1-416-277-5284</p>
                                 </li>
+                                <p className='p-bold'>Getkeel Migration Services India Private Limited</p>
                                 <li>
                                     <img className="img-fluid" src="/assets/loc.svg" />
                                     <div>

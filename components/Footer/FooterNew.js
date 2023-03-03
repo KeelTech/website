@@ -74,6 +74,7 @@ const Footer = ()=>{
                     <a href="/contact-us" onClick={(e)=>e.preventDefault()}>About Us</a>
                 </li>
                 </ul>
+                <p className='p-bold'>Getkeel Migration Services India Private Limited</p>
                 <p>Results that speak loud and clear. Join the league of the top 1% achievers in the world!</p>
                 <ul className="footSocialLIst">
                     <li><a href="https://www.facebook.com/getkeelinc" target="_blank"><img className="img-fluid" src="/assets/face.svg" alt="facebook"/></a></li>

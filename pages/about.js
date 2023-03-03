@@ -8,7 +8,7 @@ const Resource = () => {
                     <div className="storyContent full-width text-center">
                         <h4 className="grdHdng">Our Story</h4>
                         <h5>About <span>Keel</span></h5>
-                        <p className="customPeraAbout">Ask questions, share ideas, and build connections with each other—all right next to your code. GitHub Discussions enables healthy and productive software collaboration. Ask questions, share ideas, and build connections with each other—all right next to your code. GitHub Discussions enables healthy and productive software collaboration.</p>
+                        <p className="customPeraAbout"><p className='p-bold'>Getkeel Migration Services India Private Limited</p> Ask questions, share ideas, and build connections with each other—all right next to your code. GitHub Discussions enables healthy and productive software collaboration. Ask questions, share ideas, and build connections with each other—all right next to your code. GitHub Discussions enables healthy and productive software collaboration.</p>
                     </div>
                     <img className="img-fluid aboutUsImg" src="/assets/about.webp" />
                 </div>

@@ -154,11 +154,11 @@ const Contact = () => {
                                     <img className="img-fluid" src="/assets/call.svg" />
                                     <p>+91-9810206875, +1-416-277-5284</p>
                                 </li>
-                                <p className='p-bold'>Getkeel Migration Services India Private Limited</p>
+                                
                                 <li>
                                     <img className="img-fluid" src="/assets/loc.svg" />
                                     <div>
-                                        <p>JMD Empire Square
+                                        <p><p className='p-bold'>Getkeel Migration Services India Private Limited</p> JMD Empire Square
                                             201-202, Mehrauli-Gurgaon Road, A Block, DLF Phase 1, Sector 28, Sarhol, Haryana,
                                             India 122002
                                         </p>

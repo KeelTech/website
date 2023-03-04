@@ -158,7 +158,7 @@ const Contact = () => {
                                 <li>
                                     <img className="img-fluid" src="/assets/loc.svg" />
                                     <div>
-                                        <p><p className='p-bold'>Getkeel Migration Services India Private Limited</p> JMD Empire Square
+                                        <p><span className='p-bold'>Getkeel Migration Services India Private Limited,</span> JMD Empire Square
                                             201-202, Mehrauli-Gurgaon Road, A Block, DLF Phase 1, Sector 28, Sarhol, Haryana,
                                             India 122002
                                         </p>

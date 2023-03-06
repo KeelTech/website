@@ -15,10 +15,10 @@ const IELTS = () => {
 
                             </h1>
                             <ul className="ieltsListBan">
-                                <li> <img className="img-fluid" src="/assets/lstChk.svg" />Live Classes</li>
-                                <li> <img className="img-fluid" src="/assets/lstChk.svg" />1:1 Session with experts</li>
-                                <li> <img className="img-fluid" src="/assets/lstChk.svg" />50,000+ hours of IELTS training experience</li>
-                                <li> <img className="img-fluid" src="/assets/lstChk.svg" />Session Recordings</li>
+                                <li> <img width='100%' height='100%' className="img-fluid" src="/assets/lstChk.svg" />Live Classes</li>
+                                <li> <img width='100%' height='100%' className="img-fluid" src="/assets/lstChk.svg" />1:1 Session with experts</li>
+                                <li> <img width='100%' height='100%' className="img-fluid" src="/assets/lstChk.svg" />50,000+ hours of IELTS training experience</li>
+                                <li> <img width='100%' height='100%' className="img-fluid" src="/assets/lstChk.svg" />Session Recordings</li>
                             </ul>
                             <button>Book a Demo Class</button>
                         </div>

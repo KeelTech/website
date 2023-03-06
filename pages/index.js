@@ -83,17 +83,17 @@ const HomeView = ({ blogsList }) => {
                                 <button onClick={() => router.push(`/settleAbroad`)}>Settle Abroad</button>
                             </div>
                             <div className="bannerMidImg">
-                                <img className="img-fluid forWeb" src="https://keeldocs.s3.amazonaws.com/media/public/homeFront.webp" alt="home website benner keel"/>
-                                <img className="img-fluid forMobile" src="/assets/Hero-section.webp" alt="home mobile benner keel" />
+                                <img className="img-fluid forWeb" height='100%' width='100%' src="https://keeldocs.s3.amazonaws.com/media/public/homeFront.webp" alt="home website benner keel"/>
+                                <img className="img-fluid forMobile" height='100%' width='100%' src="/assets/Hero-section.webp" alt="home mobile benner keel" />
                             </div>
                             <div className="bannerLast">
                                 <p>Our students finished Universities and are drawing hefty salaries at</p>
                                 <div className="banImgsGrid">
-                                    <img src="/assets/ms.webp" alt="microsoft " className="img-fluid" />
-                                    <img src="/assets/uber.webp" alt="uber" className="img-fluid" />
-                                    <img src="/assets/delo.webp" alt="delo" className="img-fluid" />
-                                    <img src="/assets/google.webp" alt="google" className="img-fluid" />
-                                    <img src="/assets/ama.svg" alt="amazon" className="img-fluid" />
+                                    <img height='100%' width='100%' src="/assets/ms.webp" alt="microsoft " className="img-fluid" />
+                                    <img height='100%' width='100%' src="/assets/uber.webp" alt="uber" className="img-fluid" />
+                                    <img height='100%' width='100%' src="/assets/delo.webp" alt="delo" className="img-fluid" />
+                                    <img height='100%' width='100%' src="/assets/google.webp" alt="google" className="img-fluid" />
+                                    <img height='100%' width='100%' src="/assets/ama.svg" alt="amazon" className="img-fluid" />
                                 </div>
                             </div>
                         </div>
@@ -131,9 +131,9 @@ const HomeView = ({ blogsList }) => {
                             loading="lazy"
                             className="rectImgBtm img-fluid"
                         /> */}
-                            <img className="rectImgTop img-fluid" src="/assets/rect.webp" alt="logo rectangle"/>
-                            <img className="img-fluid" src="https://keeldocs.s3.amazonaws.com/media/public/home_ourstory.webp"  alt="logo home our story"/>
-                            <img className="rectImgBtm img-fluid" src="/assets/rect.webp"  alt="logo"/>
+                            <img height='100%' width='100%' className="rectImgTop img-fluid" src="/assets/rect.webp" alt="logo rectangle"/>
+                            <img height='100%' width='100%' className="img-fluid" src="https://keeldocs.s3.amazonaws.com/media/public/home_ourstory.webp"  alt="logo home our story"/>
+                            <img height='100%' width='100%' className="rectImgBtm img-fluid" src="/assets/rect.webp"  alt="logo"/>
                         </div>
                         <div className="storyContent pl-30">
                             <h4 className="grdHdng">Our Story</h4>

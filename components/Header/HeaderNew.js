@@ -22,7 +22,7 @@ const Header = ({ toggleNavBar, activeNav }) => {
                                     <ul className="mainList" onClick={(e) => e.stopPropagation()}>
                                         <li className="mainLogo" onClick={() => handleNavigation('')}>
                                             <a href="" onClick={(e) => e.preventDefault()}>
-                                                <img className="sideBarLogo" alt="Logo"
+                                                <img height='30px' width='80px' className="sideBarLogo" alt="Logo"
                                                     src="/assets/Logo.svg" />
                                             </a>
                                         </li>
@@ -51,7 +51,7 @@ const Header = ({ toggleNavBar, activeNav }) => {
                                 </div>
                             </div>
                         </nav>
-                        <img className="img-fluid mobileBackStop" src="/assets/Logo.svg" onClick={() => handleNavigation('/')} alt="back"/>
+                        <img className="img-fluid mobileBackStop" height='100%' width='100%' src="/assets/Logo.svg" onClick={() => handleNavigation('/')} alt="keel logo"/>
                     </div>
                     <ul>
                         <li onClick={() => handleNavigation('/')}>

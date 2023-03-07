@@ -1,12 +1,20 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import Image from "next/image";
 import BlogNewView from '@/components/BlogsView/BlogNewView';
+import GetConsultationCTA from '@/components/GetConsultationCTA';
 
 const Home = ({blogsList})=>{
+
+    const otpFormRef = useRef();
+
+    const openLeadForm = ()=>{
+        otpFormRef.current.openPopup();
+    }
 
     return(
         <>
             <section className="services">
+            <GetConsultationCTA ref={otpFormRef} hideText lead_origin='homepage'/>
                 <div className="container">
                     <div className="servicesCont">
                         <div className="storyContent customService">
@@ -14,7 +22,7 @@ const Home = ({blogsList})=>{
                             <h5>What do you <span>want to do?</span></h5>
                             <p>Our team at Keel is obsessed with making your journey a smooth ride. We are committed to be there with you every step of the way.</p>
                         </div>
-                        <div className="serviceSlider">
+                        <div className="serviceSlider" onClick={openLeadForm}>
                             <div className="srvcGrid">
                                 <h5>Discovery call</h5>
                                 <button>Know more<img className="img-fluid" src="/assets/arrow.svg" /></button>

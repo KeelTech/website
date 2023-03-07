@@ -1,7 +1,15 @@
 import { useRouter } from 'next/router';
+import { useRef } from 'react';
+import GetConsultationCTA from '@/components/GetConsultationCTA';
 
 const Header = ({ toggleNavBar, activeNav }) => {
     const router = useRouter()
+
+    const otpFormRef = useRef();
+
+    const openLeadForm = ()=>{
+        otpFormRef.current.openPopup();
+    }
 
     const handleNavigation = (path) => {
         toggleNavBar();
@@ -10,6 +18,7 @@ const Header = ({ toggleNavBar, activeNav }) => {
 
     return (
         <header className='newWebHead'>
+            <GetConsultationCTA ref={otpFormRef} hideText lead_origin='header'/>
             <div className="container">
                 <div className="navBar">
                     <div className="logo">
@@ -79,7 +88,7 @@ const Header = ({ toggleNavBar, activeNav }) => {
                             <a href="/contact-us" onClick={(e) => e.preventDefault()}>Career</a>
                         </li>
                     </ul>
-                    <button className="getStrt" onClick={()=>window.open('https://app.getkeel.com/','_blank')}>Get Started</button>
+                    <button className="getStrt" onClick={openLeadForm}>Get Started</button>
                 </div>
             </div>
         </header>

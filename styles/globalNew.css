@@ -388,6 +388,7 @@ section.services {
 }
 
 .srvcGrid {
+  cursor: pointer;
   width: 240px;
   height: 310px;
   background: linear-gradient(180deg, #4551BF 0%, #9D93D6 100%);

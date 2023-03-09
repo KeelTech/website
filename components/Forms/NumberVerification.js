@@ -246,7 +246,7 @@ const NumberVerification = ({handleClose, lead_origin, isIeltsView=false}) => {
             }
             <div className='formSettle'>
                 <h3>Don't miss your free call</h3>
-                <div className="formInputMain">
+                <div className="formInputMain stdyBanText">
                     <div className="inputForm">
                         <input type="text" className={name?"activeInput":''} onChange={(e)=>setData({name: e.target.value})} value={name} onKeyPress={(e)=>{
                             if(e.key ==="Enter"){

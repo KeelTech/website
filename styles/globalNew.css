@@ -1339,7 +1339,7 @@ img.sideBarLogo {
 }
 
 #menu li {
-  border-bottom: 1px solid #f1f1f1;
+  /* border-bottom: 1px solid #f1f1f1; */
   padding: 5px 10px;
   padding-left: 20px;
 }
@@ -3374,7 +3374,7 @@ letter-spacing: .8px;
 
 button.sgnupHed {
   background: linear-gradient(90deg, #5e98e1 1.59%, #2F7CDE 84.61%);
-  box-shadow: 2px 1px 6px #626262c7, 4px 3px 8px #62626212, inset -2px -2px 0px #00000026;
+  /* box-shadow: 2px 1px 6px #626262c7, 4px 3px 8px #62626212, inset -2px -2px 0px #00000026; */
   border: none;
   min-width: 110px;
   padding: 10px;
@@ -3382,12 +3382,13 @@ button.sgnupHed {
   color: white;
   font-size: 16px;
   font-weight: 400;
-  border: 2px solid white;
+  /* border: 2px solid white;
+  border-image-source: linear-gradient(90deg, #5e98e1 1.59%, #2F7CDE 84.61%); */
 }
 
 button.loginHead {
   background: white;
-  box-shadow: 2px 1px 6px #626262c7, 4px 3px 8px #62626212, inset -2px -2px 0px #00000012;
+  /* box-shadow: 2px 1px 6px #626262c7, 4px 3px 8px #62626212, inset -2px -2px 0px #00000012; */
   border: none;
   min-width: 110px;
   padding: 10px;

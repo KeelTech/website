@@ -17,7 +17,7 @@ const Header = ({ toggleNavBar, activeNav }) => {
     }
 
     const redirectLogin = ()=>{
-        window.open('app.getkeel.com', '_blank');
+        window.open('https://app.getkeel.com', '_blank');
     }
 
     return (

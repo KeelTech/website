@@ -1202,6 +1202,9 @@ p.topMargin {
   .navBar ul {
     display: none;
   }
+  .onBrdBtns.mobileHideThis{
+    display: none;
+  }
 }
 
 #menuToggle {
@@ -3363,4 +3366,40 @@ letter-spacing: .8px;
   color: #000 !important;
   padding: 0px !important;
   font-size: 16px !important;
+}
+
+button.sgnupHed {
+  background: linear-gradient(90deg, #5e98e1 1.59%, #2F7CDE 84.61%);
+  box-shadow: 2px 1px 6px #626262c7, 4px 3px 8px #62626212, inset -2px -2px 0px #00000026;
+  border: none;
+  min-width: 110px;
+  padding: 10px;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  border: 2px solid white;
+}
+
+button.loginHead {
+  background: white;
+  box-shadow: 2px 1px 6px #626262c7, 4px 3px 8px #62626212, inset -2px -2px 0px #00000012;
+  border: none;
+  min-width: 110px;
+  padding: 10px;
+  border-radius: 8px;
+  color: #3b7ed2;
+  font-size: 16px;
+  font-weight: 400;
+  border: 2px solid #307cde;
+}
+
+.onBrdBtns {
+  display: flex;
+  gap: 10px;
+}
+
+#menu li.onBrdBtns {
+  padding-bottom: 25px;
+  justify-content: center;
 }

@@ -7,7 +7,7 @@ const Header = ({ toggleNavBar, activeNav }) => {
 
     const otpFormRef = useRef();
 
-    const openLeadForm = ()=>{
+    const openLeadForm = () => {
         otpFormRef.current.openPopup();
     }
 
@@ -18,7 +18,7 @@ const Header = ({ toggleNavBar, activeNav }) => {
 
     return (
         <header className='newWebHead'>
-            <GetConsultationCTA ref={otpFormRef} hideText lead_origin='header'/>
+            <GetConsultationCTA ref={otpFormRef} hideText lead_origin='header' />
             <div className="container">
                 <div className="navBar">
                     <div className="logo">
@@ -56,11 +56,15 @@ const Header = ({ toggleNavBar, activeNav }) => {
                                         <li onClick={() => handleNavigation('/career')}>
                                             <a href="/contact-us" onClick={(e) => e.preventDefault()}>Career</a>
                                         </li>
+                                        <li className='onBrdBtns'>
+                                            <button className='loginHead'>Login</button>
+                                            <button className='sgnupHed'>Sign up</button>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
                         </nav>
-                        <img className="img-fluid mobileBackStop" height='100%' width='100%' src="/assets/Logo.svg" onClick={() => handleNavigation('/')} alt="keel logo"/>
+                        <img className="img-fluid mobileBackStop" height='100%' width='100%' src="/assets/Logo.svg" onClick={() => handleNavigation('/')} alt="keel logo" />
                     </div>
                     <ul>
                         <li onClick={() => handleNavigation('/')}>
@@ -88,7 +92,11 @@ const Header = ({ toggleNavBar, activeNav }) => {
                             <a href="/contact-us" onClick={(e) => e.preventDefault()}>Career</a>
                         </li>
                     </ul>
-                    <button className="getStrt" onClick={openLeadForm}>Get Started</button>
+                    {/* <button className="getStrt" onClick={openLeadForm}>Get Started</button> */}
+                    <div className='onBrdBtns mobileHideThis '>
+                        <button className='loginHead'>Login</button>
+                        <button className='sgnupHed'>Sign up</button>
+                    </div>
                 </div>
             </div>
         </header>

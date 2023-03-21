@@ -16,6 +16,10 @@ const Header = ({ toggleNavBar, activeNav }) => {
         router.push(`${path}`);
     }
 
+    const redirectLogin = ()=>{
+        window.open('app.getkeel.com', '_blank');
+    }
+
     return (
         <header className='newWebHead'>
             <GetConsultationCTA ref={otpFormRef} hideText lead_origin='header' />
@@ -57,8 +61,8 @@ const Header = ({ toggleNavBar, activeNav }) => {
                                             <a href="/contact-us" onClick={(e) => e.preventDefault()}>Career</a>
                                         </li>
                                         <li className='onBrdBtns'>
-                                            <button className='loginHead'>Login</button>
-                                            <button className='sgnupHed'>Sign up</button>
+                                            <button className='loginHead' onClick={redirectLogin}>Login</button>
+                                            <button className='sgnupHed' onClick={openLeadForm}>Sign up</button>
                                         </li>
                                     </ul>
                                 </div>
@@ -94,8 +98,8 @@ const Header = ({ toggleNavBar, activeNav }) => {
                     </ul>
                     {/* <button className="getStrt" onClick={openLeadForm}>Get Started</button> */}
                     <div className='onBrdBtns mobileHideThis '>
-                        <button className='loginHead'>Login</button>
-                        <button className='sgnupHed'>Sign up</button>
+                        <button className='loginHead' onClick={redirectLogin}>Login</button>
+                        <button className='sgnupHed' onClick={openLeadForm}>Sign up</button>
                     </div>
                 </div>
             </div>

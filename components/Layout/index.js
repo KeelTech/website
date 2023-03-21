@@ -40,8 +40,8 @@ export default function Layout({ children, dataProps }) {
     }
   }
   const handlers = useSwipeable({
-    onSwipedLeft: handleSwipeLeft,
-    onSwipedRight: toggleNavBar,
+    onSwipedLeft: toggleNavBar,
+    onSwipedRight: handleSwipeLeft,
   });
   return (
     <div {...handlers}>

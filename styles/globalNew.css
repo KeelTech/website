@@ -1192,6 +1192,8 @@ p.topMargin {
 /* ================= HamburgerMenu */
 .hamBurger {
   display: none;
+  position: absolute;
+  right: 30px;
 }
 
 @media (max-width: 992px) {
@@ -1297,6 +1299,7 @@ p.topMargin {
   opacity: 1;
   transform: rotate(45deg) translate(0px, 2px);
   background: #232323;
+  width: 25px;
 }
 
 #menuToggle input.inputChecked~span.bars:nth-last-child(3) {
@@ -1407,6 +1410,7 @@ img.sideBarLogo {
   flex-direction: column;
   margin: 0;
   height: 100%;
+  width: 100%;
 }
 
 .inputChecked {
@@ -3402,4 +3406,19 @@ button.loginHead {
 #menu li.onBrdBtns {
   padding-bottom: 25px;
   justify-content: center;
+}
+
+#menuToggle span.bars:nth-child(2) {
+  background: black ;
+  width: 10px;
+  margin-left: auto;
+}
+#menuToggle span.bars:nth-child(3) {
+  background: black ;
+  width: 15px;
+  margin-left: auto;
+}
+#menuToggle span.bars:nth-child(4) {
+  background: black ;
+  margin-left: auto;
 }

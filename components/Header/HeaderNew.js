@@ -34,13 +34,13 @@ const Header = ({ toggleNavBar, activeNav }) => {
                                 <div id="menu" onClick={toggleNavBar}><a href="/" />
                                     <ul className="mainList" onClick={(e) => e.stopPropagation()}>
                                         <li className="mainLogo" onClick={() => handleNavigation('')}>
-                                            <a href="" onClick={(e) => e.preventDefault()}>
+                                            <a href="javascript:void(0)" onClick={(e) => e.preventDefault()}>
                                                 <img height='30px' width='80px' className="sideBarLogo" alt="Logo"
                                                     src="/assets/Logo.svg" />
                                             </a>
                                         </li>
                                         <li onClick={() => handleNavigation('/')}>
-                                            <a href="" onClick={(e) => e.preventDefault()}>Home</a>
+                                            <a href="javascript:void(0)" onClick={(e) => e.preventDefault()}>Home</a>
                                         </li>
                                         <li onClick={() => handleNavigation('/IELTS')}>
                                             <a href="/blogs" onClick={(e) => e.preventDefault()}>IELTS Prep</a>

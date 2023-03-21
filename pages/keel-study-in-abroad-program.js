@@ -24,7 +24,7 @@ const StudyAbroad = () => {
                             <GetConsultationCTA lead_origin='study'/>
                         </div>
                         <div className="studyBanImg">
-                            <img className="img-fluid" src="/assets/study-abroad-hero-web.webp" />
+                            <img className="img-fluid" src="/assets/study-abroad-hero-web.webp" alt='study abroad' />
                         </div>
                     </div>
                     {/* <div className="bannerLast">
@@ -233,14 +233,14 @@ const StudyAbroad = () => {
                                 </div>
                                 <div className='rightPrsCont'>
                                     <div className='verticalImg'>
-                                        <img className='img-fluid' src='/assets/home/home-process-1.webp' />
+                                        <img className='img-fluid' src='/assets/home/home-process-1.webp' alt='home'/>
                                     </div>
                                 </div>
                             </div>
                             <div className='inrScrollBox reverseMobile'>
                                 <div className='rightPrsCont'>
                                     <div className='verticalImg'>
-                                        <img className='img-fluid' src='/assets/home/home-process-2.webp' />
+                                        <img className='img-fluid' src='/assets/home/home-process-2.webp' lang='home' />
                                     </div>
                                 </div>
                                 <div className='leftprsCont'>
@@ -265,14 +265,14 @@ const StudyAbroad = () => {
                                 </div>
                                 <div className='rightPrsCont'>
                                     <div className='verticalImg'>
-                                        <img className='img-fluid' src='/assets/home/home-process-3.webp' />
+                                        <img className='img-fluid' src='/assets/home/home-process-3.webp' alt='home' />
                                     </div>
                                 </div>
                             </div>
                             <div className='inrScrollBox reverseMobile'>
                                 <div className='rightPrsCont'>
                                     <div className='verticalImg'>
-                                        <img className='img-fluid' src='/assets/home/home-process-4.webp' />
+                                        <img className='img-fluid' src='/assets/home/home-process-4.webp' alt='process' />
                                     </div>
                                 </div>
                                 <div className='leftprsCont'>
@@ -350,7 +350,7 @@ const StudyAbroad = () => {
                                 </div>
                             </div>
                             <div className='verticalImg'>
-                                <img className='img-fluid' src='/assets/ver.webp' />
+                                <img className='img-fluid' src='/assets/ver.webp' alt='vertical icon' />
                             </div>
                         </div>
                     </div>
@@ -375,7 +375,7 @@ Hear what they have to say about us.</p>
                                                 <h5>Sheetal Mehta</h5>
                                                 <button>Studying in UK</button>
                                             </div>
-                                            <img className="img-fluid hpyRht" src="/assets/studyAbroad/sheetal-mehta.webp" />
+                                            <img className="img-fluid hpyRht" src="/assets/studyAbroad/sheetal-mehta.webp" alt='user image' />
                                         </div>
                                     </div>
                                 </div>
@@ -389,7 +389,7 @@ Hear what they have to say about us.</p>
                                                 <h5>Rajat Gupta</h5>
                                                 <button>Studying in USA</button>
                                             </div>
-                                            <img className="img-fluid hpyRht" src="/assets/studyAbroad/rajat-gupta.webp" />
+                                            <img className="img-fluid hpyRht" src="/assets/studyAbroad/rajat-gupta.webp" alt='user image' />
                                         </div>
                                     </div>
                                 </div>
@@ -405,7 +405,7 @@ Hear what they have to say about us.</p>
                                                 <h5>Ruchi Parmar</h5>
                                                 <button>Studying in Canada</button>
                                             </div>
-                                            <img className="img-fluid hpyRht" src="/assets/studyAbroad/ruchi-parmar.webp" />
+                                            <img className="img-fluid hpyRht" src="/assets/studyAbroad/ruchi-parmar.webp" alt='user image' />
                                         </div>
                                     </div>
                                 </div>
@@ -419,7 +419,7 @@ Hear what they have to say about us.</p>
                                                 <h5>Luv Gupta</h5>
                                                 <button>Studying in Italy</button>
                                             </div>
-                                            <img className="img-fluid hpyRht" src="/assets/studyAbroad/luv-gupta.webp" />
+                                            <img className="img-fluid hpyRht" src="/assets/studyAbroad/luv-gupta.webp" alt='user image' />
                                         </div>
                                     </div>
                                 </div>
@@ -435,7 +435,7 @@ Hear what they have to say about us.</p>
                                                 <h5>Luveen Mishra</h5>
                                                 <button>Studying in Japan</button>
                                             </div>
-                                            <img className="img-fluid hpyRht" src="/assets/studyAbroad/luveen-mishra.webp" />
+                                            <img className="img-fluid hpyRht" src="/assets/studyAbroad/luveen-mishra.webp" alt='user image' />
                                         </div>
                                     </div>
                                 </div>
@@ -451,7 +451,7 @@ Hear what they have to say about us.</p>
                                                 <h5>Nitish Jha</h5>
                                                 <button>Studying in Australia</button>
                                             </div>
-                                            <img className="img-fluid hpyRht" src="/assets/studyAbroad/nitish-jha.webp" />
+                                            <img className="img-fluid hpyRht" src="/assets/studyAbroad/nitish-jha.webp" alt='user image' />
                                         </div>
                                     </div>
                                 </div>
@@ -465,7 +465,7 @@ Hear what they have to say about us.</p>
                                                 <h5>Janak Pandya</h5>
                                                 <button>Studying in Germany</button>
                                             </div>
-                                            <img className="img-fluid hpyRht" src="/assets/studyAbroad/janak-pandya.webp" />
+                                            <img className="img-fluid hpyRht" src="/assets/studyAbroad/janak-pandya.webp" alt='user image' />
                                         </div>
                                     </div>
                                 </div>

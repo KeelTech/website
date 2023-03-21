@@ -24,7 +24,7 @@ const Resource = ({ blogsList }) => {
                         </div>
                         <div className="studyBanImg">
                             {/* <img className="img-fluid" src="/assets/studyabroad.webp" /> */}
-                            <img className="img-fluid" src="/assets/recs.webp" />
+                            <img className="img-fluid" src="/assets/recs.webp" alt='resources' />
                         </div>
                     </div>
                 </div>
@@ -45,7 +45,7 @@ const Resource = ({ blogsList }) => {
                                 blogData.map((val, key) => {
                                     const { blog_img, title, id } = val;
                                     return <div className="blogGrid newWebBlog" key={key} onClick={() => router.push(`/blogs/${id}`)}>
-                                        <img className="img-fluid" src={blog_img} />
+                                        <img className="img-fluid" src={blog_img} alt="blog" />
                                         <div className="rescGrdData">
                                             {/* <span>Canada</span> */}
                                             <p className='dateCust'>Date</p>
@@ -97,7 +97,7 @@ const Resource = ({ blogsList }) => {
                                     const { blog_img, title, id } = val;
 
                                     return <div className="blogGrid" onClick={() => router.push(`/blogs/${id}`)} key={key}>
-                                        <img className="img-fluid" src={blog_img} />
+                                        <img className="img-fluid" src={blog_img} alt="blog" />
                                         <div className="rescGrdData">
                                             <span>Canada</span>
                                             <p>{title}</p>
@@ -116,28 +116,28 @@ const Resource = ({ blogsList }) => {
                             <h4 className="grdHdng">Guides</h4>
                             <div className="subheadWithBtn">
                                 <h5>Keel <span>Guides</span></h5>
-                                <button>See All <img className="img-fluid" src="/assets/arrowDark.svg" /></button>
+                                <button>See All <img className="img-fluid" src="/assets/arrowDark.svg"  alt='arrow'/></button>
                             </div>
                             <p>We believe with right exposure you can do wonders for yourself and your family hence we help you make choices that</p>
                         </div>
                         <div className="serviceSlider customGrdnGrids">
                             <div className="srvcGrid">
-                                <img className="img-fluid keelWhiteLog" src="/assets/keelWhite.svg" />
+                                <img className="img-fluid keelWhiteLog" src="/assets/keelWhite.svg" alt='keel logo' />
                                 <h5>Cost of Studying in Canada</h5>
                                 {/* <!-- <button>Know more<img className="img-fluid" src="/assets/arrow.svg"></button> --> */}
                             </div>
                             <div className="srvcGrid grdntTwo">
-                                <img className="img-fluid keelWhiteLog" src="/assets/keelWhite.svg" />
+                                <img className="img-fluid keelWhiteLog" src="/assets/keelWhite.svg" alt='keel' />
                                 <h5>Cost of Studying in Canada</h5>
                                 {/* <!-- <button>Know more<img className="img-fluid" src="/assets/arrow.svg"></button> --> */}
                             </div>
                             <div className="srvcGrid gdntThird">
-                                <img className="img-fluid keelWhiteLog" src="/assets/keelWhite.svg" />
+                                <img className="img-fluid keelWhiteLog" src="/assets/keelWhite.svg" alt='keel white' />
                                 <h5>Cost of Studying in Canada</h5>
                                 {/* <!-- <button>Know more<img className="img-fluid" src="/assets/arrow.svg"></button> --> */}
                             </div>
                             <div className="srvcGrid">
-                                <img className="img-fluid keelWhiteLog" src="/assets/keelWhite.svg" />
+                                <img className="img-fluid keelWhiteLog" src="/assets/keelWhite.svg" alt='keel' />
                                 <h5>Cost of Studying in Canada</h5>
                                 {/* <!-- <button>Know more<img className="img-fluid" src="/assets/arrow.svg"></button> --> */}
                             </div>

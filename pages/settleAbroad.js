@@ -23,20 +23,20 @@ const SettleAbroad = () => {
                         </div>
                         <div className="studyBanImg">
                             {/* <img className="img-fluid" src="/assets/studyabroad.webp" /> */}
-                            <img className="img-fluid" src="/assets/settle-abroad-hero-web.webp" />
+                            <img className="img-fluid" src="/assets/settle-abroad-hero-web.webp" alt='abroad' />
                         </div>
                     </div>
                     <div className="bannerLast">
                         <p>Our customers successfully migrated to Canada from these countries</p>
                         <div className="banImgsGrid">
-                            <img src="/assets/flg5.webp" alt="" className="img-fluid" />
-                            <img src="/assets/flg1.webp" alt="" className="img-fluid" />
-                            <img src="/assets/flg2.webp" alt="" className="img-fluid" />
-                            <img src="/assets/flg3.webp" alt="" className="img-fluid" />
-                            <img src="/assets/flg4.webp" alt="" className="img-fluid" />
-                            <img src="/assets/flg7.webp" alt="" className="img-fluid" />
-                            <img src="/assets/flg6.webp" alt="" className="img-fluid" />
-                            <img src="/assets/flg8.webp" alt="" className="img-fluid" />
+                            <img src="/assets/flg5.webp" alt="flag" className="img-fluid" />
+                            <img src="/assets/flg1.webp" alt="flag" className="img-fluid" />
+                            <img src="/assets/flg2.webp" alt="flag" className="img-fluid" />
+                            <img src="/assets/flg3.webp" alt="flag" className="img-fluid" />
+                            <img src="/assets/flg4.webp" alt="flag" className="img-fluid" />
+                            <img src="/assets/flg7.webp" alt="flag" className="img-fluid" />
+                            <img src="/assets/flg6.webp" alt="flag" className="img-fluid" />
+                            <img src="/assets/flg8.webp" alt="flag" className="img-fluid" />
                         </div>
                     </div>
                 </div>
@@ -67,7 +67,7 @@ const SettleAbroad = () => {
                         <div className="universitiesGridCont">
                             <div className="unvGrdnntOuter">
                                 <div className="unvGrids">
-                                    <img className="img-fluid" src="/assets/university.webp" />
+                                    <img className="img-fluid" src="/assets/university.webp" alt='university' />
                                     <div className="unvGrdCont">
                                         <span className="unvGrdnt">UK</span>
                                         <h4>University of Oxford</h4>
@@ -85,13 +85,13 @@ const SettleAbroad = () => {
                                                 <p>$45k</p>
                                             </li>
                                         </ul>
-                                        <button>View University <img className="img-fluid" src="/assets/vtR.webp" /></button>
+                                        <button>View University <img className="img-fluid" src="/assets/vtR.webp" alt='vtr' /></button>
                                     </div>
                                 </div>
                             </div>
                             <div className="unvGrdnntOuter">
                                 <div className="unvGrids">
-                                    <img className="img-fluid" src="/assets/university.webp" />
+                                    <img className="img-fluid" src="/assets/university.webp" alt='university' />
                                     <div className="unvGrdCont">
                                         <span className="unvGrdnt">UK</span>
                                         <h4>University of Oxford</h4>
@@ -109,13 +109,13 @@ const SettleAbroad = () => {
                                                 <p>$45k</p>
                                             </li>
                                         </ul>
-                                        <button>View University <img className="img-fluid" src="/assets/vtR.webp" /></button>
+                                        <button>View University <img className="img-fluid" src="/assets/vtR.webp" alt='vtr' /></button>
                                     </div>
                                 </div>
                             </div>
                             <div className="unvGrdnntOuter">
                                 <div className="unvGrids">
-                                    <img className="img-fluid" src="/assets/university.webp" />
+                                    <img className="img-fluid" src="/assets/university.webp"  alt='university'/>
                                     <div className="unvGrdCont">
                                         <span className="unvGrdnt">UK</span>
                                         <h4>University of Oxford</h4>
@@ -133,13 +133,13 @@ const SettleAbroad = () => {
                                                 <p>$45k</p>
                                             </li>
                                         </ul>
-                                        <button>View University <img className="img-fluid" src="/assets/vtR.webp" /></button>
+                                        <button>View University <img className="img-fluid" src="/assets/vtR.webp" alt='view' /></button>
                                     </div>
                                 </div>
                             </div>
                             <div className="unvGrdnntOuter">
                                 <div className="unvGrids">
-                                    <img className="img-fluid" src="/assets/university.webp" />
+                                    <img className="img-fluid" src="/assets/university.webp"  alt='university'/>
                                     <div className="unvGrdCont">
                                         <span className="unvGrdnt">UK</span>
                                         <h4>University of Oxford</h4>
@@ -157,13 +157,13 @@ const SettleAbroad = () => {
                                                 <p>$45k</p>
                                             </li>
                                         </ul>
-                                        <button>View University <img className="img-fluid" src="/assets/vtR.webp" /></button>
+                                        <button>View University <img className="img-fluid" src="/assets/vtR.webp" alt='view' /></button>
                                     </div>
                                 </div>
                             </div>
                             <div className="unvGrdnntOuter">
                                 <div className="unvGrids">
-                                    <img className="img-fluid" src="/assets/university.webp" />
+                                    <img className="img-fluid" src="/assets/university.webp"  alt='university'/>
                                     <div className="unvGrdCont">
                                         <span className="unvGrdnt">UK</span>
                                         <h4>University of Oxford</h4>
@@ -181,13 +181,13 @@ const SettleAbroad = () => {
                                                 <p>$45k</p>
                                             </li>
                                         </ul>
-                                        <button>View University <img className="img-fluid" src="/assets/vtR.webp" /></button>
+                                        <button>View University <img className="img-fluid" src="/assets/vtR.webp" alt='view' /></button>
                                     </div>
                                 </div>
                             </div>
                             <div className="unvGrdnntOuter">
                                 <div className="unvGrids">
-                                    <img className="img-fluid" src="/assets/university.webp" />
+                                    <img className="img-fluid" src="/assets/university.webp"  alt='university'/>
                                     <div className="unvGrdCont">
                                         <span className="unvGrdnt">UK</span>
                                         <h4>University of Oxford</h4>
@@ -205,12 +205,12 @@ const SettleAbroad = () => {
                                                 <p>$45k</p>
                                             </li>
                                         </ul>
-                                        <button>View University <img className="img-fluid" src="/assets/vtR.webp" /></button>
+                                        <button>View University <img className="img-fluid" src="/assets/vtR.webp" alt='view' /></button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        {/* <button className="seeAllBtn">See All <img className="img-fluid" src="/assets/vtR.webp" /></button> */}
+                        {/* <button className="seeAllBtn">See All <img className="img-fluid" src="/assets/vtR.webp" alt='view' /></button> */}
                     </div>
                 </div>
             </section>
@@ -266,7 +266,7 @@ const SettleAbroad = () => {
                                 </div>
                             </div>
                             <div className='verticalImg hideMobile'>
-                                <img className='img-fluid' src='/assets/ildt.webp' />
+                                <img className='img-fluid' src='/assets/ildt.webp' alt='ildt' />
                             </div>
                         </div>
                     </div>
@@ -295,14 +295,14 @@ const SettleAbroad = () => {
                                 </div>
                                 <div className='rightPrsCont'>
                                     <div className='verticalImg'>
-                                        <img className='img-fluid' src='/assets/settleAbroad/check_your_eligibility.webp' />
+                                        <img className='img-fluid' src='/assets/settleAbroad/check_your_eligibility.webp' alt='eligibility' />
                                     </div>
                                 </div>
                             </div>
                             <div className='inrScrollBox reverseMobile'>
                                 <div className='rightPrsCont'>
                                     <div className='verticalImg'>
-                                        <img className='img-fluid' src='/assets/settleAbroad/connect_wiith_a_licensed_consultant.webp' />
+                                        <img className='img-fluid' src='/assets/settleAbroad/connect_wiith_a_licensed_consultant.webp' alt='consultant' />
                                     </div>
                                 </div>
                                 <div className='leftprsCont'>
@@ -327,14 +327,14 @@ const SettleAbroad = () => {
                                 </div>
                                 <div className='rightPrsCont'>
                                     <div className='verticalImg'>
-                                        <img className='img-fluid' src='/assets/settleAbroad/ielts_preparation.webp'/>
+                                        <img className='img-fluid' src='/assets/settleAbroad/ielts_preparation.webp' alt='ielts'/>
                                     </div>
                                 </div>
                             </div>
                             <div className='inrScrollBox reverseMobile'>
                                 <div className='rightPrsCont'>
                                     <div className='verticalImg'>
-                                        <img className='img-fluid' src='/assets/settleAbroad/work_with_a_dedicated_team.webp' />
+                                        <img className='img-fluid' src='/assets/settleAbroad/work_with_a_dedicated_team.webp' alt='work with team' />
                                     </div>
                                 </div>
                                 <div className='leftprsCont'>
@@ -359,14 +359,14 @@ const SettleAbroad = () => {
                                 </div>
                                 <div className='rightPrsCont'>
                                     <div className='verticalImg'>
-                                        <img className='img-fluid' src='/assets/settleAbroad/submit_the_application.webp'/>
+                                        <img className='img-fluid' src='/assets/settleAbroad/submit_the_application.webp' alt='application'/>
                                     </div>
                                 </div>
                             </div>
                             <div className='inrScrollBox reverseMobile'>
                                 <div className='rightPrsCont'>
                                     <div className='verticalImg'>
-                                        <img className='img-fluid' src='/assets/settleAbroad/start_a_new_life.webp' />
+                                        <img className='img-fluid' src='/assets/settleAbroad/start_a_new_life.webp' alt="start" />
                                     </div>
                                 </div>
                                 <div className='leftprsCont'>
@@ -401,7 +401,7 @@ const SettleAbroad = () => {
                                                 <h5>Vignesh Macharla</h5>
                                                 <button>Engineer</button>
                                             </div>
-                                            <img className="img-fluid hpyRht" src="/assets/settleAbroad/vignesh-macharla.webp" />
+                                            <img className="img-fluid hpyRht" src="/assets/settleAbroad/vignesh-macharla.webp" alt='user image' />
                                         </div>
                                     </div>
                                 </div>
@@ -415,7 +415,7 @@ const SettleAbroad = () => {
                                                 <h5>Durgesh Kumar</h5>
                                                 <button>Doctor</button>
                                             </div>
-                                            <img className="img-fluid hpyRht" src="/assets/settleAbroad/durgesh-kumar.webp" />
+                                            <img className="img-fluid hpyRht" src="/assets/settleAbroad/durgesh-kumar.webp" alt='user image' />
                                         </div>
                                     </div>
                                 </div>
@@ -431,7 +431,7 @@ const SettleAbroad = () => {
                                                 <h5>Ronit Kakkar</h5>
                                                 <button>Investor</button>
                                             </div>
-                                            <img className="img-fluid hpyRht" src="/assets/settleAbroad/ronit-kakkar.webp" />
+                                            <img className="img-fluid hpyRht" src="/assets/settleAbroad/ronit-kakkar.webp" alt='user image' />
                                         </div>
                                     </div>
                                 </div>
@@ -445,7 +445,7 @@ const SettleAbroad = () => {
                                                 <h5>Chanak Gupta</h5>
                                                 <button>Nurse</button>
                                             </div>
-                                            <img className="img-fluid hpyRht" src="/assets/settleAbroad/chanak-gupta.webp" />
+                                            <img className="img-fluid hpyRht" src="/assets/settleAbroad/chanak-gupta.webp" alt='user image' />
                                         </div>
                                     </div>
                                 </div>
@@ -459,7 +459,7 @@ const SettleAbroad = () => {
                                                 <h5>Sanjay Kulkarni</h5>
                                                 <button>Architect</button>
                                             </div>
-                                            <img className="img-fluid hpyRht" src="/assets/settleAbroad/sanjay-kulkarni.webp" />
+                                            <img className="img-fluid hpyRht" src="/assets/settleAbroad/sanjay-kulkarni.webp" alt='user image' />
                                         </div>
                                     </div>
                                 </div>
@@ -475,7 +475,7 @@ const SettleAbroad = () => {
                                                 <h5>Tanu Kasal</h5>
                                                 <button>Doctor</button>
                                             </div>
-                                            <img className="img-fluid hpyRht" src="/assets/settleAbroad/tanu-kasal.webp" />
+                                            <img className="img-fluid hpyRht" src="/assets/settleAbroad/tanu-kasal.webp" alt='user image' />
                                         </div>
                                     </div>
                                 </div>
@@ -489,7 +489,7 @@ const SettleAbroad = () => {
                                                 <h5>Rakesh Shivhare</h5>
                                                 <button>Business Man</button>
                                             </div>
-                                            <img className="img-fluid hpyRht" src="/assets/settleAbroad/rakesh-shivhare.webp" />
+                                            <img className="img-fluid hpyRht" src="/assets/settleAbroad/rakesh-shivhare.webp" alt='user image' />
                                         </div>
                                     </div>
                                 </div>

@@ -147,16 +147,16 @@ const Contact = () => {
                             <p className="contSubPera">Have any queries? We would love to answer it for you.</p>
                             <ul className="contLst">
                                 <li>
-                                    <img className="img-fluid" src="/assets/mail1.svg" />
+                                    <img className="img-fluid" src="/assets/mail1.svg" alt='email' />
                                     <p>hello@getkeel.com</p>
                                 </li>
                                 <li>
-                                    <img className="img-fluid" src="/assets/call.svg" />
+                                    <img className="img-fluid" src="/assets/call.svg" alt='phone' />
                                     <p>+91-9810206875, +1-416-277-5284</p>
                                 </li>
                                 
                                 <li>
-                                    <img className="img-fluid" src="/assets/loc.svg" />
+                                    <img className="img-fluid" src="/assets/loc.svg" alt='location' />
                                     <div>
                                         <p><span className='p-bold'>Getkeel Migration Services India Private Limited,</span> JMD Empire Square
                                             201-202, Mehrauli-Gurgaon Road, A Block, DLF Phase 1, Sector 28, Sarhol, Haryana,
@@ -176,7 +176,7 @@ const Contact = () => {
                             <div className="inputForm mobileInp">
                                 <input type="text" ref={mobileRef} className={mobile ? 'activeInput' : ''} value={mobile} onChange={(e) => setVal({ mobile: e.target.value })} onKeyPress={(e) => handleKeyPress(e, emailRef)} />
                                 <label>Contact Number</label>
-                                <img className="img-fluid" src="/assets/ind.svg" />
+                                <img className="img-fluid" src="/assets/ind.svg" alt='india' />
                             </div>
                             <div className="inputForm">
                                 <input type="email" ref={emailRef} className={email ? 'activeInput' : ''} value={email} onChange={(e) => setVal({ email: e.target.value })} onKeyPress={(e) => handleKeyPress(e, msgRef)} />

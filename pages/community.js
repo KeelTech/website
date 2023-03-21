@@ -12,10 +12,10 @@ const Community = () => {
                             <h1>Join the World’s Largest Student Community!
                             </h1>
                             <ul className="ieltsListBan">
-                                <li> <img className="img-fluid" src="/assets/lstChk.svg" />Mentoring</li>
-                                <li> <img className="img-fluid" src="/assets/lstChk.svg" />Profile Building</li>
-                                <li> <img className="img-fluid" src="/assets/lstChk.svg" />Test Preparations</li>
-                                <li> <img className="img-fluid" src="/assets/lstChk.svg" />End to End Visa Solutions</li>
+                                <li> <img className="img-fluid" src="/assets/lstChk.svg" alt='check icon' />Mentoring</li>
+                                <li> <img className="img-fluid" src="/assets/lstChk.svg" alt='check icon' />Profile Building</li>
+                                <li> <img className="img-fluid" src="/assets/lstChk.svg" alt='check icon' />Test Preparations</li>
+                                <li> <img className="img-fluid" src="/assets/lstChk.svg" alt='check icon' />End to End Visa Solutions</li>
                             </ul>
                         </div>
                         <CommunityForm/>
@@ -26,7 +26,7 @@ const Community = () => {
                 <div className="container">
                     <div className="cmnuCont">
                         <div className="cmnuImgSec">
-                            <img className="img-fluid" src="/assets/feature-1.webp" />
+                            <img className="img-fluid" src="/assets/feature-1.webp" alt='feature' />
                         </div>
                         <div className="storyContent pl-30">
                             <h4 className="grdHdng">FORUM</h4>
@@ -41,7 +41,7 @@ const Community = () => {
                 <div className="container">
                     <div className="cmnuCont">
                         <div className="cmnuImgSec">
-                            <img className="img-fluid" src="/assets/feature-2.webp" />
+                            <img className="img-fluid" src="/assets/feature-2.webp" alt='feature' />
                         </div>
                         <div className="storyContent pl-30">
                             <h4 className="grdHdng">MENTORS</h4>
@@ -56,7 +56,7 @@ const Community = () => {
                 <div className="container">
                     <div className="cmnuCont">
                         <div className="cmnuImgSec">
-                            <img className="img-fluid" src="/assets/feature-3.webp" />
+                            <img className="img-fluid" src="/assets/feature-3.webp" alt='feature' />
                         </div>
                         <div className="storyContent pl-30">
                             <h4 className="grdHdng">WORK HARD</h4>
@@ -70,7 +70,7 @@ const Community = () => {
                 <div className="container">
                     <div className="cmnuCont">
                         <div className="cmnuImgSec">
-                            <img className="img-fluid" src="/assets/feature-4.webp" />
+                            <img className="img-fluid" src="/assets/feature-4.webp" alt='feature' />
                         </div>
                         <div className="storyContent pl-30">
                             <h4 className="grdHdng">ACHIEVE</h4>

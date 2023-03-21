@@ -56,17 +56,17 @@ const IELTS = () => {
                             <GetConsultationCTA ref={otpFormRef} hideText lead_origin='study' isIeltsView/>
                         </div>
                         <div className="studyBanImg">
-                            <img width='100%' height='100%' className="img-fluid forWeb" src="/assets/ielts-header-desktop.webp" />
-                            <img width='100%' height='100%' className="img-fluid forMobile" src="/assets/ielts-header.webp" />
+                            <img width='100%' height='100%' className="img-fluid forWeb" src="/assets/ielts-header-desktop.webp" alt='ielts' />
+                            <img width='100%' height='100%' className="img-fluid forMobile" src="/assets/ielts-header.webp" alt='ielts' />
                         </div>
                     </div>
                     <div className="bannerLast">
                         <p>We are certified by:</p>
                         <div className="banImgsGrid">
-                            <img width='100%' height='100%' alt='collobrated' src="/assets/cr1.webp" alt="" className="img-fluid" />
-                            <img width='100%' height='100%' alt='collobrated' src="/assets/cr2.webp" alt="" className="img-fluid" />
-                            <img width='100%' height='100%' alt='collobrated' src="/assets/cr3.webp" alt="" className="img-fluid" />
-                            <img width='100%' height='100%' alt='collobrated' src="/assets/cr4.webp" alt="" className="img-fluid" />
+                            <img width='100%' height='100%' alt='collobrated' src="/assets/cr1.webp"  className="img-fluid" />
+                            <img width='100%' height='100%' alt='collobrated' src="/assets/cr2.webp"  className="img-fluid" />
+                            <img width='100%' height='100%' alt='collobrated' src="/assets/cr3.webp"  className="img-fluid" />
+                            <img width='100%' height='100%' alt='collobrated' src="/assets/cr4.webp"  className="img-fluid" />
                         </div>
                     </div>
                 </div>

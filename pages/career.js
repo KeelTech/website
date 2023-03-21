@@ -28,7 +28,7 @@ const Career = () => {
                             <button onClick={handleExploreJobClick}>Explore Jobs</button>
                         </div>
                         <div className="studyBanImg">
-                            <img className="img-fluid" src="/assets/career-hero.webp" />
+                            <img className="img-fluid" src="/assets/career-hero.webp"  alt='career'/>
                         </div>
                     </div>
                 </div>
@@ -61,7 +61,7 @@ const Career = () => {
                                 <div className="prcStpIn">
                                     <span className="stepNum">Design</span>
                                     <h5>UI/UX Designer</h5>
-                                    <p className="subLoctn"><img className="img-fluid" src="/assets/mapIc.svg" /> Gurgaon/Remote
+                                    <p className="subLoctn"><img className="img-fluid" src="/assets/mapIc.svg" alt='map' /> Gurgaon/Remote
                                     </p>
                                     <p><strong>Experience:</strong> 2 - 4 Years</p>
                                     <p><strong>Skills:</strong> UX, Figma, Adobe</p>
@@ -80,7 +80,7 @@ const Career = () => {
                                 <div className="prcStpIn">
                                     <span className="stepNum">Development</span>
                                     <h5>Backend Developer</h5>
-                                    <p className="subLoctn"><img className="img-fluid" src="/assets/mapIc.svg" /> Gurgaon/Remote
+                                    <p className="subLoctn"><img className="img-fluid" src="/assets/mapIc.svg" alt='map icon' /> Gurgaon/Remote
                                     </p>
                                     <p><strong>Experience:</strong> 1 - 3 Years</p>
                                     <p><strong>Skills:</strong> Python, Mysql, Django</p>
@@ -99,7 +99,7 @@ const Career = () => {
                                 <div className="prcStpIn">
                                     <span className="stepNum">Development</span>
                                     <h5>Frontend Developer</h5>
-                                    <p className="subLoctn"><img className="img-fluid" src="/assets/mapIc.svg" />Gurgaon/Remote
+                                    <p className="subLoctn"><img className="img-fluid" src="/assets/mapIc.svg"  alt='maping'/>Gurgaon/Remote
                                     </p>
                                     <p><strong>Experience:</strong> 1 - 3 Years</p>
                                     <p><strong>Skills:</strong> React, Redux, HTML</p>

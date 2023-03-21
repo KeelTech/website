@@ -24,17 +24,17 @@ const StudyAbroad = () => {
                             <GetConsultationCTA />
                         </div>
                         <div className="studyBanImg">
-                            <img className="img-fluid stdyCutomImg" src="/assets/Frame-4-5.webp" />
+                            <img className="img-fluid stdyCutomImg" src="/assets/Frame-4-5.webp"  alt='frame icon'/>
                         </div>
                     </div>
                     <div className="bannerLast">
                         <p>Our students finished University to work at global offices of</p>
                         <div className="banImgsGrid">
-                            <img src="/assets/unvrscty5.webp" alt="" className="img-fluid" />
-                            <img src="/assets/unvrscty1.webp" alt="" className="img-fluid" />
-                            <img src="/assets/unvrscty2.webp" alt="" className="img-fluid" />
-                            <img src="/assets/unvrscty3.webp" alt="" className="img-fluid" />
-                            <img src="/assets/unvrscty4.webp" alt="" className="img-fluid" />
+                            <img src="/assets/unvrscty5.webp" alt="university" className="img-fluid" />
+                            <img src="/assets/unvrscty1.webp" alt="university" className="img-fluid" />
+                            <img src="/assets/unvrscty2.webp" alt="university" className="img-fluid" />
+                            <img src="/assets/unvrscty3.webp" alt="university" className="img-fluid" />
+                            <img src="/assets/unvrscty4.webp" alt="university" className="img-fluid" />
                         </div>
                     </div>
                 </div>

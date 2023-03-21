@@ -1339,11 +1339,17 @@ img.sideBarLogo {
 }
 
 #menu li {
-  /* border-bottom: 1px solid #f1f1f1; */
-  padding: 5px 10px;
+  border-bottom: 1px solid #f1f1f1;
+  padding: 12px 10px;
   padding-left: 20px;
 }
-
+#menu li:last-child {
+  border-bottom: none;
+}
+.mainLogo
+{
+  padding: 0px !important;
+}
 #menu li a {
   font-size: 14px;
 }
@@ -1411,6 +1417,7 @@ img.sideBarLogo {
   margin: 0;
   height: 100%;
   width: 100%;
+  gap: 0px;
 }
 
 .inputChecked {

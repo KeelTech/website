@@ -177,10 +177,10 @@ const HomeView = ({ blogsList }) => {
 }
 
 export async function getServerSideProps() {
-    const blogsList = await getBlogsList({})
+    const blogsList = await getBlogsList({});
     return {
         props: {
-            blogsList
+            blogsList: blogsList||[]
         }
     }
 }

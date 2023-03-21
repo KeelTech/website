@@ -173,7 +173,7 @@ export async function getServerSideProps() {
     const blogsList = await getBlogsList({})
     return {
         props: {
-            blogsList
+            blogsList: blogsList||[]
         }
     }
 }

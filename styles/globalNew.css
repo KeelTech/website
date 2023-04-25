@@ -3430,3 +3430,112 @@ button.loginHead {
   background: black ;
   margin-left: auto;
 }
+
+
+.CrsChatOuterCont {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.CrsChatLeft {
+  width: 50%;
+}
+
+.chatApiCrs {
+  background: #FFFFFF;
+  box-shadow: 1px 4px 82px rgba(0, 0, 0, 0.05);
+  border-radius: 40px;
+  border: 1px solid #C18BBD;
+}
+
+.crsChatHd {
+  border-top-left-radius: 32px;
+  border-top-right-radius: 32px;
+  background: linear-gradient(90deg, #C18BBD 0%, #2F7CDE 49.9%);
+  color: white;
+  padding: 10px  20px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.crsChatBody {
+  min-height: 160px;
+  padding: 12px;
+}
+
+.crsChatFoot input {
+  padding: 8px;
+  border: 1.00183px solid #307DDF;
+  border-radius: 8.01468px;
+  width: 100%;
+}
+
+.crsChatFoot {
+  padding: 20px;
+}
+
+.crsChatRight h4 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.crsChatRight ul li {
+  display: flex;
+  gap: 10px;
+  background: #FFFFFF;
+  box-shadow: 0px 2.14493px 28.9565px rgba(17, 90, 158, 0.09);
+  border-radius: 52.6379px;
+  padding: 15px 10px;
+}
+
+.crsChatRight ul {
+  display: flex;
+  flex-flow: column;
+  gap: 20px;
+}
+
+p.CrsmidParaGraph {
+  margin: 30px 0px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #57606A;
+  line-height: 22px;
+}
+
+button.crsMidBtn {
+  border: none;
+  min-width: 190px;
+  padding: 13px 36px;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  /* background: linear-gradient(90deg, #45BFA2 0%, #7FC8BB 99.79%), linear-gradient(270deg, #45A9BF 0.21%, #93B6D6 100%), linear-gradient(90deg, #C18BBD 1.59%, #2F7CDE 84.61%); */
+  background: linear-gradient(90deg, #5e98e1 1.59%, #2F7CDE 84.61%);
+  box-shadow: 2px 1px 6px #626262c7, 4px 3px 8px #62626212, inset -2px -2px 0px #00000026;
+  display: block;
+  margin: auto;
+}
+
+.crsAcrdPanel.pl-30 {
+  width: 50%;
+}
+
+.crsAcrdPanel.pl-30 h5 {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.cmnuImgSec .acrdnGridsCont {
+  margin-top: 0px;
+}
+
+.crsAcrdPanel .acrdnGridsCont {
+  margin-top: 10px;
+}
+
+.crsAcrdPanel .acrdnGridsCont .acrdGrd {
+  width: 100%;
+}

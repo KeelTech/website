@@ -1,18 +1,12 @@
-// Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
-
 import Accordian from '@/components/Accordian/newAccordian';
-import { StudyAbroadAccordianData } from '@/helpers/constant.js'
-import GetConsultationCTA from '@/components/GetConsultationCTA';
+import { StudyAbroadAccordianData, FactorsCalculatingAccordian1, FactorsCalculatingAccordian2, FactorsCalculatingAccordian3 } from '@/helpers/constant.js'
 import { useRouter } from 'next/router';
+import CustomChatWidget from '@/components/CustomChatWidget';
+import { getBlogsList } from '@/actions/index.js';
+import BlogNewView from '@/components/BlogsView/BlogNewView';
 
-
-// Import Swiper styles
-import 'swiper/css';
 const CrsScore = ({ blogsList }) => {
     const router = useRouter()
-
-    const blogData = blogsList?.data ?? [];
 
     return (
         <>
@@ -25,17 +19,19 @@ const CrsScore = ({ blogsList }) => {
                     </div>
                     <div className='CrsChatOuterCont'>
                         <div className='CrsChatLeft'>
-                            <div className='chatApiCrs'>
+                            {/* <div className='chatApiCrs'>
                                 <div className='crsChatHd'>
                                     Determine your chances of getting a Canadian PR right away!
                                 </div>
+                                <CustomChatWidget newChat/>
                                 <div className='crsChatBody'>
 
                                 </div>
                                 <div className='crsChatFoot'>
                                     <input type="text" placeholder='john' />
                                 </div>
-                            </div>
+                            </div> */}
+                            <CustomChatWidget newChat/>
                         </div>
                         <div className='crsChatRight'>
                             <h4> This CRS tool is:</h4>
@@ -128,40 +124,7 @@ const CrsScore = ({ blogsList }) => {
                         </div>
                         <div className="crsAcrdPanel pl-30">
                             <h5>Factors for calculating CRS scores are divided into four categories: </h5>
-                            <div class="acrdnGridsCont">
-                                <div class="acrdGrd acrdAct">
-                                    <h3>What is Webflow and why is it the best website builder?
-                                        <span> <img class="img-fluid" src="assets/acrdIco.svg" /></span>
-                                    </h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                        laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                </div>
-                                <div class="acrdGrd">
-                                    <h3>What is Webflow and why is it the best website builder?
-                                        <span> <img class="img-fluid" src="assets/acrdIco.svg" /></span>
-                                    </h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                        laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                </div>
-                                <div class="acrdGrd">
-                                    <h3>What is Webflow and why is it the best website builder?
-                                        <span> <img class="img-fluid" src="assets/acrdIco.svg" /></span>
-                                    </h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                        laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                </div>
-                                <div class="acrdGrd">
-                                    <h3>What is Webflow and why is it the best website builder?
-                                        <span> <img class="img-fluid" src="assets/acrdIco.svg" /></span>
-                                    </h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                        laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                </div>
-                            </div>
+                            <Accordian data={FactorsCalculatingAccordian1} />
                         </div>
                     </div>
                 </div>
@@ -171,40 +134,7 @@ const CrsScore = ({ blogsList }) => {
                     <div className="cmnuCont">
                         <div className="crsAcrdPanel pl-30">
                             <h5>Factors for calculating CRS scores are divided into four categories: </h5>
-                            <div class="acrdnGridsCont">
-                                <div class="acrdGrd acrdAct">
-                                    <h3>What is Webflow and why is it the best website builder?
-                                        <span> <img class="img-fluid" src="assets/acrdIco.svg" /></span>
-                                    </h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                        laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                </div>
-                                <div class="acrdGrd">
-                                    <h3>What is Webflow and why is it the best website builder?
-                                        <span> <img class="img-fluid" src="assets/acrdIco.svg" /></span>
-                                    </h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                        laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                </div>
-                                <div class="acrdGrd">
-                                    <h3>What is Webflow and why is it the best website builder?
-                                        <span> <img class="img-fluid" src="assets/acrdIco.svg" /></span>
-                                    </h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                        laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                </div>
-                                <div class="acrdGrd">
-                                    <h3>What is Webflow and why is it the best website builder?
-                                        <span> <img class="img-fluid" src="assets/acrdIco.svg" /></span>
-                                    </h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                        laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                </div>
-                            </div>
+                            <Accordian data={FactorsCalculatingAccordian2} />
                         </div>
                         <div className="cmnuImgSec">
                             <img className="img-fluid" src="/assets/feature-1.webp" />
@@ -233,40 +163,7 @@ const CrsScore = ({ blogsList }) => {
                         </div>
                         <div className="crsAcrdPanel pl-30">
                             <h5>Factors for calculating CRS scores are divided into four categories: </h5>
-                            <div class="acrdnGridsCont">
-                                <div class="acrdGrd acrdAct">
-                                    <h3>What is Webflow and why is it the best website builder?
-                                        <span> <img class="img-fluid" src="assets/acrdIco.svg" /></span>
-                                    </h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                        laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                </div>
-                                <div class="acrdGrd">
-                                    <h3>What is Webflow and why is it the best website builder?
-                                        <span> <img class="img-fluid" src="assets/acrdIco.svg" /></span>
-                                    </h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                        laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                </div>
-                                <div class="acrdGrd">
-                                    <h3>What is Webflow and why is it the best website builder?
-                                        <span> <img class="img-fluid" src="assets/acrdIco.svg" /></span>
-                                    </h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                        laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                </div>
-                                <div class="acrdGrd">
-                                    <h3>What is Webflow and why is it the best website builder?
-                                        <span> <img class="img-fluid" src="assets/acrdIco.svg" /></span>
-                                    </h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                        laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                </div>
-                            </div>
+                            <Accordian data={FactorsCalculatingAccordian3} />
                         </div>
                     </div>
                 </div>
@@ -307,6 +204,7 @@ const CrsScore = ({ blogsList }) => {
                     </div>
                 </div>
             </section>
+            <BlogNewView blogsList={blogsList} showHighlighted />
             <section className="faqSection">
                 <div className="container">
                     <div className="storyContent full-width text-center">
@@ -325,6 +223,15 @@ const CrsScore = ({ blogsList }) => {
             </section>
         </>
     )
+}
+
+export async function getServerSideProps() {
+    const blogsList = await getBlogsList({});
+    return {
+        props: {
+            blogsList: blogsList||[]
+        }
+    }
 }
 
 export default CrsScore;

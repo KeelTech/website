@@ -4,7 +4,6 @@ import { useRouter } from 'next/router';
 import CustomChatWidget from '@/components/CustomChatWidget';
 import { getBlogsList } from '@/actions/index.js';
 import BlogNewView from '@/components/BlogsView/BlogNewView';
-
 const CrsScore = ({ blogsList }) => {
     const router = useRouter()
 
@@ -37,19 +36,19 @@ const CrsScore = ({ blogsList }) => {
                             <h4> This CRS tool is:</h4>
                             <ul>
                                 <li>
-                                    <img src='' className='img-fluid' />
+                                    <img src='/assets/check.png' className='img-fluid' />
                                     <div className='crsLstPera'>
                                         <p>fast (get your scores in under 30 seconds)</p>
                                     </div>
                                 </li>
                                 <li>
-                                    <img src='' className='img-fluid' />
+                                    <img src='/assets/check.png' className='img-fluid' />
                                     <div className='crsLstPera'>
                                         <p>efficient in estimating your scores</p>
                                     </div>
                                 </li>
                                 <li>
-                                    <img src='' className='img-fluid' />
+                                    <img src='/assets/check.png' className='img-fluid' />
                                     <div className='crsLstPera'>
                                         <p>free and confidential</p>
                                     </div>
@@ -75,10 +74,10 @@ const CrsScore = ({ blogsList }) => {
                                     <img className="img-fluid" src="/assets/feature-3.webp" alt='feature' />
                                 </div>
                                 <div className="divider"></div>
-                                <div className='cstmFootJob'>
+                                <div className='cstmFootJob crsFoot'>
                                     <p>Canadian Experience Class (CEC)
                                     </p>
-                                    <button className="aplyNbtn">Know More </button>
+                                    {/* <button className="aplyNbtn">Know More </button> */}
                                 </div>
                             </div>
                         </div>
@@ -88,10 +87,10 @@ const CrsScore = ({ blogsList }) => {
                                     <img className="img-fluid" src="/assets/feature-3.webp" alt='feature' />
                                 </div>
                                 <div className="divider"></div>
-                                <div className='cstmFootJob'>
+                                <div className='cstmFootJob crsFoot'>
                                     <p>Canadian Experience Class (CEC)
                                     </p>
-                                    <button className="aplyNbtn">Know More </button>
+                                    {/* <button className="aplyNbtn">Know More </button> */}
                                 </div>
                             </div>
                         </div>
@@ -101,10 +100,10 @@ const CrsScore = ({ blogsList }) => {
                                     <img className="img-fluid" src="/assets/feature-3.webp" alt='feature' />
                                 </div>
                                 <div className="divider"></div>
-                                <div className='cstmFootJob'>
+                                <div className='cstmFootJob crsFoot'>
                                     <p>Canadian Experience Class (CEC)
                                     </p>
-                                    <button className="aplyNbtn">Know More </button>
+                                    {/* <button className="aplyNbtn">Know More </button> */}
                                 </div>
                             </div>
                         </div>
@@ -119,10 +118,7 @@ const CrsScore = ({ blogsList }) => {
             <section className="communitySection">
                 <div className="container">
                     <div className="cmnuCont">
-                        <div className="cmnuImgSec">
-                            <img className="img-fluid" src="/assets/feature-1.webp" />
-                        </div>
-                        <div className="crsAcrdPanel pl-30">
+                    <div class="storyContent full-width text-center">
                             <h5>Factors for calculating CRS scores are divided into four categories: </h5>
                             <Accordian data={FactorsCalculatingAccordian1} />
                         </div>
@@ -164,42 +160,6 @@ const CrsScore = ({ blogsList }) => {
                         <div className="crsAcrdPanel pl-30">
                             <h5>Factors for calculating CRS scores are divided into four categories: </h5>
                             <Accordian data={FactorsCalculatingAccordian3} />
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section className="resourceSection">
-                <div className="container">
-                    <div className="resrcCont">
-                        <div className="storyContent full-width">
-                            <h4 className="grdHdng">Guides</h4>
-                            <div className="subheadWithBtn">
-                                <h5>Keel <span>Guides</span></h5>
-                                <button>See All <img className="img-fluid" src="/assets/arrowDark.svg" /></button>
-                            </div>
-                            <p>We believe with right exposure you can do wonders for yourself and your family hence we help you make choices that</p>
-                        </div>
-                        <div className="serviceSlider customGrdnGrids">
-                            <div className="srvcGrid">
-                                <img className="img-fluid keelWhiteLog" src="/assets/keelWhite.svg" />
-                                <h5>Cost of Studying in Canada</h5>
-                                {/* <!-- <button>Know more<img className="img-fluid" src="/assets/arrow.svg"></button> --> */}
-                            </div>
-                            <div className="srvcGrid grdntTwo">
-                                <img className="img-fluid keelWhiteLog" src="/assets/keelWhite.svg" />
-                                <h5>Cost of Studying in Canada</h5>
-                                {/* <!-- <button>Know more<img className="img-fluid" src="/assets/arrow.svg"></button> --> */}
-                            </div>
-                            <div className="srvcGrid gdntThird">
-                                <img className="img-fluid keelWhiteLog" src="/assets/keelWhite.svg" />
-                                <h5>Cost of Studying in Canada</h5>
-                                {/* <!-- <button>Know more<img className="img-fluid" src="/assets/arrow.svg"></button> --> */}
-                            </div>
-                            <div className="srvcGrid">
-                                <img className="img-fluid keelWhiteLog" src="/assets/keelWhite.svg" />
-                                <h5>Cost of Studying in Canada</h5>
-                                {/* <!-- <button>Know more<img className="img-fluid" src="/assets/arrow.svg"></button> --> */}
-                            </div>
                         </div>
                     </div>
                 </div>

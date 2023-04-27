@@ -3440,6 +3440,14 @@ button.loginHead {
 
 .CrsChatLeft {
   width: 50%;
+  min-height: 420px;
+}
+.crsChatRight {
+  padding-left: 60px;
+}
+
+.crsChatRight ul {
+  margin-top: 40px;
 }
 
 .chatApiCrs {
@@ -3476,7 +3484,7 @@ button.loginHead {
 }
 
 .crsChatRight h4 {
-  font-size: 16px;
+  font-size:22px;
   font-weight: 500;
   margin-bottom: 10px;
 }
@@ -3488,8 +3496,11 @@ button.loginHead {
   box-shadow: 0px 2.14493px 28.9565px rgba(17, 90, 158, 0.09);
   border-radius: 52.6379px;
   padding: 15px 10px;
+  align-items: center;
 }
-
+.crsFoot{
+  min-height: auto;
+}
 .crsChatRight ul {
   display: flex;
   flex-flow: column;
@@ -3524,8 +3535,9 @@ button.crsMidBtn {
 }
 
 .crsAcrdPanel.pl-30 h5 {
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 500;
+  margin-bottom: 30px;
 }
 
 .cmnuImgSec .acrdnGridsCont {
@@ -3538,4 +3550,26 @@ button.crsMidBtn {
 
 .crsAcrdPanel .acrdnGridsCont .acrdGrd {
   width: 100%;
+}
+
+@media (max-width:992px) {
+  .CrsChatOuterCont {
+    flex-wrap: wrap;
+}
+
+.CrsChatLeft {
+    width: 100%;
+}
+
+.crsChatRight {
+    padding: 0;
+}
+
+.crsAcrdPanel.pl-30 {
+    width: 100%;
+    padding: 0px !important;
+}
+.crsChatRight ul li img {
+  width: 50px;
+}
 }

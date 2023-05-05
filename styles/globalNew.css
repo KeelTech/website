@@ -3573,3 +3573,60 @@ button.crsMidBtn {
   width: 50px;
 }
 }
+/* ================ */
+.CrsChatOuterCont {
+  padding: 80px 0px 30px;
+  background: url(/assets/map.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+}
+.prcStpIn.crsPtrs{
+  text-align: center;
+}
+p.crsWallPera {
+  margin-top: 30px;
+  font-size: 14px;
+}
+p.subParaNew {
+  margin: 25px 0;
+}
+p.subParaNew {
+  margin: 12px 0;
+}
+.tableAcrd {
+  width: 100%;
+}
+.tableAcrd {
+  margin: 20px 0;
+}
+
+.crsAcrdPanel.tableouterAcrd {
+  width: 80%;
+  margin: auto;
+}
+table tr th,table tr td {
+  border: 1px solid #d4d4d4;
+  padding: 6px;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+@media (max-width:767px) {
+  .prcStpIn.crsPtrs {
+    text-align: center;
+}
+
+.crsAcrdPanel.tableouterAcrd {
+    width: 100%;
+}
+
+p.subParaNew {
+    font-size: 12px;
+}
+
+}

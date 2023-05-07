@@ -3546,12 +3546,26 @@ button.crsMidBtn {
 
 .crsAcrdPanel .acrdnGridsCont {
   margin-top: 10px;
+  margin-bottom: 30px;
 }
 
 .crsAcrdPanel .acrdnGridsCont .acrdGrd {
   width: 100%;
 }
 
+.crsAcrdPanel .acrdnGridsCont .acrdGrd h3 span img {
+  filter: grayscale(1);
+}
+
+.crsAcrdPanel .acrdnGridsCont .acrdGrd:last-child {
+  border-bottom: none;
+}
+.crsAcrdPanel .acrdnGridsCont .acrdGrd {
+  padding: 5px 0;
+  box-shadow: none;
+  border-bottom: 1px solid #E9E9E9;
+  border-radius: 0px;
+}
 @media (max-width:992px) {
   .CrsChatOuterCont {
     flex-wrap: wrap;

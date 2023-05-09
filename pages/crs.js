@@ -4,14 +4,28 @@ import { useRouter } from 'next/router';
 import CustomChatWidget from '@/components/CustomChatWidget';
 import { getBlogsList } from '@/actions/index.js';
 import BlogNewView from '@/components/BlogsView/BlogNewView';
+import GetConsultationCTA from '@/components/GetConsultationCTA';
+import React from 'react';
+
 const CrsScore = ({ blogsList }) => {
     const router = useRouter()
+
+    const otpFormRef = React.useRef();
+
+    const openLeadForm = ()=>{
+        otpFormRef.current.openPopup();
+    }
+
+    const handleScroll = ()=>{
+        document.getElementById('chat-widget-crs').scrollIntoView();
+    }
 
     return (
         <>
             <section className='happyCustomers'>
+                <GetConsultationCTA ref={otpFormRef} hideText lead_origin='homepage'/>
                 <div className='container'>
-                    <div className="storyContent full-width text-center">
+                    <div className="storyContent full-width text-center" id="chat-widget-crs">
                         <h4 className="grdHdng">CRS</h4>
                         <h5>CRS score calculator</h5>
                         <p>Use this CRS score calculator  to estimate your CRS scores in seconds.</p>
@@ -114,7 +128,9 @@ const CrsScore = ({ blogsList }) => {
                     <p className='CrsmidParaGraph'>
                         Once the IRCC sets the cut-off CRS score, candidates with CRS scores above the cutoff are invited through a randomized draw. This happens every two weeks and the cutoff may change for every cycle as well. Selected Express Entry candidates will be offered an Invitation to Apply (ITA). The candidates can fill in and submit their PR applications within 60 days from the date they have received the ITA.
                     </p>
-                    <button className='crsMidBtn'>Calculate Your CRS Now</button>
+                    <button className='crsMidBtn' onClick={handleScroll}>Calculate Your CRS Now</button>
+                    <button className='crsMidBtn' onClick={openLeadForm}>Schedule a call with expert</button>
+                    <button className='crsMidBtn' onClick={openLeadForm}>Get Personalise Tips</button>
                 </div>
             </section>
             <section className="communitySection">

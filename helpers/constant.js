@@ -62,7 +62,8 @@ export const StudyAbroadAccordianData = [
         ques: 'What are the benefits of study abroad?',
         ans: "<p>Ten benefits to studying abroad <ol><li>See the World and truly become a global citizen with a better future for the upcoming generations.</li><li>World-class education with a diverse community of people.</li><li>Take in a New Culture.</li><li>Hone Your Language Skills.</li><li>Lucrative Career Opportunities from top companies in the world.</li><li>Find New Interests.</li><li>Make Lifelong Friends.</li><li>Personal Development.</li><li>Be a part of global alumni network.</li><li>Life experiences that can help you in your personal and professional growth.</li></ol></p>",
         isHtml: true
-    },
+    }
+    ,
     {
         ques: 'Why do I need application assistance?',
         ans: "The foremost thing to know before deciding to go for professional help is that your dream university might not appreciate a sloppily filled application with avoidable mistakes. Such small things could not only lead to rejection but also can lower your chances of fulfilling your study abroad dream. Keel has a team of experts who have years of experience in filing study abroad application. Our team walks you through the entire process and review everything minutely to make sure there is no error. "
@@ -168,28 +169,29 @@ export const FactorsCalculatingAccordian1 = [
         ques: ' Additional factors',
         ans: "This includes all other factors such as provincial nomination programs, arranged employment, and French language skills. The maximum number of points in this category is 600 points.",
         isHtml: true
-    },
-    {
-        ques: 'Why do I need application assistance?',
-        ans: "The foremost thing to know before deciding to go for professional help is that your dream university might not appreciate a sloppily filled application with avoidable mistakes. Such small things could not only lead to rejection but also can lower your chances of fulfilling your study abroad dream. Keel has a team of experts who have years of experience in filing study abroad application. Our team walks you through the entire process and review everything minutely to make sure there is no error. "
     }
+    // ,
+    // {
+    //     ques: 'Why do I need application assistance?',
+    //     ans: "The foremost thing to know before deciding to go for professional help is that your dream university might not appreciate a sloppily filled application with avoidable mistakes. Such small things could not only lead to rejection but also can lower your chances of fulfilling your study abroad dream. Keel has a team of experts who have years of experience in filing study abroad application. Our team walks you through the entire process and review everything minutely to make sure there is no error. "
+    // }
 ]
 
 export const FactorsCalculatingAccordian2 = [
     {
-        ques: 'Determines your CRS score:',
+        ques: 'Determines your CRS score',
         ans: "The CRS score calculator is a tool that estimates your CRS score as well as your ranking in comparison to other applicants. This score indicates your potential to become a successful permanent resident of Canada. The higher your CRS score, the more likely you are to be selected for immigration to Canada."
     },
     {
-        ques: 'Provides transparency:',
+        ques: 'Provides transparency',
         ans: "The CRS tool provides transparency allowing the applicant to gauge where they stand when compared to other applicants. This helps applicants decide on how to improve their scores and understand where they are falling short."
     },
     {
-        ques: 'Estimates the immigration programs you could qualify for:',
+        ques: 'Estimates the immigration programs you could qualify for',
         ans: "The CRS score calculator also helps you estimate which immigration programs you could be eligible for based on your CRS score. Canada offers various immigration programs, such as the Federal Skilled Worker Program, the Canadian Experience Class, and the Provincial Nominee Program. Applicants can then apply to these programs or try to improve their scores to be eligible for such programs."
     },
     {
-        ques: 'Allows you to improve your CRS score:',
+        ques: 'Allows you to improve your CRS score',
         ans: "The Canada CRS calculator also provides suggestions on improving your CRS score. For example, you can improve your score by improving your language proficiency, obtaining higher education, gaining more work experience, or obtaining a job offer from a Canadian employer.",
         isHtml: true
     }
@@ -202,7 +204,7 @@ export const FactorsCalculatingAccordian3 = [
     },
     {
         ques: 'Work experience',
-        ans: "<p>Maximum points: 70; if applying without spouse/ common-law partner: 80</p><p>Canadian work experience is valued more than foreign work experience. Work experience of less than one year earns no points. The breakdown of points for Canadian work experience as per the years of experience is stated below:-</p><div class='tableAcrd'><table><tr><th>Years</th><th>With a spouse or common-law partner</th><th>Without a spouse or common-law partner</th></tr><tr><td>1</td><td>35</td><td>40</td></tr><tr><td>2</td><td>46</td><td>53</td></tr><tr><td>3</td><td>56</td><td>64</td></tr><tr><td>4</td><td>63</td><td>72</td></tr><tr><td>5 or more</td><td>70</td><td>80</td></tr></table></div><p>Foreign work experience paired with official language proficiency of CLB level 7 or more is considered. The number of points allotted as per the work experience is as follows:-</p><div class='tableAcrd'><table><tr><th>Years (Foreign work experience)</th><th>For CLB level 7 or more in all first official language abilities (at least one above 9)</th><th>For CLB level 9 or more in all first official language abilities</th></tr><tr><td>1 to 2</td><td>1 to 2</td><td>25</td></tr><tr><td>3 or more</td><td>25</td><td>50</td></tr></table></div>",isHtml: true
+        ans: "<p>Maximum points: 70; if applying without spouse/ common-law partner: 80</p><p>Canadian work experience is valued more than foreign work experience. Immigrants get additional points for their work experience in Canada that increases every year by a fixed number of points till 5 years. After 5 years there are no additional points for Canadian work experience. Work experience of less than one year does not help your CRS scores. The breakdown of points for Canadian work experience as per the years of experience is stated below:-</p><div class='tableAcrd'><table><tr><th>Years</th><th>With a spouse or common-law partner</th><th>Without a spouse or common-law partner</th></tr><tr><td>1</td><td>35</td><td>40</td></tr><tr><td>2</td><td>46</td><td>53</td></tr><tr><td>3</td><td>56</td><td>64</td></tr><tr><td>4</td><td>63</td><td>72</td></tr><tr><td>5 or more</td><td>70</td><td>80</td></tr></table></div><p>Foreign work experience paired with official language proficiency of CLB level 7 or more is considered. The number of points allotted as per the work experience is as follows:-</p><div class='tableAcrd'><table><tr><th>Years (Foreign work experience)</th><th>For CLB level 7 or more in all first official language abilities (at least one above 9)</th><th>For CLB level 9 or more in all first official language abilities</th></tr><tr><td>1 to 2</td><td>1 to 2</td><td>25</td></tr><tr><td>3 or more</td><td>25</td><td>50</td></tr></table></div>",isHtml: true
     },
     {
         ques: 'Age factor',
@@ -236,24 +238,24 @@ export const FactorsCalculatingAccordian3 = [
 ]
 export const FactorsCalculatingAccordian4 = [
     {
-        ques: 'Improve language test scores:',
+        ques: 'Improve language test scores',
         ans: "Improve scores for language tests like IELTS (for English) to add up to 136 points to the CRS score. Scoring well in French language tests can get applicants up to 50 points more. Use the CRS calculator to gauge how your language scores can improve your overall score. Improving language proficiency is one of the easiest and fastest ways to improve CRS scores."
     },
     {
-        ques: 'Apply for a job in Canada:',
+        ques: 'Apply for a job in Canada',
         ans: "If the applicant gets an LMIA (Labor Market Impact Assessment) approved job offer, they can receive up to 200 CRS points. Moreover, Canadian work experience is more valued and would get the candidate more points. While this is a time-consuming process, it is also very beneficial and would improve your chances of getting an ITA."
     },
     {
-        ques: 'Canadian education:',
+        ques: 'Canadian education',
         ans: "Studying in Canada can be beneficial. Applicants can add up to 30 points if they get a degree or diploma from a recognized Canadian college/ university. Higher-level degrees can help gain more points."
     },
     {
-        ques: 'Provincial Nominee Program:',
+        ques: 'Provincial Nominee Program',
         ans: "Provincial nomination gets candidates up to 600 points, making it one of the most valuable factors. If candidates can, they must attempt to receive a provincial or territorial nomination.",
         isHtml: true
     },
     {
-        ques: 'Work experience:',
+        ques: 'Work experience',
         ans: "Work experience is one of the easiest ways to gain points.  An applicant can gain the most points with foreign work experience of 3 years or more. This score can be boosted further by increasing Canadian work experience. The details of work experience and points allotted are described in the table above. ",
         isHtml: true
     }

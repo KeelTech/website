@@ -1,5 +1,5 @@
 import Accordian from '@/components/Accordian/newAccordian';
-import { StudyAbroadAccordianData, FactorsCalculatingAccordian1, FactorsCalculatingAccordian2, FactorsCalculatingAccordian3,FactorsCalculatingAccordian4 } from '@/helpers/constant.js'
+import { StudyAbroadAccordianData, FactorsCalculatingAccordian1, FactorsCalculatingAccordian2, FactorsCalculatingAccordian3, FactorsCalculatingAccordian4 } from '@/helpers/constant.js'
 import { useRouter } from 'next/router';
 import CustomChatWidget from '@/components/CustomChatWidget';
 import { getBlogsList } from '@/actions/index.js';
@@ -56,7 +56,7 @@ const CrsScore = ({ blogsList }) => {
                             </ul>
                         </div>
                     </div>
-                    <p className='crsWallPera'>Determine your chances of getting a Canadian PR right away! </p>
+                    {/* <p className='crsWallPera'>Determine your chances of getting a Canadian PR right away! </p> */}
                 </div>
             </section>
             <section className='universitiesSection'>
@@ -68,6 +68,7 @@ const CrsScore = ({ blogsList }) => {
                     </p>
                     <p className='CrsmidParaGraph'>
                         The Canada Express Entry Program is used by the federal government of Canada to attract skilled workers from foreign countries. It is the most sought-after federal immigration program in Canada.</p>
+                    <p className='CrsmidParaGraph'>The <strong>CRS</strong> or <strong>Canada Express Entry Score</strong> is applicable for candidates who are under the following programs -</p>
                     <div className="universitiesGridCont threeGrid" >
                         <div className="processStepGrid">
                             <div className="prcStpIn crsPtrs">
@@ -163,10 +164,10 @@ const CrsScore = ({ blogsList }) => {
                     <div className="cmnuCont">
                         <div className="crsAcrdPanel tableouterAcrd">
                             <Accordian data={FactorsCalculatingAccordian3} />
-                            
-                           {/* ==== */}
-                          
-                           {/* ==== */}
+
+                            {/* ==== */}
+
+                            {/* ==== */}
                         </div>
                     </div>
                 </div>
@@ -174,16 +175,16 @@ const CrsScore = ({ blogsList }) => {
             <section className="communitySection">
                 <div className="container">
                     <div className="cmnuCont">
-                    <div className="cmnuImgSec">
+                        <div className="cmnuImgSec">
                             <img className="img-fluid" src="/assets/tips.webp" />
                         </div>
                         <div className="crsAcrdPanel pl-30">
                             <h5>Tips to improve CRS scores
- </h5>
+                            </h5>
                             <p className='CrsmidParaGraph'>Candidates can check CRS scores using the <strong>CRS points calculator</strong> above to get an idea of the areas they may need to improve upon. Below are a few points that candidates can use to improve their scores and rank higher.
-</p>
+                            </p>
                             <Accordian data={FactorsCalculatingAccordian4} />
-                            
+
                         </div>
                     </div>
                 </div>

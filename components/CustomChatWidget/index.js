@@ -163,7 +163,7 @@ const CustomChatWidget = ({newChat})=>{
             <section className="msger">
                 <header className="msger-header">
                     <div className="msger-header-title">
-                        <i className="fas fa-comment-alt"></i>Start Chat
+                        <i className="fas fa-comment-alt"></i>Determine your chances of getting a Canadian PR right away!
                     </div>
                     <div className="msger-header-options">
                         <span><i className="fas fa-cog"></i></span>

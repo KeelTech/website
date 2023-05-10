@@ -96,6 +96,9 @@ ul li {
 .justify-center {
   justify-content: center;
 }
+.ml-0{
+  margin-left: 0px !important;
+}
 
 .p-relative {
   position: relative !important;

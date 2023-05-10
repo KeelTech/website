@@ -129,8 +129,8 @@ const CrsScore = ({ blogsList }) => {
                         Once the IRCC sets the cut-off CRS score, candidates with CRS scores above the cutoff are invited through a randomized draw. This happens every two weeks and the cutoff may change for every cycle as well. Selected Express Entry candidates will be offered an Invitation to Apply (ITA). The candidates can fill in and submit their PR applications within 60 days from the date they have received the ITA.
                     </p>
                     <button className='crsMidBtn' onClick={handleScroll}>Calculate Your CRS Now</button>
-                    <button className='crsMidBtn' onClick={openLeadForm}>Schedule a call with expert</button>
-                    <button className='crsMidBtn' onClick={openLeadForm}>Get Personalise Tips</button>
+                    
+                   
                 </div>
             </section>
             <section className="communitySection">
@@ -155,6 +155,7 @@ const CrsScore = ({ blogsList }) => {
                             <h5>Canada Express Entry Points calculator can help assess your eligibility </h5>
                             <p className='CrsmidParaGraph'>Learn how the Canada Express Entry Points calculator can help you evaluate your eligibility.</p>
                             <Accordian data={FactorsCalculatingAccordian2} />
+                            <button className='crsMidBtn ml-0' onClick={openLeadForm}>Schedule a call with expert</button>
                         </div>
                         <div className="cmnuImgSec">
                             <img className="img-fluid" src="/assets/acrdIs.webp" />
@@ -200,7 +201,7 @@ const CrsScore = ({ blogsList }) => {
                             <p className='CrsmidParaGraph'>Candidates can check CRS scores using the <strong>CRS points calculator</strong> above to get an idea of the areas they may need to improve upon. Below are a few points that candidates can use to improve their scores and rank higher.
                             </p>
                             <Accordian data={FactorsCalculatingAccordian4} />
-
+                            <button className='crsMidBtn ml-0'  onClick={openLeadForm}>Get Personalise Tips</button>
                         </div>
                     </div>
                 </div>

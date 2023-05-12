@@ -5,6 +5,7 @@ import Accordian from '@/components/Accordian/newAccordian';
 import { SettleAbroadAccordianData } from '@/helpers/constant.js'
 import GetConsultationCTA from '@/components/GetConsultationCTA';
 
+
 // Import Swiper styles
 import 'swiper/css';
 const SettleAbroad = () => {
@@ -16,10 +17,10 @@ const SettleAbroad = () => {
                     <div className="studyBannerCont">
                         <div className="stdyBanText">
                             <h1><span>World’s No.1 Customer-friendly </span>
-                            Canada Immigration platform
+                                Canada Immigration platform
                             </h1>
                             <p>We are a first-of-its-kind tech enabled team of Licensed Immigration Consultants obsessed with making your Canada dream come true.</p>
-                            <GetConsultationCTA lead_origin='settle'/>
+                            <GetConsultationCTA lead_origin='settle' />
                         </div>
                         <div className="studyBanImg">
                             {/* <img className="img-fluid" src="/assets/studyabroad.webp" /> */}
@@ -115,7 +116,7 @@ const SettleAbroad = () => {
                             </div>
                             <div className="unvGrdnntOuter">
                                 <div className="unvGrids">
-                                    <img className="img-fluid" src="/assets/university.webp"  alt='university'/>
+                                    <img className="img-fluid" src="/assets/university.webp" alt='university' />
                                     <div className="unvGrdCont">
                                         <span className="unvGrdnt">UK</span>
                                         <h4>University of Oxford</h4>
@@ -139,7 +140,7 @@ const SettleAbroad = () => {
                             </div>
                             <div className="unvGrdnntOuter">
                                 <div className="unvGrids">
-                                    <img className="img-fluid" src="/assets/university.webp"  alt='university'/>
+                                    <img className="img-fluid" src="/assets/university.webp" alt='university' />
                                     <div className="unvGrdCont">
                                         <span className="unvGrdnt">UK</span>
                                         <h4>University of Oxford</h4>
@@ -163,7 +164,7 @@ const SettleAbroad = () => {
                             </div>
                             <div className="unvGrdnntOuter">
                                 <div className="unvGrids">
-                                    <img className="img-fluid" src="/assets/university.webp"  alt='university'/>
+                                    <img className="img-fluid" src="/assets/university.webp" alt='university' />
                                     <div className="unvGrdCont">
                                         <span className="unvGrdnt">UK</span>
                                         <h4>University of Oxford</h4>
@@ -187,7 +188,7 @@ const SettleAbroad = () => {
                             </div>
                             <div className="unvGrdnntOuter">
                                 <div className="unvGrids">
-                                    <img className="img-fluid" src="/assets/university.webp"  alt='university'/>
+                                    <img className="img-fluid" src="/assets/university.webp" alt='university' />
                                     <div className="unvGrdCont">
                                         <span className="unvGrdnt">UK</span>
                                         <h4>University of Oxford</h4>
@@ -211,6 +212,93 @@ const SettleAbroad = () => {
                             </div>
                         </div>
                         {/* <button className="seeAllBtn">See All <img className="img-fluid" src="/assets/vtR.webp" alt='view' /></button> */}
+                    </div>
+                </div>
+            </section>
+            <section className="processSection">
+                <div className="container">
+                    <div className="processMain">
+                        <div className="processCont">
+                            <div className="storyContent full-width">
+                                <h4 className="grdHdng">Plans</h4>
+                                <h5>Our Services</h5>
+                                <p>If you have the will to get into your dream university, we have a way to make it happen.</p>
+                            </div>
+                        </div>
+                        <div className='plansContainer'>
+                            <div className='plansOuter'>
+                                <h4>Profile Review</h4>
+                                <div className='plnPrc'>
+                                    <p>₹8999</p>
+                                    <span>₹13000</span>
+                                </div>
+                                <button className='pngChose'>Choose This Plan</button>
+                                <ul>
+                                    <li><img className='img-fluid' src='/assets/check.png' /><p>Immigration Expert profile review</p></li>
+                                    <li className='unavlPlans'><img className='img-fluid' src='/assets/check.png' /><p>Express entry profile submission</p></li>
+                                    <li className='unavlPlans'><img className='img-fluid' src='/assets/check.png' /><p>PNP application submission</p></li>
+                                    <li className='unavlPlans'><img className='img-fluid' src='/assets/check.png' /><p>Easy EMI</p></li>
+                                    <li className='unavlPlans'><img className='img-fluid' src='/assets/check.png' /><p>WhatsApp Updates</p></li>
+                                    <li className='unavlPlans'><img className='img-fluid' src='/assets/check.png' /><p>Profile gap identification</p></li>
+                                    <li className='unavlPlans'><img className='img-fluid' src='/assets/check.png' /><p>ADR identification</p></li>
+                                    <li className='unavlPlans'><img className='img-fluid' src='/assets/check.png' /><p>Priority Documentation</p></li>
+                                    <li className='unavlPlans'><img className='img-fluid' src='/assets/check.png' /><p>Dedicated Account Manager</p></li>
+                                    <li className='unavlPlans'><img className='img-fluid' src='/assets/check.png' /><p>Response to ITA</p></li>
+                                    <li className='unavlPlans'><img className='img-fluid' src='/assets/check.png' /><p>ECA</p></li>
+                                    <li className='unavlPlans'><img className='img-fluid' src='/assets/check.png' /><p>IELTS classes</p></li>
+                                    <li className='unavlPlans'><img className='img-fluid' src='/assets/check.png' /><p>Keel Elite Membership</p></li>
+                                </ul>
+                            </div>
+                            <div className='plansOuter'>
+                                <h4>Profile Review</h4>
+                                <div className='plnPrc'>
+                                    <p>₹8999</p>
+                                    <span>₹13000</span>
+                                </div>
+                                <button className='pngChose'>Choose This Plan</button>
+                                <ul>
+                                    <li><img className='img-fluid' src='/assets/check.png' /><p>Immigration Expert profile review</p></li>
+                                    <li><img className='img-fluid' src='/assets/check.png' /><p>Express entry profile submission</p></li>
+                                    <li><img className='img-fluid' src='/assets/check.png' /><p>PNP application submission</p></li>
+                                    <li><img className='img-fluid' src='/assets/check.png' /><p>Easy EMI</p></li>
+                                    <li><img className='img-fluid' src='/assets/check.png' /><p>WhatsApp Updates</p></li>
+                                    <li><img className='img-fluid' src='/assets/check.png' /><p>Profile gap identification</p></li>
+                                    <li><img className='img-fluid' src='/assets/check.png' /><p>ADR identification</p></li>
+                                    <li><img className='img-fluid' src='/assets/check.png' /><p>Priority Documentation</p></li>
+                                    <li className='unavlPlans'><img className='img-fluid' src='/assets/check.png' /><p>Dedicated Account Manager</p></li>
+                                    <li className='unavlPlans'><img className='img-fluid' src='/assets/check.png' /><p>Response to ITA</p></li>
+                                    <li className='unavlPlans'><img className='img-fluid' src='/assets/check.png' /><p>ECA</p></li>
+                                    <li className='unavlPlans'><img className='img-fluid' src='/assets/check.png' /><p>IELTS classes</p></li>
+                                    <li className='unavlPlans'><img className='img-fluid' src='/assets/check.png' /><p>Keel Elite Membership</p></li>
+                                </ul>
+                            </div>
+                            <div className='plansOuter'>
+                                <div className='recomndedOut'>
+                                    <p>Recommended</p>
+                                </div>
+                                <h4>Profile Review</h4>
+                                <div className='plnPrc'>
+                                    <p>₹8999</p>
+                                    <span>₹13000</span>
+                                </div>
+                                <button className='pngChose rcmndBtn'>Choose This Plan</button>
+                                <ul>
+                                    <li><img className='img-fluid' src='/assets/check.png' /><p>Immigration Expert profile review</p></li>
+                                    <li ><img className='img-fluid' src='/assets/check.png' /><p>Express entry profile submission</p></li>
+                                    <li ><img className='img-fluid' src='/assets/check.png' /><p>PNP application submission</p></li>
+                                    <li ><img className='img-fluid' src='/assets/check.png' /><p>Easy EMI</p></li>
+                                    <li ><img className='img-fluid' src='/assets/check.png' /><p>WhatsApp Updates</p></li>
+                                    <li ><img className='img-fluid' src='/assets/check.png' /><p>Profile gap identification</p></li>
+                                    <li ><img className='img-fluid' src='/assets/check.png' /><p>ADR identification</p></li>
+                                    <li ><img className='img-fluid' src='/assets/check.png' /><p>Priority Documentation</p></li>
+                                    <li ><img className='img-fluid' src='/assets/check.png' /><p>Dedicated Account Manager</p></li>
+                                    <li ><img className='img-fluid' src='/assets/check.png' /><p>Response to ITA</p></li>
+                                    <li ><img className='img-fluid' src='/assets/check.png' /><p>ECA</p></li>
+                                    <li ><img className='img-fluid' src='/assets/check.png' /><p>IELTS classes</p></li>
+                                    <li ><img className='img-fluid' src='/assets/check.png' /><p>Keel Elite Membership</p></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -327,7 +415,7 @@ const SettleAbroad = () => {
                                 </div>
                                 <div className='rightPrsCont'>
                                     <div className='verticalImg'>
-                                        <img className='img-fluid' src='/assets/settleAbroad/ielts_preparation.webp' alt='ielts'/>
+                                        <img className='img-fluid' src='/assets/settleAbroad/ielts_preparation.webp' alt='ielts' />
                                     </div>
                                 </div>
                             </div>
@@ -359,7 +447,7 @@ const SettleAbroad = () => {
                                 </div>
                                 <div className='rightPrsCont'>
                                     <div className='verticalImg'>
-                                        <img className='img-fluid' src='/assets/settleAbroad/submit_the_application.webp' alt='application'/>
+                                        <img className='img-fluid' src='/assets/settleAbroad/submit_the_application.webp' alt='application' />
                                     </div>
                                 </div>
                             </div>
@@ -504,7 +592,7 @@ const SettleAbroad = () => {
                         <h4 className="grdHdng">FAQ</h4>
                         <h5>We are happy to <span>Help</span></h5>
                     </div>
-                    <Accordian data={SettleAbroadAccordianData}/>
+                    <Accordian data={SettleAbroadAccordianData} />
                 </div>
             </section>
         </>

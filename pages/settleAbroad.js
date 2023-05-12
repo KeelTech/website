@@ -252,8 +252,8 @@ const SettleAbroad = () => {
                             <div className='plansOuter'>
                                 <h4>Profile Review</h4>
                                 <div className='plnPrc'>
-                                    <p>₹8999</p>
-                                    <span>₹13000</span>
+                                    <p>₹99999</p>
+                                    <span>₹120000</span>
                                 </div>
                                 <button className='pngChose'>Choose This Plan</button>
                                 <ul>
@@ -278,8 +278,8 @@ const SettleAbroad = () => {
                                 </div>
                                 <h4>Profile Review</h4>
                                 <div className='plnPrc'>
-                                    <p>₹8999</p>
-                                    <span>₹13000</span>
+                                    <p>₹12999</p>
+                                    <span>₹150000</span>
                                 </div>
                                 <button className='pngChose rcmndBtn'>Choose This Plan</button>
                                 <ul>

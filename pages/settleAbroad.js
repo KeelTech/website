@@ -10,14 +10,22 @@ import React from 'react';
 import 'swiper/css';
 const SettleAbroad = () => {
 
-    const [selectedTab, setActiveTab]=React.useState('1')
+    const [selectedTab, setActiveTab]=React.useState('3')
+
+    const otpFormRef = React.useRef();
+
+    const openLeadForm = ()=>{
+        otpFormRef.current.openPopup();
+    }
 
     const handleClick=(val)=>{
         setActiveTab(val);
+        openLeadForm();
     }
     return (
         <>
             <section className="studyBannerSection">
+            <GetConsultationCTA ref={otpFormRef} hideText lead_origin='settleAbroad'/>
                 <div className="container">
                     <div className="studyBannerCont">
                         <div className="stdyBanText">
@@ -232,13 +240,7 @@ const SettleAbroad = () => {
                         </div>
                         <div className='plansContainer'>
                             <div className='plansOuter'>
-                            {
-                                    selectedTab==='1'?
-                                    <div className='recomndedOut'>
-                                        <p>Recommended</p>
-                                    </div>
-                                    :null
-                                }
+                            
                                 <h4>Profile Review</h4>
                                 <div className='plnPrc'>
                                     <p>₹8999</p>
@@ -262,13 +264,7 @@ const SettleAbroad = () => {
                                 </ul>
                             </div>
                             <div className='plansOuter'>
-                            {
-                                    selectedTab==='2'?
-                                    <div className='recomndedOut'>
-                                        <p>Recommended</p>
-                                    </div>
-                                    :null
-                                }
+                            
                                 <h4>Profile Review</h4>
                                 <div className='plnPrc'>
                                     <p>₹99999</p>
@@ -292,13 +288,9 @@ const SettleAbroad = () => {
                                 </ul>
                             </div>
                             <div className='plansOuter '>
-                                {
-                                    selectedTab==='3'?
                                     <div className='recomndedOut'>
                                         <p>Recommended</p>
                                     </div>
-                                    :null
-                                }
                                 
                                 <h4>Profile Review</h4>
                                 <div className='plnPrc'>

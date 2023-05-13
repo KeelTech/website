@@ -4,12 +4,17 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import Accordian from '@/components/Accordian/newAccordian';
 import { SettleAbroadAccordianData } from '@/helpers/constant.js'
 import GetConsultationCTA from '@/components/GetConsultationCTA';
-
+import React from 'react';
 
 // Import Swiper styles
 import 'swiper/css';
 const SettleAbroad = () => {
 
+    const [selectedTab, setActiveTab]=React.useState('1')
+
+    const handleClick=(val)=>{
+        setActiveTab(val);
+    }
     return (
         <>
             <section className="studyBannerSection">
@@ -227,12 +232,19 @@ const SettleAbroad = () => {
                         </div>
                         <div className='plansContainer'>
                             <div className='plansOuter'>
+                            {
+                                    selectedTab==='1'?
+                                    <div className='recomndedOut'>
+                                        <p>Recommended</p>
+                                    </div>
+                                    :null
+                                }
                                 <h4>Profile Review</h4>
                                 <div className='plnPrc'>
                                     <p>₹8999</p>
                                     <span>₹13000</span>
                                 </div>
-                                <button className='pngChose'>Choose This Plan</button>
+                                <button className={selectedTab==='1'?'pngChose rcmndBtn':'pngChose'} onClick={()=>handleClick('1')}>Choose This Plan</button>
                                 <ul>
                                     <li><img className='img-fluid' src='/assets/check.png' /><p>Immigration Expert profile review</p></li>
                                     <li className='unavlPlans'><img className='img-fluid' src='/assets/check.png' /><p>Express entry profile submission</p></li>
@@ -250,12 +262,19 @@ const SettleAbroad = () => {
                                 </ul>
                             </div>
                             <div className='plansOuter'>
+                            {
+                                    selectedTab==='2'?
+                                    <div className='recomndedOut'>
+                                        <p>Recommended</p>
+                                    </div>
+                                    :null
+                                }
                                 <h4>Profile Review</h4>
                                 <div className='plnPrc'>
                                     <p>₹99999</p>
                                     <span>₹120000</span>
                                 </div>
-                                <button className='pngChose'>Choose This Plan</button>
+                                <button className={selectedTab==='2'?'pngChose rcmndBtn':'pngChose'} onClick={()=>handleClick('2')}>Choose This Plan</button>
                                 <ul>
                                     <li><img className='img-fluid' src='/assets/check.png' /><p>Immigration Expert profile review</p></li>
                                     <li><img className='img-fluid' src='/assets/check.png' /><p>Express entry profile submission</p></li>
@@ -272,16 +291,21 @@ const SettleAbroad = () => {
                                     <li className='unavlPlans'><img className='img-fluid' src='/assets/check.png' /><p>Keel Elite Membership</p></li>
                                 </ul>
                             </div>
-                            <div className='plansOuter'>
-                                <div className='recomndedOut'>
-                                    <p>Recommended</p>
-                                </div>
+                            <div className='plansOuter '>
+                                {
+                                    selectedTab==='3'?
+                                    <div className='recomndedOut'>
+                                        <p>Recommended</p>
+                                    </div>
+                                    :null
+                                }
+                                
                                 <h4>Profile Review</h4>
                                 <div className='plnPrc'>
                                     <p>₹12999</p>
                                     <span>₹150000</span>
                                 </div>
-                                <button className='pngChose rcmndBtn'>Choose This Plan</button>
+                                <button className={selectedTab==='3'?'pngChose rcmndBtn':'pngChose'} onClick={()=>handleClick('3')}>Choose This Plan</button>
                                 <ul>
                                     <li><img className='img-fluid' src='/assets/check.png' /><p>Immigration Expert profile review</p></li>
                                     <li ><img className='img-fluid' src='/assets/check.png' /><p>Express entry profile submission</p></li>

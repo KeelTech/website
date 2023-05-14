@@ -3813,7 +3813,10 @@ li.unavlPlans .imgCont:before {
 li.unavlPlans .imgCont{
   position: relative;
 }
-
+.plnPrc p sup {
+  font-size: 16px;
+  margin-right: 2px;
+}
 @media (max-width:767px) {
   .plansOuter h4 {font-size: 14px;}
 

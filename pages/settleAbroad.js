@@ -265,10 +265,10 @@ const SettleAbroad = () => {
                             </div>
                             <div className='plansOuter'>
                             
-                                <h4>Profile Review</h4>
+                                <h4>Express Entry Profile Submission</h4>
                                 <div className='plnPrc'>
-                                    <p>₹99999</p>
-                                    <span>₹120000</span>
+                                    <p>₹19999</p>
+                                    <span>₹25000</span>
                                 </div>
                                 <button className={selectedTab==='2'?'pngChose rcmndBtn':'pngChose'} onClick={()=>handleClick('2')}>Choose This Plan</button>
                                 <ul>
@@ -292,10 +292,10 @@ const SettleAbroad = () => {
                                         <p>Recommended</p>
                                     </div>
                                 
-                                <h4>Profile Review</h4>
+                                <h4>White Glove</h4>
                                 <div className='plnPrc'>
-                                    <p>₹12999</p>
-                                    <span>₹150000</span>
+                                    <p>₹99999</p>
+                                    <span>₹120000</span>
                                 </div>
                                 <button className={selectedTab==='3'?'pngChose rcmndBtn':'pngChose'} onClick={()=>handleClick('3')}>Choose This Plan</button>
                                 <ul>

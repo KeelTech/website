@@ -3726,6 +3726,7 @@ border: none;
 .plnPrc span {
   display: block;
   font-size: 12px;
+  text-decoration: line-through;
 }
 
 button.pngChose {
@@ -3797,5 +3798,85 @@ button.pngChose.rcmndBtn {
   bottom: -13px;
   border-top-left-radius: 23px;
   border-top-right-radius: 23px;
+}
+li.unavlPlans .imgCont:before {
+  content: '';
+  height: 10px;
+  width: 10px;
+  background: #ffffff;
+  position: absolute;
+  top: 4px;
+  z-index: 9;
+  left: 3px;
+  border-radius: 20px;
+}
+li.unavlPlans .imgCont{
+  position: relative;
+}
+
+@media (max-width:767px) {
+  .plansOuter h4 {font-size: 14px;}
+
+.plnPrc {
+    font-size: 2px;
+    margin: 12px 0;
+}
+
+.plnPrc p {
+    font-size: 24px;
+}
+
+button.pngChose.rcmndBtn {
+    font-size: 13px;
+    min-height: 40px;
+}
+
+.plansOuter ul {
+    margin-top: 15px;
+    gap: 8px;
+}
+
+.plansOuter ul li {
+    font-size: 12px;
+}
+
+li.unavlPlans img {
+    position: relative;
+}
+
+li.unavlPlans .imgCont:before {
+  content: '';
+  height: 10px;
+  width: 10px;
+  background: #ffffff;
+  position: absolute;
+  top: 2px;
+  z-index: 9;
+  left: 2px;
+  border-radius: 20px;
+}
+
+
+
+li.unavlPlans {
+    position: relative;
+}
+.recomndedOut:before {
+  height: 18px;
+  display: none;
+}
+
+.recomndedOut {
+  min-height: unset;
+  position: absolute;
+}
+
+.recomndedOut p {
+  padding: 4px 0;
+}
+
+.plansOuter h4 {
+  margin-top: 15px;
+}
 }
 /* ======== plan new */

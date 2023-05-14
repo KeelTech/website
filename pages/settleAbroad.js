@@ -248,19 +248,19 @@ const SettleAbroad = () => {
                                 </div>
                                 <button className={selectedTab==='1'?'pngChose rcmndBtn':'pngChose'} onClick={()=>handleClick('1')}>Choose This Plan</button>
                                 <ul>
-                                    <li><img className='img-fluid' src='/assets/check.png' /><p>Immigration Expert profile review</p></li>
-                                    <li className='unavlPlans'><img className='img-fluid' src='/assets/check.png' /><p>Express entry profile submission</p></li>
-                                    <li className='unavlPlans'><img className='img-fluid' src='/assets/check.png' /><p>PNP application submission</p></li>
-                                    <li className='unavlPlans'><img className='img-fluid' src='/assets/check.png' /><p>Easy EMI</p></li>
-                                    <li className='unavlPlans'><img className='img-fluid' src='/assets/check.png' /><p>WhatsApp Updates</p></li>
-                                    <li className='unavlPlans'><img className='img-fluid' src='/assets/check.png' /><p>Profile gap identification</p></li>
-                                    <li className='unavlPlans'><img className='img-fluid' src='/assets/check.png' /><p>ADR identification</p></li>
-                                    <li className='unavlPlans'><img className='img-fluid' src='/assets/check.png' /><p>Priority Documentation</p></li>
-                                    <li className='unavlPlans'><img className='img-fluid' src='/assets/check.png' /><p>Dedicated Account Manager</p></li>
-                                    <li className='unavlPlans'><img className='img-fluid' src='/assets/check.png' /><p>Response to ITA</p></li>
-                                    <li className='unavlPlans'><img className='img-fluid' src='/assets/check.png' /><p>ECA</p></li>
-                                    <li className='unavlPlans'><img className='img-fluid' src='/assets/check.png' /><p>IELTS classes</p></li>
-                                    <li className='unavlPlans'><img className='img-fluid' src='/assets/check.png' /><p>Keel Elite Membership</p></li>
+                                    <li><span className='imgCont'><img className='img-fluid' src='/assets/check.png' /></span><p>Immigration Expert profile review</p></li>
+                                    <li className='unavlPlans'><span className='imgCont'><img className='img-fluid' src='/assets/check.png' /></span><p>Express entry profile submission</p></li>
+                                    <li className='unavlPlans'><span className='imgCont'><img className='img-fluid' src='/assets/check.png' /></span><p>PNP application submission</p></li>
+                                    <li className='unavlPlans'><span className='imgCont'><img className='img-fluid' src='/assets/check.png' /></span><p>Easy EMI</p></li>
+                                    <li className='unavlPlans'><span className='imgCont'><img className='img-fluid' src='/assets/check.png' /></span><p>WhatsApp Updates</p></li>
+                                    <li className='unavlPlans'><span className='imgCont'><img className='img-fluid' src='/assets/check.png' /></span><p>Profile gap identification</p></li>
+                                    <li className='unavlPlans'><span className='imgCont'><img className='img-fluid' src='/assets/check.png' /></span><p>ADR identification</p></li>
+                                    <li className='unavlPlans'><span className='imgCont'><img className='img-fluid' src='/assets/check.png' /></span><p>Priority Documentation</p></li>
+                                    <li className='unavlPlans'><span className='imgCont'><img className='img-fluid' src='/assets/check.png' /></span><p>Dedicated Account Manager</p></li>
+                                    <li className='unavlPlans'><span className='imgCont'><img className='img-fluid' src='/assets/check.png' /></span><p>Response to ITA</p></li>
+                                    <li className='unavlPlans'><span className='imgCont'><img className='img-fluid' src='/assets/check.png' /></span><p>ECA</p></li>
+                                    <li className='unavlPlans'><span className='imgCont'><img className='img-fluid' src='/assets/check.png' /></span><p>IELTS classes</p></li>
+                                    <li className='unavlPlans'><span className='imgCont'><img className='img-fluid' src='/assets/check.png' /></span><p>Keel Elite Membership</p></li>
                                 </ul>
                             </div>
                             <div className='plansOuter'>
@@ -272,19 +272,19 @@ const SettleAbroad = () => {
                                 </div>
                                 <button className={selectedTab==='2'?'pngChose rcmndBtn':'pngChose'} onClick={()=>handleClick('2')}>Choose This Plan</button>
                                 <ul>
-                                    <li><img className='img-fluid' src='/assets/check.png' /><p>Immigration Expert profile review</p></li>
-                                    <li><img className='img-fluid' src='/assets/check.png' /><p>Express entry profile submission</p></li>
-                                    <li><img className='img-fluid' src='/assets/check.png' /><p>PNP application submission</p></li>
-                                    <li><img className='img-fluid' src='/assets/check.png' /><p>Easy EMI</p></li>
-                                    <li><img className='img-fluid' src='/assets/check.png' /><p>WhatsApp Updates</p></li>
-                                    <li><img className='img-fluid' src='/assets/check.png' /><p>Profile gap identification</p></li>
-                                    <li><img className='img-fluid' src='/assets/check.png' /><p>ADR identification</p></li>
-                                    <li><img className='img-fluid' src='/assets/check.png' /><p>Priority Documentation</p></li>
-                                    <li className='unavlPlans'><img className='img-fluid' src='/assets/check.png' /><p>Dedicated Account Manager</p></li>
-                                    <li className='unavlPlans'><img className='img-fluid' src='/assets/check.png' /><p>Response to ITA</p></li>
-                                    <li className='unavlPlans'><img className='img-fluid' src='/assets/check.png' /><p>ECA</p></li>
-                                    <li className='unavlPlans'><img className='img-fluid' src='/assets/check.png' /><p>IELTS classes</p></li>
-                                    <li className='unavlPlans'><img className='img-fluid' src='/assets/check.png' /><p>Keel Elite Membership</p></li>
+                                    <li><span className='imgCont'><img className='img-fluid' src='/assets/check.png' /></span><p>Immigration Expert profile review</p></li>
+                                    <li><span className='imgCont'><img className='img-fluid' src='/assets/check.png' /></span><p>Express entry profile submission</p></li>
+                                    <li><span className='imgCont'><img className='img-fluid' src='/assets/check.png' /></span><p>PNP application submission</p></li>
+                                    <li><span className='imgCont'><img className='img-fluid' src='/assets/check.png' /></span><p>Easy EMI</p></li>
+                                    <li><span className='imgCont'><img className='img-fluid' src='/assets/check.png' /></span><p>WhatsApp Updates</p></li>
+                                    <li><span className='imgCont'><img className='img-fluid' src='/assets/check.png' /></span><p>Profile gap identification</p></li>
+                                    <li><span className='imgCont'><img className='img-fluid' src='/assets/check.png' /></span><p>ADR identification</p></li>
+                                    <li><span className='imgCont'><img className='img-fluid' src='/assets/check.png' /></span><p>Priority Documentation</p></li>
+                                    <li className='unavlPlans'><span className='imgCont'><img className='img-fluid' src='/assets/check.png' /></span><p>Dedicated Account Manager</p></li>
+                                    <li className='unavlPlans'><span className='imgCont'><img className='img-fluid' src='/assets/check.png' /></span><p>Response to ITA</p></li>
+                                    <li className='unavlPlans'><span className='imgCont'><img className='img-fluid' src='/assets/check.png' /></span><p>ECA</p></li>
+                                    <li className='unavlPlans'><span className='imgCont'><img className='img-fluid' src='/assets/check.png' /></span><p>IELTS classes</p></li>
+                                    <li className='unavlPlans'><span className='imgCont'><img className='img-fluid' src='/assets/check.png' /></span><p>Keel Elite Membership</p></li>
                                 </ul>
                             </div>
                             <div className='plansOuter '>
@@ -299,19 +299,19 @@ const SettleAbroad = () => {
                                 </div>
                                 <button className={selectedTab==='3'?'pngChose rcmndBtn':'pngChose'} onClick={()=>handleClick('3')}>Choose This Plan</button>
                                 <ul>
-                                    <li><img className='img-fluid' src='/assets/check.png' /><p>Immigration Expert profile review</p></li>
-                                    <li ><img className='img-fluid' src='/assets/check.png' /><p>Express entry profile submission</p></li>
-                                    <li ><img className='img-fluid' src='/assets/check.png' /><p>PNP application submission</p></li>
-                                    <li ><img className='img-fluid' src='/assets/check.png' /><p>Easy EMI</p></li>
-                                    <li ><img className='img-fluid' src='/assets/check.png' /><p>WhatsApp Updates</p></li>
-                                    <li ><img className='img-fluid' src='/assets/check.png' /><p>Profile gap identification</p></li>
-                                    <li ><img className='img-fluid' src='/assets/check.png' /><p>ADR identification</p></li>
-                                    <li ><img className='img-fluid' src='/assets/check.png' /><p>Priority Documentation</p></li>
-                                    <li ><img className='img-fluid' src='/assets/check.png' /><p>Dedicated Account Manager</p></li>
-                                    <li ><img className='img-fluid' src='/assets/check.png' /><p>Response to ITA</p></li>
-                                    <li ><img className='img-fluid' src='/assets/check.png' /><p>ECA</p></li>
-                                    <li ><img className='img-fluid' src='/assets/check.png' /><p>IELTS classes</p></li>
-                                    <li ><img className='img-fluid' src='/assets/check.png' /><p>Keel Elite Membership</p></li>
+                                    <li><span className='imgCont'><img className='img-fluid' src='/assets/check.png' /></span><p>Immigration Expert profile review</p></li>
+                                    <li ><span className='imgCont'><img className='img-fluid' src='/assets/check.png' /></span><p>Express entry profile submission</p></li>
+                                    <li ><span className='imgCont'><img className='img-fluid' src='/assets/check.png' /></span><p>PNP application submission</p></li>
+                                    <li ><span className='imgCont'><img className='img-fluid' src='/assets/check.png' /></span><p>Easy EMI</p></li>
+                                    <li ><span className='imgCont'><img className='img-fluid' src='/assets/check.png' /></span><p>WhatsApp Updates</p></li>
+                                    <li ><span className='imgCont'><img className='img-fluid' src='/assets/check.png' /></span><p>Profile gap identification</p></li>
+                                    <li ><span className='imgCont'><img className='img-fluid' src='/assets/check.png' /></span><p>ADR identification</p></li>
+                                    <li ><span className='imgCont'><img className='img-fluid' src='/assets/check.png' /></span><p>Priority Documentation</p></li>
+                                    <li ><span className='imgCont'><img className='img-fluid' src='/assets/check.png' /></span><p>Dedicated Account Manager</p></li>
+                                    <li ><span className='imgCont'><img className='img-fluid' src='/assets/check.png' /></span><p>Response to ITA</p></li>
+                                    <li ><span className='imgCont'><img className='img-fluid' src='/assets/check.png' /></span><p>ECA</p></li>
+                                    <li ><span className='imgCont'><img className='img-fluid' src='/assets/check.png' /></span><p>IELTS classes</p></li>
+                                    <li ><span className='imgCont'><img className='img-fluid' src='/assets/check.png' /></span><p>Keel Elite Membership</p></li>
                                 </ul>
                             </div>
                         </div>

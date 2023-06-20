@@ -247,8 +247,8 @@ p.bannerParaSub {
 
 .bannerButton button {
   border: none;
-  min-width: 190px;
-  padding: 13px 36px;
+  min-width: 200px;
+  padding: 13px 15px;
   border-radius: 8px;
   color: white;
   font-size: 16px;
@@ -258,6 +258,9 @@ p.bannerParaSub {
   box-shadow: 2px 1px 6px #626262c7, 4px 3px 8px #62626212, inset -2px -2px 0px #00000026;
 }
 
+span.imgCont {
+  flex-shrink: 0;
+}
 .bannerMidImg {
   display: flex;
   align-items: center;
@@ -3742,7 +3745,7 @@ button.pngChose {
 
 .plansOuter ul li {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   gap: 8px;
 }
 

@@ -4,14 +4,27 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import Accordian from '@/components/Accordian/newAccordian';
 import { StudyAbroadAccordianData } from '@/helpers/constant.js'
 import GetConsultationCTA from '@/components/GetConsultationCTA';
+import React from 'react';
 
 // Import Swiper styles
 import 'swiper/css';
 const StudyAbroad = () => {
+    const [selectedTab, setActiveTab] = React.useState('3')
 
+    const otpFormRef = React.useRef();
+
+    const openLeadForm = () => {
+        otpFormRef.current.openPopup();
+    }
+
+    const handleClick = (val) => {
+        setActiveTab(val);
+        openLeadForm();
+    }
     return (
         <>
             <section className="studyBannerSection">
+                <GetConsultationCTA ref={otpFormRef} hideText lead_origin='studyAbroad' />
                 <div className="container">
                     <div className="studyBannerCont">
                         <div className="stdyBanText">
@@ -21,7 +34,7 @@ const StudyAbroad = () => {
                             </h1>
                             <p>Mentoring | Profile Building | Test Preparations | End to End Visa Solutions
                             </p>
-                            <GetConsultationCTA lead_origin='study'/>
+                            <GetConsultationCTA lead_origin='study' />
                         </div>
                         <div className="studyBanImg">
                             <img className="img-fluid" src="/assets/study-abroad-hero-web.webp" alt='study abroad' />
@@ -214,6 +227,63 @@ const StudyAbroad = () => {
                 <div className="container">
                     <div className="processMain">
                         <div className="processCont">
+                            <div className="storyContent full-width">
+                                <h4 className="grdHdng">Membership</h4>
+                                <h5>Our Membership</h5>
+                                {/* <p>If you have the will to get into your dream university, we have a way to make it happen.</p> */}
+                                <p>Here is everything that you get when you choose Keel as your study abroad partner:</p>
+                            </div>
+                        </div>
+                        <div className='plansContainer'>
+                            <div className='plansOuter'>
+
+                                <h4>Keel Prime Membership</h4>
+                                <div className='plnPrc'>
+                                    <p><sup>₹</sup>1999</p><sub>Only</sub>
+                                    {/* <span>₹13000</span> */}
+                                </div>
+                                <button className={selectedTab === '1' ? 'pngChose rcmndBtn' : 'pngChose'} onClick={() => handleClick('1')}>Choose This Membership</button>
+                                <ul>
+                                    <li><span className='imgCont'><img className='img-fluid' src='/assets/check.png' /></span><p>1:1 Counselling session with handpicked study abroad experts</p></li>
+                                    <li className=''><span className='imgCont'><img className='img-fluid' src='/assets/check.png' /></span><p>University shortlisting that gets you the right jump in your career trajectory
+                                    </p></li>
+                                    <li className=''><span className='imgCont'><img className='img-fluid' src='/assets/check.png' /></span><p>Application filing to help you get into your dream university</p></li>
+                                    <li className=''><span className='imgCont'><img className='img-fluid' src='/assets/check.png' /></span><p>SOP & LOR/LOE editing assistance to build a story that gets you attention and admission</p></li>
+                                    <li className=''><span className='imgCont'><img className='img-fluid' src='/assets/check.png' /></span><p>Study visa filing with the help of RCICs (Licensed Canadian Immigration consultants)
+                                    </p></li>
+                                    <li className=''><span className='imgCont'><img className='img-fluid' src='/assets/check.png' /></span><p>IELTS Classes with top 0.1% IELTS coaches in India </p></li>
+                                    <li className=''><span className='imgCont'><img className='img-fluid' src='/assets/check.png' /></span><p>Scholarship Assistance to help you avail the maximum scholarship.</p></li>
+                                </ul>
+                            </div>
+                            <div className='plansOuter '>
+                                <div className='recomndedOut'>
+                                    <p>Recommended</p>
+                                </div>
+
+                                <h4>Keel Elite Membership</h4>
+                                <div className='plnPrc'>
+                                    <p><sup>₹</sup>35,000</p><sub>per application</sub>
+                                    {/* <span>₹120000</span> */}
+                                </div>
+                                <button className={selectedTab === '3' ? 'pngChose rcmndBtn' : 'pngChose'} onClick={() => handleClick('3')}>Choose This Membership</button>
+                                <ul>
+                                    <li><span className='imgCont'><img className='img-fluid' src='/assets/check.png' /></span><p>1:1 Counselling session with alumnus from Top Business Schools in the world</p></li>
+                                    <li ><span className='imgCont'><img className='img-fluid' src='/assets/check.png' /></span><p>Profile Building & Application filing for better chances of getting an admission into your dream university</p></li>
+                                    <li ><span className='imgCont'><img className='img-fluid' src='/assets/check.png' /></span><p>SOP & LOR/LOE editing assistance to build a story that gets you attention and admission
+                                    </p></li>
+                                    <li ><span className='imgCont'><img className='img-fluid' src='/assets/check.png' /></span><p> Study visa filing with the help of RCICs (Licensed Canadian Immigration consultants)</p></li>
+                                    <li ><span className='imgCont'><img className='img-fluid' src='/assets/check.png' /></span><p>IELTS Classes with top 0.1% IELTS coaches in India.</p></li>
+                                    <li ><span className='imgCont'><img className='img-fluid' src='/assets/check.png' /></span><p>GRE & GMAT preparation with the best coaches in India</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section className="processSection">
+                <div className="container">
+                    <div className="processMain">
+                        <div className="processCont">
                             <div className="storyContent full-width text-center">
                                 <h4 className="grdHdng">Process</h4>
                                 <h5>The Process<span></span></h5>
@@ -233,7 +303,7 @@ const StudyAbroad = () => {
                                 </div>
                                 <div className='rightPrsCont'>
                                     <div className='verticalImg'>
-                                        <img className='img-fluid' src='/assets/home/home-process-1.webp' alt='home'/>
+                                        <img className='img-fluid' src='/assets/home/home-process-1.webp' alt='home' />
                                     </div>
                                 </div>
                             </div>
@@ -362,7 +432,7 @@ const StudyAbroad = () => {
                         <h4 className="grdHdng">Customers</h4>
                         <h5>Happy <span>Keelers</span></h5>
                         <p>Our team at Keel works day and night to make our students’ dreams come true.
-Hear what they have to say about us.</p>
+                            Hear what they have to say about us.</p>
                     </div>
                     <div className="happyContent">
                         <div className="hpyGridCont">

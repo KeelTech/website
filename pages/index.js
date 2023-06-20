@@ -80,7 +80,7 @@ const HomeView = ({ blogsList }) => {
                             <p className="bannerParaSub">We are India’s largest tech-enabled study abroad platform supported by an army of experts</p>
                             <div className="bannerButton">
                                 <button onClick={() => router.push(`/keel-study-in-abroad-program`)}>Study Abroad</button>
-                                <button onClick={() => router.push(`/settleAbroad`)}>Settle Abroad</button>
+                                <button onClick={() => router.push(`/settleAbroad`)}>Immigration Services</button>
                             </div>
                             <div className="bannerMidImg">
                                 <img className="img-fluid forWeb" height='100%' width='100%' src="https://keeldocs.s3.amazonaws.com/media/public/homeFront.webp" alt="home website benner keel"/>

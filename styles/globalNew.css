@@ -628,6 +628,12 @@ span.stepNum {
 .processCont {
   padding-bottom: 30px;
 }
+.processMain.memberShip .plansOuter li{
+  font-size:14px
+}
+.processMain.memberShip .plansOuter{
+  max-width: 450px;
+}
 
 .custCarusalCont {
   position: relative;

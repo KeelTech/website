@@ -225,7 +225,7 @@ const StudyAbroad = () => {
             </section> */}
             <section className="processSection">
                 <div className="container">
-                    <div className="processMain">
+                    <div className="processMain memberShip">
                         <div className="processCont">
                             <div className="storyContent full-width">
                                 <h4 className="grdHdng">Membership</h4>

@@ -1,28 +1,121 @@
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { useRouter } from "next/router";
 
 import Accordian from '@/components/Accordian/newAccordian';
 import { StudyAbroadAccordianData } from '@/helpers/constant.js'
 import GetConsultationCTA from '@/components/GetConsultationCTA';
 import React from 'react';
+import CreateRazorPayOrderModal from '@/components/CreateRazorPayOrder';
+import { captureRazorpaylead } from '@/actions';
+import LoadingWidget from '@/components/LoadingWidget';
 
 // Import Swiper styles
 import 'swiper/css';
 const StudyAbroad = () => {
-    const [selectedTab, setActiveTab] = React.useState('3')
+    var router = useRouter();
+    const [isLoading, setLoader] = React.useState(false);
 
+    const [selectedTab, setActiveTab] = React.useState('3');
+    const [openRazorPayModal, setRazorPayModal] = React.useState(false);
+    const [selectedPlanId, setPlanId] = React.useState('');
     const otpFormRef = React.useRef();
 
-    const openLeadForm = () => {
-        otpFormRef.current.openPopup();
+    const paymentMethodClicked = (val)=>{
+        setPlanId(val);
+        setRazorPayModal(true);
     }
 
-    const handleClick = (val) => {
-        setActiveTab(val);
-        openLeadForm();
+    const handleRazorPayOrder = (orderID, userInfo)=>{
+        const { name, number, email } = userInfo||{};
+        var options = {
+            "key": "rzp_live_SHoE722sQX5Zzg", // Enter the Key ID generated from the Dashboard
+            "amount": selectedPlanId==4?'199900':"3500000", // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
+            "currency": "INR",
+            "name": "Keel Corp", //your business name
+            "description": "Test Transaction",
+            "image": "https://getkeel.com/assets/Logo.svg",
+            "order_id": orderID, //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
+          //  "callback_url": "https://getkeel.com/settleAbroad",
+            "prefill": { //We recommend using the prefill parameter to auto-fill customer's contact information especially their phone number
+                "name": name, //your customer's name
+                "email": email,
+                "contact": number //Provide the customer's phone number for better conversion rates 
+            },
+            "notes": {
+                "address": "Razorpay Corporate Office"
+            },
+            "theme": {
+                "color": "#3399cc"
+            },
+            "handler": async function (response){
+                setLoader(true);
+                console.log("inside success handler", response);
+                if(response.razorpay_payment_id){
+                    captureRazorpaylead(postParams).then((resp)=>{
+                        console.log("success in capture payment");
+                        setLoader(false);
+                        router.push('/payment-success');
+                    }).catch((e)=>{
+                        console.log("error in capture payment", e);
+                        setLoader(false);
+                        router.push('/payment-failure');
+                    })
+                }
+            },
+            "modal": {
+                "ondismiss": function(){
+                    console.log("on dismiss clicked");
+                    router.reload(window.location.pathname)
+                 }
+            }
+        };
+        var rzp1 = new Razorpay(options);
+        rzp1.on('payment.failed', function (response){
+            //router.push('/payment-failure');
+            router.reload(window.location.pathname)
+        });
+        rzp1.on('payment.captured', async function (response){
+            console.log("API PAYMENT CAPTURED", response);
+            if(response.razorpay_payment_id){
+                captureRazorpaylead(postParams).then((resp)=>{
+                    console.log("success in capture payment");
+                    setLoader(false);
+                    router.push('/payment-success');
+                }).catch((e)=>{
+                    console.log("error in capture payment", e);
+                    setLoader(false);
+                    router.push('/payment-failure');
+                })
+            }
+        });
+        rzp1.open();
     }
+
+    const handleOrderCreateResponse = (response, userInfo)=>{
+        if(response && response.data){
+            const orderID = response.data.order_id
+            handleRazorPayOrder(orderID, userInfo);
+
+        }
+        console.log("response from handleOrderCreateResponse", response);
+    }
+
+    const handleClose = ()=>{
+        setRazorPayModal(false);
+        setPlanId('');
+    }
+   
+
     return (
         <>
+            {
+                openRazorPayModal?<CreateRazorPayOrderModal handleClose={handleClose} handleOrderCreateResponse={handleOrderCreateResponse} plan_id={selectedPlanId}/>:null
+            }
+            {
+                isLoading?<LoadingWidget/>:null
+            }
+            <button id="rzp-button1" style={{display: 'none'}} >Pay</button>
             <section className="studyBannerSection">
                 <GetConsultationCTA ref={otpFormRef} hideText lead_origin='studyAbroad' />
                 <div className="container">
@@ -242,7 +335,7 @@ const StudyAbroad = () => {
                                     <p><sup>₹</sup>1999</p><sub>Only</sub>
                                     {/* <span>₹13000</span> */}
                                 </div>
-                                <button className={selectedTab === '1' ? 'pngChose rcmndBtn' : 'pngChose'} onClick={() => handleClick('1')}>Choose This Membership</button>
+                                <button className={selectedTab === '1' ? 'pngChose rcmndBtn' : 'pngChose'} onClick={()=>paymentMethodClicked(4)}>Choose This Membership</button>
                                 <ul>
                                     <li><span className='imgCont'><img className='img-fluid' src='/assets/check.png' /></span><p>1:1 Counselling session with handpicked study abroad experts</p></li>
                                     <li className=''><span className='imgCont'><img className='img-fluid' src='/assets/check.png' /></span><p>University shortlisting that gets you the right jump in your career trajectory
@@ -265,7 +358,7 @@ const StudyAbroad = () => {
                                     <p><sup>₹</sup>35,000</p><sub>per application</sub>
                                     {/* <span>₹120000</span> */}
                                 </div>
-                                <button className={selectedTab === '3' ? 'pngChose rcmndBtn' : 'pngChose'} onClick={() => handleClick('3')}>Choose This Membership</button>
+                                <button className={selectedTab === '3' ? 'pngChose rcmndBtn' : 'pngChose'} onClick={()=>paymentMethodClicked(5)}>Choose This Membership</button>
                                 <ul>
                                     <li><span className='imgCont'><img className='img-fluid' src='/assets/check.png' /></span><p>1:1 Counselling session with alumnus from Top Business Schools in the world</p></li>
                                     <li ><span className='imgCont'><img className='img-fluid' src='/assets/check.png' /></span><p>Profile Building & Application filing for better chances of getting an admission into your dream university</p></li>

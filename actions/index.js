@@ -127,3 +127,17 @@ export const sendOTP = (dataParams, cb=null)=>{
         payload
     )
   }
+
+  export const createRazorPayOrder = (dataParams, cb=null)=>{
+
+    return API_POST(`${API_END_POINT}/payment/create-order-details`, {
+        ...dataParams
+    })
+  }
+
+  export const captureRazorpaylead = (dataParams, cb=null)=>{
+
+    return API_POST(`${API_END_POINT}/payment/capture-payment`, {
+        ...dataParams
+    })
+  }

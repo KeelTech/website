@@ -862,6 +862,78 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
+.closePop {
+  position: absolute;
+  right: 5px;
+  cursor: pointer;
+  top: 5px;
+}
+.popBtn {
+  margin-top: 25px;
+}
+
+.popBtn button {
+  margin: 0 8px;
+  min-width: 80px;
+  font-size: 14px;
+  padding: 5px 5px;
+  border-radius: 4px;
+}
+.payData {
+  border-bottom: 1px dashed #e7e7e7;
+  margin-bottom: 30px;
+}
+
+.payData h2 {
+  color: #4267b2;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.payData h4 {
+  color: #343a40;
+  font-weight: 700;
+  margin: 19px 0;
+  font-size: 30px;
+}
+
+.payButtons button {
+  width: 100%;
+  margin-bottom: 12px;
+  background: #ffffff;
+  box-shadow: 4px 4px 8px #d8dce4;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  padding: 10px 10px;
+}
+
+.payButtons {
+}
+
+.payButtons button img {
+  margin-right: 10px;
+}
+
+.payButtons button:last-child {
+  margin: 0;
+}
+
+.popCntrImg {
+  margin: 10px 0 20px;
+}
+p.popSubPera {
+  color: gray;
+  font-size: 12px;
+}
+.popCntrImg img {
+  width: 70px;
+  height: 70px;
+}
+
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;

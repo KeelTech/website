@@ -27,6 +27,7 @@ export default class AppDocument extends Document {
           src="https://code.jquery.com/jquery-3.6.0.min.js"
           integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
           crossorigin="anonymous"></script>
+          <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
         </Head> 
         <link rel="shortcut icon" href="../images/fav.ico" />
         <link rel="manifest" href="/manifest.json"/>

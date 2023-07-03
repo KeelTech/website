@@ -26,7 +26,7 @@ const StudyAbroad = () => {
         setRazorPayModal(true);
     }
 
-    const handleRazorPayOrder = (orderID, userInfo)=>{
+    const handleRazorPayOrder = (orderID, transactionId, userInfo)=>{
         const { name, number, email } = userInfo||{};
         var options = {
             "key": "rzp_live_SHoE722sQX5Zzg", // Enter the Key ID generated from the Dashboard
@@ -52,6 +52,11 @@ const StudyAbroad = () => {
                 setLoader(true);
                 console.log("inside success handler", response);
                 if(response.razorpay_payment_id){
+                    const postParams = {
+                        payment_id: response.razorpay_payment_id,
+                        transaction_id: transactionId,
+                        order_id: orderID
+                    }
                     captureRazorpaylead(postParams).then((resp)=>{
                         console.log("success in capture payment");
                         setLoader(false);
@@ -94,11 +99,11 @@ const StudyAbroad = () => {
 
     const handleOrderCreateResponse = (response, userInfo)=>{
         if(response && response.data){
-            const orderID = response.data.order_id
-            handleRazorPayOrder(orderID, userInfo);
+            const orderID = response.data.order_id;
+            const transactionId = response.data.transaction_id;
+            handleRazorPayOrder(orderID, transactionId, userInfo);
 
         }
-        console.log("response from handleOrderCreateResponse", response);
     }
 
     const handleClose = ()=>{

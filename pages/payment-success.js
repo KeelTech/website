@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 const PaymentSuccessModal = ()=>{
     var router = useRouter();
     const mainPaymentModal = ()=>{
-        window.open('https://app.getkeel.com', '_blank');
+        window.open('https://app.getkeel.com');
     }
     return(
         <div className="commonPopUpOverlay">

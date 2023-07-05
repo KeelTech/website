@@ -140,7 +140,7 @@ const NumberVerification = ({handleClose, lead_origin, isIeltsView=false}) => {
                 "Value": "Phone"
             },
             {
-                "Attribute": "lead_origin",
+                "Attribute": "Origin",
                 "Value": lead_origin
             },
             {

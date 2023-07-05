@@ -7,8 +7,9 @@ import { StudyAbroadAccordianData } from '@/helpers/constant.js'
 import GetConsultationCTA from '@/components/GetConsultationCTA';
 import React from 'react';
 import CreateRazorPayOrderModal from '@/components/CreateRazorPayOrder';
-import { captureRazorpaylead } from '@/actions';
+import { captureRazorpaylead, createLeadSquareLead } from '@/actions';
 import LoadingWidget from '@/components/LoadingWidget';
+import { LEAD_SQUARED_ACCESS_ID, LEAD_SQUARED_SECRET_KEY, LEAD_SQUARED_X_API } from '@/actions/constant.js';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -57,15 +58,66 @@ const StudyAbroad = () => {
                         transaction_id: transactionId,
                         order_id: orderID
                     }
-                    captureRazorpaylead(postParams).then((resp)=>{
-                        console.log("success in capture payment");
-                        setLoader(false);
-                        router.push('/payment-success');
-                    }).catch((e)=>{
-                        console.log("error in capture payment", e);
-                        setLoader(false);
-                        router.push('/payment-failure');
+
+                    const headers = {
+                        "x-api-key": LEAD_SQUARED_X_API,
+                        "access-control-allow-origin": "*"
+                    }
+                    const payload = [
+                        {
+                            "Attribute": "SearchBy",
+                            "Value": "Phone"
+                        },
+                        {
+                            "Attribute": "FirstName",
+                            "Value": name
+                        },
+                        {
+                            "Attribute": "EmailAddress",
+                            "Value": email
+                        },
+                        {
+                            "Attribute": "Phone",
+                            "Value": number
+                        },
+                        {
+                            "Attribute": "ProspectID",
+                            "Value": "xxxxxxxx-d168-xxxx-9f8b-xxxx97xxxxxx"
+                        },
+                        {
+                            "Attribute": "Origin",
+                            "Value": "keel-study-in-abroad-program"
+                        },
+                        {
+                            "Attribute": "source",
+                            "Value": "WEB"
+                        },
+                        {
+                            "Attribute": "ProspectStage",
+                            "Value": "SA student Subscribed"
+                        },
+                    ]
+                    const dataParams = {
+                        accessKey: LEAD_SQUARED_ACCESS_ID,
+                        secretKey: LEAD_SQUARED_SECRET_KEY,
+                        payload
+                    }
+                    createLeadSquareLead(dataParams, null, headers).then((resp)=>{
+                    }).catch((err)=>{
+                        
                     })
+                    setTimeout(()=>{
+                        captureRazorpaylead(postParams).then((resp)=>{
+                            console.log("success in capture payment");
+                            setLoader(false);
+                            router.push('/payment-success');
+                        }).catch((e)=>{
+                            console.log("error in capture payment", e);
+                            setLoader(false);
+                            router.push('/payment-failure');
+                        })
+                    },400)
+                    
                 }
             },
             "modal": {

@@ -113,7 +113,7 @@ const CommunityForm = ()=>{
                 "Value": utm_campaign
             },
             {
-                "Attribute": "lead_origin",
+                "Attribute": "Origin",
                 "Value": 'community'
             }
         ]

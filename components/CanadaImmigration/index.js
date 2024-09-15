@@ -7,7 +7,7 @@ const CanadaImmigration = ()=>{
     const router = useRouter();
 
     const handleCtaClick = ()=>{
-        router.push('/eligibility');
+        router.push('/check-eligibility');
     }
 
     return(
@@ -31,7 +31,7 @@ const CanadaImmigration = ()=>{
                 </div>
                 <div className="col-md-6">
                     <div className="rightImagePanel">
-                        <img className="img-fluid" src="https://getkeel.com/wp-content/uploads/2021/06/canadian-flag.jpg"/>
+                        <img className="img-fluid" src="/images/canadaFlag.svg" alt="immigration"/>
                     </div>
                 </div>
             </div>

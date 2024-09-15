@@ -5,6 +5,9 @@ export const promiseSection = css`
     padding:80px 0px;
     @media (max-width:767px){
       padding:30px 0px;
+      .msger-header{
+        display:none !important;
+      }
     }
     display: -webkit-box;
     display: -ms-flexbox;
@@ -19,6 +22,44 @@ p.blackSubPera {
     font-size: 16px;
     margin-bottom: 100px;
   }
+
+  .startChat {
+    display:none;
+    text-align:center;
+    margin-bottom:30px;
+  button {
+    padding: 10px 30px;
+    border: none;
+    color: white;
+    margin: auto;
+    background: #c32020;
+    border-radius: 4px;
+    
+  }
+  @media (max-width:767px){
+    display:block;
+    }
+
+}
+.startChat.btnReturn {
+  display: block;
+  position: fixed;
+  top: 60px;
+  z-index: 19;
+  margin: 0px;
+  padding: 10px;
+  border-bottom: 1px solid #dbdbdb;
+  border-top:1px solid #dbdbdb;
+  background: #eee;
+  color: #666;
+  width: 100%;
+  text-align: left;
+  left: 0;
+    button{
+      padding: 5px 10px;
+      margin:0px;
+    }
+}
       
       // .row {
       //   display: -ms-flexbox;
@@ -37,6 +78,21 @@ p.blackSubPera {
       //   max-width: 50%;
         
       // }
+      @media (max-width:767px){
+      .iframeContainer{
+        display:none;
+      &.forMobileIframe{
+        display:block;
+        position: fixed;
+        z-index: 1;
+        left: 0px;
+        top: 80px;
+        bottom: 0px;
+        max-height: 100%;
+        height: calc(100vh - 112px);
+      }
+    }
+    }
       .iframeContainer iframe {
         width: 100%;
         height: 100%;
@@ -63,6 +119,10 @@ p.blackSubPera {
 .listEmlText ul {
     list-style: none;
   }
+  .listEmlText ul li img {
+    width: 70px;
+    flex-shrink: 0;
+}
   
   .listEmlText ul li {
     display: -webkit-box;
@@ -412,4 +472,5 @@ export const improveScore = css`
   div.course-panel p {
     padding: 20px 0;
   }  
+  
 `

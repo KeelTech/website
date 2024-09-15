@@ -1,0 +1,18 @@
+{
+    "name":"Keel",
+    "short_name": "Keel Inc",
+    "start_url": "./",
+    "scope": ".",
+    "description": "Keel connects you with Canada’s best licensed immigration consultants.",
+    "display": "standalone",
+    "background_color" :"White",
+    "theme_color": "White",
+    "icons": [
+        {
+            "src": "/With_bg.png",
+            "type": "image/png",
+            "sizes": "144x144",
+            "purpose": "any"
+        }
+    ]
+}

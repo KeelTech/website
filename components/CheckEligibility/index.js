@@ -5,6 +5,7 @@ import { validateEmail } from '@/helpers/utils.js';
 import { createLead } from '@/actions/index.js';
 import CustomToaster from '@/components/CustomToaster';
 import { useAppContext } from '@/context/index.js';
+import ImgBan from '../../public/images/Feature-1.png'
 
 import { container } from './style.js';
 
@@ -94,13 +95,22 @@ const CheckEligibily = ()=>{
     const renderHomeText = useCallback(()=>{
         const homeWidget = activeComponents?.filter(x=>x.id===3);
         if(homeWidget.length){
-            const { title, body } = homeWidget[0];
+            const { title, body, is_active } = homeWidget[0];
+            if(is_active){
+                return <>
+                    <h1>{title}</h1>
+                    <p dangerouslySetInnerHTML={{__html: body}}></p>
+                </>
+            }
             return <>
-                <h1>{title}</h1>
-                <p dangerouslySetInnerHTML={{__html: body}}></p>
+                <h1>Want To Immigrate To Canada?</h1>
+                <p>Keel connects you with Canada’s <span className="coloredHeading">best licensed immigration consultants.</span></p>
             </>
         }
-        return <></>
+        return <>
+            <h1>Want To Immigrate To Canada?</h1>
+            <p>Keel connects you with Canada’s <span className="coloredHeading">best licensed immigration consultants.</span></p>
+        </>
         
     },[activeComponents])
 
@@ -133,7 +143,7 @@ const CheckEligibily = ()=>{
                 </div>
                 <div className="col-md-6 col-12">
                     <div className="animatedGif">
-                        <Image layout="responsive" src="https://getkeel.com/wp-content/uploads/2022/01/Feature-1.png" className="img-fluid" width={450} height={450} priority/>
+                        <Image layout="responsive" src={ImgBan} className="img-fluid" width={450} height={450} priority alt="check eligibility"/>
                     </div>
                 </div>
             </div>

@@ -77,4 +77,8 @@ export const container = css`
     color: #4d5459;
   }
   
+  .listEmlText ul li img {
+    width: 80px;
+    flex-shrink: 0;
+}
 `

@@ -9,20 +9,28 @@ const Testimonials = ()=>{
     const renderWidget = useMemo(()=>{
         const widgetText = activeComponents?.filter(x=>x.id===2);
         if(widgetText.length){
-            const { title, body } = widgetText[0];
+            const { title, body, is_active } = widgetText[0];
+            if(is_active){
+                return {
+                    title,
+                    body
+                }
+            }
             return {
-                title,
-                body
+                body:'All in one application management platform is a dream come true. Used this for my brother. Wish I had this when I was trying to immigrate. Love the service! ',
+                title: "TESTIMONIALS"
             }
         }
         return {
-            title:'',
-            body: ''
+            body:'All in one application management platform is a dream come true. Used this for my brother. Wish I had this when I was trying to immigrate. Love the service! ',
+            title: "TESTIMONIALS"
         }
-        
     },[activeComponents])
     return(
-    <section className={container}>
+    <>
+    {
+        renderWidget.title && renderWidget.body?
+        <section className={container}>
         <div className="container">
             <div className="testiMainCont">
                 <div className="row">
@@ -37,7 +45,7 @@ const Testimonials = ()=>{
                             <div className="testiMoCard">
                                 <p dangerouslySetInnerHTML={{__html: renderWidget.body}}></p>
                                     <div className="testiUsr">
-                                        <img className="img-fluid"
+                                        <img className="img-fluid" alt="testimonials"
                                             src="https://getkeel.com/wp-content/uploads/2021/05/close-up-handsome-male-fashion-model-face-with-bea-DCZ9NLF.jpg" />
                                         <p>Maddy</p>
                                     </div>
@@ -47,7 +55,10 @@ const Testimonials = ()=>{
                 </div>
             </div>
         </div>
-    </section>
+        </section>
+        :null
+    }
+    </>
     )
 }
 

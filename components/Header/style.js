@@ -50,6 +50,7 @@ export const container = css`
           pointer-events: none;
           visibility: hidden;
           position: fixed;
+          z-index:9;
           // img.sideBarLogo{
           //   display:none;
           // }
@@ -57,7 +58,7 @@ export const container = css`
             position: absolute;
             width: 320px;
             margin: 0 0 0 0px;
-            padding: 85px 10px;
+            padding: 55px 10px;
             background: #ffffff;
             list-style-type: none;
             -webkit-font-smoothing: antialiased;
@@ -122,6 +123,7 @@ input{
     opacity: 1;
     transform: rotate(45deg) translate(0px, 2px);
     background: #232323;
+    display:none;
     &:nth-last-child(3) {
       opacity: 0;
       transform: rotate(0deg) scale(0.2, 0.2);
@@ -208,11 +210,54 @@ span{
         padding: 15px 10px;
         border-radius: 4px;
         @media (max-width:992px){
-          padding:12px 10px;
+          padding:8px 10px;
         }
       }
       li a{
         text-decoration: none;
         color: #c32020;
       }
+
+      span.closeSide {
+        position: absolute;
+        right: 20px;
+        top: 72px;
+    }
+    
+    span.closeSide img {
+        width: 25px !important;
+        margin: 0px !important;
+        cursor: pointer;
+    }
+    @media (max-width:992px){
+      .navBarMain {
+        min-height: 60px !important;
+    }
+    nav{
+      box-shadow:2px 2px 5px #0000000a;
+    }
+     }
+     .mobIContop{
+      display:none;
+     }
+     .getStarted span{
+      color:white;
+      }
+     @media (max-width:992px){
+      .mobIContop{
+        display:block;
+      }
+      button.getStarted{
+        display:flex;
+        align-items:center;
+        width:38px;
+        height:38px;
+        background:none;
+        padding:8px;
+        display:none;
+        }
+      .getStarted span{
+      display:none;
+      }
+     }
 `

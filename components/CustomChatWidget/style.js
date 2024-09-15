@@ -40,6 +40,9 @@ export const container = css`
         color: #666;
     }
     
+    .terms ul li:before{
+        display:none;
+    }
     .msger-chat {
         flex: 1;
         overflow-y: auto;
@@ -54,6 +57,7 @@ export const container = css`
     .msger-chat::-webkit-scrollbar-thumb {
         background: #bdbdbd;
     }
+    
     .msg {
         display: flex;
         align-items: flex-start;
@@ -64,7 +68,8 @@ export const container = css`
     }
     .msg.right-msg{
         .msg-img{
-        background-image:url("../../../../assets/images/common/chatAv.svg");
+            background-image:url("../../../../person.svg");
+            background-size: 25px;
     }
 }
     .msg-img {
@@ -294,8 +299,9 @@ export const container = css`
             background-repeat: no-repeat;
             background-position: center;
             background-size: auto;
-        background-image:url("../../../../assets/images/common/keel.svg");
+        background-image:url("../../../../keelLogo.svg");
             border-radius: 50%;
+            background-size:35px;
         }
         .msg-bubble {
             max-width: 450px;

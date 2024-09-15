@@ -81,3 +81,20 @@ export const getActiveComponents = (dataParams={}, cb=null)=>{
         if(cb)cb(null, true);
     })
 }
+
+export const getBlogsList = (dataParams={}, cb=null)=>{
+    return API_GET(`${API_END_POINT}/web/blog-list`).then((response)=>{
+        return response;        
+    }).catch((e)=>{
+        if(cb)cb(null, true);
+    })
+}
+
+export const getBlogDetail = (dataParams={}, cb=null)=>{
+    const { id } = dataParams;
+    return API_GET(`${API_END_POINT}/web/blog-list/${id}`).then((response)=>{
+        return response; 
+    }).catch((e)=>{
+        if(cb)cb(null, true);
+    })
+}

@@ -9,35 +9,35 @@ const ReviewSection = ()=>{
             <h2>Reviews By Our Happy Customers</h2>
             <div className="reviewSLider">
                 <div className="revSlideCard">
-                    <img className="img-fluid"
+                    <img className="img-fluid" alt="reviews"
                         src="https://getkeel.com/wp-content/uploads/2022/02/WhatsApp-Image-2022-02-22-at-7.25.52-AM-600x1300.jpeg" />
                 </div>
                 <div className="revSlideCard">
-                    <img className="img-fluid"
+                    <img className="img-fluid" alt="reviews"
                         src="https://getkeel.com/wp-content/uploads/2022/02/WhatsApp-Image-2022-02-22-at-7.25.52-AM-600x1300.jpeg" />
                 </div>
                 <div className="revSlideCard">
-                    <img className="img-fluid"
+                    <img className="img-fluid" alt="reviews"
                         src="https://getkeel.com/wp-content/uploads/2022/02/WhatsApp-Image-2022-02-22-at-7.25.52-AM-600x1300.jpeg" />
                 </div>
                 <div className="revSlideCard">
-                    <img className="img-fluid"
+                    <img className="img-fluid" alt="reviews"
                         src="https://getkeel.com/wp-content/uploads/2022/02/WhatsApp-Image-2022-02-22-at-7.25.52-AM-600x1300.jpeg" />
                 </div>
                 <div className="revSlideCard">
-                    <img className="img-fluid"
+                    <img className="img-fluid" alt="reviews"
                         src="https://getkeel.com/wp-content/uploads/2022/02/WhatsApp-Image-2022-02-22-at-7.25.52-AM-600x1300.jpeg" />
                 </div>
                 <div className="revSlideCard">
-                    <img className="img-fluid"
+                    <img className="img-fluid" alt="reviews"
                         src="https://getkeel.com/wp-content/uploads/2022/02/WhatsApp-Image-2022-02-22-at-7.25.52-AM-600x1300.jpeg" />
                 </div>
                 <div className="revSlideCard">
-                    <img className="img-fluid"
+                    <img className="img-fluid" alt="reviews"
                         src="https://getkeel.com/wp-content/uploads/2022/02/WhatsApp-Image-2022-02-22-at-7.25.52-AM-600x1300.jpeg" />
                 </div>
                 <div className="revSlideCard">
-                    <img className="img-fluid"
+                    <img className="img-fluid" alt="reviews"
                         src="https://getkeel.com/wp-content/uploads/2022/02/WhatsApp-Image-2022-02-22-at-7.25.52-AM-600x1300.jpeg" />
                 </div>
 

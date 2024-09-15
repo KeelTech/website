@@ -10,15 +10,22 @@ const Contact = () => {
     const renderContactUsText = useMemo(()=>{
         const widgetText = activeComponents?.filter(x=>x.id===1);
         if(widgetText.length){
-            const { title, body } = widgetText[0];
+            const { title, body, is_active } = widgetText[0];
+            
+            if(is_active){
+                return {
+                    title,
+                    body
+                }
+            }
             return {
-                title,
-                body
+                title:'Contact Us',
+                body: 'Please contact us for more Details'
             }
         }
         return {
-            title:'',
-            body: ''
+            title:'Contact Us',
+            body: 'Please contact us for more Details'
         }
         
     },[activeComponents])
@@ -26,7 +33,7 @@ const Contact = () => {
     return (
         <section className={contactSection}>
             <div className="container">
-                <div className="contactContainer">
+                <div className="contactContainer" >
                     <div className="contactMainHeading">
                         <h2>{renderContactUsText.title}</h2>
                     </div>

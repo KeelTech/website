@@ -703,19 +703,11 @@ section.mainSection {
   font-weight: 600;
 }
 
-.immigrateForm h1 span {
-  color: #fd5b5b;
-}
-
 .immigrateForm p {
   color: #4d5459;
   font-size: 18px;
   font-weight: 500;
   margin: 20px 0;
-}
-
-.immigrateForm p span {
-  color: #fd5b5b;
 }
 
 .inputForm {
@@ -812,7 +804,7 @@ h2.subHeadings {
   width: 100%;
 }
 
-.immgTextBlock h2 {
+.immgTextBlock h3 {
   font-size: 20px;
   color: #262e33;
   font-weight: 600;
@@ -956,6 +948,7 @@ section.contact {
   border-radius: 10px;
   -webkit-box-shadow: 1px 1px 14px 10px #f0ecec;
           box-shadow: 1px 1px 14px 10px #f0ecec;
+  background: white;
 }
 
 footer {

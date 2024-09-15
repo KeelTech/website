@@ -15,28 +15,28 @@ const ConsultingMember = ()=>{
                                 <div className="imgigCard">
                                     <h4>20,000+</h4>
                                     <p>Community Members</p>
-                                    <img className="img-fluid" src="https://getkeel.com/wp-content/uploads/2022/02/1.jpg" />
+                                    <img className="img-fluid" src="https://getkeel.com/wp-content/uploads/2022/02/1.jpg" alt="members"/>
                                 </div>
                             </div>
                             <div className="col-md-6 col-12">
                                 <div className="imgigCard">
                                     <h4>20,000+</h4>
                                     <p>Community Members</p>
-                                    <img className="img-fluid" src="https://getkeel.com/wp-content/uploads/2022/02/1.jpg" />
+                                    <img className="img-fluid" src="https://getkeel.com/wp-content/uploads/2022/02/1.jpg" alt="members"/>
                                 </div>
                             </div>
                             <div className="col-md-6 col-12">
                                 <div className="imgigCard">
                                     <h4>20,000+</h4>
                                     <p>Community Members</p>
-                                    <img className="img-fluid" src="https://getkeel.com/wp-content/uploads/2022/02/1.jpg" />
+                                    <img className="img-fluid" src="https://getkeel.com/wp-content/uploads/2022/02/1.jpg" alt="feature"/>
                                 </div>
                             </div>
                             <div className="col-md-6 col-12">
                                 <div className="imgigCard">
                                     <h4>20,000+</h4>
                                     <p>Community Members</p>
-                                    <img className="img-fluid" src="https://getkeel.com/wp-content/uploads/2022/02/1.jpg" />
+                                    <img className="img-fluid" src="https://getkeel.com/wp-content/uploads/2022/02/1.jpg" alt="feature"/>
                                 </div>
                             </div>
                         </div>
@@ -44,7 +44,7 @@ const ConsultingMember = ()=>{
                 </div>
                 <div className="col-md-6 col-12">
                     <div className="imgrRight">
-                        <img className="img-fluid" src="https://getkeel.com/wp-content/uploads/2022/02/2-2-1024x576.jpg" />
+                        <img className="img-fluid" src="https://getkeel.com/wp-content/uploads/2022/02/2-2-1024x576.jpg" alt="price"/>
                         <div className="imgrPrice">
                             <p>
                                 <span>₹14,999.00</span>

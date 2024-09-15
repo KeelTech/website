@@ -14,7 +14,7 @@ const ApplicationPlatform = ()=>{
                 <div className="row">
                     <div className="col-md-6 col-12">
                         <div className="platformImg">
-                            <img className="img-fluid" src="https://getkeel.com/wp-content/uploads/2022/01/Feature-3.png" />
+                            <img className="img-fluid" src="https://getkeel.com/wp-content/uploads/2022/01/Feature-3.png" alt="feature"/>
                         </div>
                     </div>
                     <div className="col-md-6 col-12">
@@ -22,7 +22,7 @@ const ApplicationPlatform = ()=>{
                             <ul>
                                 <li>
                                     <img className="img-fluid"
-                                        src="https://getkeel.com/wp-content/uploads/2022/01/license-svgrepo-com-1.svg" />
+                                        src="https://getkeel.com/wp-content/uploads/2022/01/license-svgrepo-com-1.svg" alt="license"/>
                                     <div>
                                         <p>Only Licensed Consultants </p>
                                         <span>No more ghost consultants ghosting you!</span>
@@ -30,7 +30,7 @@ const ApplicationPlatform = ()=>{
                                 </li>
                                 <li>
                                     <img className="img-fluid"
-                                        src="https://getkeel.com/wp-content/uploads/2022/01/no-step-svgrepo-com-1.svg" />
+                                        src="https://getkeel.com/wp-content/uploads/2022/01/no-step-svgrepo-com-1.svg" alt="steps"/>
                                     <div>
                                         <p>Don't Settle for the consultant "near you" </p>
                                         <span>No more ghost consultants ghosting you! </span>
@@ -38,7 +38,7 @@ const ApplicationPlatform = ()=>{
                                 </li>
                                 <li>
                                     <img className="img-fluid"
-                                        src="https://getkeel.com/wp-content/uploads/2022/01/8884838fb15f00484d61d641962ce96e-1.svg" />
+                                        src="https://getkeel.com/wp-content/uploads/2022/01/8884838fb15f00484d61d641962ce96e-1.svg" alt="feature"/>
                                     <div>
                                         <p>Your Money Is Precious </p>
                                         <span>Know your chances before starting your application </span>
@@ -46,7 +46,7 @@ const ApplicationPlatform = ()=>{
                                 </li>
                                 <li>
                                     <img className="img-fluid"
-                                        src="https://getkeel.com/wp-content/uploads/2022/01/295293-1.svg" />
+                                        src="https://getkeel.com/wp-content/uploads/2022/01/295293-1.svg" alt="feature"/>
                                     <div>
                                         <p>Don't Run For Updates For Months </p>
                                         <span>End to end application management at one platform </span>

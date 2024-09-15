@@ -16,10 +16,13 @@ export const container = css`
         font-size: 40px;
         color: #262e33;
         font-weight: 600;
+        @media (max-width:992px){
+          font-size:30px;
+        }
       }
       
       .immigrateForm h1 span {
-        color: #fd5b5b;
+        // color: #fd5b5b;
       }
       
       .immigrateForm p {
@@ -27,10 +30,13 @@ export const container = css`
         font-size: 18px;
         font-weight: 500;
         margin: 20px 0;
+        @media (max-width:992px){
+          font-size:16px;
+        }
       }
       
       .immigrateForm p span {
-        color: #fd5b5b;
+        // color: #fd5b5b;
       }
       
       .inputForm {
@@ -74,6 +80,9 @@ export const container = css`
                 flex-direction: column;
         gap: 30px;
         margin: 35px 0px;
+      }
+      .coloredHeading{
+        color: #e74c3c;
       }
       
       .inputForm input:focus + label {

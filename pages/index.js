@@ -1,5 +1,3 @@
-// Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
 import { useRouter } from 'next/router';
 import { getBlogsList } from '@/actions/index.js';
 import { useState, useEffect } from 'react';
@@ -10,9 +8,6 @@ const BlogNewView = dynamic(() => import('@/components/BlogsView/BlogNewView'), 
   loading: () => <div>Loading blogs...</div>,
   ssr: false
 });
-
-// Import Swiper styles
-import 'swiper/css';
 const HomeView = ({ blogsList }) => {
     const router = useRouter()
     
@@ -63,17 +58,17 @@ const HomeView = ({ blogsList }) => {
                                 <button onClick={() => router.push(`/settleAbroad`)}>Settle Abroad</button>
                             </div>
                             <div className="bannerMidImg">
-                                <img className="img-fluid forWeb" src="/assets/bgUp.webp" />
-                                <img className="img-fluid forMobile" src="/assets/Hero-section.webp" />
+                                <img className="img-fluid forWeb" src="/assets/bgUp.webp" loading="eager" />
+                                <img className="img-fluid forMobile" src="/assets/Hero-section.webp" loading="eager" />
                             </div>
                             <div className="bannerLast">
                                 <p>Our students finished Universities and are drawing hefty salaries at</p>
                                 <div className="banImgsGrid">
-                                    <img src="/assets/ms.webp" alt="" className="img-fluid" />
-                                    <img src="/assets/uber.webp" alt="" className="img-fluid" />
-                                    <img src="/assets/delo.webp" alt="" className="img-fluid" />
-                                    <img src="/assets/google.webp" alt="" className="img-fluid" />
-                                    <img src="/assets/ama.svg" alt="" className="img-fluid" />
+                                    <img src="/assets/ms.webp" alt="" className="img-fluid" loading="lazy" />
+                                    <img src="/assets/uber.webp" alt="" className="img-fluid" loading="lazy" />
+                                    <img src="/assets/delo.webp" alt="" className="img-fluid" loading="lazy" />
+                                    <img src="/assets/google.webp" alt="" className="img-fluid" loading="lazy" />
+                                    <img src="/assets/ama.svg" alt="" className="img-fluid" loading="lazy" />
                                 </div>
                             </div>
                         </div>
@@ -151,14 +146,14 @@ const HomeView = ({ blogsList }) => {
                                 </div>
                                 <div className='rightPrsCont'>
                                     <div className='verticalImg'>
-                                        <img className='img-fluid' src='/assets/home/home-process-1.webp' />
+                                        <img className='img-fluid' src='/assets-optimized/home/home-process-1.webp' loading="lazy" />
                                     </div>
                                 </div>
                             </div>
                             <div className='inrScrollBox reverseMobile'>
                                 <div className='rightPrsCont'>
                                     <div className='verticalImg'>
-                                        <img className='img-fluid' src='/assets/home/home-process-2.webp' />
+                                        <img className='img-fluid' src='/assets-optimized/home/home-process-2.webp' loading="lazy" />
                                     </div>
                                 </div>
                                 <div className='leftprsCont'>
@@ -183,14 +178,14 @@ const HomeView = ({ blogsList }) => {
                                 </div>
                                 <div className='rightPrsCont'>
                                     <div className='verticalImg'>
-                                        <img className='img-fluid' src='/assets/home/home-process-3.webp'/>
+                                        <img className='img-fluid' src='/assets-optimized/home/home-process-3.webp' loading="lazy" />
                                     </div>
                                 </div>
                             </div>
                             <div className='inrScrollBox reverseMobile'>
                                 <div className='rightPrsCont'>
                                     <div className='verticalImg'>
-                                        <img className='img-fluid' src='/assets/home/home-process-4.webp' />
+                                        <img className='img-fluid' src='/assets-optimized/home/home-process-4.webp' loading="lazy" />
                                     </div>
                                 </div>
                                 <div className='leftprsCont'>
@@ -334,20 +329,22 @@ const HomeView = ({ blogsList }) => {
     )
 }
 
-export async function getServerSideProps(){
+export async function getStaticProps(){
     try {
         const blogsList = await getBlogsList({})
         return {
             props: {
                 blogsList: blogsList || []
-            }
+            },
+            revalidate: 3600 // Revalidate every hour
         }
     } catch (error) {
         console.error('Error fetching blogs:', error)
         return {
             props: {
                 blogsList: []
-            }
+            },
+            revalidate: 3600
         }
     }
 }

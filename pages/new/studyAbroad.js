@@ -1,12 +1,6 @@
-// Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
-
 import Accordian from '@/components/Accordian/newAccordian';
 import { StudyAbroadAccordianData } from '@/helpers/constant.js'
 import GetConsultationCTA from '@/components/GetConsultationCTA';
-
-// Import Swiper styles
-import 'swiper/css';
 const StudyAbroad = () => {
 
     return (

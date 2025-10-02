@@ -1,9 +1,4 @@
-// Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
 import { useRouter } from 'next/router';
-
-// Import Swiper styles
-import 'swiper/css';
 const HomeView = () => {
     const router = useRouter()
 

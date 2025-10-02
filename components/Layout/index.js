@@ -1,5 +1,4 @@
 import { useEffect, useState, useMemo } from 'react';
-import { useSwipeable } from 'react-swipeable'
 import { useRouter } from 'next/router'
 
 import Header from '@/components/Header';
@@ -34,17 +33,34 @@ export default function Layout({ children, dataProps }) {
     setNav(false);
   }
 
-  const handleSwipeLeft = ()=>{
-    if(activeNav){
-      toggleNavBar();
-    }
-  }
-  const handlers = useSwipeable({
-    onSwipedLeft: handleSwipeLeft,
-    onSwipedRight: toggleNavBar,
-  });
+  // Native touch events for better performance
+  const handleTouchStart = (e) => {
+    const touch = e.touches[0];
+    const startX = touch.clientX;
+    
+    const handleTouchEnd = (e) => {
+      const touch = e.changedTouches[0];
+      const endX = touch.clientX;
+      const diff = startX - endX;
+      
+      if (Math.abs(diff) > 50) { // Minimum swipe distance
+        if (diff > 0) {
+          // Swiped left
+          if (activeNav) {
+            toggleNavBar();
+          }
+        } else {
+          // Swiped right
+          toggleNavBar();
+        }
+      }
+    };
+    
+    document.addEventListener('touchend', handleTouchEnd, { once: true });
+  };
+
   return (
-    <div {...handlers}>
+    <div onTouchStart={handleTouchStart}>
       {
         isNew?<HeaderNew toggleNavBar={toggleNavBar} activeNav={activeNav}/>:<Header activeNav={activeNav} toggleNavBar={toggleNavBar} closeNavBar={closeNavBar}/>
       }

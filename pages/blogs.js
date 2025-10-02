@@ -167,10 +167,19 @@ const Resource = ({ blogsList })=>{
 }
 
 export async function getServerSideProps(){
-    const blogsList =  await getBlogsList({})
-    return {
-        props: {
-            blogsList
+    try {
+        const blogsList = await getBlogsList({})
+        return {
+            props: {
+                blogsList: blogsList || []
+            }
+        }
+    } catch (error) {
+        console.error('Error fetching blogs:', error)
+        return {
+            props: {
+                blogsList: []
+            }
         }
     }
 }

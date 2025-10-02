@@ -10,7 +10,6 @@ const SuccessFail = () => {
                         <path d="M15.2321 5.21777L5.23212 15.2178" stroke="#343A40" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                         <path d="M5.23212 5.21777L15.2321 15.2178" stroke="#343A40" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
-
                     <h3>Transaction Failed</h3>
                     <p>Please try again later, or contact our helpline no</p>
                     <button onClick={()=>router.push('/')}>Back to Home page</button>

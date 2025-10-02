@@ -2,12 +2,53 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { useRouter } from 'next/router';
 import { getBlogsList } from '@/actions/index.js';
-import BlogNewView from '@/components/BlogsView/BlogNewView';
+import { useState, useEffect } from 'react';
+import dynamic from 'next/dynamic';
+
+// Dynamic import for better performance
+const BlogNewView = dynamic(() => import('@/components/BlogsView/BlogNewView'), {
+  loading: () => <div>Loading blogs...</div>,
+  ssr: false
+});
 
 // Import Swiper styles
 import 'swiper/css';
 const HomeView = ({ blogsList }) => {
     const router = useRouter()
+    
+    // Typing animation state
+    const [currentText, setCurrentText] = useState('')
+    const [currentIndex, setCurrentIndex] = useState(0)
+    const [isDeleting, setIsDeleting] = useState(false)
+    
+    const words = ['Study', 'Settle', 'Work']
+    
+    useEffect(() => {
+        const timeout = setTimeout(() => {
+            const currentWord = words[currentIndex]
+            
+            if (!isDeleting) {
+                // Typing effect
+                if (currentText.length < currentWord.length) {
+                    setCurrentText(currentWord.substring(0, currentText.length + 1))
+                } else {
+                    // Wait before starting to delete
+                    setTimeout(() => setIsDeleting(true), 2000)
+                }
+            } else {
+                // Deleting effect
+                if (currentText.length > 0) {
+                    setCurrentText(currentText.substring(0, currentText.length - 1))
+                } else {
+                    // Move to next word
+                    setIsDeleting(false)
+                    setCurrentIndex((prevIndex) => (prevIndex + 1) % words.length)
+                }
+            }
+        }, isDeleting ? 100 : 200) // Faster deletion, slower typing
+        
+        return () => clearTimeout(timeout)
+    }, [currentText, currentIndex, isDeleting, words])
 
     return (
         <>
@@ -15,8 +56,7 @@ const HomeView = ({ blogsList }) => {
                 <div className="container">
                     <div className="mainBanner">
                         <div className="bannerTopHeading">
-                            <h1 className="bannerHeading">Fly to the country of your dreams to <span>Study|</span></h1>
-                            {/* Study | Settle | Work  */}
+                            <h1 className="bannerHeading">Fly to the country of your dreams to <span className="typing-text">{currentText}<span className="cursor">|</span></span></h1>
                             <p className="bannerParaSub">We are India’s largest tech-enabled study abroad platform supported by an army of experts</p>
                             <div className="bannerButton">
                                 <button onClick={() => router.push(`/studyAbroad`)}>Study Abroad</button>
@@ -295,10 +335,19 @@ const HomeView = ({ blogsList }) => {
 }
 
 export async function getServerSideProps(){
-    const blogsList =  await getBlogsList({})
-    return {
-        props: {
-            blogsList
+    try {
+        const blogsList = await getBlogsList({})
+        return {
+            props: {
+                blogsList: blogsList || []
+            }
+        }
+    } catch (error) {
+        console.error('Error fetching blogs:', error)
+        return {
+            props: {
+                blogsList: []
+            }
         }
     }
 }

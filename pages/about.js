@@ -146,4 +146,12 @@ const Resource = () => {
     )
 }
 
+// Static generation for better performance
+export async function getStaticProps() {
+  return {
+    props: {},
+    revalidate: 3600, // Revalidate every hour
+  }
+}
+
 export default Resource;

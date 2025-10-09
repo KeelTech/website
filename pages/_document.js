@@ -22,7 +22,19 @@ export default class AppDocument extends Document {
   render() {
     return (
       <Html lang='en'>
-        <Head />
+        <Head>
+          {/* Preload critical fonts */}
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
+          
+          {/* Preload critical images */}
+          <link rel="preload" as="image" href="/assets/bgUp.webp" />
+          <link rel="preload" as="image" href="/assets/Hero-section.webp" />
+          
+          {/* DNS prefetch for external domains */}
+          <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+          <link rel="dns-prefetch" href="//fonts.gstatic.com" />
+        </Head>
         <link rel="shortcut icon" href="../images/fav.ico" />
         <link rel="manifest" href="/manifest.json"/>
         <meta name="apple-mobile-web-app-capable" content="yes"/>

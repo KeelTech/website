@@ -7,7 +7,7 @@ import TagManager from 'react-gtm-module';
 import { useEffect } from 'react';
 
 export default function App(props){
-    const { Component, pageProps, dataProps } = props;
+    const { Component, pageProps } = props;
 
     useEffect(() => {
         TagManager.initialize({ gtmId: 'NXF24DB' });
@@ -15,15 +15,16 @@ export default function App(props){
 
     return (
     <AppWrapper>
-        <Layout dataProps={dataProps}>
+        <Layout>
             <Component {...pageProps}/>
         </Layout>
     </AppWrapper>
     )
 }
 
-App.getInitialProps = async () => {
-      // calls page's `getInitialProps` and fills `appProps.pageProps`
-      const appProps = await getActiveComponents({});
-      return { dataProps: appProps }
-}
+// Removed getInitialProps to enable static optimization
+// App.getInitialProps = async () => {
+//       // calls page's `getInitialProps` and fills `appProps.pageProps`
+//       const appProps = await getActiveComponents({});
+//       return { dataProps: appProps }
+// }
